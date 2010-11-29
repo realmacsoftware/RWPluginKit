@@ -262,6 +262,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ONLY_ACTIVE_ARCH = YES;
 				RAPIDWEAVER_ROOT = ../../RapidWeaver;
 				SDKROOT = macosx10.5;
 			};
