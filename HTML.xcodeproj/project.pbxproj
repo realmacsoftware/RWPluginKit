@@ -16,7 +16,7 @@
 		4A844B14103C1E6400E24E24 /* RMSSamplePluginContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A844B13103C1E6400E24E24 /* RMSSamplePluginContentViewController.m */; };
 		4A90E4671031086300093215 /* RMSSamplePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A90E4641031086300093215 /* RMSSamplePlugin.m */; };
 		4A90E4681031086300093215 /* RMSSamplePlugin+Sandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A90E4661031086300093215 /* RMSSamplePlugin+Sandwich.m */; };
-		4A90E4801031100A00093215 /* HTML.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4A90E47F1031100A00093215 /* HTML.icns */; };
+		4A90E4801031100A00093215 /* PluginIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4A90E47F1031100A00093215 /* PluginIcon.icns */; };
 		4A90E49110311B3000093215 /* RWHTMLViewCM.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A90E49010311B3000093215 /* RWHTMLViewCM.m */; };
 		7B4669CF0A55846700967B9D /* quickInsertTemplates.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B4669CE0A55846700967B9D /* quickInsertTemplates.plist */; };
 		9C736B75094C726A001443E6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EC48AB06813ED400EF9A10 /* Cocoa.framework */; };
@@ -36,12 +36,12 @@
 		4A90E4641031086300093215 /* RMSSamplePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMSSamplePlugin.m; path = source/RMSSamplePlugin.m; sourceTree = "<group>"; };
 		4A90E4651031086300093215 /* RMSSamplePlugin+Sandwich.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RMSSamplePlugin+Sandwich.h"; path = "source/RMSSamplePlugin+Sandwich.h"; sourceTree = "<group>"; };
 		4A90E4661031086300093215 /* RMSSamplePlugin+Sandwich.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RMSSamplePlugin+Sandwich.m"; path = "source/RMSSamplePlugin+Sandwich.m"; sourceTree = "<group>"; };
-		4A90E47F1031100A00093215 /* HTML.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = HTML.icns; path = resources/HTML.icns; sourceTree = "<group>"; };
+		4A90E47F1031100A00093215 /* PluginIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = PluginIcon.icns; path = resources/PluginIcon.icns; sourceTree = "<group>"; };
 		4A90E48F10311B3000093215 /* RWHTMLViewCM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWHTMLViewCM.h; path = source/RWHTMLViewCM.h; sourceTree = "<group>"; };
 		4A90E49010311B3000093215 /* RWHTMLViewCM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWHTMLViewCM.m; path = source/RWHTMLViewCM.m; sourceTree = "<group>"; };
 		865793D7068F59A7005600C4 /* English */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text.plist.xml; name = English; path = English.lproj/quickInsertTemplates.plist; sourceTree = "<group>"; };
 		86EC48AB06813ED400EF9A10 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		9C736B80094C726A001443E6 /* HTML.rwplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTML.rwplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C736B80094C726A001443E6 /* SamplePlugin.rwplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SamplePlugin.rwplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C736B84094C7280001443E6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,7 +97,7 @@
 		86EC479A06811BCE00EF9A10 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C736B80094C726A001443E6 /* HTML.rwplugin */,
+				9C736B80094C726A001443E6 /* SamplePlugin.rwplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				9C736B84094C7280001443E6 /* Info.plist */,
-				4A90E47F1031100A00093215 /* HTML.icns */,
+				4A90E47F1031100A00093215 /* PluginIcon.icns */,
 				376A5EF70A2D9C950019BB34 /* Localizable.strings */,
 				4A844B0E103C1E2200E24E24 /* RWHTMLPluginContentView.xib */,
 				4A3828A2103BFE2400B264B7 /* RWPOptionsView.xib */,
@@ -128,23 +128,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9C736B69094C726A001443E6 /* HTML */ = {
+		9C736B69094C726A001443E6 /* Plugin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C736B7B094C726A001443E6 /* Build configuration list for PBXNativeTarget "HTML" */;
+			buildConfigurationList = 9C736B7B094C726A001443E6 /* Build configuration list for PBXNativeTarget "Plugin" */;
 			buildPhases = (
 				9C736B72094C726A001443E6 /* Sources */,
 				9C736B74094C726A001443E6 /* Frameworks */,
 				9C736B6C094C726A001443E6 /* Resources */,
-				4A75DC5512A3A46E00AD635C /* ShellScript */,
+				4A75DC5512A3A46E00AD635C /* Run Install Script */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HTML;
+			name = Plugin;
 			productInstallPath = "$(USER_LIBRARY_DIR)/Bundles";
 			productName = Blog;
-			productReference = 9C736B80094C726A001443E6 /* HTML.rwplugin */;
+			productReference = 9C736B80094C726A001443E6 /* SamplePlugin.rwplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -170,7 +170,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9C736B69094C726A001443E6 /* HTML */,
+				9C736B69094C726A001443E6 /* Plugin */,
 			);
 		};
 /* End PBXProject section */
@@ -182,7 +182,7 @@
 			files = (
 				7B4669CF0A55846700967B9D /* quickInsertTemplates.plist in Resources */,
 				376A5EF80A2D9C950019BB34 /* Localizable.strings in Resources */,
-				4A90E4801031100A00093215 /* HTML.icns in Resources */,
+				4A90E4801031100A00093215 /* PluginIcon.icns in Resources */,
 				4A3828A4103BFE2400B264B7 /* RWPOptionsView.xib in Resources */,
 				4A844B10103C1E2200E24E24 /* RWHTMLPluginContentView.xib in Resources */,
 			);
@@ -191,13 +191,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4A75DC5512A3A46E00AD635C /* ShellScript */ = {
+		4A75DC5512A3A46E00AD635C /* Run Install Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Install Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +288,7 @@
 					"\"$(SRCROOT)/Frameworks\"",
 				);
 				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = HTML;
+				PRODUCT_NAME = SamplePlugin;
 				SDKROOT = macosx10.5;
 				WRAPPER_EXTENSION = rwplugin;
 			};
@@ -322,7 +323,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C736B7B094C726A001443E6 /* Build configuration list for PBXNativeTarget "HTML" */ = {
+		9C736B7B094C726A001443E6 /* Build configuration list for PBXNativeTarget "Plugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C736B7C094C726A001443E6 /* Debug */,

@@ -5,11 +5,11 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>HTML</string>
+	<string>SamplePlugin</string>
 	<key>CFBundleIconFile</key>
-	<string>HTML</string>
+	<string>PluginIcon</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.realmacsoftware.rwplugin.HTML</string>
+	<string>com.realmacsoftware.rwplugin.SamplePlugin</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
