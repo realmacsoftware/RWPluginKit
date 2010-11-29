@@ -9,7 +9,7 @@
 	<key>CFBundleIconFile</key>
 	<string>PluginIcon</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.realmacsoftware.rwplugin.SamplePlugin</string>
+	<string>com.mycompanyname.rwplugin.SamplePlugin</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
