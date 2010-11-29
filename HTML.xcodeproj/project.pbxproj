@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		376A5EF80A2D9C950019BB34 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 376A5EF70A2D9C950019BB34 /* Localizable.strings */; };
+		4A382892103BF7D600B264B7 /* RWPOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A382891103BF7D600B264B7 /* RWPOptionsViewController.m */; };
+		4A3828A4103BFE2400B264B7 /* RWPOptionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A3828A2103BFE2400B264B7 /* RWPOptionsView.xib */; };
+		4A844B10103C1E2200E24E24 /* RWHTMLPluginContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A844B0E103C1E2200E24E24 /* RWHTMLPluginContentView.xib */; };
+		4A844B14103C1E6400E24E24 /* RWHTMLPluginContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A844B13103C1E6400E24E24 /* RWHTMLPluginContentViewController.m */; };
+		4A90E4671031086300093215 /* RWHTMLPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A90E4641031086300093215 /* RWHTMLPlugin.m */; };
+		4A90E4681031086300093215 /* RWHTMLPlugin+Sandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A90E4661031086300093215 /* RWHTMLPlugin+Sandwich.m */; };
+		4A90E4801031100A00093215 /* HTML.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4A90E47F1031100A00093215 /* HTML.icns */; };
+		4A90E49110311B3000093215 /* RWHTMLViewCM.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A90E49010311B3000093215 /* RWHTMLViewCM.m */; };
+		4ACF3C8C11C35B0900B84DB5 /* RMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACF3C8B11C35B0900B84DB5 /* RMKit.framework */; };
+		7B4669CF0A55846700967B9D /* quickInsertTemplates.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B4669CE0A55846700967B9D /* quickInsertTemplates.plist */; };
+		7B55ADE20C78480C00AF827E /* RWKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B55ADDB0C78480A00AF827E /* RWKit.framework */; };
+		9C736B75094C726A001443E6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EC48AB06813ED400EF9A10 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37D24E370D586D0500D3DC49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B55ADCF0C78480A00AF827E /* RapidWeaver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7B80D56A0CF69FFA0032EB9A;
+			remoteInfo = asutil;
+		};
+		37D24E390D586D0500D3DC49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B55ADCF0C78480A00AF827E /* RapidWeaver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7B5ADA5B0D40574900BD7E91;
+			remoteInfo = RWIB3Plugins;
+		};
+		4AC364960FC2EFE000E9C525 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B55ADCF0C78480A00AF827E /* RapidWeaver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7B02EA2F0DFBA26A0055AA2B;
+			remoteInfo = RWPluginUtilities;
+		};
+		4AC364980FC2EFE000E9C525 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B55ADCF0C78480A00AF827E /* RapidWeaver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7B8247170E60C1A80015015A;
+			remoteInfo = rwexport;
+		};
+		4AC3649A0FC2EFE000E9C525 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B55ADCF0C78480A00AF827E /* RapidWeaver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7BEF04D40E95E7EC00A65311;
+			remoteInfo = CleanRWSWCaches;
+		};
+		7B55ADD80C78480A00AF827E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B55ADCF0C78480A00AF827E /* RapidWeaver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7387F053049A937200C919A3;
+			remoteInfo = RapidWeaver;
+		};
+		7B55ADDA0C78480A00AF827E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B55ADCF0C78480A00AF827E /* RapidWeaver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7B9F5B9C0C7834DE008BF187;
+			remoteInfo = RWPluginUtilities;
+		};
+		7B55ADDC0C78480A00AF827E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B55ADCF0C78480A00AF827E /* RapidWeaver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7B5066710B24FE1A00ACEC68;
+			remoteInfo = HTMLColorStringTest;
+		};
+		7B55ADDE0C78480A00AF827E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B55ADCF0C78480A00AF827E /* RapidWeaver.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7B8701920B439E4E0021627D;
+			remoteInfo = NSStringHTMLDataTest;
+		};
+		7B55ADE30C78481C00AF827E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B55ADCF0C78480A00AF827E /* RapidWeaver.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B02EA2E0DFBA26A0055AA2B;
+			remoteInfo = RWPluginUtilities;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		377811660917CBDB00E538D6 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4A382890103BF7D600B264B7 /* RWPOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWPOptionsViewController.h; path = source/RWPOptionsViewController.h; sourceTree = "<group>"; };
+		4A382891103BF7D600B264B7 /* RWPOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWPOptionsViewController.m; path = source/RWPOptionsViewController.m; sourceTree = "<group>"; };
+		4A3828A3103BFE2400B264B7 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/RWPOptionsView.xib; sourceTree = "<group>"; };
+		4A844B0F103C1E2200E24E24 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/RWHTMLPluginContentView.xib; sourceTree = "<group>"; };
+		4A844B12103C1E6400E24E24 /* RWHTMLPluginContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWHTMLPluginContentViewController.h; path = source/RWHTMLPluginContentViewController.h; sourceTree = "<group>"; };
+		4A844B13103C1E6400E24E24 /* RWHTMLPluginContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWHTMLPluginContentViewController.m; path = source/RWHTMLPluginContentViewController.m; sourceTree = "<group>"; };
+		4A90E4631031086300093215 /* RWHTMLPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWHTMLPlugin.h; path = source/RWHTMLPlugin.h; sourceTree = "<group>"; };
+		4A90E4641031086300093215 /* RWHTMLPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWHTMLPlugin.m; path = source/RWHTMLPlugin.m; sourceTree = "<group>"; };
+		4A90E4651031086300093215 /* RWHTMLPlugin+Sandwich.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RWHTMLPlugin+Sandwich.h"; path = "source/RWHTMLPlugin+Sandwich.h"; sourceTree = "<group>"; };
+		4A90E4661031086300093215 /* RWHTMLPlugin+Sandwich.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RWHTMLPlugin+Sandwich.m"; path = "source/RWHTMLPlugin+Sandwich.m"; sourceTree = "<group>"; };
+		4A90E47F1031100A00093215 /* HTML.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = HTML.icns; path = resources/HTML.icns; sourceTree = "<group>"; };
+		4A90E48F10311B3000093215 /* RWHTMLViewCM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWHTMLViewCM.h; path = source/RWHTMLViewCM.h; sourceTree = "<group>"; };
+		4A90E49010311B3000093215 /* RWHTMLViewCM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWHTMLViewCM.m; path = source/RWHTMLViewCM.m; sourceTree = "<group>"; };
+		4ACF3C8B11C35B0900B84DB5 /* RMKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RMKit.framework; path = ../../RapidWeaver/Application/Frameworks/RMKit.framework; sourceTree = SOURCE_ROOT; };
+		7B55ADCF0C78480A00AF827E /* RapidWeaver.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RapidWeaver.xcodeproj; path = ../../RapidWeaver/RapidWeaver.xcodeproj; sourceTree = SOURCE_ROOT; };
+		7B57C0DD0BC3395600C4A23A /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = Common.xcconfig; path = ../../XcodeConfigurations/Common.xcconfig; sourceTree = SOURCE_ROOT; };
+		7B57C0DE0BC3395600C4A23A /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = ../../XcodeConfigurations/Debug.xcconfig; sourceTree = SOURCE_ROOT; };
+		7B57C0DF0BC3395600C4A23A /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = ../../XcodeConfigurations/Release.xcconfig; sourceTree = SOURCE_ROOT; };
+		865793D7068F59A7005600C4 /* English */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text.plist.xml; name = English; path = English.lproj/quickInsertTemplates.plist; sourceTree = "<group>"; };
+		86EC48AB06813ED400EF9A10 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		9C736B80094C726A001443E6 /* HTML.rwplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTML.rwplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C736B84094C7280001443E6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C736B74094C726A001443E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C736B75094C726A001443E6 /* Cocoa.framework in Frameworks */,
+				7B55ADE20C78480C00AF827E /* RWKit.framework in Frameworks */,
+				4ACF3C8C11C35B0900B84DB5 /* RMKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A90E4691031087600093215 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4A90E4651031086300093215 /* RWHTMLPlugin+Sandwich.h */,
+				4A90E4661031086300093215 /* RWHTMLPlugin+Sandwich.m */,
+				4A90E4631031086300093215 /* RWHTMLPlugin.h */,
+				4A90E4641031086300093215 /* RWHTMLPlugin.m */,
+				4A844B12103C1E6400E24E24 /* RWHTMLPluginContentViewController.h */,
+				4A844B13103C1E6400E24E24 /* RWHTMLPluginContentViewController.m */,
+				4A90E48F10311B3000093215 /* RWHTMLViewCM.h */,
+				4A90E49010311B3000093215 /* RWHTMLViewCM.m */,
+				4A382890103BF7D600B264B7 /* RWPOptionsViewController.h */,
+				4A382891103BF7D600B264B7 /* RWPOptionsViewController.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		7B55ADD00C78480A00AF827E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B55ADD90C78480A00AF827E /* RapidWeaver 5.app */,
+				4AC364970FC2EFE000E9C525 /* RWPluginUtilities.framework */,
+				7B55ADDB0C78480A00AF827E /* RWKit.framework */,
+				7B55ADDD0C78480A00AF827E /* HTMLColorStringTest.octest */,
+				7B55ADDF0C78480A00AF827E /* NSStringHTMLDataTest.octest */,
+				37D24E380D586D0500D3DC49 /* asutil */,
+				4AC364990FC2EFE000E9C525 /* rwexport */,
+				4AC3649B0FC2EFE000E9C525 /* CleanRWSWCaches */,
+				37D24E3A0D586D0500D3DC49 /* RWIB3Plugins.ibplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BEBF65A0A5432D00086333B /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				7B55ADCF0C78480A00AF827E /* RapidWeaver.xcodeproj */,
+				7B57C0DD0BC3395600C4A23A /* Common.xcconfig */,
+				7B57C0DE0BC3395600C4A23A /* Debug.xcconfig */,
+				7B57C0DF0BC3395600C4A23A /* Release.xcconfig */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		86EC46E80681018500EF9A10 = {
+			isa = PBXGroup;
+			children = (
+				4A90E4691031087600093215 /* Source */,
+				7BEBF65A0A5432D00086333B /* Dependencies */,
+				86EC483306812DE600EF9A10 /* Resources */,
+				86EC48B406813EDD00EF9A10 /* Frameworks */,
+				86EC479A06811BCE00EF9A10 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		86EC479A06811BCE00EF9A10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C736B80094C726A001443E6 /* HTML.rwplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86EC483306812DE600EF9A10 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9C736B84094C7280001443E6 /* Info.plist */,
+				4A90E47F1031100A00093215 /* HTML.icns */,
+				376A5EF70A2D9C950019BB34 /* Localizable.strings */,
+				4A844B0E103C1E2200E24E24 /* RWHTMLPluginContentView.xib */,
+				4A3828A2103BFE2400B264B7 /* RWPOptionsView.xib */,
+				7B4669CE0A55846700967B9D /* quickInsertTemplates.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		86EC48B406813EDD00EF9A10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86EC48AB06813ED400EF9A10 /* Cocoa.framework */,
+				4ACF3C8B11C35B0900B84DB5 /* RMKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C736B69094C726A001443E6 /* HTML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C736B7B094C726A001443E6 /* Build configuration list for PBXNativeTarget "HTML" */;
+			buildPhases = (
+				9C736B72094C726A001443E6 /* Sources */,
+				9C736B74094C726A001443E6 /* Frameworks */,
+				9C736B6C094C726A001443E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B55ADE40C78481C00AF827E /* PBXTargetDependency */,
+			);
+			name = HTML;
+			productInstallPath = "$(USER_LIBRARY_DIR)/Bundles";
+			productName = Blog;
+			productReference = 9C736B80094C726A001443E6 /* HTML.rwplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86EC46EC0681018500EF9A10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Realmac Software";
+			};
+			buildConfigurationList = 9C72E61C088EEA07007CC3F7 /* Build configuration list for PBXProject "HTML" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 86EC46E80681018500EF9A10;
+			productRefGroup = 86EC479A06811BCE00EF9A10 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7B55ADD00C78480A00AF827E /* Products */;
+					ProjectRef = 7B55ADCF0C78480A00AF827E /* RapidWeaver.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				9C736B69094C726A001443E6 /* HTML */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		37D24E380D586D0500D3DC49 /* asutil */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = asutil;
+			remoteRef = 37D24E370D586D0500D3DC49 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		37D24E3A0D586D0500D3DC49 /* RWIB3Plugins.ibplugin */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RWIB3Plugins.ibplugin;
+			remoteRef = 37D24E390D586D0500D3DC49 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4AC364970FC2EFE000E9C525 /* RWPluginUtilities.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RWPluginUtilities.framework;
+			remoteRef = 4AC364960FC2EFE000E9C525 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4AC364990FC2EFE000E9C525 /* rwexport */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = rwexport;
+			remoteRef = 4AC364980FC2EFE000E9C525 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4AC3649B0FC2EFE000E9C525 /* CleanRWSWCaches */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = CleanRWSWCaches;
+			remoteRef = 4AC3649A0FC2EFE000E9C525 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B55ADD90C78480A00AF827E /* RapidWeaver 5.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "RapidWeaver 5.app";
+			remoteRef = 7B55ADD80C78480A00AF827E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B55ADDB0C78480A00AF827E /* RWKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RWKit.framework;
+			remoteRef = 7B55ADDA0C78480A00AF827E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B55ADDD0C78480A00AF827E /* HTMLColorStringTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HTMLColorStringTest.octest;
+			remoteRef = 7B55ADDC0C78480A00AF827E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7B55ADDF0C78480A00AF827E /* NSStringHTMLDataTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NSStringHTMLDataTest.octest;
+			remoteRef = 7B55ADDE0C78480A00AF827E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C736B6C094C726A001443E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4669CF0A55846700967B9D /* quickInsertTemplates.plist in Resources */,
+				376A5EF80A2D9C950019BB34 /* Localizable.strings in Resources */,
+				4A90E4801031100A00093215 /* HTML.icns in Resources */,
+				4A3828A4103BFE2400B264B7 /* RWPOptionsView.xib in Resources */,
+				4A844B10103C1E2200E24E24 /* RWHTMLPluginContentView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C736B72094C726A001443E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A90E4671031086300093215 /* RWHTMLPlugin.m in Sources */,
+				4A90E4681031086300093215 /* RWHTMLPlugin+Sandwich.m in Sources */,
+				4A90E49110311B3000093215 /* RWHTMLViewCM.m in Sources */,
+				4A382892103BF7D600B264B7 /* RWPOptionsViewController.m in Sources */,
+				4A844B14103C1E6400E24E24 /* RWHTMLPluginContentViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B55ADE40C78481C00AF827E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RWPluginUtilities;
+			targetProxy = 7B55ADE30C78481C00AF827E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		376A5EF70A2D9C950019BB34 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				377811660917CBDB00E538D6 /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		4A3828A2103BFE2400B264B7 /* RWPOptionsView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A3828A3103BFE2400B264B7 /* English */,
+			);
+			name = RWPOptionsView.xib;
+			sourceTree = "<group>";
+		};
+		4A844B0E103C1E2200E24E24 /* RWHTMLPluginContentView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A844B0F103C1E2200E24E24 /* English */,
+			);
+			name = RWHTMLPluginContentView.xib;
+			sourceTree = "<group>";
+		};
+		7B4669CE0A55846700967B9D /* quickInsertTemplates.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				865793D7068F59A7005600C4 /* English */,
+			);
+			name = quickInsertTemplates.plist;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C72E61D088EEA07007CC3F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B57C0DE0BC3395600C4A23A /* Debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../RapidWeaver/build/$(BUILD_STYLE)";
+				RAPIDWEAVER_ROOT = ../../RapidWeaver;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		9C72E61E088EEA07007CC3F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B57C0DF0BC3395600C4A23A /* Release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../RapidWeaver/build/$(BUILD_STYLE)";
+				IBC_FLATTEN_NIBS = NO;
+				RAPIDWEAVER_ROOT = ../../RapidWeaver;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+		9C736B7C094C726A001443E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../RapidWeaver/Application/Frameworks\"",
+				);
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = HTML;
+				SDKROOT = macosx10.5;
+				WRAPPER_EXTENSION = rwplugin;
+			};
+			name = Debug;
+		};
+		9C736B7D094C726A001443E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "Realmac Software - Code Signing";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../RapidWeaver/Application/Frameworks\"",
+				);
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = HTML;
+				SDKROOT = macosx10.5;
+				WRAPPER_EXTENSION = rwplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C72E61C088EEA07007CC3F7 /* Build configuration list for PBXProject "HTML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C72E61D088EEA07007CC3F7 /* Debug */,
+				9C72E61E088EEA07007CC3F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C736B7B094C726A001443E6 /* Build configuration list for PBXNativeTarget "HTML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C736B7C094C726A001443E6 /* Debug */,
+				9C736B7D094C726A001443E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86EC46EC0681018500EF9A10 /* Project object */;
+}

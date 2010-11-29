@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>HTML</string>
+	<key>CFBundleIconFile</key>
+	<string>HTML</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.realmacsoftware.rwplugin.HTML</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>HTML</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>5.0</string>
+	<key>CFBundleSignature</key>
+	<string>RWP </string>
+	<key>CFBundleVersion</key>
+	<string>100</string>
+	<key>NSPrincipalClass</key>
+	<string>RWHTMLPlugin</string>
+	<key>RWPluginAPIVersion</key>
+	<integer>4</integer>
+</dict>
+</plist>
