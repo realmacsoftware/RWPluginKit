@@ -1,4 +1,4 @@
-
 //BolierPlate
-"PluginName" = "HTML Code";
-"PluginDescription" = "Use HTML, XHTML or PHP to create virtually anything.";
+
+"PluginName" = "Sample Plugin";
+"PluginDescription" = "A sample plugin from Realmac Software.";
