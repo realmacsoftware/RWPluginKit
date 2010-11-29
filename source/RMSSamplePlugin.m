@@ -238,7 +238,7 @@ static NSBundle *sPluginBundle = nil;
 
 + (NSString *)pluginAuthor
 {
-	return @"Realmac Software";
+	return @"My Company Name";
 }
 
 + (NSImage *)pluginIcon
