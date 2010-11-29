@@ -12,7 +12,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-#import "RWHTMLPlugin.h"
+#import "RMSSamplePlugin.h"
 
 //***************************************************************************
 
@@ -20,7 +20,7 @@
 
 //***************************************************************************
 
-@interface RWHTMLPlugin (Sandwich)
+@interface RMSSamplePlugin (Sandwich)
 
 + (id)createWithSandwich:(RMSandwich*)sandwich;
 - (RMSandwich*)sandwich;

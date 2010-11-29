@@ -10,16 +10,16 @@
 
 //***************************************************************************
 
-#import "RWHTMLPlugin.h"
-#import "RWPOptionsViewController.h"
+#import "RMSSamplePlugin.h"
+#import "RMSSamplePluginOptionsViewController.h"
 
 //***************************************************************************
 
-@implementation RWPOptionsViewController
+@implementation RMSSamplePluginOptionsViewController
 
 - (id)initWithRepresentedObject:(id)inObject
 {
-	self = [super initWithNibName:@"RWPOptionsView" bundle:[RWHTMLPlugin bundle]];
+	self = [super initWithNibName:@"RWPOptionsView" bundle:[RMSSamplePlugin bundle]];
 	
 	if (self)
 	{

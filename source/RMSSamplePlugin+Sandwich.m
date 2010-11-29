@@ -10,12 +10,12 @@
 
 //***************************************************************************
 
-#import "RWHTMLPlugin+Sandwich.h"
-#import "RWHTMLPluginContentViewController.h"
+#import "RMSSamplePlugin+Sandwich.h"
+#import "RMSSamplePluginContentViewController.h"
 
 //***************************************************************************
 
-@implementation RWHTMLPlugin (Sandwich)
+@implementation RMSSamplePlugin (Sandwich)
 
 + (void)load
 {
@@ -28,7 +28,7 @@
 
 + (id)createWithSandwich:(RMSandwich*)sandwich
 {
-	RWHTMLPlugin* plugin = [[[RWHTMLPlugin alloc] init] autorelease];
+	RMSSamplePlugin* plugin = [[[RMSSamplePlugin alloc] init] autorelease];
 	
 	NSDictionary* dictionary = [sandwich sandwichFillingForVersion:0].dictionary;
 	NSDictionary* files = [sandwich sandwichFillingForVersion:0].files;

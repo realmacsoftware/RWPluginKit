@@ -10,7 +10,7 @@
 
 //***************************************************************************
 
-#import "RWHTMLPlugin.h"
+#import "RMSSamplePlugin.h"
 #import "RWHTMLViewCM.h"
 
 //***************************************************************************
@@ -32,7 +32,7 @@ static NSDictionary *sQuickInsertDictionary = nil;
 		NSMenu *menu = [[[NSMenu alloc] initWithTitle:@"Secret Menu!"] autorelease];
 		
 		sQuickInsertDictionary = [[NSDictionary alloc] initWithContentsOfFile:
-			[[NSBundle bundleForClass:[RWHTMLPlugin class]] pathForResource:@"quickInsertTemplates" ofType:@"plist"]];
+			[[NSBundle bundleForClass:[RMSSamplePlugin class]] pathForResource:@"quickInsertTemplates" ofType:@"plist"]];
 		
 		for (id key in [sQuickInsertDictionary allKeys])
 		{

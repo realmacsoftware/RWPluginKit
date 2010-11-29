@@ -14,18 +14,18 @@
 #import <RWKit/RWKit.h>
 
 @class RWHTMLViewCM;
-@class RWPOptionsViewController;
-@class RWHTMLPluginContentViewController;
+@class RMSSamplePluginOptionsViewController;
+@class RMSSamplePluginContentViewController;
 
 //***************************************************************************
 
-@interface RWHTMLPlugin : RWAbstractPlugin /*<RWPluginProtocol>*/
+@interface RMSSamplePlugin : RWAbstractPlugin /*<RWPluginProtocol>*/
 {
 	NSString *content;
 	BOOL emitRawContent;
 	
-	RWHTMLPluginContentViewController *contentViewController;
-	RWPOptionsViewController *optionsViewController;
+	RMSSamplePluginContentViewController *contentViewController;
+	RMSSamplePluginOptionsViewController *optionsViewController;
 }
 
 @property (nonatomic, copy) NSString *content;

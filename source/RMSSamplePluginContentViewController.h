@@ -12,12 +12,16 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class RWHTMLViewCM;
+
 //***************************************************************************
 
-@interface RWPOptionsViewController : NSViewController
+@interface RMSSamplePluginContentViewController : NSViewController
 {
-	
+	IBOutlet RWHTMLViewCM *htmlView;
 }
+
+@property (nonatomic, readonly) NSString *content;
 
 - (id)initWithRepresentedObject:(id)inObject;
 

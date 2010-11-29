@@ -10,13 +10,13 @@
 
 //***************************************************************************
 
-#import "RWHTMLPlugin.h"
-#import "RWHTMLPluginContentViewController.h"
+#import "RMSSamplePlugin.h"
+#import "RMSSamplePluginContentViewController.h"
 #import "RWHTMLViewCM.h"
 
 //***************************************************************************
 
-@implementation RWHTMLPluginContentViewController
+@implementation RMSSamplePluginContentViewController
 
 @dynamic content;
 
@@ -27,14 +27,14 @@
 
 - (void)textDidChange:(NSNotification *)aNotification
 {
-	RWHTMLPlugin *p = self.representedObject;
+	RMSSamplePlugin *p = self.representedObject;
 	
 	[p broadcastPluginChanged];
 }
 
 - (void)awakeFromNib
 {
-	RWHTMLPlugin *p = self.representedObject;
+	RMSSamplePlugin *p = self.representedObject;
 	NSString *string = p.content;
 	
 	if (string)
@@ -46,7 +46,7 @@
 
 - (id)initWithRepresentedObject:(id)inObject
 {
-	self = [super initWithNibName:@"RWHTMLPluginContentView" bundle:[RWHTMLPlugin bundle]];
+	self = [super initWithNibName:@"RWHTMLPluginContentView" bundle:[RMSSamplePlugin bundle]];
 	
 	if (self)
 	{

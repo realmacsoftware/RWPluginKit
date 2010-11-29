@@ -10,14 +10,14 @@
 
 //***************************************************************************
 
-#import "RWHTMLPlugin.h"
+#import "RMSSamplePlugin.h"
 #import "RWHTMLViewCM.h"
-#import "RWPOptionsViewController.h"
-#import "RWHTMLPluginContentViewController.h"
+#import "RMSSamplePluginOptionsViewController.h"
+#import "RMSSamplePluginContentViewController.h"
 
 //***************************************************************************
 
-@implementation RWHTMLPlugin
+@implementation RMSSamplePlugin
 
 static NSBundle *sPluginBundle = nil;
 // static NSDictionary *gQuickInsertDictionary = nil;
@@ -67,7 +67,7 @@ static NSBundle *sPluginBundle = nil;
 {
 	if (optionsViewController == nil)
 	{
-		optionsViewController = [[RWPOptionsViewController alloc] initWithRepresentedObject:self];
+		optionsViewController = [[RMSSamplePluginOptionsViewController alloc] initWithRepresentedObject:self];
 	}
 	
 	return optionsViewController.view;
@@ -77,7 +77,7 @@ static NSBundle *sPluginBundle = nil;
 {
 	if (contentViewController == nil)
 	{
-		contentViewController = [[RWHTMLPluginContentViewController alloc] initWithRepresentedObject:self];
+		contentViewController = [[RMSSamplePluginContentViewController alloc] initWithRepresentedObject:self];
 	}
 	
 	return contentViewController.view;
@@ -221,7 +221,7 @@ static NSBundle *sPluginBundle = nil;
 
 + (NSEnumerator *)pluginsAvailable
 {
-	id plugin = [[RWHTMLPlugin alloc] init];
+	id plugin = [[RMSSamplePlugin alloc] init];
 	
 	if (plugin)
 	{
