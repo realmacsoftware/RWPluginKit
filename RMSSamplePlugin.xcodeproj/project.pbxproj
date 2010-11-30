@@ -17,8 +17,6 @@
 		4A90E4671031086300093215 /* RMSSamplePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A90E4641031086300093215 /* RMSSamplePlugin.m */; };
 		4A90E4681031086300093215 /* RMSSamplePlugin+Sandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A90E4661031086300093215 /* RMSSamplePlugin+Sandwich.m */; };
 		4A90E4801031100A00093215 /* PluginIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4A90E47F1031100A00093215 /* PluginIcon.icns */; };
-		4A90E49110311B3000093215 /* RWHTMLViewCM.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A90E49010311B3000093215 /* RWHTMLViewCM.m */; };
-		7B4669CF0A55846700967B9D /* quickInsertTemplates.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B4669CE0A55846700967B9D /* quickInsertTemplates.plist */; };
 		9C736B75094C726A001443E6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EC48AB06813ED400EF9A10 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,9 +35,6 @@
 		4A90E4651031086300093215 /* RMSSamplePlugin+Sandwich.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RMSSamplePlugin+Sandwich.h"; path = "source/RMSSamplePlugin+Sandwich.h"; sourceTree = "<group>"; };
 		4A90E4661031086300093215 /* RMSSamplePlugin+Sandwich.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RMSSamplePlugin+Sandwich.m"; path = "source/RMSSamplePlugin+Sandwich.m"; sourceTree = "<group>"; };
 		4A90E47F1031100A00093215 /* PluginIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = PluginIcon.icns; path = resources/PluginIcon.icns; sourceTree = "<group>"; };
-		4A90E48F10311B3000093215 /* RWHTMLViewCM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWHTMLViewCM.h; path = source/RWHTMLViewCM.h; sourceTree = "<group>"; };
-		4A90E49010311B3000093215 /* RWHTMLViewCM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWHTMLViewCM.m; path = source/RWHTMLViewCM.m; sourceTree = "<group>"; };
-		865793D7068F59A7005600C4 /* English */ = {isa = PBXFileReference; fileEncoding = 12; lastKnownFileType = text.plist.xml; name = English; path = English.lproj/quickInsertTemplates.plist; sourceTree = "<group>"; };
 		86EC48AB06813ED400EF9A10 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		9C736B80094C726A001443E6 /* SamplePlugin.rwplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SamplePlugin.rwplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C736B84094C7280001443E6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,8 +63,6 @@
 				4A90E4641031086300093215 /* RMSSamplePlugin.m */,
 				4A844B12103C1E6400E24E24 /* RMSSamplePluginContentViewController.h */,
 				4A844B13103C1E6400E24E24 /* RMSSamplePluginContentViewController.m */,
-				4A90E48F10311B3000093215 /* RWHTMLViewCM.h */,
-				4A90E49010311B3000093215 /* RWHTMLViewCM.m */,
 				4A382890103BF7D600B264B7 /* RMSSamplePluginOptionsViewController.h */,
 				4A382891103BF7D600B264B7 /* RMSSamplePluginOptionsViewController.m */,
 			);
@@ -110,7 +103,6 @@
 				376A5EF70A2D9C950019BB34 /* Localizable.strings */,
 				4A844B0E103C1E2200E24E24 /* RMSSamplePluginContentView.xib */,
 				4A3828A2103BFE2400B264B7 /* RMSSamplePluginOptionsView.xib */,
-				7B4669CE0A55846700967B9D /* quickInsertTemplates.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -155,7 +147,7 @@
 			attributes = {
 				ORGANIZATIONNAME = "Realmac Software";
 			};
-			buildConfigurationList = 9C72E61C088EEA07007CC3F7 /* Build configuration list for PBXProject "HTML" */;
+			buildConfigurationList = 9C72E61C088EEA07007CC3F7 /* Build configuration list for PBXProject "RMSSamplePlugin" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -180,7 +172,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B4669CF0A55846700967B9D /* quickInsertTemplates.plist in Resources */,
 				376A5EF80A2D9C950019BB34 /* Localizable.strings in Resources */,
 				4A90E4801031100A00093215 /* PluginIcon.icns in Resources */,
 				4A3828A4103BFE2400B264B7 /* RMSSamplePluginOptionsView.xib in Resources */,
@@ -214,7 +205,6 @@
 			files = (
 				4A90E4671031086300093215 /* RMSSamplePlugin.m in Sources */,
 				4A90E4681031086300093215 /* RMSSamplePlugin+Sandwich.m in Sources */,
-				4A90E49110311B3000093215 /* RWHTMLViewCM.m in Sources */,
 				4A382892103BF7D600B264B7 /* RMSSamplePluginOptionsViewController.m in Sources */,
 				4A844B14103C1E6400E24E24 /* RMSSamplePluginContentViewController.m in Sources */,
 			);
@@ -245,14 +235,6 @@
 				4A844B0F103C1E2200E24E24 /* English */,
 			);
 			name = RMSSamplePluginContentView.xib;
-			sourceTree = "<group>";
-		};
-		7B4669CE0A55846700967B9D /* quickInsertTemplates.plist */ = {
-			isa = PBXVariantGroup;
-			children = (
-				865793D7068F59A7005600C4 /* English */,
-			);
-			name = quickInsertTemplates.plist;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -315,7 +297,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9C72E61C088EEA07007CC3F7 /* Build configuration list for PBXProject "HTML" */ = {
+		9C72E61C088EEA07007CC3F7 /* Build configuration list for PBXProject "RMSSamplePlugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C72E61D088EEA07007CC3F7 /* Debug */,
