@@ -4,4 +4,7 @@
 
 #ifdef __OBJC__
     #import <Cocoa/Cocoa.h>
+	
+	#import <RMKit/RMKit.h>
+	#import <RWKit/RWKit.h>
 #endif

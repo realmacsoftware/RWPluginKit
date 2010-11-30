@@ -10,10 +10,6 @@
 
 //***************************************************************************
 
-@class RWHTMLView;
-
-//***************************************************************************
-
 @interface RMSSamplePluginContentViewController : NSViewController
 {
 	IBOutlet RWHTMLView *htmlView;
