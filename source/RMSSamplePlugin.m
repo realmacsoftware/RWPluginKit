@@ -19,44 +19,8 @@
 @implementation RMSSamplePlugin
 
 static NSBundle *sPluginBundle = nil;
-// static NSDictionary *gQuickInsertDictionary = nil;
 
 @synthesize content, emitRawContent;
-
-//***************************************************************************
-
-#pragma mark Actions
-
-- (IBAction)quickInsert:(id)sender
-{
-	// [[self documentWindow] makeFirstResponder:htmlContent];
-	// 
-	// NSString *templateToInsert = [gQuickInsertDictionary objectForKey:[sender titleOfSelectedItem]];
-	// 
-	// if (templateToInsert)
-	// {
-	// 	NSArray *templateParts = [templateToInsert componentsSeparatedByString:@"%c"];
-	// 	NSRange selectedRange = [htmlContent selectedRange];
-	// 	NSTextStorage *storage = [htmlContent textStorage];
-	// 	NSString *firstPart = [templateParts objectAtIndex:0];
-	// 	if ([htmlContent shouldChangeTextInRange:selectedRange replacementString:[NSString stringWithFormat:@"%@%@%@", firstPart, [[htmlContent string] substringWithRange:selectedRange], [templateParts count] > 1 ? [templateParts objectAtIndex:1] : @""]])
-	// 	{
-	// 		[storage beginEditing];
-	// 		[storage insertAttributedString:[htmlContent colorize:firstPart] atIndex:selectedRange.location];
-	// 		if ([templateParts count] > 1 && ![[templateParts objectAtIndex:1] isEqualToString:@""])
-	// 		{
-	// 			[storage insertAttributedString:[htmlContent colorize:[templateParts objectAtIndex:1]] atIndex:selectedRange.location + selectedRange.length + [firstPart length]];
-	// 		}
-	// 		[storage endEditing];
-	// 		[htmlContent didChangeText];
-	// 		[[htmlContent undoManager] setActionName:@"Quick Insert"];
-	// 		selectedRange.location += [firstPart length] + selectedRange.length;
-	// 		selectedRange.length = 0;
-	// 		[htmlContent setSelectedRange:selectedRange];
-	// 		[self performSelector:@selector(textDidChange:) withObject:nil afterDelay:0];
-	// 	}
-	// }
-}
 
 //***************************************************************************
 
@@ -213,7 +177,6 @@ static NSBundle *sPluginBundle = nil;
 	if (sPluginBundle) return NO;
 	
 	sPluginBundle = [aBundle retain];
-	// gQuickInsertDictionary = [[NSDictionary alloc] initWithContentsOfFile:[aBundle pathForResource:@"quickInsertTemplates" ofType:@"plist"]];
 	
 	return YES;
 }
