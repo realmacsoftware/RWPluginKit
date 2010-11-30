@@ -15,7 +15,6 @@
 		4A844B10103C1E2200E24E24 /* RMSSamplePluginContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A844B0E103C1E2200E24E24 /* RMSSamplePluginContentView.xib */; };
 		4A844B14103C1E6400E24E24 /* RMSSamplePluginContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A844B13103C1E6400E24E24 /* RMSSamplePluginContentViewController.m */; };
 		4A90E4671031086300093215 /* RMSSamplePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A90E4641031086300093215 /* RMSSamplePlugin.m */; };
-		4A90E4681031086300093215 /* RMSSamplePlugin+Sandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A90E4661031086300093215 /* RMSSamplePlugin+Sandwich.m */; };
 		4A90E4801031100A00093215 /* PluginIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4A90E47F1031100A00093215 /* PluginIcon.icns */; };
 		9C736B75094C726A001443E6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EC48AB06813ED400EF9A10 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -204,7 +203,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A90E4671031086300093215 /* RMSSamplePlugin.m in Sources */,
-				4A90E4681031086300093215 /* RMSSamplePlugin+Sandwich.m in Sources */,
 				4A382892103BF7D600B264B7 /* RMSSamplePluginOptionsViewController.m in Sources */,
 				4A844B14103C1E6400E24E24 /* RMSSamplePluginContentViewController.m in Sources */,
 			);
