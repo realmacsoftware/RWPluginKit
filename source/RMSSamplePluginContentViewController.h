@@ -12,13 +12,13 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class RWHTMLViewCM;
+@class RWHTMLView;
 
 //***************************************************************************
 
 @interface RMSSamplePluginContentViewController : NSViewController
 {
-	IBOutlet RWHTMLViewCM *htmlView;
+	IBOutlet RWHTMLView *htmlView;
 }
 
 @property (nonatomic, readonly) NSString *content;

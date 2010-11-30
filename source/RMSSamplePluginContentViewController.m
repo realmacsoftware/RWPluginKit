@@ -12,7 +12,6 @@
 
 #import "RMSSamplePlugin.h"
 #import "RMSSamplePluginContentViewController.h"
-#import "RWHTMLViewCM.h"
 
 //***************************************************************************
 
