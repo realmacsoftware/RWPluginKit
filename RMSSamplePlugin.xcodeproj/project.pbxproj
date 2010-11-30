@@ -37,7 +37,7 @@
 		4A90E47F1031100A00093215 /* PluginIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = PluginIcon.icns; path = resources/PluginIcon.icns; sourceTree = "<group>"; };
 		86EC48AB06813ED400EF9A10 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		9C736B80094C726A001443E6 /* SamplePlugin.rwplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SamplePlugin.rwplugin; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C736B84094C7280001443E6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C736B84094C7280001443E6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,7 +270,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/Frameworks\"",
 				);
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				PRODUCT_NAME = SamplePlugin;
 				SDKROOT = macosx10.5;
 				WRAPPER_EXTENSION = rwplugin;
@@ -287,7 +287,7 @@
 					"\"$(SRCROOT)/../../RapidWeaver/Application/Frameworks\"",
 					"\"$(SRCROOT)/Frameworks\"",
 				);
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				PRODUCT_NAME = HTML;
 				SDKROOT = macosx10.5;
 				WRAPPER_EXTENSION = rwplugin;
