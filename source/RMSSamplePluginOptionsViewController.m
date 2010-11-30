@@ -19,7 +19,7 @@
 
 - (id)initWithRepresentedObject:(id)inObject
 {
-	self = [super initWithNibName:@"RWPOptionsView" bundle:[RMSSamplePlugin bundle]];
+	self = [super initWithNibName:@"RMSSamplePluginOptionsView" bundle:[RMSSamplePlugin bundle]];
 	
 	if (self)
 	{

@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		376A5EF80A2D9C950019BB34 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 376A5EF70A2D9C950019BB34 /* Localizable.strings */; };
 		4A382892103BF7D600B264B7 /* RMSSamplePluginOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A382891103BF7D600B264B7 /* RMSSamplePluginOptionsViewController.m */; };
-		4A3828A4103BFE2400B264B7 /* RWPOptionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A3828A2103BFE2400B264B7 /* RWPOptionsView.xib */; };
+		4A3828A4103BFE2400B264B7 /* RMSSamplePluginOptionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A3828A2103BFE2400B264B7 /* RMSSamplePluginOptionsView.xib */; };
 		4A75DB4712A39B8700AD635C /* RMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A75DB4612A39B8700AD635C /* RMKit.framework */; };
 		4A75DBAD12A39C6E00AD635C /* RWKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A75DBAC12A39C6E00AD635C /* RWKit.framework */; };
-		4A844B10103C1E2200E24E24 /* RWHTMLPluginContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A844B0E103C1E2200E24E24 /* RWHTMLPluginContentView.xib */; };
+		4A844B10103C1E2200E24E24 /* RMSSamplePluginContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A844B0E103C1E2200E24E24 /* RMSSamplePluginContentView.xib */; };
 		4A844B14103C1E6400E24E24 /* RMSSamplePluginContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A844B13103C1E6400E24E24 /* RMSSamplePluginContentViewController.m */; };
 		4A90E4671031086300093215 /* RMSSamplePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A90E4641031086300093215 /* RMSSamplePlugin.m */; };
 		4A90E4681031086300093215 /* RMSSamplePlugin+Sandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A90E4661031086300093215 /* RMSSamplePlugin+Sandwich.m */; };
@@ -26,10 +26,10 @@
 		377811660917CBDB00E538D6 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4A382890103BF7D600B264B7 /* RMSSamplePluginOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMSSamplePluginOptionsViewController.h; path = source/RMSSamplePluginOptionsViewController.h; sourceTree = "<group>"; };
 		4A382891103BF7D600B264B7 /* RMSSamplePluginOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMSSamplePluginOptionsViewController.m; path = source/RMSSamplePluginOptionsViewController.m; sourceTree = "<group>"; };
-		4A3828A3103BFE2400B264B7 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/RWPOptionsView.xib; sourceTree = "<group>"; };
+		4A3828A3103BFE2400B264B7 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/RMSSamplePluginOptionsView.xib; sourceTree = "<group>"; };
 		4A75DB4612A39B8700AD635C /* RMKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RMKit.framework; path = Frameworks/RMKit.framework; sourceTree = "<group>"; };
 		4A75DBAC12A39C6E00AD635C /* RWKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RWKit.framework; path = Frameworks/RWKit.framework; sourceTree = "<group>"; };
-		4A844B0F103C1E2200E24E24 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/RWHTMLPluginContentView.xib; sourceTree = "<group>"; };
+		4A844B0F103C1E2200E24E24 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/RMSSamplePluginContentView.xib; sourceTree = "<group>"; };
 		4A844B12103C1E6400E24E24 /* RMSSamplePluginContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMSSamplePluginContentViewController.h; path = source/RMSSamplePluginContentViewController.h; sourceTree = "<group>"; };
 		4A844B13103C1E6400E24E24 /* RMSSamplePluginContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMSSamplePluginContentViewController.m; path = source/RMSSamplePluginContentViewController.m; sourceTree = "<group>"; };
 		4A90E4631031086300093215 /* RMSSamplePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMSSamplePlugin.h; path = source/RMSSamplePlugin.h; sourceTree = "<group>"; };
@@ -108,8 +108,8 @@
 				9C736B84094C7280001443E6 /* Info.plist */,
 				4A90E47F1031100A00093215 /* PluginIcon.icns */,
 				376A5EF70A2D9C950019BB34 /* Localizable.strings */,
-				4A844B0E103C1E2200E24E24 /* RWHTMLPluginContentView.xib */,
-				4A3828A2103BFE2400B264B7 /* RWPOptionsView.xib */,
+				4A844B0E103C1E2200E24E24 /* RMSSamplePluginContentView.xib */,
+				4A3828A2103BFE2400B264B7 /* RMSSamplePluginOptionsView.xib */,
 				7B4669CE0A55846700967B9D /* quickInsertTemplates.plist */,
 			);
 			name = Resources;
@@ -183,8 +183,8 @@
 				7B4669CF0A55846700967B9D /* quickInsertTemplates.plist in Resources */,
 				376A5EF80A2D9C950019BB34 /* Localizable.strings in Resources */,
 				4A90E4801031100A00093215 /* PluginIcon.icns in Resources */,
-				4A3828A4103BFE2400B264B7 /* RWPOptionsView.xib in Resources */,
-				4A844B10103C1E2200E24E24 /* RWHTMLPluginContentView.xib in Resources */,
+				4A3828A4103BFE2400B264B7 /* RMSSamplePluginOptionsView.xib in Resources */,
+				4A844B10103C1E2200E24E24 /* RMSSamplePluginContentView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,20 +231,20 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
-		4A3828A2103BFE2400B264B7 /* RWPOptionsView.xib */ = {
+		4A3828A2103BFE2400B264B7 /* RMSSamplePluginOptionsView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4A3828A3103BFE2400B264B7 /* English */,
 			);
-			name = RWPOptionsView.xib;
+			name = RMSSamplePluginOptionsView.xib;
 			sourceTree = "<group>";
 		};
-		4A844B0E103C1E2200E24E24 /* RWHTMLPluginContentView.xib */ = {
+		4A844B0E103C1E2200E24E24 /* RMSSamplePluginContentView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4A844B0F103C1E2200E24E24 /* English */,
 			);
-			name = RWHTMLPluginContentView.xib;
+			name = RMSSamplePluginContentView.xib;
 			sourceTree = "<group>";
 		};
 		7B4669CE0A55846700967B9D /* quickInsertTemplates.plist */ = {

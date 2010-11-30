@@ -46,7 +46,7 @@
 
 - (id)initWithRepresentedObject:(id)inObject
 {
-	self = [super initWithNibName:@"RWHTMLPluginContentView" bundle:[RMSSamplePlugin bundle]];
+	self = [super initWithNibName:@"RMSSamplePluginContentView" bundle:[RMSSamplePlugin bundle]];
 	
 	if (self)
 	{
