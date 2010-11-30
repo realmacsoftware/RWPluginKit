@@ -113,25 +113,30 @@ static NSBundle *sPluginBundle = nil;
 
 #pragma mark Object Lifecycle
 
+- (void)finishSetup
+{
+	contentViewController = nil;
+	optionsViewController = nil;
+	
+	[self observeVisibleKeys];
+}
+
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
-	// Dead Code Path
-	// This is only hear to show how to load plugins when not using the sandwich based routines.
+	[super encodeWithCoder:aCoder];
 	
-	[aCoder encodeObject:(contentViewController.content) ?: self.content];
-	[aCoder encodeObject:[NSNumber numberWithBool:self.emitRawContent]];
+	[aCoder encodeObject:(contentViewController.content) ?: self.content forKey:@"Content String"];
+	[aCoder encodeObject:[NSNumber numberWithBool:self.emitRawContent] forKey:@"Emit Raw Content"];
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
-	// Dead Code Path
-	// This has been superseded by the sandwich based routines.
+	[super initWithCoder:aDecoder];
 	
-	if ((self = [self init]))
-	{
-		self.content = [aDecoder decodeObject];
-		self.emitRawContent = [[aDecoder decodeObject] boolValue];
-	}
+	self.content = [aDecoder decodeObjectForKey:@"Content String"];
+	self.emitRawContent = [[aDecoder decodeObjectForKey:@"Emit Raw Content"] boolValue];
+	
+	[self finishSetup];
 	
 	return self;
 }
@@ -143,10 +148,7 @@ static NSBundle *sPluginBundle = nil;
 	self.content = nil;
 	self.emitRawContent = NO;
 	
-	contentViewController = nil;
-	optionsViewController = nil;
-	
-	[self observeVisibleKeys];
+	[self finishSetup];
 	
 	return self;
 }
