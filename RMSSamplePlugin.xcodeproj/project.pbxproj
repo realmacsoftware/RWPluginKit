@@ -270,6 +270,8 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/Frameworks\"",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Resources/Prefix.pch;
 				INFOPLIST_FILE = Resources/Info.plist;
 				PRODUCT_NAME = SamplePlugin;
 				SDKROOT = macosx10.5;
@@ -287,6 +289,8 @@
 					"\"$(SRCROOT)/../../RapidWeaver/Application/Frameworks\"",
 					"\"$(SRCROOT)/Frameworks\"",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Resources/Prefix.pch;
 				INFOPLIST_FILE = Resources/Info.plist;
 				PRODUCT_NAME = HTML;
 				SDKROOT = macosx10.5;
