@@ -20,6 +20,10 @@
 
 @interface RMSSamplePlugin (Sandwich)
 
+// Note: This code is not actually included in the project. It's just here
+// to demonstrate how the API is used. The sample plugin uses NSCoding
+// to read/write it's data to disk.
+
 + (id)createWithSandwich:(RMSandwich*)sandwich;
 - (RMSandwich*)sandwich;
 
