@@ -68,6 +68,13 @@ static NSBundle *sPluginBundle = nil;
 	return [NSNumber numberWithUnsignedInt:0];
 }
 
+- (NSString *)overrideFileExtension
+{
+	// Return the extension you'd like to force RapidWeaver to apply to your page.
+	
+	return @"htm";
+}
+
 //***************************************************************************
 
 #pragma mark KVO Broadcasting
