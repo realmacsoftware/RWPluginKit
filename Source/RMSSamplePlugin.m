@@ -216,7 +216,7 @@
 
 + (NSString *)pluginName
 {
-	return RMLocalizedStringInSelfBundle(@"PluginName");
+	return NSLocalizedStringFromTableInBundle(@"PluginName", nil, [RMSSamplePlugin bundle], @"Localizable");
 }
 
 + (NSString *)pluginAuthor
@@ -226,14 +226,14 @@
 
 + (NSImage *)pluginIcon
 {
-	NSString *pathToIcon = [RMSelfBundle() pathForImageResource:[RMSelfBundle() objectForInfoDictionaryKey:@"CFBundleIconFile"]];
-	
-	return [[[NSImage alloc] initWithContentsOfFile:pathToIcon] autorelease];
+	NSBundle *bundle = [RMSSamplePlugin bundle];
+	NSString *iconFilename = [bundle objectForInfoDictionaryKey:@"CFBundleIconFile"];
+	return [[[NSImage alloc] initWithContentsOfFile:[bundle pathForImageResource:iconFilename]] autorelease];
 }
 
 + (NSString *)pluginDescription;
 {
-	return RMLocalizedStringInSelfBundle(@"PluginDescription");
+	return NSLocalizedStringFromTableInBundle(@"PluginDescription", nil, [RMSSamplePlugin bundle], @"Localizable");
 }
 
 @end
