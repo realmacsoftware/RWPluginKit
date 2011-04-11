@@ -19,8 +19,6 @@
 
 @implementation RMSSamplePlugin
 
-static NSBundle *sPluginBundle = nil;
-
 @synthesize content, emitRawContent;
 
 //***************************************************************************
@@ -196,15 +194,11 @@ static NSBundle *sPluginBundle = nil;
 
 + (NSBundle *)bundle
 {
-	return sPluginBundle;
+	return [NSBundle bundleForClass:[self class]];
 }
 
 + (BOOL)initializeClass:(NSBundle *)aBundle
 {
-	if (sPluginBundle) return NO;
-	
-	sPluginBundle = [aBundle retain];
-	
 	return YES;
 }
 
