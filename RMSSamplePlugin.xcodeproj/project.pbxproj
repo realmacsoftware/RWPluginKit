@@ -260,6 +260,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				ONLY_ACTIVE_ARCH = YES;
 				RAPIDWEAVER_ROOT = ../../RapidWeaver;
 				SDKROOT = macosx10.5;
@@ -270,6 +272,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../RapidWeaver/build/$(BUILD_STYLE)";
 				IBC_FLATTEN_NIBS = NO;
 				RAPIDWEAVER_ROOT = ../../RapidWeaver;
@@ -280,7 +283,6 @@
 		9C736B7C094C726A001443E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "Don't Code Sign";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,7 +292,6 @@
 				GCC_PREFIX_HEADER = Resources/Prefix.pch;
 				INFOPLIST_FILE = Resources/Info.plist;
 				PRODUCT_NAME = SamplePlugin;
-				SDKROOT = macosx10.5;
 				WRAPPER_EXTENSION = rwplugin;
 			};
 			name = Debug;
@@ -298,7 +299,6 @@
 		9C736B7D094C726A001443E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "Realmac Software - Code Signing";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,7 +309,6 @@
 				GCC_PREFIX_HEADER = Resources/Prefix.pch;
 				INFOPLIST_FILE = Resources/Info.plist;
 				PRODUCT_NAME = HTML;
-				SDKROOT = macosx10.5;
 				WRAPPER_EXTENSION = rwplugin;
 			};
 			name = Release;
