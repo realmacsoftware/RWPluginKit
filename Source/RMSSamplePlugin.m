@@ -13,6 +13,7 @@
 #import "RMSSamplePlugin.h"
 #import "RMSSamplePluginOptionsViewController.h"
 #import "RMSSamplePluginContentViewController.h"
+#import "RMSSparkleLoader.h"
 
 //***************************************************************************
 
@@ -23,6 +24,21 @@ static NSBundle *sPluginBundle = nil;
 @synthesize content, emitRawContent;
 
 //***************************************************************************
+
+- (void)checkForUpdates
+{
+	static SUUpdater *sUpdater = nil;
+	
+	if (sUpdater == nil)
+	{
+		sUpdater = [[RMSSparkleLoader sparkleLoader] updaterForBundle:[NSBundle bundleForClass:[self class]]];
+		NSLog(@"Updater: %@", sUpdater);
+		
+		// Normal Sparkle update logic goes here.
+		// Needs to be inside the block so as to avoid happening once
+		// per plugin instance.
+	}
+}
 
 #pragma mark Protocol Methods
 
@@ -40,6 +56,8 @@ static NSBundle *sPluginBundle = nil;
 {
 	if (contentViewController == nil)
 	{
+		[self checkForUpdates];
+		
 		contentViewController = [[RMSSamplePluginContentViewController alloc] initWithRepresentedObject:self];
 	}
 	
