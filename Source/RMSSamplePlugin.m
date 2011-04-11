@@ -242,17 +242,6 @@ static NSBundle *sPluginBundle = nil;
 	return RMLocalizedStringInSelfBundle(@"PluginDescription");
 }
 
-+ (NSURL *)pluginHomepageURL
-{
-	NSString *string = @"http://realmacsoftware.com/";
-	
-	NSInteger buildNumber = [[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"] integerValue];
-	
-	id value = (buildNumber > 7994) ? [NSURL URLWithString:string] : [NSString stringWithString:string];
-	
-	return value;
-}
-
 @end
 
 //***************************************************************************
