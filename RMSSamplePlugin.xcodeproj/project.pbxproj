@@ -68,18 +68,10 @@
 			name = Source;
 			sourceTree = "<group>";
 		};
-		7BEBF65A0A5432D00086333B /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Dependencies;
-			sourceTree = "<group>";
-		};
 		86EC46E80681018500EF9A10 = {
 			isa = PBXGroup;
 			children = (
 				4A90E4691031087600093215 /* Source */,
-				7BEBF65A0A5432D00086333B /* Dependencies */,
 				86EC483306812DE600EF9A10 /* Resources */,
 				86EC48B406813EDD00EF9A10 /* Frameworks */,
 				86EC479A06811BCE00EF9A10 /* Products */,
