@@ -4,6 +4,6 @@ if [-e "$HOME/Library/Application Support/RapidWeaver/${PRODUCT_NAME}.rwplugin"]
     rm -rf "$HOME/Library/Application Support/RapidWeaver/${PRODUCT_NAME}.rwplugin"
 fi
 
-ln -sf "${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.rwplugin" "$HOME/Library/Application Support/RapidWeaver/${PRODUCT_NAME}.rwplugin"
+ln -sf "${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.rwplugin" "$HOME/Library/Application Support/RapidWeaver"
 
 exit 0;
