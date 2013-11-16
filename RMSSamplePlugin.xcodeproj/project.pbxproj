@@ -264,7 +264,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				ONLY_ACTIVE_ARCH = YES;
 				RAPIDWEAVER_ROOT = ../../RapidWeaver;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -276,7 +276,7 @@
 				FRAMEWORK_SEARCH_PATHS = "";
 				IBC_FLATTEN_NIBS = NO;
 				RAPIDWEAVER_ROOT = ../../RapidWeaver;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
