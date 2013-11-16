@@ -11,11 +11,8 @@
 //***************************************************************************
 
 @interface RMSSamplePluginOptionsViewController : NSViewController
-{
-	
-}
 
-- (id)initWithRepresentedObject:(id)inObject;
+- (id)initWithRepresentedObject:(id)object;
 
 @end
 

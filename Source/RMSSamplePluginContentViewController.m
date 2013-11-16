@@ -24,7 +24,7 @@
 	return [htmlView string];
 }
 
-- (void)textDidChange:(NSNotification *)aNotification
+- (void)textDidChange:(NSNotification *)notification
 {
 	RMSSamplePlugin *p = self.representedObject;
 	
@@ -43,14 +43,14 @@
 	}
 }
 
-- (id)initWithRepresentedObject:(id)inObject
+- (id)initWithRepresentedObject:(id)object
 {
 	self = [super initWithNibName:@"RMSSamplePluginContentView" bundle:[RMSSamplePlugin bundle]];
 	if (self == nil) {
 		return nil;
 	}
 	
-	[self setRepresentedObject:inObject];
+	[self setRepresentedObject:object];
 	
 	return self;
 }

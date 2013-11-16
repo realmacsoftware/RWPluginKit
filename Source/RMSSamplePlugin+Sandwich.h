@@ -24,8 +24,8 @@
 // to demonstrate how the API is used. The sample plugin uses NSCoding
 // to read/write it's data to disk.
 
-+ (id)createWithSandwich:(RMSandwich*)sandwich;
-- (RMSandwich*)sandwich;
++ (id)createWithSandwich:(RMSandwich *)sandwich;
+- (RMSandwich *)sandwich;
 
 @end
 

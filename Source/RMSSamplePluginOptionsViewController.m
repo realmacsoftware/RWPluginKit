@@ -17,14 +17,14 @@
 
 @implementation RMSSamplePluginOptionsViewController
 
-- (id)initWithRepresentedObject:(id)inObject
+- (id)initWithRepresentedObject:(id)object
 {
 	self = [super initWithNibName:@"RMSSamplePluginOptionsView" bundle:[RMSSamplePlugin bundle]];
 	if (self == nil) {
 		return nil;
 	}
 	
-	[self setRepresentedObject:inObject];
+	[self setRepresentedObject:object];
 	
 	return self;
 }

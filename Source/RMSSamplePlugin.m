@@ -144,23 +144,23 @@
 	[self observeVisibleKeys];
 }
 
-- (void)encodeWithCoder:(NSCoder *)aCoder
+- (void)encodeWithCoder:(NSCoder *)coder
 {
-	[super encodeWithCoder:aCoder];
+	[super encodeWithCoder:coder];
 	
-	[aCoder encodeObject:(contentViewController.content) ?: self.content forKey:@"Content String"];
-	[aCoder encodeObject:[NSNumber numberWithBool:self.emitRawContent] forKey:@"Emit Raw Content"];
+	[coder encodeObject:(contentViewController.content) ?: self.content forKey:@"Content String"];
+	[coder encodeObject:[NSNumber numberWithBool:self.emitRawContent] forKey:@"Emit Raw Content"];
 }
 
-- (id)initWithCoder:(NSCoder *)aDecoder
+- (id)initWithCoder:(NSCoder *)coder
 {
-	self = [super initWithCoder:aDecoder];
+	self = [super initWithCoder:coder];
 	if (self == nil) {
 		return nil;
 	}
 	
-	self.content = [aDecoder decodeObjectForKey:@"Content String"];
-	self.emitRawContent = [[aDecoder decodeObjectForKey:@"Emit Raw Content"] boolValue];
+	self.content = [coder decodeObjectForKey:@"Content String"];
+	self.emitRawContent = [[coder decodeObjectForKey:@"Emit Raw Content"] boolValue];
 	
 	[self finishSetup];
 	

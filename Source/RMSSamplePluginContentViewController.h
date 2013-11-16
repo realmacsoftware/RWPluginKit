@@ -17,7 +17,7 @@
 
 @property (nonatomic, readonly) NSString *content;
 
-- (id)initWithRepresentedObject:(id)inObject;
+- (id)initWithRepresentedObject:(id)object;
 
 @end
 
