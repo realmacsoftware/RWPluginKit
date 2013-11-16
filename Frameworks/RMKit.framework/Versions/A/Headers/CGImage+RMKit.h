@@ -51,7 +51,7 @@ extern CFStringRef const kCGImageTransformToNSColorSpace;	// NSColorSpace*
 //***************************************************************************
 
 /// Appends a rounded rectangle to a mutable graphics path.
-void CGPathAddRoundedRect(CGContextRef context, const CGRect rect, const CGSize cornerSize);
+void rwCGPathAddRoundedRect(CGContextRef context, const CGRect rect, const CGSize cornerSize);
 
 /// Paints a rounded rectangle path.
 void CGContextStrokeRoundedRect(CGContextRef context, const CGRect rect, const CGSize cornerSize);
