@@ -20,11 +20,11 @@
 - (id)initWithRepresentedObject:(id)inObject
 {
 	self = [super initWithNibName:@"RMSSamplePluginOptionsView" bundle:[RMSSamplePlugin bundle]];
-	
-	if (self)
-	{
-		[self setRepresentedObject:inObject];
+	if (self == nil) {
+		return nil;
 	}
+	
+	[self setRepresentedObject:inObject];
 	
 	return self;
 }

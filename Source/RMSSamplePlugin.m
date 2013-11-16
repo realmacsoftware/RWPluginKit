@@ -154,7 +154,10 @@
 
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
-	[super initWithCoder:aDecoder];
+	self = [super initWithCoder:aDecoder];
+	if (self == nil) {
+		return nil;
+	}
 	
 	self.content = [aDecoder decodeObjectForKey:@"Content String"];
 	self.emitRawContent = [[aDecoder decodeObjectForKey:@"Emit Raw Content"] boolValue];
@@ -166,7 +169,10 @@
 
 - (id)init
 {
-	[super init];
+	self = [super init];
+	if (self == nil) {
+		return nil;
+	}
 	
 	self.content = nil;
 	self.emitRawContent = NO;
