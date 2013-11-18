@@ -55,7 +55,7 @@
 		4AFBCD9112A6811000781A0C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Localizations/English.lproj/RMSSamplePluginContentView.xib; sourceTree = "<group>"; };
 		4AFBCD9312A6811000781A0C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Localizations/English.lproj/RMSSamplePluginOptionsView.xib; sourceTree = "<group>"; };
 		86EC48AB06813ED400EF9A10 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		9C736B80094C726A001443E6 /* SamplePlugin.rwplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SamplePlugin.rwplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C736B80094C726A001443E6 /* SamplePlugin.rapidweaverplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SamplePlugin.rapidweaverplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C736B84094C7280001443E6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,7 +104,7 @@
 		86EC479A06811BCE00EF9A10 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C736B80094C726A001443E6 /* SamplePlugin.rwplugin */,
+				9C736B80094C726A001443E6 /* SamplePlugin.rapidweaverplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,7 +152,7 @@
 			name = Plugin;
 			productInstallPath = "$(USER_LIBRARY_DIR)/Bundles";
 			productName = Blog;
-			productReference = 9C736B80094C726A001443E6 /* SamplePlugin.rwplugin */;
+			productReference = 9C736B80094C726A001443E6 /* SamplePlugin.rapidweaverplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -291,7 +291,7 @@
 				GCC_PREFIX_HEADER = Resources/Prefix.pch;
 				INFOPLIST_FILE = Resources/Info.plist;
 				PRODUCT_NAME = SamplePlugin;
-				WRAPPER_EXTENSION = rwplugin;
+				WRAPPER_EXTENSION = rapidweaverplugin;
 			};
 			name = Debug;
 		};
@@ -307,7 +307,7 @@
 				GCC_PREFIX_HEADER = Resources/Prefix.pch;
 				INFOPLIST_FILE = Resources/Info.plist;
 				PRODUCT_NAME = SamplePlugin;
-				WRAPPER_EXTENSION = rwplugin;
+				WRAPPER_EXTENSION = rapidweaverplugin;
 			};
 			name = Release;
 		};
