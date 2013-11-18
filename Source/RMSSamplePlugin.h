@@ -13,6 +13,8 @@
 @class RMSSamplePluginOptionsViewController;
 @class RMSSamplePluginContentViewController;
 
+#import <RWKit/RWKit.h>
+
 //***************************************************************************
 
 @interface RMSSamplePlugin : RWAbstractPlugin /*<RWPluginProtocol>*/
