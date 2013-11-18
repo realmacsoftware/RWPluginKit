@@ -27,18 +27,6 @@
 
 //***************************************************************************
 
-@interface NSImage (ImageFromWebPage)
-
-/// Returns an NSImage that is a snapshot of the webpage at the given URL.
-/** The simulated Web browser has a viewing size of 800x600.  This would be
-  * trivially customisable, but, well, we haven't needed to change it yet.
-  * You also have to specify a string encoding for now... */
-+ (NSImage*)imageFromWebPageAtURL:(NSURL*)url encoding:(NSStringEncoding)encoding;
-
-@end
-
-//***************************************************************************
-
 @interface NSImage (ImageNamedInBundle)
 
 + (NSImage*)imageNamed:(NSString*)name bundle:(NSBundle*)bundle;
@@ -49,22 +37,11 @@
 
 @interface NSImage (CIImage)
 
-- (NSImage*)croppedImageFromRect:(NSRect)rect;
+- (NSBitmapImageRep *)fastBitmapImageRepresentation;
+- (NSBitmapImageRep *)bitmapImageRepresentation;
 
-- (NSBitmapImageRep*)fastBitmapImageRepresentation;
-- (NSBitmapImageRep*)bitmapImageRepresentation;
-
-- (CIImage*)CIImage;
-- (NSImage*)initWithCIImage:(CIImage*)image;
-+ (NSImage*)imageWithCIImage:(CIImage*)image;
-
-@end
-
-//***************************************************************************
-
-@interface NSImage (UTI)
-
-+ (NSString*)UTIForImageData:(NSData*)imageData;
+- (NSImage *)initWithCIImage:(CIImage *)image;
+- (CIImage *)CIImage;
 
 @end
 
@@ -73,7 +50,6 @@
 @interface NSImage (RWImage)
 
 - (NSSize)fullResolutionSize;
-- (BOOL)isJPEGImage;
 
 @end
 
@@ -84,21 +60,16 @@
 + (BOOL)available;
 
 // Renamed the method to respect proper Cocoa naming conventions.
-// Please update your code to use the non-deprecated method.
 // Note: The caller is responsible for releasing the image with CFRelease() or CGImageRelease().
-+ (CGImageRef)imageFromFile:(NSString*)path DEPRECATED_ATTRIBUTE;
-+ (CGImageRef)newImageFromFile:(NSString*)path;
++ (CGImageRef)newImageFromFile:(NSString *)path;
 
 // Renamed the method to respect proper Cocoa naming conventions.
-// Please update your code to use the non-deprecated method.
 // Note: The caller is responsible for releasing the image with CFRelease() or CGImageRelease().
-+ (CGImageRef)thumbnailFromFile:(NSString*)path size:(NSInteger)size DEPRECATED_ATTRIBUTE;
-+ (CGImageRef)newThumbnailFromFile:(NSString*)path size:(NSInteger)size;
-+ (NSDictionary*)propertiesFromFile:(NSString*)path;
++ (CGImageRef)newThumbnailFromFile:(NSString *)path size:(NSInteger)size;
 
-+ (NSImage*)imageFromCGImage:(CGImageRef)image;
++ (NSDictionary *)propertiesFromFile:(NSString *)path;
 
-+ (BOOL)writeImage:(NSImage*)image to:(NSString*)path as:(NSString*)format;
++ (NSImage *)imageFromCGImage:(CGImageRef)image;
 
 @end
 
@@ -106,8 +77,8 @@
 
 @interface NSImage (RWTransformImage)
 
-- (NSImage*)transformImageUsingAttributes:(NSDictionary*)attributes;
-- (NSImage*)transformImageUsingAttributesAndScreenResolution:(NSDictionary*)attributes;
+- (NSImage *)transformImageUsingAttributes:(NSDictionary*)attributes;
+- (NSImage *)transformImageUsingAttributesAndScreenResolution:(NSDictionary*)attributes;
 
 @end
 

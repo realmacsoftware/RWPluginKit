@@ -23,59 +23,49 @@
 
 //***************************************************************************
 
-#import <RMKit/CGImage+RMKit.h>
-#import <RMKit/CIImage+RMKit.h>
-#import <RMKit/MNLineNumberingRulerView.h>
-#import <RMKit/MNLineNumberingTextStorage.h>
-#import <RMKit/MNLineNumberingTextView.h>
-#import <RMKit/NSAttributedString+RMKit.h>
-#import <RMKit/NSCalendarDate+RMKit.h>
-#import <RMKit/NSCharacterSet+RMKit.h>
-#import <RMKit/NSColor+RMKit.h>
-#import <RMKit/NSData+RMKit.h>
-#import <RMKit/NSDictionary+RMKit.h>
-#import <RMKit/NSError+RMKit.h>
-#import <RMKit/NSFileManager+RMKit.h>
-#import <RMKit/NSHost+RMKit.h>
-#import <RMKit/NSImage+RMKit.h>
-#import <RMKit/NSManagedObjectContext+RMKit.h>
-#import <RMKit/NSMutableDictionary+RMKit.h>
-#import <RMKit/NSObject+RMKit.h>
-#import <RMKit/NSString+RMKit.h>
-#import <RMKit/NSURL+RMKit.h>
-#import <RMKit/RMActivity.h>
-#import <RMKit/RMActivityView.h>
-#import <RMKit/RMButtonWithMenu.h>
-#import <RMKit/RMCGFloatSupport.h>
-#import <RMKit/RMDelegateOperation.h>
-#import <RMKit/RMFilesystemObject.h>
-#import <RMKit/RMFolderWatcher.h>
-#import <RMKit/RMFreezeThaw.h>
-#import <RMKit/RMHTMLPackage.h>
-#import <RMKit/RMMacros.h>
-#import <RMKit/RMMenuButton.h>
-// #import <RMKit/RMMessage.h>
-#import <RMKit/RMModelObject.h>
-#import <RMKit/RMObjectPath.h>
-#import <RMKit/RMPagedAttributedString.h>
-#import <RMKit/RMPagedObject.h>
-#import <RMKit/RMProgressIndicator.h>
-#import <RMKit/RMSandwich.h>
-#import <RMKit/RMSystem.h>
-#import <RMKit/RMUUID.h>
-#import <RMKit/RMValueObject.h>
-#import <RMKit/RWFileReference.h>
-#import <RMKit/RWKeychain.h>
-#import <RMKit/RWLineCountView.h>
-#import <RMKit/RWLocale.h>
+#import "RMKit/RMMacros.h"
+#import "RMKit/RMKit-Constants.h"
 
-#if !defined(__ppc64__) && !defined(__x86_64__)
-	#import <RMKit/RWQTEXIF.h>
-	#import <RMKit/RWQTExport.h>
-#endif
+#import "RMKit/RMButtonWithMenu.h"
+#import "RMKit/RMCGFloatSupport.h"
+#import	"RMKit/RMEXIFFetcher.h"
+#import "RMKit/RMFilesystemObject.h"
+#import "RMKit/RMFolderWatcher.h"
+#import "RMKit/RMFreezeThaw.h"
+#import "RMKit/RMHTMLPackage.h"
+#import "RMKit/RMMenuButton.h"
+#import "RMKit/RMModelObject.h"
+#import "RMKit/RMObjectPath.h"
+#import "RMKit/RMPagedAttributedString.h"
+#import "RMKit/RMPagedObject.h"
+#import "RMKit/RMProgressIndicator.h"
+#import "RMKit/RMSandwich.h"
+#import "RMKit/RMSystem.h"
+#import "RMKit/RMUUID.h"
+#import "RMKit/RMValueObject.h"
+#import "RMKit/RWFileReference.h"
+#import "RMKit/RWLineCountView.h"
+#import "RMKit/RWLocale.h"
+#import "RMKit/RWQTEXIF.h"
+#import "RMKit/RWQTExport.h"
+#import "RMKit/RWTextAttachment.h"
+#import "RMKit/RWTextAttachmentCellWrapper.h"
+#import "RMKit/RWTuple.h"
 
-#import <RMKit/RWTextAttachment.h>
-#import <RMKit/RWTextAttachmentCellWrapper.h>
-#import <RMKit/RWTuple.h>
-
-//***************************************************************************
+#import "RMKit/CGImage+RMKit.h"
+#import "RMKit/CIImage+RMKit.h"
+#import "RMKit/MNLineNumberingRulerView.h"
+#import "RMKit/MNLineNumberingTextStorage.h"
+#import "RMKit/NSAttributedString+RMKit.h"
+#import "RMKit/NSCalendarDate+RMKit.h"
+#import "RMKit/NSCharacterSet+RMKit.h"
+#import "RMKit/NSColor+RMKit.h"
+#import "RMKit/NSData+RMKit.h"
+#import "RMKit/NSDictionary+RMKit.h"
+#import "RMKit/NSError+RMKit.h"
+#import "RMKit/NSFileManager+RMKit.h"
+#import "RMKit/NSImage+RMKit.h"
+#import "RMKit/NSMutableDictionary+RMKit.h"
+#import "RMKit/NSObject+RMKit.h"
+#import "RMKit/NSString+RMKit.h"
+#import "RMKit/NSURL+RMKit.h"

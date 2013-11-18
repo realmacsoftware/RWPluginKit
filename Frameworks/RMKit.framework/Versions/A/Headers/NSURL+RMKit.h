@@ -25,14 +25,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-//***************************************************************************
-
 @interface NSURL (FullPath)
 
 /// This method is similar to -path, but keeps trailing slashes on the end of the path if there is one present.
 /** For example, for the URLs "file:///foo/bar/" and "http://foo.com/bar/", -[NSURL path] will return "/bar", whereas -[NSURL fullPath] (this method) will return "/bar/".  This method therefore gives similar behaviour to CFURLCopyPath(), but will also replace percent-escapes in the string with their unescaped, raw equivalents (like -[NSURL path]). */
-- (NSString*)fullPath;
+- (NSString *)fullPath;
 
 @end
-
-//***************************************************************************

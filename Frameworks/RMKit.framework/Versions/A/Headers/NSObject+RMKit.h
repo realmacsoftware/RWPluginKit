@@ -52,10 +52,11 @@
 					   withObject:(id)argument2;
 
 /// Performs the selector on a new background thread, and runs the default run loop run until the method call returns.
-/** This method can be useful for performing relatively simple tasks that won't block the UI. */
+/// Deprecated because it blocks until the background thread completes, making it somewhat pointless to run the selector in the background
+/// Instead use NSOperation and NSOperationQueue
 - (id)performSelectorOnBackgroundThread:(SEL)aSelector
 							 withObject:(id)argument1
-							 withObject:(id)argument2;
+							 withObject:(id)argument2 __attribute__((deprecated));
 
 /// Invokes the given invocation with the target set to the receiver.
 - (void)performInvocation:(NSInvocation*)anInvocation;

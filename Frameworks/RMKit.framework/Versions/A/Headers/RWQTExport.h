@@ -25,25 +25,18 @@
 
 #import <Cocoa/Cocoa.h>
 
-
-
 //***************************************************************************
-#if !defined(__ppc64__) && !defined(__x86_64__)
-#import <QuickTime/QuickTime.h>
 
 @interface RWQTExport : NSObject {
 	NSString* _path;
 	NSString* _source;
 	NSData* _data;
 	NSColor* _fillColour;
-	OSType _format;
-	CodecQ _quality;
-	ComponentInstance _importer;
-	ComponentInstance _exporter;
+	NSBitmapImageFileType _format;
+	NSInteger _quality;
 	OSStatus _status;
 	CGFloat _width, _height;
 	BOOL _hqScaling;
-	BOOL _retainProfiles;
 	BOOL _flipHorizontally;
 	BOOL _flipVertically;
 	BOOL _clip;
@@ -52,32 +45,34 @@
 	CGFloat _shadowBlur;
 	NSColor* _shadowColour;
 	CGFloat _rotation;
-	NSData* _tiff;
 	__weak NSDictionary* _attributes;
 	CGImageSourceRef _sourceImage;
 }
 
-- (id)initWithData:(NSData*)data;
-//- (id)initWithFile:(NSString*)path;
+enum {
+	RWExportQualityLossless = 0,
+	RWExportQualityHigh,
+	RWExportQualityMedium,
+	RWExportQualityLow
+};
 
+@property (nonatomic, assign) NSInteger quality;
+@property (nonatomic, assign) NSBitmapImageFileType format;
+
+- (id)initWithData:(NSData*)data;
 - (id)initWithPath:(NSString*)path;
 
 + (id)exporterWithData:(NSData*)data;
 + (id)exporterWithFile:(NSString*)path;
 
 - (void)setDestination:(NSString*)path;
-- (void)setFormat:(OSType)format;
-- (void)setQuality:(CodecQ)quality;
 - (void)setWidth:(CGFloat)width;
 - (void)setHeight:(CGFloat)height;
 
-- (void)setAttributes:(NSDictionary*)attributes;
+- (void)setAttributes:(__weak NSDictionary *)attributes;
 
 - (BOOL)highQualityScaling;
 - (void)setHighQualityScaling:(BOOL)flag;
-
-- (BOOL)retainProfiles;
-- (void)setRetainProfiles:(BOOL)flag;
 
 - (BOOL)flipHorizontally;
 - (void)setFlipHorizontally:(BOOL)flag;
@@ -85,8 +80,8 @@
 - (BOOL)flipVertically;
 - (void)setFlipVertically:(BOOL)flag;
 
-- (float)rotation;
-- (void)setRotation:(float)rotation;
+- (CGFloat)rotation;
+- (void)setRotation:(CGFloat)rotation;
 
 - (BOOL)clip;
 - (void)setClip:(BOOL)clip;
@@ -109,31 +104,18 @@
 - (OSStatus)export;
 - (OSStatus)status;
 
-+ (ImageDescriptionHandle)getImageDescription:(NSString*)path;
++ (NSString *)quicktimeEmbedHTMLForSrc:(NSString *)path width:(NSInteger)width height:(NSInteger)height autoplay:(BOOL)autoplay;
 
-+ (NSSize)getMovieDimensions:(NSString*)path;
-+ (NSSize)getMovieDimensionsFromData:(NSData*)data;
-+ (BOOL)getPotentialQuickTimeMovie:(NSString*)path;
-+ (NSString*)quicktimeEmbedHTMLForSrc:(NSString*)path width:(NSInteger)width height:(NSInteger)height autoplay:(BOOL)autoplay;
-+ (NSString*)flattenQuickTimeMovieForFastStart:(NSString*)path intoTempDirectory:(NSString*)directory;
+// Deprecated in the move to 64-bit. These methods were dependant on the QuickTime framework which is 32-bit only.
+// These methods will return NSZeroSize, NO or nil as appropriate.
 
-@property (setter=setFormat:) OSType _format;
-@property (setter=setQuality:) CodecQ _quality;
-@property (getter=rotation,setter=setRotation:) CGFloat _rotation;
-@property (retain) NSData* _data;
-@property ComponentInstance _importer;
-@property (retain) NSData* _tiff;
-@property (getter=status) OSStatus _status;
-@property (getter=shadowBlur,setter=setShadowBlur:) CGFloat _shadowBlur;
-@property (getter=shadowOffset,setter=setShadowOffset:) CGFloat _shadowOffset;
-@property ComponentInstance _exporter;
-@property (retain,getter=fillColour) NSColor* _fillColour;
-@property CGImageSourceRef _sourceImage;
-@property (retain) NSString* _source;
-@property (retain,getter=shadowColour) NSColor* _shadowColour;
-@property (assign,setter=setAttributes:) __weak NSDictionary* _attributes;
-@property (retain,setter=setDestination:) NSString* _path;
++ (void *)getImageDescription:(NSString *)path DEPRECATED_ATTRIBUTE;
+
++ (NSSize)getMovieDimensions:(NSString *)path DEPRECATED_ATTRIBUTE;
++ (NSSize)getMovieDimensionsFromData:(NSData *)data DEPRECATED_ATTRIBUTE;
++ (BOOL)getPotentialQuickTimeMovie:(NSString *)path DEPRECATED_ATTRIBUTE;
++ (NSString *)flattenQuickTimeMovieForFastStart:(NSString *)path intoTempDirectory:(NSString *)directory DEPRECATED_ATTRIBUTE;
+
 @end
-#endif
 
 //***************************************************************************

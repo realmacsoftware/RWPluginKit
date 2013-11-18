@@ -13,8 +13,9 @@
 
 @class RWLineCountView;
 
-@interface RWHTMLView : NSTextView {
-	RWLineCountView* _lineView;
+@interface RWHTMLView : NSTextView <NSTextStorageDelegate>
+{
+	RWLineCountView *_lineView;
 	BOOL _wrapHTML;
 }
 

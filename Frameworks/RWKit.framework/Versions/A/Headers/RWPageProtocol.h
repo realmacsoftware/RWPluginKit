@@ -10,18 +10,16 @@
 
 //***************************************************************************
 
-#import "RWDocumentProtocol.h"
+#import "RWKit/RWDocumentProtocol.h"
 
-//***************************************************************************
-
-/// This is the public API for a RapidWeaver 4.0 page.
-@protocol RW40Page <NSObject>
+/// This is the public API for a RapidWeaver page.
+@protocol RWPage <NSObject>
 
 /// Returns the document that this page is part of.
-- (id)document;
+- (NSDocument <RWDocument> *)document;
 
 /// Returns an NSString that is used as a unique identifier for this page.
-- (NSString*)uniqueID;
+- (NSString *)uniqueID;
 
 /// Returns the page title as specified in the page inspector.
 - (NSString *)title;
@@ -30,12 +28,3 @@
 - (NSArray *)children;
 
 @end
-
-//---------------------------------------------------------------------------
-
-/// This is the public API for a RapidWeaver page.
-@protocol RWPage <RW40Page>
-
-@end
-
-//***************************************************************************

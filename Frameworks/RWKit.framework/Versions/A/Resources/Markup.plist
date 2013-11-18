@@ -1,12 +1,12 @@
-<?xml version="1.0f" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0f//EN" "http://www.apple.com/DTDs/PropertyList-1.0f.dtd">
-<plist version="1.0f">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
 <array>
 	<dict>
-		<key>name</key>
-		<string>None</string>
 		<key>cleartags</key>
 		<true/>
+		<key>name</key>
+		<string>HTMLFormatMenuHeadingNone</string>
 	</dict>
 	<dict>
 		<key>separator</key>
@@ -57,20 +57,20 @@
 		<true/>
 	</dict>
 	<dict>
+		<key>closetag</key>
+		<string>&lt;/div&gt;</string>
 		<key>name</key>
 		<string>HTMLFormatMenuAlignImageLeft</string>
-		<key>closetag</key>
-		<string>&lt;/div&gt;</string>
 		<key>opentag</key>
-		<string>&lt;div class="image-left"&gt;</string>
+		<string>&lt;div class=&quot;image-left&quot;&gt;</string>
 	</dict>
 	<dict>
-		<key>name</key>
-		<string>HTMLFormatMenuAlignImageRight</string>
 		<key>closetag</key>
 		<string>&lt;/div&gt;</string>
+		<key>name</key>
+		<string>HTMLFormatMenuAlignImageRight</string>
 		<key>opentag</key>
-		<string>&lt;div class="image-right"&gt;</string>
+		<string>&lt;div class=&quot;image-right&quot;&gt;</string>
 	</dict>
 	<dict>
 		<key>separator</key>
@@ -91,10 +91,10 @@
 		<string>code</string>
 	</dict>
 	<dict>
-		<key>name</key>
-		<string>HTMLFormatMenuParagraph</string>
 		<key>closetag</key>
 		<string>&lt;/p&gt;</string>
+		<key>name</key>
+		<string>HTMLFormatMenuParagraph</string>
 		<key>opentag</key>
 		<string>&lt;p&gt;</string>
 	</dict>
@@ -103,26 +103,26 @@
 		<true/>
 	</dict>
 	<dict>
-		<key>name</key>
-		<string>HTMLFormatMenuStrike</string>
 		<key>closetag</key>
 		<string>&lt;/s&gt;</string>
+		<key>name</key>
+		<string>HTMLFormatMenuStrike</string>
 		<key>opentag</key>
 		<string>&lt;s&gt;</string>
 	</dict>
 	<dict>
-		<key>name</key>
-		<string>HTMLFormatMenuSubscript</string>
 		<key>closetag</key>
 		<string>&lt;/sub&gt;</string>
+		<key>name</key>
+		<string>HTMLFormatMenuSubscript</string>
 		<key>opentag</key>
 		<string>&lt;sub&gt;</string>
 	</dict>
 	<dict>
-		<key>name</key>
-		<string>HTMLFormatMenuSuperscript</string>
 		<key>closetag</key>
 		<string>&lt;/sup&gt;</string>
+		<key>name</key>
+		<string>HTMLFormatMenuSuperscript</string>
 		<key>opentag</key>
 		<string>&lt;sup&gt;</string>
 	</dict>

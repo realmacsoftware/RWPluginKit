@@ -27,8 +27,6 @@
 
 #import "RMValueObject.h"
 
-//***************************************************************************
-
 /// An in-memory representation of a sandwich filling.
 /** A Sandwich Filling is the central entity of the Sandwich file format: it is responsible for preserving the user's data.  To do this, you can store three types of data in a sandwich filling: (1) an arbitrary NSDictionary, (2) files, (3) more sandwiches.  The intended use is for the NSDictionary to store small bits of information that would be inefficient to store in a file, due to inefficiency issues with lots of small files.  While files can be very large, they are multiply hard-linked as much as possible for maximum efficiency.  (This is particularly useful in conjunction with the RMPagedObject class; see that class's documentation for more information.)  Currently, files are required to be normal files or directories and cannot be e.g. a symlink, or special character device.  Subsandwiches are simply stored as subdirectories. */
 @interface RMSandwichFilling : NSObject<RMValueObject>
@@ -231,8 +229,6 @@
 @protocol RMSandwichMaking <NSObject>
 
 /// Returns a sandwiched version of the receiver's contents.
-- (RMSandwich*)sandwich;
+- (RMSandwich *)sandwich;
 
 @end
-
-//***************************************************************************

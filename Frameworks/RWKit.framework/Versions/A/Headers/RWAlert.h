@@ -11,10 +11,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-
-@interface RWAlert : NSObject {
-
-}
+@interface RWAlert : NSObject
 
 + (void)runAlert:(NSString *)title message:(NSString *)message;
 + (NSInteger)runAlert:(NSString *)title message:(NSString *)message defaultChoice:(NSString *)defaultButtonText alternateChoice:(NSString *)alternateButtonText;
@@ -23,5 +20,19 @@
 + (NSInteger)runInfoAlert:(NSString*)title message:(NSString*)message defaultButton:(NSString*)defaultButton alternateButton:(NSString*)otherButton;
 + (NSInteger)runInfoAlertOKCancel:(NSString*)title message:(NSString*)message;
 + (NSInteger)runInfoAlertOKCancelAlternate:(NSString*)title message:(NSString*)message alternate:(NSString*)alternate;
+
+@end
+
+@interface NWAlert : NSAlert
+
+// Convenience class. Allows slightly simpler setup of alerts.
+
++ (id)alertWithTitle:(NSString *)title message:(NSString *)message;
+
++ (NSString *)localizedDefaultButtonText;
++ (NSString *)localizedCancelButtonText;
+
+- (void)setDefaultButtonText:(NSString *)buttonText;
+- (void)setCancelButtonText:(NSString *)buttonText;
 
 @end

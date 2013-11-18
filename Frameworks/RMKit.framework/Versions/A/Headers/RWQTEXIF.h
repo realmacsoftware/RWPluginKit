@@ -27,11 +27,17 @@
 
 //***************************************************************************
 
-@interface RWQTEXIF : NSObject {
+@interface RWQTEXIF : NSObject
+{
 
 }
 
-+ (NSDictionary*)getImageEXIF:(NSString*)path;
+// Use ImageIO to grab the EXIF attributes of the image at the provided path.
+// Seems the name of this class is no longer appropriate!
+// Use the RMEXIFFetcher class instead. The method there is:
+// + (NSDictionary *)EXIFAttributesForImageAtPath:(NSString *)path instead.
+
++ (NSDictionary *)getImageEXIF:(NSString *)path DEPRECATED_ATTRIBUTE;
 
 @end
 

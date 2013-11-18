@@ -33,6 +33,10 @@
 
 @interface NSFileManager (DuplicateFile)
 
+/// Like -duplicateItemAtPath:toPath:error:, except that it's named to better represent what it does.
+/** A regular copy is performed if the hard-link fails. */
+- (BOOL)linkOrCopyItemAtPath:(NSString *)srcPath toPath:(NSString *)dstPath error:(NSError **)outError;
+
 /// This is similar to -copyItemAtPath:toPath:error:, except that it attempts to hard-link the file first.
 /** A regular copy is performed if the hard-link fails. */
 - (BOOL)duplicateItemAtPath:(NSString*)srcPath toPath:(NSString*)dstPath error:(NSError**)outError;
@@ -73,6 +77,8 @@
 /** An example path would be /var/folders/4K/4KPl0EDa2RW0Rk+1YwSRB++++TI/-Tmp-/com.realmacsoftware.rapidweaverpro/25673. */
 - (NSString*)applicationTemporaryDirectoryRootPath;
 
+#pragma mark - Files
+
 /// Returns a temporary path name.
 /** This function is safe from race conditions, unlike mktemp(3). */
 - (NSString*)temporaryFilename;
@@ -92,6 +98,8 @@
 /// Returns a temporary filename in a temporary directory that contains the specified "prefix" name in its filename, and the specified extension for its path extension (which can be useful if the user's trawling the temporary directory looking for things).
 /** Note that this function is safe since it will proceed to open(2) the file with O_EXCL, as described in the mktemp(3) manpage.  The file will be created with mode 0700 and zero bytes. */
 - (NSString*)temporaryFilenameWithPrefix:(NSString*)prefix extension:(NSString*)pathExtension;
+
+#pragma mark - Directories
 
 /// Returns a temporary directory name.
 /** The resulting returned path will be created as a directory, with a mode of 0700. */
@@ -113,6 +121,8 @@
 /** The resulting returned path will be created as a directory, with a mode of 0700.  If the prefix name is nil, the current process name is used as the prefix instead. */
 - (NSString*)temporaryDirectoryWithPrefix:(NSString*)prefix extension:(NSString*)pathExtension;
 
+#pragma mark - Paths
+
 /// Returns a temporary pathname.
 /** Warning: a possible race condition can exist when a filename is obtained and you creating the file, since another process can create the file with the same name before you do.  It is strongly recommended you use the -temporaryDirectory or -temporaryFilename methods instead.  The filename is guaranteed not to exist at the time the method is called. */
 - (NSString*)temporaryPathname;
@@ -130,5 +140,3 @@
 - (NSString*)temporaryPathnameWithPrefix:(NSString*)prefix extension:(NSString*)pathExtension;
 
 @end
-
-//***************************************************************************

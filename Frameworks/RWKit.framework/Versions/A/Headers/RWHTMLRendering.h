@@ -12,35 +12,28 @@
 
 #import <Cocoa/Cocoa.h>
 
-#import <RMKit/RMKit.h>
-#import "RWPageProtocol.h"
-#import "RWExportParams.h"
-
-//***************************************************************************
+#import "RWKit/RWPageProtocol.h"
+#import "RWKit/RWExportParams.h"
 
 /// This class provides a simple interface to render an NSAttributedString or a RapidWeaver page as HTML.
 /** If you are familiar with the RMHTML class and the (undocumented and private) RWExporter class, this is essentially a public facade class to those two classes. */
 @interface RWHTMLRendering : NSObject
-{
-}
 
 /// Renders (exports) the attributed string as HTML to the specified directory.
 /** The index filename must not be nil.  If the page parameter is nil, no links will be resolved, and images will be exported in their original file format with high quality.  The folder name for auxiliary files (images etc) and the image prefix will be randomly named. */
-+ (void)renderAttributedString:(NSAttributedString*)attributedString toDirectory:(NSString*)path indexFilename:(NSString*)indexFilename page:(id<RWPage>)page exportMode:(RWExportMode)exportMode;
++ (void)renderAttributedString:(NSAttributedString *)attributedString toDirectory:(NSString *)path indexFilename:(NSString *)indexFilename page:(id <RWPage>)page exportMode:(RWExportMode)exportMode;
 
 /// Renders (exports) the attributed string as an HTML package, and returns an HTML package.
 /* If the page parameter is nil, no links will be resolved, and images will be exported in their original file format with high quality.  The folder name for auxiliary files (images etc) and the image prefix will be randomly named. */
-+ (RMHTMLPackage*)renderAttributedStringToHTMLPackage:(NSAttributedString*)attributedString page:(id<RWPage>)page exportMode:(RWExportMode)exportMode;
++ (RMHTMLPackage *)renderAttributedStringToHTMLPackage:(NSAttributedString *)attributedString page:(id <RWPage>)page exportMode:(RWExportMode)exportMode;
 
 /// Renders (exports) the page as HTML to the directory at the given path.
 /** The index filename must not be nil. */
-+ (void)renderPage:(id<RWPage>)page toDirectory:(NSString*)path indexFilename:(NSString*)indexFilename exportMode:(RWExportMode)exportMode;
++ (void)renderPage:(id <RWPage>)page toDirectory:(NSString *)path indexFilename:(NSString *)indexFilename exportMode:(RWExportMode)exportMode;
 
 @end
 
-//***************************************************************************
-
-@protocol RWHTMLRendering
+@protocol RWHTMLRendering <NSObject>
 
 /// Renders (exports) the receiver as an HTML package.
 /* If the page parameter is nil, no links will be resolved, and images will be exported in their original file format with high quality.  The folder name for auxiliary files (images etc) and the image prefix will be randomly named. */
@@ -48,16 +41,10 @@
 
 @end
 
-//***************************************************************************
-
 @interface NSAttributedString (RWHTMLRenderingSupport) <RWHTMLRendering>
 
 @end
 
-//---------------------------------------------------------------------------
-
 @interface RMHTMLPackage (RWHTMLRenderingSupport) <RWHTMLRendering>
 
 @end
-
-//***************************************************************************

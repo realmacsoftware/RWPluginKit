@@ -29,14 +29,25 @@
 
 @interface NSError (RMErrorCreation)
 
-/// Returns an NSError object derived from the given POSIX errno, given as the errorNumber parameter.  The error domain set to NSPOSIXErrorDomain, error code set to the given errorNumber (errno), and userInfo dictionary's NSLocalizedDescriptionKey key set to strerror(errorNumber).
+/*
+	Returns an NSError object derived from the given POSIX errno, given as the
+	errorNumber parameter. The error domain set to NSPOSIXErrorDomain, error code
+	set to the given errorNumber (errno), and userInfo dictionary's
+	NSLocalizedDescriptionKey key set to strerror(errorNumber).
+*/
 extern NSError* RMErrorWithPOSIXErrno(const int errorNumber);
 
-/// Sets the given "out" NSError** parameter to an NSError object created from the POSIX errno given as the errorNumber parameter.
-extern void RMErrorSetErrorParameterWithWithPOSIXErrno(const int errorNumber, NSError** outError);
+/*
+	Sets the given "out" NSError** parameter to an NSError object created from
+	the POSIX errno given as the errorNumber parameter.
+*/
+extern BOOL RMErrorSetErrorParameterWithWithPOSIXErrno(const int errorNumber, NSError** outError);
 
-/// Sets the given "out" NSError** parameter to an NSError object created from the POSIX errno given as the errorNumber parameter, and returns NO.
-extern BOOL RMErrorFailureWithPOSIXErrno(const int errorNumber, NSError** outError);
+/*
+	Deprecated in RW 5.2.1. Use RMErrorSetErrorParameterWithWithPOSIXErrno() instead.
+	Internally this function just calls that directly.
+*/
+extern BOOL RMErrorFailureWithPOSIXErrno(const int errorNumber, NSError** outError) DEPRECATED_ATTRIBUTE;
 
 @end
 

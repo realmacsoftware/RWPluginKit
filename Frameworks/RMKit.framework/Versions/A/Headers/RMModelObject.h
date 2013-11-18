@@ -27,36 +27,16 @@
 
 //***************************************************************************
 
-@interface RMModelObjectBackingStore : NSObject
-
-- (BOOL)isEqualToModelObjectBackingStore:(RMModelObjectBackingStore*)other;
-
-@end
-
-//***************************************************************************
-
 /** See http://developer.apple.com/documentation/Cocoa/Conceptual/ModelObjects/ */
-@interface RMModelObject : NSObject<NSCoding, NSCopying>
-{
-	RMModelObjectBackingStore* _modelObjectBackingStore;
-}
+@interface RMModelObject : NSObject<NSCopying, NSCoding>
 
 - (BOOL)isEqualToModelObject:(RMModelObject*)other;
 
-//- (id)initWithPropertyList:(id)plist;
-//- (id)propertyListWithFormat:(NSPropertyListFormat)format error:(NSError**)outError;
-
 @end
 
 //***************************************************************************
 
-@interface RMMutableModelObject : RMModelObject
-
-@end
-
-//***************************************************************************
-
-@protocol RMModelObjectPropertyChanging<NSObject>
+@protocol RMModelObjectPropertyChanging
 
 @optional
 

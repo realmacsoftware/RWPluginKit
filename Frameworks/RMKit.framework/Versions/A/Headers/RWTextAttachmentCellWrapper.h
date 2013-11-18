@@ -15,15 +15,15 @@
 
 //***************************************************************************
 
-@interface RWTextAttachmentCellWrapper : NSObject /* : NSObject<NSTextAttachmentCell> */ {
-	
-	id<NSTextAttachmentCell> _cell;
+@interface RWTextAttachmentCellWrapper : NSObject /* : NSObject<NSTextAttachmentCell> */
+{
+	id <NSTextAttachmentCell> _cell;
 	
 	// These ivars really belongs to RWImageTextAttachmentCellWrapper (since 
 	// only it will use it), but putting it there causes RapidWeaver to crash on
 	// startup immediately due to weird +poseAsClass: issues.
-	NSDictionary* cachedMediaAttributes;
-	NSImage* cachedTransformImage;
+	NSDictionary *cachedMediaAttributes;
+	NSImage *cachedTransformImage;
 }
 
 enum {
@@ -32,36 +32,31 @@ enum {
 	kPDFAttachmentType
 };
 
+@property (retain) NSImage *cachedTransformImage;
+@property (retain) id <NSTextAttachmentCell> cell;
+@property (retain) NSDictionary *cachedMediaAttributes;
+
 - (NSInteger)attachmentType;
-- (void)setUnderlyingCell:(id<NSTextAttachmentCell>)cell;
+- (void)setUnderlyingCell:(id <NSTextAttachmentCell>)cell;
 - (void)setAttachment:(NSTextAttachment *)anAttachment;
 
-@property (retain) NSImage* cachedTransformImage;
-@property (retain) id<NSTextAttachmentCell> _cell;
-@property (retain) NSDictionary* cachedMediaAttributes;
 @end
 
 //---------------------------------------------------------------------------
 
-@interface RWImageTextAttachmentCellWrapper : RWTextAttachmentCellWrapper {
-	
-}
+@interface RWImageTextAttachmentCellWrapper : RWTextAttachmentCellWrapper
 
 @end
 
 //---------------------------------------------------------------------------
 
-@interface RWMovieTextAttachmentCellWrapper : RWTextAttachmentCellWrapper {
-	
-}
+@interface RWMovieTextAttachmentCellWrapper : RWTextAttachmentCellWrapper
 
 @end
 
 //---------------------------------------------------------------------------
 
-@interface RWPDFTextAttachmentCellWrapper : RWTextAttachmentCellWrapper {
-	
-}
+@interface RWPDFTextAttachmentCellWrapper : RWTextAttachmentCellWrapper
 
 @end
 

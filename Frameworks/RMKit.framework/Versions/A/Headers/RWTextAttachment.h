@@ -23,11 +23,12 @@
 
 //***************************************************************************
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 //***************************************************************************
 
 @interface NSDictionary (RWTextAttachmentAttributes)
+
 - (BOOL)flipVertically;
 - (BOOL)flipHorizontally;
 - (BOOL)lockRatios;
@@ -41,46 +42,49 @@
 - (CGFloat)scale;
 - (float)rotation;
 - (BOOL)clip;
-- (NSString*)altTag;
-- (NSString*)fileName;
-- (NSColor*)fillColour;
-enum {
+- (NSString *)altTag;
+- (NSString *)fileName;
+- (NSColor *)fillColour;
+
+enum
+{
 	kMediaAttachmentImageType = 1,
 	kMediaAttachmentMovieType
 };
+
 - (NSInteger)mediaType;
 - (BOOL)enableShadow;
 - (CGFloat)shadowOffset;
 - (CGFloat)shadowBlur;
-- (NSColor*)shadowColour;
+- (NSColor *)shadowColour;
 - (BOOL)enableBorder;
 - (CGFloat)borderOffset;
 - (CGFloat)borderBlur;
-- (NSColor*)borderColour;
+- (NSColor *)borderColour;
+
 @end
 
-@interface RWTextAttachment : NSTextAttachment {
+//***************************************************************************
+
+@interface RWTextAttachment : NSTextAttachment
+{
 	@private
-	NSMutableDictionary* _attributes;
-	NSImage* _image;
-	NSData* _cachedImage;
+	NSMutableDictionary *_attributes;
+	NSImage *_image;
+	NSData *_cachedImage;
 }
 
-- (NSImage*)image;
-- (void)updateImage;
+@property (retain) NSMutableDictionary *attributes;
+@property (retain) NSData *cachedImage;
+@property (retain, nonatomic) NSImage *image;
 
-- (NSData*)cachedImage;
-- (void)setCachedImage:(NSData*)cachedImage;
-- (void)clearCachedImage;
-
+- (NSMutableDictionary *)mediaAttributes;
 - (void)setMediaType:(NSInteger)type;
 
-- (NSMutableDictionary*)mediaAttributes;
+- (void)updateImage;
+- (void)clearCachedImage;
 - (BOOL)normalise;
 
-@property (retain,getter=cachedImage) NSData* _cachedImage;
-@property (retain) NSMutableDictionary* _attributes;
-@property (retain) NSImage* _image;
 @end
 
 //***************************************************************************

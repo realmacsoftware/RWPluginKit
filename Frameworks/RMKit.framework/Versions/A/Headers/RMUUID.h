@@ -27,16 +27,9 @@
 
 #import "RMValueObject.h"
 
-//***************************************************************************
+extern NSString *UUIDString(void);
 
-extern NSString* UUIDString();
-
-//***************************************************************************
-
-@interface RMUUID : NSObject<RMValueObject, NSCoding>
-{
-	__strong CFUUIDRef _UUID;
-}
+@interface RMUUID : NSObject <RMValueObject, NSCoding>
 
 + (RMUUID*)UUID;
 + (RMUUID*)UUIDWithString:(NSString*)UUIDString;
@@ -54,5 +47,3 @@ extern NSString* UUIDString();
 - (BOOL)isEqualToUUID:(RMUUID*)other;
 
 @end
-
-//***************************************************************************

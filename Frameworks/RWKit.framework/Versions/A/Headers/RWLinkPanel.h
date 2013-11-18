@@ -14,13 +14,13 @@
 @class RWLink;
 
 @protocol RWLinkPanelDelegate
-- (void)panelCompletedWithLink:(RWLink*)link;
+- (void)panelCompletedWithLink:(RWLink *)link;
 @end
 
-@interface RWLinkPanel : NSWindowController
+@interface RWLinkPanel : NSWindowController <NSMenuDelegate>
 {
 	id _plugin;
-	RWLink* _currentLink;
+	RWLink *_currentLink;
 	id<RWLinkPanelDelegate> _delegate;
 	
 	BOOL _creatingLink;
@@ -32,21 +32,18 @@
 	
 	IBOutlet NSTextField *urlField;
 	IBOutlet NSPopUpButton *schemePopUp;
-	IBOutlet NSView* customAttributesView;
-	IBOutlet NSTableView* customAttributesTable;
+	IBOutlet NSView *customAttributesView;
+	IBOutlet NSTableView *customAttributesTable;
 	IBOutlet NSDictionaryController *linkAttributesController;
 }
 
+@property (nonatomic, readonly) IBOutlet NSObjectController *bindings;
+
++ (RWLinkPanel *)panelWithDelegate:(id <RWLinkPanelDelegate>)delegate plugin:(id)plugin;
+
+- (void)presentPanelWithLink:(RWLink *)link parent:(NSWindow *)parent;
+
 - (IBAction)addAttribute:(id)aSender;
 - (IBAction)onToggleCustomLinkAttributes:(id)sender;
-
-- (void)presentPanelWithLink:(RWLink*)link parent:(NSWindow*)parent;
-
-+ (RWLinkPanel*)panelWithDelegate:(id<RWLinkPanelDelegate>)delegate plugin:(id)plugin;
-
-@property (nonatomic, retain) id _plugin;
-@property (nonatomic, retain) id<RWLinkPanelDelegate> _delegate;
-@property (nonatomic, retain, getter=currentLink) RWLink* _currentLink;
-@property (nonatomic, readonly) IBOutlet NSObjectController *bindings;
 
 @end
