@@ -10,12 +10,10 @@
 #import <Sparkle/Sparkle.h>
 
 @interface RMSSparkleLoader : NSObject
-{
-	
-}
 
 + (RMSSparkleLoader *)sparkleLoader;
 
-- (SUUpdater *)updaterForBundle:(NSBundle *)bundle;
+- (SUUpdater *)updaterForBundle:(NSBundle *)bundle DEPRECATED_ATTRIBUTE;
+- (SUUpdater *)updaterForBundle:(NSBundle *)bundle error:(NSError **)error;
 
 @end

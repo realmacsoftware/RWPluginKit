@@ -8,55 +8,55 @@
 
 #import "RMSSparkleLoader.h"
 
-
 @implementation RMSSparkleLoader
 
-- (BOOL)loadSparkle
+- (NSString *)_sparkleFrameworkPath
 {
-	// Dig into the plugin bundle to get at the framework.
-	
 	NSBundle *bundle = [NSBundle bundleForClass:[self class]];
-	NSString *path = [[bundle sharedFrameworksPath] stringByAppendingPathComponent:@"Sparkle.framework"];
 	
-	return [[NSBundle bundleWithPath:path] load];
+	return [[bundle sharedFrameworksPath] stringByAppendingPathComponent:@"Sparkle.framework"];
 }
 
-- (BOOL)isSparkleLoaded
+- (BOOL)_loadSparkleAndReturnError:(NSError **)error
 {
-	BOOL result = NO;
+	// Attempt to load our bundled copy of the framework.
 	
-	if (NSClassFromString(@"SUUpdater"))
-	{
-		result = YES;
-	}
-	
-	else
-	{
-		if ([self loadSparkle])
-		{
-			result = YES;
-		}
-	}
-	
-	return result;
+	return [[NSBundle bundleWithPath:[self _sparkleFrameworkPath]] loadAndReturnError:error];
 }
 
+- (BOOL)_isSparkleLoaded
+{
+	Class sparkleClass = NSClassFromString(@"SUUpdater");
+	if (sparkleClass == nil) {
+		return NO;
+	}
+	
+	return YES;
+}
 
-#pragma mark Public Interface
+#pragma mark - Public Interface
+
+- (SUUpdater *)updaterForBundle:(NSBundle *)bundle error:(NSError **)error
+{
+	BOOL isLoaded = [self _isSparkleLoaded];
+	if (isLoaded == YES) {
+		return [SUUpdater updaterForBundle:bundle];
+	}
+	
+	isLoaded = [self _loadSparkleAndReturnError:error];
+	if (isLoaded) {
+		return [SUUpdater updaterForBundle:bundle];
+	}
+	
+	return nil;
+}
 
 - (SUUpdater *)updaterForBundle:(NSBundle *)bundle
 {
-	SUUpdater *updater = nil;
-	
-	if ([self isSparkleLoaded])
-	{
-		updater = [SUUpdater updaterForBundle:bundle];
-	}
-	
-	return updater;
+	return [self updaterForBundle:bundle error:NULL];
 }
 
-#pragma mark Object Lifecycle
+#pragma mark - Object Lifecycle
 
 + (RMSSparkleLoader *)sparkleLoader
 {
