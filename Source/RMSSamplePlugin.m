@@ -26,16 +26,19 @@
 - (void)checkForUpdates
 {
 	static SUUpdater *sUpdater = nil;
-	
-	if (sUpdater == nil)
-	{
-		sUpdater = [[RMSSparkleLoader sparkleLoader] updaterForBundle:[NSBundle bundleForClass:[self class]]];
-		NSLog(@"Updater: %@", sUpdater);
-		
-		// Normal Sparkle update logic goes here.
-		// Needs to be inside the block so as to avoid happening once
-		// per plugin instance.
+	if (sUpdater != nil) {
+		return;
 	}
+	
+	NSError *sparkleError = nil;
+	NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+	sUpdater = [[RMSSparkleLoader sparkleLoader] updaterForBundle:bundle error:&sparkleError];
+	if (sUpdater == nil) {
+		NSLog(@"Failed with error: %@", sparkleError);
+		return;
+	}
+	
+	// Normal Sparkle update logic goes here.
 }
 
 #pragma mark Protocol Methods

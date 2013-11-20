@@ -18,13 +18,13 @@
 	
 }
 
+@property (nonatomic, assign) BOOL nilOnWebUnsafeFont;
+
 + (void)styliseFontMenu:(NSMenu*)menu;
 + (NSFont*)menuItemTitleToFont:(NSString*)item;
 
 + (BOOL)containsWebUnsafeFonts:(NSAttributedString*)string;
 
-- (void)setNilOnWebUnsafeFont:(BOOL)flag;
 - (NSString*)styleStringForFont:(NSFont*)font;
 
-@property (setter=setNilOnWebUnsafeFont:) BOOL _nilOnWebUnsafeFont;
 @end

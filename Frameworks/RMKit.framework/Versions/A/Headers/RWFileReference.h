@@ -27,29 +27,22 @@
 
 //***************************************************************************
 
-@interface RWFileReference : NSObject {
-@private
-	NSString* _path;
-	NSMutableData* _alias;
-}
+@interface RWFileReference : NSObject
 
-+ (RWFileReference*)referenceTo:(NSString*)pathA relativeTo:(NSString*)pathB;
+@property (nonatomic, copy) NSString *path;
+@property (nonatomic, retain) NSMutableData *alias;
 
-+ (RWFileReference*)referenceWithDictionary:(NSDictionary*)dictionary;
-- (id)propertyList;
++ (RWFileReference *)referenceTo:(NSString *)pathA relativeTo:(NSString *)pathB;
 
-- (NSString*)path;
-- (void)setPath:(NSString*)pathA relativeTo:(NSString*)pathB;
++ (RWFileReference *)referenceWithDictionary:(NSDictionary *)dictionary;
+- (NSDictionary *)propertyList;
 
-- (NSData*)alias;
-- (void)setAlias:(NSMutableData*)data;
+- (void)setPath:(NSString *)pathA relativeTo:(NSString *)pathB;
 
 - (BOOL)pathExists;
 
-- (NSString*)resolveRelativeTo:(NSString*)path;
+- (NSString *)resolveRelativeTo:(NSString *)path;
 
-@property (retain,getter=path) NSString* _path;
-@property (retain,setter=setAlias:) NSMutableData* _alias;
 @end
 
 //***************************************************************************

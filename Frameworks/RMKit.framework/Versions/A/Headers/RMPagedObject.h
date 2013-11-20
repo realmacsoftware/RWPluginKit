@@ -63,8 +63,6 @@
   * Note that the paged object may not be deleted when the application terminates; in particular, a paged object's backing store on disk will not be deleted if the application crashes.  This is intentional, since expert users can then peek around in the paged objects' temporary directory to examine any data.  If you really need to make sure that all your files are deleted when the process exits, it's strongly suggested that you track the paths yourself and use atexit() or a similar handler to register a cleanup function.
   *
   * Also note that if you are loading data from a user's document, the user may delete that document while your application is running, and the user probably expects that the application still has their data!  It's strongly suggested that you use the idiom of "RMPagedObject* myLoadedObject = [[RMPagedObject pagedObjectWithPath:myPath deleteOnDisposal:NO] copy]" if you are loading a user's document data.  This will use a separate disk backing store in a temporary file, so that if the user deletes their document while the application is running, the paged object's data will still be available.
-  * 
-  * If you are using garbage collection, be aware that an object's backing store is only deleted when -finalize is called, but -finalize isn't guaranteed to be called, and -finalize may be run at unpredictable times on background threads.  If you want to make 100% sure that an object's on-disk backing store is deleted, ensure the garbage collector runs via -[NSGarbageCollector collectExhaustively].
   */
 @interface RMPagedObject : NSObject<RMValueObject, RMDiscardableContent>
 {
@@ -85,7 +83,7 @@
 + (id)pagedObjectWithObject:(id<NSCopying, NSObject>)object forceCaching:(BOOL)cacheInitially;
 
 /// Convenience class method to allocate a new (autoreleased) paged object.
-+ (id)pagedObjectWithPath:(NSString*)path deleteOnDisposal:(BOOL)willDeleteOnDeallocOrFinalize;
++ (id)pagedObjectWithPath:(NSString*)path deleteOnDisposal:(BOOL)willDeleteOnDealloc;
 
 /// Returns a preferred extension for the object archived on disk.
 + (NSString*)preferredExtension;
@@ -103,16 +101,16 @@
 - (BOOL)shouldCacheObject:(id<NSCopying, NSObject>)newObject;
 
 /// Initialises a new RMPagedObject with a temporary object.
-/** The on-disk object will always be deleted when it's disposed (deallocated/finalized). */
+/** The on-disk object will always be deleted when it's disposed of. */
 - (id)initWithObject:(id<NSCopying, NSObject>)object;
 
 /// Initialises a new RMPagedObject with a temporary object, forcing it to be cached initially.
-/** The on-disk object will always be deleted when it's disposed (deallocated/finalized). */
+/** The on-disk object will always be deleted when it's disposed of. */
 - (id)initWithObject:(id<NSCopying, NSObject>)object forceCaching:(BOOL)cacheInitially;
 
 /// Initialises a new RMPagedObject with the backing store at the given path.
 /** The path itself nor the file residing at the path is not checked for its validity until it's actually retrived with the -object method.  The object will be deleted on deallocation/finalization or application termination only if the deleteOnDisposal: parameter is set to YES. */
-- (id)initWithPath:(NSString*)path deleteOnDisposal:(BOOL)willDeleteOnDeallocOrFinalize;
+- (id)initWithPath:(NSString*)path deleteOnDisposal:(BOOL)willDeleteOnDealloc;
 
 /// This is a method designed to be overridden by subclasses to perform any initialisation before freezing or thawing an object.  (Do _not_ override -init!)
 - (void)setup;
@@ -140,7 +138,7 @@
 /// Returns the actual path to the object on the disk.
 @property (readonly, copy) NSString* path;
 
-/// Delete this object when it's disposed of (deallocated/finalized).
+/// Delete this object when it's disposed of.
 @property BOOL deleteOnDisposal;
 
 /// Returns the cached hash value for the currently paged object.

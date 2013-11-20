@@ -25,8 +25,8 @@
 
 #import <Cocoa/Cocoa.h>
 
-#import "RMPagedObject.h"
-#import "RMSandwich.h"
+#import "RMKit/RMPagedObject.h"
+#import "RMKit/RMSandwich.h"
 
 //***************************************************************************
 
@@ -173,5 +173,3 @@
 @interface RMSandwich (RMFreezeThaw) <RMFreezing, RMThawing>
 
 @end
-
-//***************************************************************************

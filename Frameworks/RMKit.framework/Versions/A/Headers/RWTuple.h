@@ -23,7 +23,7 @@
 
 //***************************************************************************
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 //***************************************************************************
 
@@ -31,20 +31,21 @@
 /** Note that the objects stored here are retained, not copied, so RWTuple
   * can work with objects that do not implement value semantics.  This enables
   * us to store things such as NSWindows and NSTextViews in a tuple. */
+
 @interface RWTuple : NSObject
 {
 	id _first;
 	id _second;
 }
 
-+ (RWTuple*)tupleWithFirstElement:(id)first secondElement:(id)second;
++ (RWTuple *)tupleWithFirstElement:(id)first secondElement:(id)second;
 
-- (RWTuple*)initWithFirstElement:(id)first secondElement:(id)second;
-- (BOOL)isEqualToTuple:(RWTuple*)other;
-- (NSComparisonResult)compare:(RWTuple*)tuple;
+- (RWTuple *)initWithFirstElement:(id)first secondElement:(id)second;
+- (BOOL)isEqualToTuple:(RWTuple *)other;
+- (NSComparisonResult)compare:(RWTuple *)tuple;
 
-@property (retain) id first;
-@property (retain) id second;
+@property (nonatomic, retain) id first;
+@property (nonatomic, retain) id second;
 
 @end
 

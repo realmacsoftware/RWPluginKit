@@ -14,11 +14,12 @@
 #import <RMKit/RMKit.h>
 #import "RWKit.h"
 
-@interface RWTextViewPluginClient : RWAbstractPlugin <RWLinkPanelDelegate> {
-	RWLinkPanel* _linkPanel;
-	RWTextView* _styledContentTextView;
-	NSButton* _addButton;
-	NSButton* _removeButton;
+@interface RWTextViewPluginClient : RWAbstractPlugin <RWLinkPanelDelegate>
+{
+	RWLinkPanel *_linkPanel;
+	RWTextView *_styledContentTextView;
+	NSButton *_addButton;
+	NSButton *_removeButton;
 	NSRange _linkSelectedRange;
 }
 
@@ -27,8 +28,11 @@
 
 - (void)currentMediaAttributesChanged;
 
-@property (retain) RWTextView* _styledContentTextView;
-@property (retain) NSButton* _addButton;
-@property (retain) RWLinkPanel* _linkPanel;
-@property (retain) NSButton* _removeButton;
+- (void)textDidChange:(NSNotification *)aNotification;
+
+@property (retain) RWTextView *_styledContentTextView;
+@property (retain) NSButton *_addButton;
+@property (retain) RWLinkPanel *_linkPanel;
+@property (retain) NSButton *_removeButton;
+
 @end

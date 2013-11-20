@@ -13,15 +13,14 @@
 
 #import "RWLinkPanel.h"
 
-@interface RWTextView : NSTextView<RWLinkPanelDelegate>
-{
+@interface RWTextView : NSTextView <RWLinkPanelDelegate> {
 	NSColor* _ignoreBackground;
 	NSColor* _htmlBackground;
 	BOOL _addedNotificationObserver;
 }
+
 - (NSArray*)attachments;
 - (NSArray*)selectedAttachments;
-+ (NSString*)listMarkerFormatForMenuTag:(const NSInteger)tag;
 - (id)currentMedia;
 
 - (IBAction)addLink:(id)sender;

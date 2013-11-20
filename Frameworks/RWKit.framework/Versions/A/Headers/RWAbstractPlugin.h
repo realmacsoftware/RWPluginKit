@@ -6,65 +6,88 @@
 */
 
 #import <Cocoa/Cocoa.h>
-#import "RWPluginInterface.h"
+
+#import "RWKit/RWPluginProtocol.h"
+#import "RWKit/RWDocumentProtocol.h"
 
 @class RMHTML;
+@class RWSharedStorage;
 
-@interface RWAbstractPlugin : NSObject <RWPluginProtocol, NSCoding>
-{
-    id _unused; // this ivar was named _documentWindow: we're renaming it to _unused rather than deleting it to preserve ABI compatibility
-    NSMutableDictionary *_themeSpecificOptionsDictionary;
-    NSString *_uniqueID;
-    id _unused2; // this ivar was _document and used to keep track of the parent document: we're renaming it to _unused rather than deleting it to preserve ABI compatibility
-}
+extern NSString *const kRWPluginChangedNotification;
+extern NSString *const kRWPluginChangedInvertNotification;
+extern NSString *const kRWPluginExportStatusNotification;
+extern NSString *const kRWCurrentMediaChangedNotification;
+extern NSString *const kRWPluginPageSettingsRequestNotification;
+extern NSString *const kRWDoubleClickedMediaNotification;
 
-- (id)document;
-- (void)setDocument:(id)document;
+@interface RWAbstractPlugin : NSObject <RWPlugin, NSCoding>
 
-- (NSWindow *)documentWindow;
-- (void)setDocumentWindow:(NSWindow *)documentWindow;
+- (NSDocument <RWDocument> *)document;
 
-- (NSString*)documentPath;
+- (NSObject <RWPage> *)page;
 
-- (NSString *)uniqueID;
-- (void)setUniqueID:(NSString *)uniqueID;
++ (NSArray *)extraFilesNeededInExportFolder:(NSDictionary *)params;
+- (NSArray *)extraFilesNeededInExportFolder:(NSDictionary *)params;
 
-+ (NSArray *)extraFilesNeededInExportFolder:(NSDictionary*)params;
-- (NSArray *)extraFilesNeededInExportFolder:(NSDictionary*)params;
-
-- (NSString *)contentHTML:(NSDictionary*)params;
-- (NSString *)sidebarHTML:(NSDictionary*)params;
-- (NSString *)pageContentHeaders:(NSDictionary*)params;
+- (NSString *)contentHTML:(NSDictionary *)params;
+- (NSString *)sidebarHTML:(NSDictionary *)params;
+- (NSString *)pageContentHeaders:(NSDictionary *)params;
 
 - (void)broadcastPluginChanged;
 - (void)broadcastPluginChangedInvert;
-- (void)broadcastPluginExportStatus:(NSString*)message progress:(CGFloat)percent;
+- (void)broadcastPluginExportStatus:(NSString *)message progress:(CGFloat)percent;
 - (void)broadcastMediaChanged;
 - (void)broadcastPluginSettingsRequest;
 
-- (NSArray*)directoryContents:(NSString*)path;
+- (NSArray *)directoryContents:(NSString *)path;
 
-- (NSString*)tempFilesDirectory:(NSString*)name;
-+ (NSString*)tempFilesDirectory:(NSString*)name forPlugin:(RWAbstractPlugin*)plugin;
-+ (NSString*)tempFilesDirectory:(NSString*)name forUniqueID:(NSString*)unique;
+- (NSString *)tempFilesDirectory:(NSString *)name;
++ (NSString *)tempFilesDirectory:(NSString *)name forPlugin:(RWAbstractPlugin *)plugin;
++ (NSString *)tempFilesDirectory:(NSString *)name forUniqueID:(NSString *)unique;
 
-+ (NSString*)rwTempFilesDirectory;
-+ (NSString*)appTempFilesDirectory;
+// Return paths for temporary file storage. These calls don't create the folder.
+// Return paths of the form:
+// --> path/to/tmp/RapidWeaver
+// --> path/to/tmp/RapidWeaver/processID
 
-- (RMHTML*)exporterWithParams:(NSDictionary*)params;
-- (NSString*)pathToThemeFile:(NSString*)file params:(NSDictionary*)params correction:(NSInteger)depth;
++ (NSString *)pathToTempDirectory;
++ (NSString *)pathToAppTempDirectory; // Process ID version.
 
-- (NSMutableDictionary*)pluginSettingsValueForDisplay:(NSString*)display value:(id)value;
+- (NSString *)pathToThemeFile:(NSString *)file params:(NSDictionary *)params correction:(NSInteger)depth;
 
-- (NSMutableString*)updatePageTemplate:(NSMutableString*)pageTemplate params:(NSDictionary*)params depth:(NSInteger)depth;
+- (NSMutableDictionary *)pluginSettingsValueForDisplay:(NSString *)display value:(id)value;
 
-- (NSMutableDictionary*)contentOnlySubpageWithHTML:(NSString*)content name:(NSString*)name;
-- (NSMutableDictionary*)contentOnlySubpageWithData:(NSData*)content name:(NSString*)name;
-- (NSMutableDictionary*)contentOnlySubpageWithEntireHTML:(NSString*)content name:(NSString*)name;
+- (NSMutableString *)updatePageTemplate:(NSMutableString *)pageTemplate params:(NSDictionary *)params depth:(NSInteger)depth;
 
-- (NSMutableDictionary*)customSubpageWithData:(NSData*)content name:(NSString*)name destination:(NSString*)destination;
+- (NSMutableDictionary *)contentOnlySubpageWithHTML:(NSString *)content name:(NSString *)name;
+- (NSMutableDictionary *)contentOnlySubpageWithData:(NSData *)content name:(NSString *)name;
+- (NSMutableDictionary *)contentOnlySubpageWithEntireHTML:(NSString *)content name:(NSString *)name;
 
-- (NSMutableDictionary*)pluginDefaults;
-- (void)setPluginDefaults:(NSDictionary*)defaults;
+- (NSMutableDictionary *)customSubpageWithData:(NSData *)content name:(NSString *)name destination:(NSString *)destination;
+
+- (void)cancelExport;
+
+- (NSMutableDictionary *)pluginDefaults;
+- (void)setPluginDefaults:(NSDictionary *)defaults;
+
+- (RWSharedStorage *)sharedPluginStorage;
+
+#pragma mark Resource Access & Linking
+
+// Returns a flat list of site resources.
+
+- (NSArray *)resourceInfoList;
+
+// Returns a URL string that takes into account the user's current link setting as specified in the preferences.
+// Passing nil will result in an empty string being returned.
+// Note: Results are only valid if called during export!
+
+- (NSString *)linkForResourceWithIdentifier:(NSString *)identifier;
+
+#pragma mark NSURL Bookmark Support
+
+- (NSString *)registerFileURL:(NSURL *)fileURL error:(NSError **)error;
+- (void)removeFileReferenceForToken:(NSString *)token;
+- (NSURL *)fileURLForToken:(NSString *)token error:(NSError **)error;
 
 @end

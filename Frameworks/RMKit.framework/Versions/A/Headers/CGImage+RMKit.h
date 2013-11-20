@@ -28,7 +28,6 @@
 //***************************************************************************
 
 #include <ApplicationServices/ApplicationServices.h>
-#import <AppKit/AppKit.h>
 
 /// Creates a CGImageRef from a given NSImage, with the given final size.  The returned CGImageRef follows the standard Core Foundation "create" rule (i.e. the caller owns it and is responsible for releasing it).
 CGImageRef CGImageCreateWithNSImage(NSImage* image, const CGSize size);
@@ -47,13 +46,3 @@ bool CGImageTransform(CGImageSourceRef const imageSource, CFDictionaryRef const 
 extern CFStringRef const kCGImageTransformToThumbnailMaximumDimension;	// NSNumber*
 extern CFStringRef const kCGImageTransformToCGColorSpace;	// CGColorSpaceRef
 extern CFStringRef const kCGImageTransformToNSColorSpace;	// NSColorSpace*
-
-//***************************************************************************
-
-/// Appends a rounded rectangle to a mutable graphics path.
-void rwCGPathAddRoundedRect(CGContextRef context, const CGRect rect, const CGSize cornerSize);
-
-/// Paints a rounded rectangle path.
-void CGContextStrokeRoundedRect(CGContextRef context, const CGRect rect, const CGSize cornerSize);
-
-//***************************************************************************

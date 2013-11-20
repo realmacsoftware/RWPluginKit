@@ -30,10 +30,10 @@
 @interface NSData (SHA1Digest)
 
 /// Returns a SHA-1 digest of the receiver.
-- (NSData*)SHA1Digest;
+- (NSData *)SHA1Digest;
 
 /// Returns a SHA-1 digest of the receiver as a hexadecimal string, with all letters uppercased (e.g. @"8B8B1E0C820C07FA0D1D97D3D94CC08755B81D59").
-- (NSString*)SHA1DigestHexString;
+- (NSString *)SHA1DigestHexString;
 
 @end
 
@@ -42,7 +42,7 @@
 @interface NSData (WriteToTemporaryFile)
 
 /// Writes the receiver to a temporary file on disk.  Returns nil if the write failed, or the full pathname to the temporary file if the write succeeds.
-- (NSString*)writeToTemporaryFileWithOptions:(NSUInteger)writeOptionsMask error:(NSError**)outError;
+- (NSString *)writeToTemporaryFileWithOptions:(NSDataWritingOptions)writeOptionsMask error:(NSError **)outError;
 
 @end
 

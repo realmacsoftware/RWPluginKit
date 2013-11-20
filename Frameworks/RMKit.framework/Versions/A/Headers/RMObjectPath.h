@@ -34,13 +34,13 @@
  */
 @protocol RMObjectPathing
 
-@optional
+ @optional
 
 /// Returns the given object for the object path string.  If you do not implement this method (which is the normal case), a default implementation will be used.
 /** As an example, [foo objectForPath:@"key1/key2"] is equivalent to first performing [foo objectForKey:@"key1"], then calling objectForKey:@"key2" on the result of that. */
 - (id)objectForPath:(NSString*)objectPath;
 
-@required
+ @required
 
 /// Returns the object for a given path component.
 /** You are guaranteed that the path component passed to this method will not have a slash character (/) in it.  It is up to your individual object to define how the path component should be interpreted; for example, if your object uses array-like indexing, you may choose to interpret path components as integer strings that represent the object index. */

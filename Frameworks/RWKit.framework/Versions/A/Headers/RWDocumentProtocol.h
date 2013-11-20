@@ -13,11 +13,8 @@
 /// This is the public API for a RapidWeaver 4.0 document.
 @protocol RW40Document <NSObject>
 
-/// Returns a universally unique identifier for this document.
-- (NSString*)UUIDString;
-
 /// Returns the window for the document
-- (NSWindow*)window;
+- (NSWindow *)window;
 
 @end
 
@@ -25,5 +22,3 @@
 @protocol RWDocument <RW40Document>
 
 @end
-
-//***************************************************************************

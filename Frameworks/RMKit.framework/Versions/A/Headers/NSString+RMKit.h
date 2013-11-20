@@ -24,30 +24,17 @@
 
 //***************************************************************************
 
-#import <Cocoa/Cocoa.h>
-
-//***************************************************************************
-
-// Copyright (C) 2004, Keith Anderson
-
-//***************************************************************************
-
-@interface NSString (KNTruncate)
-
--(NSMutableString *)ellipsizeToWidth:(CGFloat)width withAttributes:(NSDictionary *)atts;
--(NSMutableString *)centrallyEllipsizeToWidth:(CGFloat)width withAttributes:(NSDictionary *)atts;
-
-@end
-
 //***************************************************************************
 
 // Copyright (C) 2005-2008 Realmac Software Pty Ltd
 
 //***************************************************************************
 
+#import <Cocoa/Cocoa.h>
+
 @interface NSString (UTI)
 
-+ (NSString*)pathExtensionForUTI:(NSString*)uniformTypeIdentifier;
++ (NSString *)pathExtensionForUTI:(NSString*)uniformTypeIdentifier;
 
 @end
 
@@ -67,9 +54,17 @@
 - (NSString*)convertToEntities;
 - (NSString*)convertToNumericalReferences:(BOOL)everything;
 - (NSString*)summarizeToSentences:(UInt32*)sentences;
-- (NSString*)stringEscapedForHTMLElementText;
+
 - (NSString*)stringEscapedForXMLElementText;
+- (NSString*)stringEscapedForXMLElementTextWithCharactersToLeaveUnescaped:(NSArray *)characters;
+
+- (NSString*)stringEscapedForHTMLElementText;
+- (NSString*)stringEscapedForHTMLElementTextWithCharactersToLeaveUnescaped:(NSArray *)characters;
+
 - (NSString*)stringEscapedForHTMLAttribute;
+- (NSString*)stringEscapedForHTMLAttributeWithCharactersToLeaveUnescaped:(NSArray *)characters;
+
+
 - (NSString*)stringEscapedForFilename;
 - (NSString*)stringEscapedForLowercaseFilename;
 - (NSString*)stringEscapedForFriendlyFilename;

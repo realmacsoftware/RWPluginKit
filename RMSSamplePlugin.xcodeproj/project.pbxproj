@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -55,7 +55,7 @@
 		4AFBCD9112A6811000781A0C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Localizations/English.lproj/RMSSamplePluginContentView.xib; sourceTree = "<group>"; };
 		4AFBCD9312A6811000781A0C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Localizations/English.lproj/RMSSamplePluginOptionsView.xib; sourceTree = "<group>"; };
 		86EC48AB06813ED400EF9A10 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		9C736B80094C726A001443E6 /* SamplePlugin.rwplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SamplePlugin.rwplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C736B80094C726A001443E6 /* SamplePlugin.rapidweaverplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SamplePlugin.rapidweaverplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C736B84094C7280001443E6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,7 +104,7 @@
 		86EC479A06811BCE00EF9A10 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C736B80094C726A001443E6 /* SamplePlugin.rwplugin */,
+				9C736B80094C726A001443E6 /* SamplePlugin.rapidweaverplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,7 +143,6 @@
 				9C736B74094C726A001443E6 /* Frameworks */,
 				9C736B6C094C726A001443E6 /* Resources */,
 				4A73654B1352822E00ECD9EB /* Copy Sparkle */,
-				4A75DC5512A3A46E00AD635C /* Run Install Script */,
 			);
 			buildRules = (
 			);
@@ -152,7 +151,7 @@
 			name = Plugin;
 			productInstallPath = "$(USER_LIBRARY_DIR)/Bundles";
 			productName = Blog;
-			productReference = 9C736B80094C726A001443E6 /* SamplePlugin.rwplugin */;
+			productReference = 9C736B80094C726A001443E6 /* SamplePlugin.rapidweaverplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -161,10 +160,11 @@
 		86EC46EC0681018500EF9A10 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Realmac Software";
 			};
 			buildConfigurationList = 9C72E61C088EEA07007CC3F7 /* Build configuration list for PBXProject "RMSSamplePlugin" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -196,23 +196,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4A75DC5512A3A46E00AD635C /* Run Install Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Install Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "scripts/install.sh\nexit 0;\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9C736B72094C726A001443E6 /* Sources */ = {
@@ -259,7 +242,6 @@
 		9C72E61D088EEA07007CC3F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +253,6 @@
 		9C72E61E088EEA07007CC3F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "";
 				IBC_FLATTEN_NIBS = NO;
@@ -283,6 +264,7 @@
 		9C736B7C094C726A001443E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Frameworks\"",
@@ -291,13 +273,14 @@
 				GCC_PREFIX_HEADER = Resources/Prefix.pch;
 				INFOPLIST_FILE = Resources/Info.plist;
 				PRODUCT_NAME = SamplePlugin;
-				WRAPPER_EXTENSION = rwplugin;
+				WRAPPER_EXTENSION = rapidweaverplugin;
 			};
 			name = Debug;
 		};
 		9C736B7D094C726A001443E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Frameworks\"",
@@ -306,7 +289,7 @@
 				GCC_PREFIX_HEADER = Resources/Prefix.pch;
 				INFOPLIST_FILE = Resources/Info.plist;
 				PRODUCT_NAME = SamplePlugin;
-				WRAPPER_EXTENSION = rwplugin;
+				WRAPPER_EXTENSION = rapidweaverplugin;
 			};
 			name = Release;
 		};

@@ -11,7 +11,7 @@
 @class RWTextViewDefaultDelegate;
 
 @protocol RWStyledTextViewDelegate;
-@protocol RWPluginProtocol;
+@protocol RWPlugin;
 @protocol RWPage;
 
 //***************************************************************************
@@ -26,7 +26,7 @@ RWStyledTextViewMode;
 
 //***************************************************************************
 
-@interface RWStyledTextView : NSView<NSCoding>
+@interface RWStyledTextView : NSView <NSCoding>
 {
 	NSTabView* _tabView;
 	
@@ -50,7 +50,7 @@ RWStyledTextViewMode;
 - (BOOL)isAttributedStringMode;
 - (BOOL)isHTMLMode;
 
-- (id<RWPluginProtocol>)plugin;
+- (NSObject <RWPlugin> *)plugin;
 
 /// Sets up the WebView; this returns immediately if the WebView is already initialised and configured.
 - (void)setupWebView;
@@ -95,7 +95,7 @@ RWStyledTextViewMode;
 
 @protocol RWStyledTextViewDelegate <NSObject>
 
-- (NSObject<RWPluginProtocol>*)pluginForStyledTextView:(RWStyledTextView*)styledTextView;
+- (NSObject <RWPlugin> *)pluginForStyledTextView:(RWStyledTextView*)styledTextView;
 
 @optional
 
@@ -113,10 +113,10 @@ extern NSString* const RWStyledTextViewDidChangeModeNotification;
 
 //***************************************************************************
 
-@interface RWTextViewDefaultDelegate : NSObject
+@interface RWTextViewDefaultDelegate : NSObject <NSTextViewDelegate>
 {
-	RWStyledTextView* _styledTextView;
-	NSUndoManager* _undoManager;
+	RWStyledTextView *_styledTextView;
+	NSUndoManager *_undoManager;
 }
 
 + (RWTextViewDefaultDelegate*)textViewDefaultDelegateWithStyledTextView:(RWStyledTextView*)styledTextView;
