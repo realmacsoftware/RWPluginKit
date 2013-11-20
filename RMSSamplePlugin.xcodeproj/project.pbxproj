@@ -143,7 +143,6 @@
 				9C736B74094C726A001443E6 /* Frameworks */,
 				9C736B6C094C726A001443E6 /* Resources */,
 				4A73654B1352822E00ECD9EB /* Copy Sparkle */,
-				4A75DC5512A3A46E00AD635C /* Run Install Script */,
 			);
 			buildRules = (
 			);
@@ -197,23 +196,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		4A75DC5512A3A46E00AD635C /* Run Install Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Install Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "scripts/install.sh\nexit 0;\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9C736B72094C726A001443E6 /* Sources */ = {
