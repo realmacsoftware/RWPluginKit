@@ -29,6 +29,59 @@
 	return self;
 }
 
+- (IBAction)chooseFile:(id)sender
+{
+	NSOpenPanel *openPanel = [NSOpenPanel openPanel];
+	[openPanel beginWithCompletionHandler:^(NSInteger result) {
+		if (result != NSFileHandlingPanelOKButton) {
+			return;
+		}
+		
+		NSError *bookmarkError = nil;
+		NSURL *fileURL = [openPanel URL];
+		RMSSamplePlugin *pluginInstance = self.representedObject;
+		NSString *newFileToken = [pluginInstance registerFileURL:fileURL error:&bookmarkError];
+		if (newFileToken == nil) {
+			NSLog(@"Failed to bookmark file with error: %@", bookmarkError);
+			return;
+		}
+		
+		if (pluginInstance.fileToken) {
+			[pluginInstance removeFileReferenceForToken:pluginInstance.fileToken];
+		}
+		
+		pluginInstance.fileToken = newFileToken;
+	}];
+}
+
+- (IBAction)testFileAccess:(id)sender
+{
+	RMSSamplePlugin *pluginInstance = self.representedObject;
+	NSLog(@"fileToken: %@", pluginInstance.fileToken);
+	if (pluginInstance.fileToken == nil) {
+		NSBeep();
+		return;
+	}
+	
+	NSError *bookmarkError = nil;
+	NSURL *fileURL = [pluginInstance fileURLForToken:pluginInstance.fileToken error:&bookmarkError];
+	if (fileURL == nil) {
+		NSBeep();
+		NSLog(@"Failed to resolve token with error: %@", bookmarkError);
+		return;
+	}
+	
+	NSError *fileReadError = nil;
+	NSData *fileData = [NSData dataWithContentsOfURL:fileURL options:(NSDataReadingOptions)0 error:&fileReadError];
+	if (fileData == nil) {
+		NSBeep();
+		NSLog(@"Failed to read file with error: %@.", fileReadError);
+		return;
+	}
+	
+	NSLog(@"Read data of %ld bytes.", [fileData length]);
+}
+
 @end
 
 //***************************************************************************

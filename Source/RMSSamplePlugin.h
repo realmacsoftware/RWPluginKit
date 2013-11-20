@@ -28,6 +28,7 @@
 
 @property (nonatomic, copy) NSString *content;
 @property (nonatomic, assign) BOOL emitRawContent;
+@property (nonatomic, copy) NSString *fileToken;
 
 + (NSBundle *)bundle;
 

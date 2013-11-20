@@ -14,6 +14,9 @@
 
 - (id)initWithRepresentedObject:(id)object;
 
+- (IBAction)chooseFile:(id)sender;
+- (IBAction)testFileAccess:(id)sender;
+
 @end
 
 //***************************************************************************
