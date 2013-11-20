@@ -190,6 +190,7 @@
 	[self stopObservingVisibleKeys];
 	
 	self.content = nil;
+	[_fileToken release];
 	
 	[contentViewController release];
 	[optionsViewController release];
