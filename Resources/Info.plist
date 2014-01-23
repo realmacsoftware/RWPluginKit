@@ -16,6 +16,8 @@
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
+	<key>RWAddonAuthor</key>
+	<string>Developer Name</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0b1</string>
 	<key>CFBundleSignature</key>
