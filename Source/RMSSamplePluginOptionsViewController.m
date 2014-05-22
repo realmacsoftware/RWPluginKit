@@ -71,6 +71,12 @@
 		return;
 	}
 	
+	if ([fileURL startAccessingSecurityScopedResource] == NO) {
+		NSBeep();
+		NSLog(@"Failed to enable URL access.");
+		return;
+	}
+	
 	NSError *fileReadError = nil;
 	NSData *fileData = [NSData dataWithContentsOfURL:fileURL options:(NSDataReadingOptions)0 error:&fileReadError];
 	if (fileData == nil) {
@@ -78,6 +84,8 @@
 		NSLog(@"Failed to read file with error: %@.", fileReadError);
 		return;
 	}
+	
+	[fileURL stopAccessingSecurityScopedResource];
 	
 	NSLog(@"Read data of %ld bytes.", [fileData length]);
 }
