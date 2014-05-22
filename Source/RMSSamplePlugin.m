@@ -149,6 +149,7 @@
 	
 	[coder encodeObject:(contentViewController.content) ?: self.content forKey:@"Content String"];
 	[coder encodeObject:[NSNumber numberWithBool:self.emitRawContent] forKey:@"Emit Raw Content"];
+	[coder encodeObject:self.fileToken forKey:@"File Token"];
 }
 
 - (id)initWithCoder:(NSCoder *)coder
@@ -160,6 +161,7 @@
 	
 	_content = [[coder decodeObjectForKey:@"Content String"] copy];
 	_emitRawContent = [[coder decodeObjectForKey:@"Emit Raw Content"] boolValue];
+	_fileToken = [[coder decodeObjectForKey:@"File Token"] copy];
 	
 	[self finishSetup];
 	
