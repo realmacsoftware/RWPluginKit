@@ -55,7 +55,7 @@
 {
 	if (contentViewController == nil)
 	{
-		[self checkForUpdates];
+//		[self checkForUpdates];
 		
 		contentViewController = [[RMSSamplePluginContentViewController alloc] initWithRepresentedObject:self];
 	}
