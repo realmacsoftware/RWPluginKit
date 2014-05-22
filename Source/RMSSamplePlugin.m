@@ -19,8 +19,6 @@
 
 @implementation RMSSamplePlugin
 
-@synthesize content, emitRawContent;
-
 //***************************************************************************
 
 - (void)checkForUpdates
@@ -57,7 +55,7 @@
 {
 	if (contentViewController == nil)
 	{
-		[self checkForUpdates];
+//		[self checkForUpdates];
 		
 		contentViewController = [[RMSSamplePluginContentViewController alloc] initWithRepresentedObject:self];
 	}
@@ -68,13 +66,15 @@
 - (id)contentHTML:(NSDictionary *)params
 {
 	NSString *string = (contentViewController.content) ?: self.content;
+	if (string == nil) {
+		string = @"";
+	}
 	
-	id result;
+	if (self.emitRawContent == NO) {
+		return [NSString stringWithString:string];
+	}
 	
-	if (self.emitRawContent == NO) result = [NSString stringWithString:string];
-	else result = [self contentOnlySubpageWithEntireHTML:[NSString stringWithString:string] name:nil];
-	
-	return result;
+	return [self contentOnlySubpageWithEntireHTML:[NSString stringWithString:string] name:nil];
 }
 
 - (NSString *)sidebarHTML:(NSDictionary *)params
@@ -100,11 +100,9 @@
 
 - (NSArray *)visibleKeys
 {
-	// Add any values here that cause the document to need saving.
-	// This allows us to use KVO to catch any changes and do our broadcasting
-	// instead of writing the setters manually. Properties and KVO FTW!
+	// Add any values here that cause the document to need saving. This allows us to use KVO to catch any changes and do our broadcasting instead of writing the setters manually. Properties and KVO FTW!
 	
-	return [NSArray arrayWithObjects:@"emitRawContent", nil];
+	return @[@"emitRawContent", @"fileToken"];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
@@ -153,6 +151,7 @@
 	
 	[coder encodeObject:(contentViewController.content) ?: self.content forKey:@"Content String"];
 	[coder encodeObject:[NSNumber numberWithBool:self.emitRawContent] forKey:@"Emit Raw Content"];
+	[coder encodeObject:self.fileToken forKey:@"File Token"];
 }
 
 - (id)initWithCoder:(NSCoder *)coder
@@ -162,8 +161,9 @@
 		return nil;
 	}
 	
-	self.content = [coder decodeObjectForKey:@"Content String"];
-	self.emitRawContent = [[coder decodeObjectForKey:@"Emit Raw Content"] boolValue];
+	_content = [[coder decodeObjectForKey:@"Content String"] copy];
+	_emitRawContent = [[coder decodeObjectForKey:@"Emit Raw Content"] boolValue];
+	_fileToken = [[coder decodeObjectForKey:@"File Token"] copy];
 	
 	[self finishSetup];
 	
@@ -177,9 +177,6 @@
 		return nil;
 	}
 	
-	self.content = nil;
-	self.emitRawContent = NO;
-	
 	[self finishSetup];
 	
 	return self;
@@ -189,7 +186,7 @@
 {
 	[self stopObservingVisibleKeys];
 	
-	self.content = nil;
+	[_content release];
 	[_fileToken release];
 	
 	[contentViewController release];

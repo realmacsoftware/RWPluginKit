@@ -19,9 +19,6 @@
 
 @interface RMSSamplePlugin : RWAbstractPlugin /*<RWPluginProtocol>*/
 {
-	NSString *content;
-	BOOL emitRawContent;
-	
 	RMSSamplePluginContentViewController *contentViewController;
 	RMSSamplePluginOptionsViewController *optionsViewController;
 }

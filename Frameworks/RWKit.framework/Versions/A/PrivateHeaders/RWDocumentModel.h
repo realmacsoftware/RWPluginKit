@@ -33,6 +33,10 @@
 @property (copy) NSData* siteLogoData;
 @property (copy) NSString* siteContactText;
 @property (retain) RWTheme* siteTheme;
+@property (copy) NSString *globalCSS;
+@property (copy) NSString *globalJavascript;
+@property (copy) NSString *globalHeader;
+@property (copy) NSString *globalPrefix;
 
 extern NSString *const RWDocumentModelTreeKey;
 @property (readonly, retain) RWPageTree *tree;
@@ -65,6 +69,12 @@ extern NSString *const RWDocumentModelTreeKey;
 @property (assign) BOOL wantsXMLSiteMap;
 @property (assign) BOOL putGoogleAnalyticsInHead;
 @property (assign) BOOL cruftlessLinks;
+@property (assign) BOOL hasChangedGlobalCSS;
+@property (assign) BOOL hasChangedGlobalJavascript;
+@property (assign) BOOL hasChangedGlobalHeader;
+@property (assign) BOOL hasChangedGlobalPrefix;
+@property (assign) BOOL consolidateCSSFiles;
+
 @property (copy) NSArray *directoryIndexEntries;
 
 @end

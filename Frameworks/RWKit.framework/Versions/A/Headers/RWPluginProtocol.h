@@ -38,6 +38,9 @@
 /// Returns a resolution-independent icon of the plugin, which will used in RapidWeaver's page list.  The icon will usually be displayed at a size of 128x128 pixels.
 + (NSImage *)pluginIcon;
 
+/// Returns a very small version of the icon for the plugin, which is used in RapidWeaver's page list. The icon will usually be displayed at a size of 16x16px
++ (NSImage *)smallPluginIcon;
+
 /// Returns a localised description of the plugin, to be displayed to the user.
 /** For example: "The Photo Album plugin enables you to publish your iPhoto
  * galleries and other images from your local hard disk to the Web." */
