@@ -98,11 +98,9 @@
 
 - (NSArray *)visibleKeys
 {
-	// Add any values here that cause the document to need saving.
-	// This allows us to use KVO to catch any changes and do our broadcasting
-	// instead of writing the setters manually. Properties and KVO FTW!
+	// Add any values here that cause the document to need saving. This allows us to use KVO to catch any changes and do our broadcasting instead of writing the setters manually. Properties and KVO FTW!
 	
-	return [NSArray arrayWithObjects:@"emitRawContent", nil];
+	return @[@"emitRawContent", @"fileToken"];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
