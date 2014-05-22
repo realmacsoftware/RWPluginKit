@@ -19,8 +19,6 @@
 
 @implementation RMSSamplePlugin
 
-@synthesize content, emitRawContent;
-
 //***************************************************************************
 
 - (void)checkForUpdates
@@ -162,8 +160,8 @@
 		return nil;
 	}
 	
-	self.content = [coder decodeObjectForKey:@"Content String"];
-	self.emitRawContent = [[coder decodeObjectForKey:@"Emit Raw Content"] boolValue];
+	_content = [[coder decodeObjectForKey:@"Content String"] copy];
+	_emitRawContent = [[coder decodeObjectForKey:@"Emit Raw Content"] boolValue];
 	
 	[self finishSetup];
 	
@@ -177,9 +175,6 @@
 		return nil;
 	}
 	
-	self.content = nil;
-	self.emitRawContent = NO;
-	
 	[self finishSetup];
 	
 	return self;
@@ -189,7 +184,7 @@
 {
 	[self stopObservingVisibleKeys];
 	
-	self.content = nil;
+	[_content release];
 	[_fileToken release];
 	
 	[contentViewController release];
