@@ -31,11 +31,13 @@
 @property (nonatomic, retain) id <RWPlugin> plugin;
 @property (nonatomic, retain) RWPageStyles *styles;
 @property (nonatomic, retain) NSDictionary *manifest;
+@property (nonatomic, copy) NSDate *createdDate;
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *buttonName;
 @property (nonatomic, copy) NSString *themeName;
 @property (nonatomic, copy) NSString *mostRecentlySelectedStyleName;
+@property (nonatomic, readonly) NSURL *supportURL;
 
 @property (nonatomic, assign) NSInteger savedIndex;
 

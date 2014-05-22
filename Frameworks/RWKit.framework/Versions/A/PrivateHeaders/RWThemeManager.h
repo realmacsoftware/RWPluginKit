@@ -13,6 +13,9 @@
 @class RMFolderWatcher;
 @class RWTheme;
 
+extern NSString *const RWThemeManagerWillRemoveThemeNotification;
+extern NSString *const RWThemeManagerDidRemoveThemeNotification;
+
 @interface RWThemeManager : NSObject
 
 + (instancetype)sharedInstance;
@@ -22,11 +25,14 @@
 
 // return the version of the object at path
 + (NSString *)getObjectVersion:(NSString *)path;
++ (NSDictionary *)getObjectPlist:(NSString *)path;
 
 // return the version of the object at the given path
 + (NSString *)versionForPath:(NSString*)name;
 
 + (BOOL)isApplicationSupportTheme:(RWTheme *)theme;
++ (BOOL)askUserDeleteTheme:(RWTheme *)theme;
++ (BOOL)removeTheme:(RWTheme *)theme;
 
 + (NSArray *)pluginExtensions;
 
@@ -55,7 +61,6 @@
 // call this when you've completed the registration scan
 - (void)registrationComplete;
 
-- (NSDictionary *)themePropertiesAtPath:(NSString *)path;
 - (NSDictionary *)themePropertiesAtPath:(NSString *)path error:(NSError **)error;
 
 - (NSString *)themeNameAtPath:(NSString *)path;

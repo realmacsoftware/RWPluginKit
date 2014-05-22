@@ -4,7 +4,7 @@
 
 @interface RWTheme : NSObject
 
-- (id)initWithPath:(NSString *)path;
++ (instancetype)themeWithPath:(NSString *)path;
 
 @property (readonly, retain) NSArray *colourTagFiles;
 @property (readonly, retain) NSArray *files;
@@ -21,6 +21,7 @@
 
 @property (readonly) NSString *path;
 @property (readonly) NSString *version;
+@property (readonly) NSURL *supportURL;
 
 // RWTextToolbar plist values.
 @property (readonly) BOOL toolbarAlwaysDisplayFullNavigation;

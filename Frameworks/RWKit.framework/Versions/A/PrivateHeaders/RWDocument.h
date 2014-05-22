@@ -126,7 +126,32 @@ extern NSString *const RWDocumentSiteBaseURLKey;
 
 @property (copy) NSString *siteDefaultExportDestination;
 
+@property (copy) NSString *globalCSS;
+@property (copy) NSAttributedString *attributedGlobalCSS;
+@property (readonly) BOOL useGlobalCSS;
+@property (assign) BOOL hasChangedGlobalCSS;
+
+@property (assign) BOOL consolidateCSSFiles;
+
+@property (copy) NSString *globalJavascript;
+@property (copy) NSAttributedString *attributedGlobalJavascript;
+@property (readonly) BOOL useGlobalJavascript;
+@property (assign) BOOL hasChangedGlobalJavascript;
+
+@property (copy) NSString *globalHeader;
+@property (copy) NSAttributedString *attributedGlobalHeader;
+@property (readonly) BOOL useGlobalHeader;
+@property (assign) BOOL hasChangedGlobalHeader;
+
+@property (copy) NSString *globalPrefix;
+@property (copy) NSAttributedString *attributedGlobalPrefix;
+@property (readonly) BOOL useGlobalPrefix;
+@property (assign) BOOL hasChangedGlobalPrefix;
+
 - (BOOL)com_rwrp_checkAndWarnIfTIFF:(NSData *)data extendedWarning:(BOOL)warning;
+
+- (BOOL)hasChangedGlobalFiles;
+- (void)resetGlobalFilesChangedFlags;
 
 @property (nonatomic, retain) NSMutableArray *fileReferences;
 - (NSString *)registerFileURL:(NSURL *)fileURL withIdentifier:(NSString *)clientIdentifier error:(NSError **)error;
