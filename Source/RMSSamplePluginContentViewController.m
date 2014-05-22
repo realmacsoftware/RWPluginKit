@@ -36,11 +36,11 @@
 	RMSSamplePlugin *p = self.representedObject;
 	NSString *string = p.content;
 	
-	if (string)
-	{
-		[htmlView setString:string lazily:YES];
-		[htmlView colorize];
+	if (string) {
+		[htmlView setString:string];
 	}
+	
+	[htmlView setHasBorder:NO];
 }
 
 - (id)initWithRepresentedObject:(id)object
