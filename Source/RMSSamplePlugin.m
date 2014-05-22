@@ -66,13 +66,15 @@
 - (id)contentHTML:(NSDictionary *)params
 {
 	NSString *string = (contentViewController.content) ?: self.content;
+	if (string == nil) {
+		string = @"";
+	}
 	
-	id result;
+	if (self.emitRawContent == NO) {
+		return [NSString stringWithString:string];
+	}
 	
-	if (self.emitRawContent == NO) result = [NSString stringWithString:string];
-	else result = [self contentOnlySubpageWithEntireHTML:[NSString stringWithString:string] name:nil];
-	
-	return result;
+	return [self contentOnlySubpageWithEntireHTML:[NSString stringWithString:string] name:nil];
 }
 
 - (NSString *)sidebarHTML:(NSDictionary *)params
