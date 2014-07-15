@@ -19,14 +19,7 @@
 
 @interface RWLinkPanel : NSWindowController <NSMenuDelegate>
 {
-	id _plugin;
 	RWLink *_currentLink;
-	id<RWLinkPanelDelegate> _delegate;
-	
-	BOOL _creatingLink;
-	
-	NSDictionary *savedAttributes;
-	NSWindow *parent;
 	
 	NSObjectController *bindings;
 	
@@ -43,7 +36,7 @@
 
 - (void)presentPanelWithLink:(RWLink *)link parent:(NSWindow *)parent;
 
-- (IBAction)addAttribute:(id)aSender;
+- (IBAction)addAttribute:(id)sender;
 - (IBAction)onToggleCustomLinkAttributes:(id)sender;
 
 @end

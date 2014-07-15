@@ -28,5 +28,7 @@
 	<string>RMSSamplePlugin</string>
 	<key>RWPluginAPIVersion</key>
 	<integer>4</integer>
+	<key>RWAddonAuthor</key>
+	<string>Supermac Software</string>
 </dict>
 </plist>

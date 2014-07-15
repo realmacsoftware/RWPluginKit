@@ -10,20 +10,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "RWCodeView.h"
 
-@class RWLineCountView;
+@interface RWHTMLView : RWCodeView
 
-@interface RWHTMLView : NSTextView <NSTextStorageDelegate>
-{
-	RWLineCountView *_lineView;
-	BOOL _wrapHTML;
-}
-
-- (void)setString:(NSString*)string lazily:(BOOL)settingLazily;
-
-- (void)setShowLineNumbers:(BOOL)flag;
-- (NSMutableAttributedString *)colorize:(NSString *)source;
-- (void)colorize;
-
-@property (retain) RWLineCountView* _lineView;
 @end

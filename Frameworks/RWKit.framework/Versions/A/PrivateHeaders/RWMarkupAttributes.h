@@ -11,11 +11,8 @@
 
 #import <Cocoa/Cocoa.h>
 
+@interface RWMarkupAttributes : NSObject
 
-@interface RWMarkupAttributes : NSObject {
-
-}
-
-+ (NSMenu*)setupMarkupMenu;
++ (NSMenu *)setupMarkupMenu;
 
 @end
