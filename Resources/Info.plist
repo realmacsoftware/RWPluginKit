@@ -29,6 +29,10 @@
 	<key>RWPluginAPIVersion</key>
 	<integer>4</integer>
 	<key>RWAddonAuthor</key>
-	<string>Supermac Software</string>
+	<string>Sample Plugin Developer</string>
+	<key>RWPluginIconSmall</key>
+	<string>plugin_icon</string>
+	<key>RWPluginIconSmallSelected</key>
+	<string>plugin_icon_active</string>
 </dict>
 </plist>
