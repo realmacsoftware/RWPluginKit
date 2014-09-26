@@ -94,6 +94,16 @@
 	return @"htm";
 }
 
+- (void)pluginWillAutoSave {
+	
+//	NSLog(@"Called -pluginWillAutoSave. Is main thread: %d", [NSThread isMainThread]);
+}
+
+- (void)pluginDidAutoSave {
+	
+//	NSLog(@"Called -pluginDidAutoSave. Is main thread: %d", [NSThread isMainThread]);
+}
+
 //***************************************************************************
 
 #pragma mark KVO Broadcasting
