@@ -253,6 +253,12 @@
 	return NSLocalizedStringFromTableInBundle(@"PluginDescription", nil, [RMSSamplePlugin bundle], @"Localizable");
 }
 
++ (BOOL) canCreateNewPage:(NSError **)errorRef
+{
+	// Return NO and populate the errorRef's localizedDescription if you want to stop a user from creating a new page.
+	return YES;
+}
+
 @end
 
 //***************************************************************************
