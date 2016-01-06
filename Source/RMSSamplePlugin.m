@@ -259,6 +259,12 @@
 	return YES;
 }
 
++ (void) willMigrateAddonLocation
+{
+	// If you'd like to be notified if the user migrates their addon folder to a new location,
+	// implement this method and do any necessary work before returning
+}
+
 @end
 
 //***************************************************************************
