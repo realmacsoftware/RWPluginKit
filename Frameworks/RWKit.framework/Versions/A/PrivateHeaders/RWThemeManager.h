@@ -15,6 +15,7 @@
 
 extern NSString *const RWThemeManagerWillRemoveThemeNotification;
 extern NSString *const RWThemeManagerDidRemoveThemeNotification;
+extern NSString *const RWThemeManagerCustomStylesDidChangeNotification;
 
 @interface RWThemeManager : NSObject
 
@@ -29,6 +30,7 @@ extern NSString *const RWThemeManagerDidRemoveThemeNotification;
 
 // return the version of the object at the given path
 + (NSString *)versionForPath:(NSString*)name;
++ (NSString *)versionStringForPath:(NSString *)path;
 
 + (BOOL)isApplicationSupportTheme:(RWTheme *)theme;
 + (BOOL)askUserDeleteTheme:(RWTheme *)theme;
@@ -72,6 +74,7 @@ extern NSString *const RWThemeManagerDidRemoveThemeNotification;
 
 extern NSString *const RWThemeManagerThemesKey;
 @property (readonly, copy, nonatomic) NSArray *themes;
+@property (readonly, copy, nonatomic) NSArray *responsiveThemes;
 
 // return the theme matching the given name
 - (RWTheme *)themeForName:(NSString*)name;

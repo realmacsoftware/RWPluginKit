@@ -42,4 +42,6 @@ extern NSString *const RWSiteResourceNameKey;
 @property (nonatomic, retain) NSDate *timeStamp;
 @property (nonatomic, assign) BOOL changed;
 
+@property (nonatomic, copy) NSString *fullPath;
+
 @end

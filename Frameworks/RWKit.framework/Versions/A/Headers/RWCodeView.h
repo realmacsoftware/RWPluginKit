@@ -10,17 +10,23 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "RWCodeHighlightingController.h"
 
-@interface RWCodeView : NSView
+extern NSString * const RWCodeHighlightingLanguageHTML;
+extern NSString * const RWCodeHighlightingLanguageCSS;
+extern NSString * const RWCodeHighlightingLanguagePHP;
+extern NSString * const RWCodeHighlightingLanguageJavascript;
+extern NSString * const RWCodeHighlightingLanguageMarkdown;
+
+@interface RWCodeView : NSView <NSTextDelegate>
 
 @property (nonatomic, retain) NSString *string;
-@property (nonatomic, readonly) IBOutlet NSTextView *textView;
-@property (nonatomic, assign) IBOutlet id delegate;
+@property (nonatomic, assign) IBOutlet id <NSTextDelegate> delegate;
 
-- (void)setShowLineNumbers:(BOOL)flag;
-- (void)setLanguage:(NSString *)language;
-- (void)setHasBorder:(BOOL)hasBorder;
-- (void)setEditable:(BOOL)editable;
+@property (nonatomic) BOOL showLineNumbers;
+@property (nonatomic, copy) NSString *language;
+@property (nonatomic) BOOL hasBorder;
+@property (nonatomic) BOOL editable;
+@property (nonatomic) BOOL autocompleteEnabled;
+@property (nonatomic) NSInteger fontSize;
 
 @end

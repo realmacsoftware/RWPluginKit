@@ -8,7 +8,7 @@
 
 #import <RWKit/RWKit.h>
 
-@interface RWMarkdownView : RWHTMLView
+@interface RWMarkdownView : RWCodeView
 
 - (NSString *) htmlString;
 

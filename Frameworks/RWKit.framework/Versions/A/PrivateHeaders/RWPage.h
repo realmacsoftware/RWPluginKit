@@ -41,6 +41,10 @@
 
 @property (nonatomic, assign) NSInteger savedIndex;
 
+@property (nonatomic, assign) BOOL useBanner;
+@property (nonatomic, copy) NSData *bannerData;
+@property (nonatomic, copy) NSString *bannerFilename;
+
 - (NSString *)path;
 - (NSString *)type;
 

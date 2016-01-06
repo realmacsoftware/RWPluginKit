@@ -32,6 +32,7 @@ typedef enum {
 	RWExportModeExport,
 	RWExportModePublish,
 	RWExportModePreview,
+	RWExportModeMasterStyle,
 	RWExportModeViewSourceCode,
 	RWExportModeConvertingForWebViewDOM,
 	RWExportModeQuickLook

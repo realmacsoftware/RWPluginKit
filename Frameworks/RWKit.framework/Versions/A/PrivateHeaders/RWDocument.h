@@ -26,7 +26,6 @@
 
 extern NSString *const RWDocumentWillRemoveResourceNotification;
 extern NSString *const RWDocumentDidRemoveResourceNotification;
-extern NSString *const RWDocumentDidUpdateStatsConfigNotification;
 
 /// RWDocument is the shiny new replacement for the old MyDocument class.
 /** If you are defining any new methods that should belong to the document class, define them here instead of in MyDocument.  Over time, I'd like to eventually refactor all the methods in MyDocument and gradually move them here once it's decided that those methods are clean enough to make it through. */
@@ -54,8 +53,8 @@ extern NSString *const RWDocumentAllPagesKey;
 - (NSString *)pathFromPage:(id)pageID to:(id)pageID2;
 - (NSString *)pathFromPage:(id)params cruftlessLinks:(NSNumber *)cruftlessLinksNumber;
 
-- (void)addResources:(NSArray *)inResourceArray toNode:(RWSourceListNode *)inFolderNode atIndex:(NSInteger)inIndex;
-- (void)removeResourceNode:(RWSourceListNode *)inNode;
+- (void)addResources:(NSArray *)resourceArray toNode:(RWSourceListNode *)folderNode atIndex:(NSInteger)index;
+- (void)removeResourceNode:(RWSourceListNode *)node;
 
 @property (assign, nonatomic) BOOL wantsXMLSiteMap;
 
@@ -72,7 +71,7 @@ extern NSString *const RWDocumentAllPagesKey;
 @property (nonatomic, retain) RWResourceDatabase *resourceDB;
 
 @property (nonatomic, assign) BOOL publishSettingsConfigured;
-@property (nonatomic, retain) NSDictionary *publishingSettings;
+@property (nonatomic, retain) NSMutableArray *publishingDestinations;
 
 @property (assign) BOOL useSiteLogo;
 @property (copy) NSData *siteLogoData;
@@ -82,13 +81,10 @@ extern NSString *const RWDocumentAllPagesKey;
 
 @property (copy) NSString *siteLogoFilename;
 
-@property (copy) NSString *siteGoogleAnalyticsCode;
-@property (assign) BOOL putGoogleAnalyticsInHead;
-
-@property (copy) NSString *siteLiveStatsCode;
-
 @property (copy) NSString *siteTitle;
 @property (assign) BOOL useSiteTitle;
+
+@property (copy) NSString *siteLogoAltText;
 
 @property (copy) NSString *siteCopyright;
 @property (assign) BOOL useSiteCopyright;
@@ -121,10 +117,20 @@ extern NSString *const RWDocumentSiteBaseURLKey;
 @property (assign) BOOL useFavicon;
 @property (copy) NSData *faviconData;
 
+@property (assign) BOOL useBanner;
+@property (copy) NSData *bannerData;
+@property (copy) NSString *bannerFilename;
+
+@property (copy) NSString *siteBannerAltText;
+
 @property (nonatomic, retain) RWTheme *theme;
-@property (nonatomic, retain) RMFolderWatcher *currentThemeFileWatcher;
+- (void)startWatchingTheme:(RWTheme *)theme;
+- (void)stopCurrentThemeWatcher;
+
+@property (copy) NSString *mostRecentlySelectedThemeStyle;
 
 @property (copy) NSString *siteDefaultExportDestination;
+@property (readonly) NSData *siteDefaultExportDestinationBookmark;
 
 @property (copy) NSString *globalCSS;
 @property (copy) NSAttributedString *attributedGlobalCSS;
@@ -139,14 +145,25 @@ extern NSString *const RWDocumentSiteBaseURLKey;
 @property (assign) BOOL hasChangedGlobalJavascript;
 
 @property (copy) NSString *globalHeader;
+@property (copy) NSString *globalBody;
 @property (copy) NSAttributedString *attributedGlobalHeader;
 @property (readonly) BOOL useGlobalHeader;
 @property (assign) BOOL hasChangedGlobalHeader;
+@property (assign) BOOL hasChangedGlobalBody;
 
 @property (copy) NSString *globalPrefix;
 @property (copy) NSAttributedString *attributedGlobalPrefix;
 @property (readonly) BOOL useGlobalPrefix;
 @property (assign) BOOL hasChangedGlobalPrefix;
+
+@property (assign) NSInteger userAgentResizingPreset;
+
+@property (copy) RMSandwich *quickLookSandwich;
+@property (copy) NSImage *quickLookSandwichThumbnail;
+
+@property (copy) NSString *projectNotes;
+
+@property (copy) NSString *uniqueBackupName;
 
 - (BOOL)com_rwrp_checkAndWarnIfTIFF:(NSData *)data extendedWarning:(BOOL)warning;
 

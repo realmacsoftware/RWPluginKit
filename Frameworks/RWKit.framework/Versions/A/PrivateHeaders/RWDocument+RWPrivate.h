@@ -9,6 +9,7 @@
 #import "RWDocument.h"
 
 @class RWDocumentModel;
+@class RWPage;
 
 @interface RWDocument ()
 
@@ -23,6 +24,8 @@
 	Should be called before reading from a URL. Safely resets properties which are filled from disk back to their original state.
  */
 - (void)_initialiseEmptyModel;
+
+- (void)_removeFileReferencesForPage:(RWPage *)page;
 
 @property (readonly, nonatomic, strong) RWDocumentModel *model;
 

@@ -12,6 +12,7 @@
 extern NSString *const kRWExporterExportMode;
 extern NSString *const kRWExporterPublishMode;
 extern NSString *const kRWExporterPreviewMode;
+extern NSString *const kRWExporterMasterStylePreviewMode;
 extern NSString *const kRWExporterViewSourceCodeMode;
 extern NSString *const kRWExporterConvertingForWebViewDOM;
 
@@ -20,6 +21,10 @@ extern NSString *const kRWExporterConvertingForWebViewDOM;
 	
 	You MUST NOT wait on the main thread inside their handlers, doing so WILL deadlock RapidWeaver
  */
+
+extern NSString *const kRWExporterSiteBackupDidStart;
+extern NSString *const kRWExporterSiteBackupDidEnd;
+extern NSString *const kRWExporterSiteBackupError;
 
 extern NSString *const kRWExporterSiteExportDidStart;
 extern NSString *const kRWExporterSiteExportDidEnd;
@@ -55,6 +60,8 @@ extern NSString *const kRWExporterPageExportError;
 
 @property (nonatomic, copy) NSString *path;
 
+@property (nonatomic, retain) NSMutableArray *exportedResourceURLs;
+
 /*
 	Start
  */
@@ -69,6 +76,8 @@ extern NSString *const kRWExporterPageExportError;
 
 @property (nonatomic, readonly, assign, getter=isCancelled) BOOL cancelled;
 - (void)cancel;
+
+- (BOOL)exportSiteBackup;
 
 /*
 	Output

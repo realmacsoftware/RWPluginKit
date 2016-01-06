@@ -2,6 +2,9 @@
 
 #import <Cocoa/Cocoa.h>
 
+extern NSString *const RWThemeInstallerDidInstallThemeNotification;
+extern NSString *const RWThemeInstallerDidUpdateThemeNotification;
+
 @interface RWThemeInstaller : NSObject
 
 + (void)installAllObjects;
@@ -12,6 +15,7 @@
 // They do not create or check for it's presence.
 
 + (NSURL *)appSupportDirectoryURL;
++ (NSURL *)addonsUninstallFileURL;
 + (void)chooseAppSupportDirectory;
 + (void)clearAppSupportDirectory;
 + (BOOL)hasUserSpecifiedAppSupportDirectory;
