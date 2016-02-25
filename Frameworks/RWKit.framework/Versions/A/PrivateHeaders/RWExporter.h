@@ -12,6 +12,7 @@
 extern NSString *const kRWExporterExportMode;
 extern NSString *const kRWExporterPublishMode;
 extern NSString *const kRWExporterPreviewMode;
+extern NSString *const kRWExporterQuickLookMode;
 extern NSString *const kRWExporterMasterStylePreviewMode;
 extern NSString *const kRWExporterViewSourceCodeMode;
 extern NSString *const kRWExporterConvertingForWebViewDOM;

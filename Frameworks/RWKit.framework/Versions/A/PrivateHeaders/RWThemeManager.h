@@ -75,6 +75,7 @@ extern NSString *const RWThemeManagerCustomStylesDidChangeNotification;
 extern NSString *const RWThemeManagerThemesKey;
 @property (readonly, copy, nonatomic) NSArray *themes;
 @property (readonly, copy, nonatomic) NSArray *responsiveThemes;
+@property (readonly, copy, nonatomic) NSArray *nonClassicThemes;
 
 // return the theme matching the given name
 - (RWTheme *)themeForName:(NSString*)name;

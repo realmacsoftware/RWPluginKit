@@ -14,6 +14,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class RWBookmark;
+
 @interface RWSiteResource : NSObject
 
 @property (nonatomic, copy) NSString *fileToken;
@@ -40,8 +42,11 @@ extern NSString *const RWSiteResourceNameKey;
 @property (nonatomic, copy) NSURL *publishedURL;
 @property (nonatomic, retain) NSDate *publishedDate;
 @property (nonatomic, retain) NSDate *timeStamp;
-@property (nonatomic, assign) BOOL changed;
 
 @property (nonatomic, copy) NSString *fullPath;
+
+- (void)setChanged:(BOOL)changed;
+- (void)setChanged:(BOOL)changed forBookmark:(RWBookmark *)bookmark;
+- (BOOL)changedStatusForBookmark:(RWBookmark *)bookmark;
 
 @end

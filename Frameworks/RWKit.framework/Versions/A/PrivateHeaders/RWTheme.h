@@ -51,6 +51,8 @@
 @property (readonly) BOOL supportsContentOnlySubPages;
 @property (readonly) BOOL supportsBannerImages;
 
+@property (readonly) BOOL themeIsClassic;
+
 // RMStoreKit-style bundle identifier, nil for any incompatible themes.
 @property (readonly) NSString *bundleIdentifier;
 

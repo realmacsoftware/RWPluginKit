@@ -27,7 +27,7 @@ extern NSString *const kRWDoubleClickedMediaNotification;
 - (NSObject <RWPage> *)page;
 - (NSString *)uniqueID;
 
-+ (BOOL)canCreateNewPage:(NSError **)errorRef;
++ (BOOL)canCreateNewPage:(NSError **)errorRef currentPages:(NSArray *)currentPages;
 + (void)willMigrateAddonLocation;
 
 + (NSArray *)extraFilesNeededInExportFolder:(NSDictionary *)params;

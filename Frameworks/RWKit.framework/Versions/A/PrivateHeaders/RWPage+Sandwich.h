@@ -18,7 +18,7 @@
 
 @interface RWPage (Sandwich) <RMSandwichMaking>
 
-+ (id)createWithSandwich:(RMSandwich *)sandwich pageIndex:(NSUInteger)pageIndex document:(MyDocument *)document missingPages:(NSMutableDictionary *)missingPages;
++ (id)createWithSandwich:(RMSandwich *)sandwich pageIndex:(NSUInteger)pageIndex document:(MyDocument *)document missingPages:(NSMutableDictionary *)missingPages corruptPages:(NSMutableDictionary *)corruptPages;
 
 - (RMSandwich *)sandwich;
 

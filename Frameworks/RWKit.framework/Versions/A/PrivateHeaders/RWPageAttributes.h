@@ -10,6 +10,7 @@
 
 @class RWPage;
 @class RWDocument;
+@class RWBookmark;
 
 @interface RWPageAttributes : NSObject {
 	NSMutableDictionary *_attributes;
@@ -97,8 +98,9 @@ typedef NS_ENUM(NSInteger, RWPageAttributesSidebarMode) {
 - (NSUInteger)expiryUnitIndex;
 - (void)setExpiryUnitIndex:(NSUInteger)index;
 
-- (BOOL)changed;
 - (void)setChanged:(BOOL)changed;
+- (void)setChanged:(BOOL)changed forBookmark:(RWBookmark *)bookmark;
+- (BOOL)changedStatusForBookmark:(RWBookmark *)bookmark;
 
 - (NSDate*)lastExported;
 - (void)setLastExported:(NSDate*)date;
@@ -194,7 +196,7 @@ extern NSString* kRWPageChangedDidChangeNotification;
 extern NSString* kRWPageIDKey;
 
 // Attributes
-extern NSString* kRWPageChangedKey;
+extern NSString* kRWPageChangedStatusesKey;
 extern NSString* kRWPageColourVariationsKey;
 extern NSString* kRWPageCreditKey;
 extern NSString* kRWPageEnabledKey;

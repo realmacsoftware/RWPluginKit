@@ -76,7 +76,7 @@ enum
 
 @property (retain) NSMutableDictionary *attributes;
 @property (retain) NSData *cachedImage;
-@property (retain, nonatomic) NSImage *image;
+@property (retain, atomic) NSImage *image;
 
 - (NSMutableDictionary *)mediaAttributes;
 - (void)setMediaType:(NSInteger)type;

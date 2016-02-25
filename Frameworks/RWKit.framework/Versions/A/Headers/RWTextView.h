@@ -13,6 +13,8 @@
 
 #import "RWLinkPanel.h"
 
+@class RWAbstractPlugin;
+
 @interface RWTextView : NSTextView <RWLinkPanelDelegate> {
 	NSColor* _ignoreBackground;
 	NSColor* _htmlBackground;
@@ -31,6 +33,8 @@
 - (IBAction)orderFrontListInspector:(id)sender;
 
 - (IBAction)removeSmartQuotesFromSelection:(id)sender;
+
+- (void)showEditorForAttachment:(id)attachment plugin:(RWAbstractPlugin *)plugin;
 
 @property (assign) id pluginDelegate;
 

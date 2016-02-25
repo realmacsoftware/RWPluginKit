@@ -8,7 +8,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bOak3VqDg0jQ+6rtWXnEFs5rWAA=
+			4iHyVZf/+QT5b0gU+LryvZLZ8RA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -26,7 +26,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PsYexoG4zo4MpJtGdsMpqqmXpno=
+			TU5pkAqDzGLCcc4denBUAg4Lgts=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -44,7 +44,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NU9GsaAgHpFOkoDep/i+pmyTOGE=
+			VT1p5UDBYnHXc9jLmfxrlSankJg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -62,7 +62,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oDw8cLcueIhD8oXXyw0AC84gvoo=
+			CFxHFsbFjQEEUvZw7BhiXqAmTlY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -96,7 +96,7 @@
 		</dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		Sap+PZPvnNZrbXX0l5mtLOMD/iA=
+		vatOCYPTVRykP38HrMix9kXfFog=
 		</data>
 		<key>Resources/LICENSE</key>
 		<data>
@@ -206,1309 +206,1353 @@
 		<data>
 		+zxR6TFJp8t1Q0DDqd2GS+h3OpQ=
 		</data>
+		<key>Resources/abap.js</key>
+		<data>
+		3XoNS4BbS67S1k6rpZMJoysRU4k=
+		</data>
+		<key>Resources/abc.js</key>
+		<data>
+		eN/t58aWYEUcodn65prISK0Xl+g=
+		</data>
 		<key>Resources/ace.js</key>
 		<data>
-		NKC4cL5ksW1EhJvNAP7Y32DYr6g=
+		rmVFpslhBQb0QUYp37CZzQFhywE=
 		</data>
-		<key>Resources/disable-drag-drop.js</key>
+		<key>Resources/actionscript.js</key>
 		<data>
-		Woy/eD/4s8a3xh7LcFPHAdMls0o=
+		LM09e4sM8vab0bNebg9Pb4BchWo=
+		</data>
+		<key>Resources/ada.js</key>
+		<data>
+		l3m3IsC/lzbzaHZi+o7PuQ1cy5U=
+		</data>
+		<key>Resources/apache_conf.js</key>
+		<data>
+		T156jJC1tr07e6c6JFPF9Pucw9M=
+		</data>
+		<key>Resources/applescript.js</key>
+		<data>
+		ZuKhpwMIvZh+OHpeNps08CG8rtw=
+		</data>
+		<key>Resources/asciidoc.js</key>
+		<data>
+		C4Tk6k9d85Fs6RZufSIn1t9tyXM=
+		</data>
+		<key>Resources/assembly_x86.js</key>
+		<data>
+		FcmLAGPEKfOQWB0pD+K+xFzTIRk=
+		</data>
+		<key>Resources/autohotkey.js</key>
+		<data>
+		O2YdBwfScY7LwChrVvuDITppQqc=
+		</data>
+		<key>Resources/batchfile.js</key>
+		<data>
+		fDlDHb36L/OKdvt8sij1bxl5Gbo=
+		</data>
+		<key>Resources/c9search.js</key>
+		<data>
+		5bsCeXb1kmnC7J0ELV9AyXCfD1M=
+		</data>
+		<key>Resources/c_cpp.js</key>
+		<data>
+		rRa2R++Sv+0wEJ5kroSKS076GZg=
+		</data>
+		<key>Resources/cirru.js</key>
+		<data>
+		jEGRjyO4e6U6hApzjd9aXtq1iDc=
+		</data>
+		<key>Resources/clojure.js</key>
+		<data>
+		YSdVMaDl9bYPLMcKbR22pYDiOFU=
+		</data>
+		<key>Resources/cobol.js</key>
+		<data>
+		1rHFueShXD7VsBmr2e0Rfj8yR6k=
+		</data>
+		<key>Resources/coffee.js</key>
+		<data>
+		wAD6aXVlnatsCsBcGeUbOQYE6ts=
+		</data>
+		<key>Resources/coldfusion.js</key>
+		<data>
+		De1Gzhd/QjZKG6MB6s8PRbUSMa0=
+		</data>
+		<key>Resources/csharp.js</key>
+		<data>
+		K72g2o3Xtgxqsjk73BLrOA+Va/o=
+		</data>
+		<key>Resources/css.js</key>
+		<data>
+		joUSNkiUyx/qpnFD47dTwQaRgE8=
+		</data>
+		<key>Resources/curly.js</key>
+		<data>
+		L8bPUyvufXDKS5aMzkKWq59R4AM=
+		</data>
+		<key>Resources/d.js</key>
+		<data>
+		z2z0/1xrZPjgwaCIRke2SJbNj/s=
+		</data>
+		<key>Resources/dart.js</key>
+		<data>
+		d351JP6oCNlz0CLGSASjOKFgTGk=
+		</data>
+		<key>Resources/diff.js</key>
+		<data>
+		PpVwEwi/ziZRg8NRlJcgmNCF28U=
+		</data>
+		<key>Resources/django.js</key>
+		<data>
+		eCZJtadBw0ZHke6gFuWyHWwDLiI=
+		</data>
+		<key>Resources/dockerfile.js</key>
+		<data>
+		dcHUskAgAaXvqPut8+nXBKroNY0=
+		</data>
+		<key>Resources/dot.js</key>
+		<data>
+		JDTLvzUqcL9HW6z3aRwDGus31b8=
+		</data>
+		<key>Resources/editor-oldwebview.html</key>
+		<data>
+		cq5K3xZGZwy1Vibq4hmRkHxopY0=
 		</data>
 		<key>Resources/editor.html</key>
 		<data>
 		zXVt8jnYUNlfdT2TnOWg60U7SAc=
 		</data>
+		<key>Resources/eiffel.js</key>
+		<data>
+		udi++5+uOTypQb0Qbb/hH/vDcxI=
+		</data>
+		<key>Resources/ejs.js</key>
+		<data>
+		u/bDXFJpVggYBdrr7w5VY2kKLOI=
+		</data>
+		<key>Resources/elixir.js</key>
+		<data>
+		h1vb65J+4yzvo6KrKoLFaQAdJEw=
+		</data>
+		<key>Resources/elm.js</key>
+		<data>
+		ddpz7IzqTT2/eLOFK+by7xkKe+M=
+		</data>
+		<key>Resources/erlang.js</key>
+		<data>
+		LMg7uIrPm+qUUVkUyIwSLp+Aesw=
+		</data>
 		<key>Resources/ext-beautify.js</key>
 		<data>
-		HJgFtVnS0K6gSId8s463wnEFwB8=
+		CrFQQxjwi+eFhfkOCp4r5woxbTM=
 		</data>
 		<key>Resources/ext-chromevox.js</key>
 		<data>
-		jOZBFD9qPBWk9BbVG+jM0l2lTck=
+		X6YUyYSzs7VudaH3HiOA+wMWFq4=
 		</data>
 		<key>Resources/ext-elastic_tabstops_lite.js</key>
 		<data>
-		gvZkQ65p8yMquczukNBkWh8TPuY=
+		DiUeQ6w8Uf+rdvgqPZ6RmhN8Jzk=
 		</data>
 		<key>Resources/ext-emmet.js</key>
 		<data>
-		6c4N99DXF3uOIZpBadsXzQ9Vs7s=
+		kuX2TfcrR8T0LR/xlWplhgmBzIU=
 		</data>
 		<key>Resources/ext-error_marker.js</key>
 		<data>
-		a3oiZlfkoyDVEa2fuVcmNsA5Zgs=
+		q5cLdckz8qC3cLrsHWNPPvESZOk=
 		</data>
 		<key>Resources/ext-keybinding_menu.js</key>
 		<data>
-		1sSQ0gpI7D4l3Dq+LR8EEy7jVnM=
+		/3t5B7oz7ItMPYA4y2PgIxn1amo=
 		</data>
 		<key>Resources/ext-language_tools.js</key>
 		<data>
-		AR9uNvVh8VxaEMh/64J4ytmTMZE=
+		clttrb+HwTfZmaykEebzDuQnRMU=
 		</data>
 		<key>Resources/ext-linking.js</key>
 		<data>
-		6uUwC7DbclAT5GJPguD1An3d2Bc=
+		EQvQTUuTa2KcYWY/rew+euFwaYg=
 		</data>
 		<key>Resources/ext-modelist.js</key>
 		<data>
-		eNV9eyoCaYg1xXuXWVefbVXQfJ8=
+		2BSVvxYx6g3DXzwBiDtHe+h96cI=
 		</data>
 		<key>Resources/ext-old_ie.js</key>
 		<data>
-		9ZTusI2XAL5ncJ97GkZziGoOSQI=
+		2lZrsSCQboNWBcPd0W2ni2264Hk=
 		</data>
 		<key>Resources/ext-searchbox.js</key>
 		<data>
-		XOepOLev+p/NQj2ULVY/gbhnERk=
+		PA9CSEKTGyTblRlPns3wYkQHvOA=
+		</data>
+		<key>Resources/ext-settings_menu.js</key>
+		<data>
+		znQM8sdf+bdWISmz9/hL/CNIsn4=
 		</data>
 		<key>Resources/ext-spellcheck.js</key>
 		<data>
-		5t6hAY98KtimVaZFVpHfglFDZwE=
+		oW+D0rA0h6URBw5S4unkspMYzg0=
 		</data>
 		<key>Resources/ext-split.js</key>
 		<data>
-		cqbAjEK5nGiLPKrK659Xc6gzvAc=
+		z91K59lsmrWhtZ/nZWJ3MpTFn4k=
 		</data>
 		<key>Resources/ext-static_highlight.js</key>
 		<data>
-		5Ei2bnOT2QtCUIrr+xkf/84kQ0c=
+		g3DoRkxkh1KCIumyey6taooTqfI=
 		</data>
 		<key>Resources/ext-statusbar.js</key>
 		<data>
-		jloxya4oxv1U8x47Z+gJYerYul0=
+		o1u7LZRNj/AaO5peJaA9B7faVQo=
 		</data>
 		<key>Resources/ext-textarea.js</key>
 		<data>
-		+/wAD3h/HxYHwQ6TSLwR9qjGe94=
+		39E6sDuVlBR3Vh8yziJGSjLS1F4=
 		</data>
 		<key>Resources/ext-themelist.js</key>
 		<data>
-		R1Dez4A17Qi3xsuK9OXEJ0aCN4U=
+		zw8h8L293fLAf5KMpho/J6yZrWc=
 		</data>
 		<key>Resources/ext-whitespace.js</key>
 		<data>
-		tFe55EfZybBQYxSWomTeN+r+opo=
+		oXBu7tslNJwAYVkLgnqbOLEmM3s=
+		</data>
+		<key>Resources/forth.js</key>
+		<data>
+		M00JiiqUD+ISfJJ/9xPIYYZNnJs=
+		</data>
+		<key>Resources/ftl.js</key>
+		<data>
+		s+MFdq63SiZDO6IL0vB1KootxWw=
+		</data>
+		<key>Resources/gcode.js</key>
+		<data>
+		GPM8xQhSldr3acMDsgzrpiqcreQ=
+		</data>
+		<key>Resources/gherkin.js</key>
+		<data>
+		h2W7vm2KCtzm4AzLJFTwFN5NOeM=
+		</data>
+		<key>Resources/gitignore.js</key>
+		<data>
+		8L5Gxn3DqeTsHeX3GOm4p/JwsQg=
+		</data>
+		<key>Resources/glsl.js</key>
+		<data>
+		PP0hLIkITAySYTmBad2rDGE0SvA=
+		</data>
+		<key>Resources/gobstones.js</key>
+		<data>
+		4Wg0RVuNdykXafbpajjKIt/Ge2g=
+		</data>
+		<key>Resources/golang.js</key>
+		<data>
+		5gQiO/PfLl3T+ESai6LmMjNPFF8=
+		</data>
+		<key>Resources/groovy.js</key>
+		<data>
+		AJK8MN+3EbBgxGHUB3zgwtOKF84=
+		</data>
+		<key>Resources/haml.js</key>
+		<data>
+		6ANTEAt+jJGFh8nobDXe5dEnGM8=
+		</data>
+		<key>Resources/handlebars.js</key>
+		<data>
+		RT3jZ4pq08/Xq909cOvOAzpHfdg=
+		</data>
+		<key>Resources/haskell.js</key>
+		<data>
+		kKekBB0FJ6lBYPRtMV3XcKO+4oY=
+		</data>
+		<key>Resources/haxe.js</key>
+		<data>
+		5NtOch28VxQt6cPu3rK1wsoH748=
+		</data>
+		<key>Resources/html.js</key>
+		<data>
+		8OjVcbHTGF0ttuqqw9JYPRSPfKA=
+		</data>
+		<key>Resources/html_elixir.js</key>
+		<data>
+		QIQaYTkC+50kmZlkLz68XGkBoXE=
+		</data>
+		<key>Resources/html_ruby.js</key>
+		<data>
+		l6Fj87Jqi3PObc7V1GZXTWiwsUY=
+		</data>
+		<key>Resources/ini.js</key>
+		<data>
+		KtDVJBJuZ8QUAo4XpjVauPCNqaw=
+		</data>
+		<key>Resources/io.js</key>
+		<data>
+		Fcqf2mqj+xNqI5pvKz+0B95scxs=
+		</data>
+		<key>Resources/jack.js</key>
+		<data>
+		drge8QK5qnTQEaUmbR1N8CXSxOE=
+		</data>
+		<key>Resources/jade.js</key>
+		<data>
+		eQgY2+4IQzw6X2oK3kOcb+TlNnA=
+		</data>
+		<key>Resources/java.js</key>
+		<data>
+		Qv6dHE+/zTMi9YnSs06oV1DoyxE=
+		</data>
+		<key>Resources/javascript.js</key>
+		<data>
+		zq+Kg8iGnW4AxyG/VFUjjP/4IW0=
+		</data>
+		<key>Resources/json.js</key>
+		<data>
+		lKAZJWSAXztkfMbIyvEtWBd+vJE=
+		</data>
+		<key>Resources/jsoniq.js</key>
+		<data>
+		xwOLER2wemgNYOt2EVCG47SmzCA=
+		</data>
+		<key>Resources/jsp.js</key>
+		<data>
+		dlT1hr2+rwbi0e6QvkN2HwsveaA=
+		</data>
+		<key>Resources/jsx.js</key>
+		<data>
+		xvt6+Dd7QLuaWHh2/1QCPHmRoxQ=
+		</data>
+		<key>Resources/julia.js</key>
+		<data>
+		0Xu+Y/UwADRDUMWA4ByjcfDq4Dg=
 		</data>
 		<key>Resources/keybinding-emacs.js</key>
 		<data>
-		1suGxk4tsriUULFGGZyd8/yOQac=
+		kAuPxxSN+IWuaF3Ub2raD/ZSbpo=
 		</data>
 		<key>Resources/keybinding-vim.js</key>
 		<data>
-		QdofI/pt49j9ou/LpAu5JPhwqgA=
+		2Qlqodf/jOHzrk5Eq8on/tuosno=
+		</data>
+		<key>Resources/latex.js</key>
+		<data>
+		oXns6jaRLMQM51dC0kSxj/Ersjg=
+		</data>
+		<key>Resources/lean.js</key>
+		<data>
+		SNsSa+6dQNS+EKBmh7lHT+itUqQ=
+		</data>
+		<key>Resources/less.js</key>
+		<data>
+		rJCenkPPcn7yu7iZkYTEmyBCSos=
+		</data>
+		<key>Resources/liquid.js</key>
+		<data>
+		k8P/W9RpcYJJcr2yCmgEva1froI=
+		</data>
+		<key>Resources/lisp.js</key>
+		<data>
+		wyyk6DhN5KB8VEKULJn7pvXzr14=
+		</data>
+		<key>Resources/live_script.js</key>
+		<data>
+		00kgB3pA5mQcMmgrtkfpnJL1PEE=
+		</data>
+		<key>Resources/livescript.js</key>
+		<data>
+		T98iYaGjT1aUHR8XCLDXQY9fWx8=
+		</data>
+		<key>Resources/logiql.js</key>
+		<data>
+		11ymdJb5InAdC9H0VvTP/KFErEI=
+		</data>
+		<key>Resources/lsl.js</key>
+		<data>
+		oYbZhNWzRsllZ31ufLGrD3Vnf5E=
+		</data>
+		<key>Resources/lua.js</key>
+		<data>
+		hN+jR6hvk9tQWQYAwcfzRxK3jos=
+		</data>
+		<key>Resources/luapage.js</key>
+		<data>
+		RIhq893rz/AWNXh6EGtaXMfGk9g=
+		</data>
+		<key>Resources/lucene.js</key>
+		<data>
+		qPf4a3fkuUk3kPfJv7w/qg+SGoA=
+		</data>
+		<key>Resources/makefile.js</key>
+		<data>
+		1tf6jKwabP+1CKlp4dFtkxScuZM=
+		</data>
+		<key>Resources/markdown.js</key>
+		<data>
+		+inEgj0UxZBRYWjPQEo8l+D4Cpg=
+		</data>
+		<key>Resources/mask.js</key>
+		<data>
+		r31z1mW66bCGvRxYwk9d1UCfjJI=
+		</data>
+		<key>Resources/matlab.js</key>
+		<data>
+		che5+frz/TYFwdU0C+YJTeqavwE=
+		</data>
+		<key>Resources/maze.js</key>
+		<data>
+		yB1Z/3IT+fDb34FGO30JyQ8XzPQ=
+		</data>
+		<key>Resources/mel.js</key>
+		<data>
+		Pi29MbNG1ImUE4m7I+n352VBbjs=
+		</data>
+		<key>Resources/mips_assembler.js</key>
+		<data>
+		qPk+T/MlBcSqaCAZi4w2gPJebK4=
+		</data>
+		<key>Resources/mipsassembler.js</key>
+		<data>
+		ctVEw9eV60ouTkAP4qSGEx9jry8=
 		</data>
 		<key>Resources/mode-abap.js</key>
 		<data>
-		+SGOUFZL66I/7aHO1dftJ2Gzv/Y=
+		+5NHKCFaZQQImhJU1g1k6qFFVVw=
 		</data>
 		<key>Resources/mode-abc.js</key>
 		<data>
-		/jrJL/kPuR1POTEFcWLa4NRYDmg=
+		xmRt6lFvKWrBg31E6IMP6thNTHs=
 		</data>
 		<key>Resources/mode-actionscript.js</key>
 		<data>
-		tvsT0STgRLfICZ/CIA5nFV1Y+vI=
+		pbYN5F2Ra3j6MTh388SWRrYGYQI=
 		</data>
 		<key>Resources/mode-ada.js</key>
 		<data>
-		XGYiEGuuMZGLmSrxfg9QSx8ELoc=
+		/eDXUGiSxluWu7a9Crinb9aOeJ0=
 		</data>
 		<key>Resources/mode-apache_conf.js</key>
 		<data>
-		bV+9ff8rjDDHtwo++UbrWAs2mjE=
+		MlOpwjJ4+s/SlSe5VhVdyHUtfAc=
 		</data>
 		<key>Resources/mode-applescript.js</key>
 		<data>
-		nth3B1fDGz+mf5mnVRle4GHr44U=
+		Kg6jAhiKeGp44+IafrzysmTLuXU=
 		</data>
 		<key>Resources/mode-asciidoc.js</key>
 		<data>
-		EYZ6O2SzDOvmCHgnlNjciqRrFtY=
+		BS7QLOTboue6l47H1pUtIbR/Yqc=
 		</data>
 		<key>Resources/mode-assembly_x86.js</key>
 		<data>
-		IGzNCMGZo4Xsf1KSeBdwo64esvo=
+		AMjbl6MvkuC/9pHptcOPjDO4iWg=
 		</data>
 		<key>Resources/mode-autohotkey.js</key>
 		<data>
-		Yw1EXSyjHkBs//M0NNq8OJ/mm9A=
+		B3Pha7qEpG+uiWbpxWAsmZPweIo=
 		</data>
 		<key>Resources/mode-batchfile.js</key>
 		<data>
-		/u+lGg1wsv7wHCKPDLLkM6mmVos=
+		+EAnMLcVpHyX6k4bOQNe4Xuhql8=
 		</data>
 		<key>Resources/mode-c9search.js</key>
 		<data>
-		jgNTharJVjJ7zNZKR7vuyUt4S+E=
+		1RQbBvc4/7WqBqbJvsIdtrEqaWo=
 		</data>
 		<key>Resources/mode-c_cpp.js</key>
 		<data>
-		b3wNOwtEdhDHh8/QYi0ANmC+wco=
+		rCYP0h56HA1Yr3tpuVcEtW0vIUs=
 		</data>
 		<key>Resources/mode-cirru.js</key>
 		<data>
-		US147h6rnfdfX/WUHXfXkEgBupg=
+		3kwmNZ6nJ9G444Rn3gYxl5gjTs0=
 		</data>
 		<key>Resources/mode-clojure.js</key>
 		<data>
-		HH+CMYYwNWE//a0eTrTd0hHHfMU=
+		dDINkZtXBRogI2wne4l1qe8Bfrk=
 		</data>
 		<key>Resources/mode-cobol.js</key>
 		<data>
-		wDSbZWpfdKsmQEKQQzzqfzeatdI=
+		u+VUNZnkbjixagqMzhDrLo5VRkg=
 		</data>
 		<key>Resources/mode-coffee.js</key>
 		<data>
-		pDbmovKUIOv+actGcbZM9CJpV8o=
+		XLql0NgZ/upjUnnDchRyusORzYE=
 		</data>
 		<key>Resources/mode-coldfusion.js</key>
 		<data>
-		rG/d7V79hXm11Cnjp5lVyZpJ8JE=
+		x420SdTAmAXRFCJe/h0FEjzhYkE=
 		</data>
 		<key>Resources/mode-csharp.js</key>
 		<data>
-		/mIR8Vvl+jcIt2XF+c+mD3Vb2OU=
+		Z+PpYSR0d5gl0bQvai1IEDN9/ww=
 		</data>
 		<key>Resources/mode-css.js</key>
 		<data>
-		3MBQhk+o5rU11zdJxIsiW9ZWTZU=
+		YaAXv+4JZxdmFsVVJC4tkjUvfLQ=
 		</data>
 		<key>Resources/mode-curly.js</key>
 		<data>
-		b5XjywYogvcNCeG+dtEvDtS9AL0=
+		MbQkjMcUgxv/q5J1tHo3NFVwvPQ=
 		</data>
 		<key>Resources/mode-d.js</key>
 		<data>
-		SOYdTJjtufMUSKUFJUK+P8ENTh8=
+		0mO0CK2syhTyspeNsoeQ3MPhGdE=
 		</data>
 		<key>Resources/mode-dart.js</key>
 		<data>
-		gmt0+/ZaQ/rmIrdZSHUaRVM94SM=
+		z8AKn/ghdYdsL6Ham6vvMkA5Gj8=
 		</data>
 		<key>Resources/mode-diff.js</key>
 		<data>
-		oJCbbqwPROqusuwClBnZbIcvdOI=
+		afsZK3XZnFJjI5LaTyVdVjvfs6c=
 		</data>
 		<key>Resources/mode-django.js</key>
 		<data>
-		2JVOpmrvl6B/qRFGA5a/5i6eH5A=
+		Z4T3jQ6YApJwbvLODTql/P/XMlo=
 		</data>
 		<key>Resources/mode-dockerfile.js</key>
 		<data>
-		PuYwEexhe/OZFsLr1I02ZrptGkk=
+		cEkoFOgxPDKtMBFBwoRXnTZswhE=
 		</data>
 		<key>Resources/mode-dot.js</key>
 		<data>
-		o2CdQx3KoDRzq4a0Xsnbf/g7Xnw=
+		gGXjEhrNqI0EQnHmbRNrMfvyZco=
 		</data>
 		<key>Resources/mode-eiffel.js</key>
 		<data>
-		4tZXMkXCP82ev0MJx+ZVnE+664k=
+		Ag5Q2qJ1pqyLCdDE6sENFcJWXkA=
 		</data>
 		<key>Resources/mode-ejs.js</key>
 		<data>
-		drkv7v93kXoZhL6hNVyedA6LZVk=
+		HmHTsvRbtS/2nb5+9Z/7PBQk6pw=
 		</data>
 		<key>Resources/mode-elixir.js</key>
 		<data>
-		OU3fOZR+O41jv9KEk41BMev88OY=
+		r10xfOjQQCdpJy9dONhG52XlpDI=
 		</data>
 		<key>Resources/mode-elm.js</key>
 		<data>
-		KBcYpIxV1TDw1VhlMi8hgpcOseM=
+		rr3qSnDw1jY1L0T6G2nDM2l+mX4=
 		</data>
 		<key>Resources/mode-erlang.js</key>
 		<data>
-		p1HeQIDU+ua+8XLgTVqB3Ld1vAw=
+		OYQk3L7cFtmMjgMv6/Iex1HCksI=
 		</data>
 		<key>Resources/mode-forth.js</key>
 		<data>
-		Ia6+S0hMgGG2Ue1LZuFWyZTKTI4=
+		I8bBjKYCv0+OcVxOx0iY63p+G3g=
 		</data>
 		<key>Resources/mode-ftl.js</key>
 		<data>
-		vOE9TyoLJO7AqzmwCXVIA/gQnrs=
+		/mJu70skhVp/TMpIvoKZBIbk9kc=
 		</data>
 		<key>Resources/mode-gcode.js</key>
 		<data>
-		MHBOVh53eLtPDWK0WIHZIuwjTYk=
+		SH+GEN/DgXqUKSucBpVKCzrTpwY=
 		</data>
 		<key>Resources/mode-gherkin.js</key>
 		<data>
-		kqtv4NWkmbPJAofy+rCArDojDKI=
+		EuOR0yjklHWg64TTM58NnOzpl9M=
 		</data>
 		<key>Resources/mode-gitignore.js</key>
 		<data>
-		DpaYyWFHfoe9XaKkyE9B4udt56M=
+		nNBtS6mMmt6Bdpnhq98t1/ZhqKo=
 		</data>
 		<key>Resources/mode-glsl.js</key>
 		<data>
-		ua+DyY3B2oQ19LxNTPhJE8jBnDc=
+		XKnl6VQgT329oDF5rRTfM5HpWPI=
+		</data>
+		<key>Resources/mode-gobstones.js</key>
+		<data>
+		f1WV+5159psGjkDiYBmmFuynbvs=
 		</data>
 		<key>Resources/mode-golang.js</key>
 		<data>
-		MXaBwYt5o3uCYFKb/vIR1jRXEz8=
+		BPdtX48+64gyS8Iecr0sxK4jc+A=
 		</data>
 		<key>Resources/mode-groovy.js</key>
 		<data>
-		x6Wfps4kt6m1kjIKEy/GWXgTRJk=
+		0Y6qqoxLsEkfIOtkaXmBqReIwTc=
 		</data>
 		<key>Resources/mode-haml.js</key>
 		<data>
-		RsiEJWvOp9PtjfZacN1WEpWPVUU=
+		kQ/KT7HUA0WAbCRsVeSqDiB8zGM=
 		</data>
 		<key>Resources/mode-handlebars.js</key>
 		<data>
-		iOi5HT8DX5JDgeS1jZqk1qYGgkw=
+		Kj/rZodbprFbdcDDVSyqHcTinb0=
 		</data>
 		<key>Resources/mode-haskell.js</key>
 		<data>
-		GmPiRqEl6BHAkZ55QWhhD8t6bqM=
+		m4keAp8C/U8/px/uJxeCTmObmvI=
 		</data>
 		<key>Resources/mode-haxe.js</key>
 		<data>
-		8opTYx49zLjPN0Uu0oXrUML02nw=
+		ZtVxuFthGXrN7CAB04JQw7oJ5ac=
 		</data>
 		<key>Resources/mode-html.js</key>
 		<data>
-		PffzhIqHd9hBjQFRJzuiXRn92hU=
+		kLJavtMHQrJzRrRe3qS0v1jW/mE=
 		</data>
 		<key>Resources/mode-html_elixir.js</key>
 		<data>
-		clnQyyrodZVsaeWEn8mqwGfw5UI=
+		Lw/9sxjb4xQZxjB5U51/jo3X2Cc=
 		</data>
 		<key>Resources/mode-html_ruby.js</key>
 		<data>
-		gNkwxiNhX0TnILtSoE4uTuaBKVc=
+		m6ZplmKRyb9Ca+uM3zujuDHuEIg=
 		</data>
 		<key>Resources/mode-ini.js</key>
 		<data>
-		aw13IZYMAqaJAeoFs8yUTeH7qM8=
+		5DkUr5nX/rTwYtyaN6v8GgX5mLk=
 		</data>
 		<key>Resources/mode-io.js</key>
 		<data>
-		KidgCg2SmRefuZu6eE3e6MvMhxI=
+		A2SulLeDe2up7M1roc+dKV2pdGg=
 		</data>
 		<key>Resources/mode-jack.js</key>
 		<data>
-		MzcmcS8OS+h3Xzba5lg/rSU68Tg=
+		t9CIP5zXQKSzOR8cBLXhalJBBio=
 		</data>
 		<key>Resources/mode-jade.js</key>
 		<data>
-		GW6TBeSjprx5cuKFtwHeSGe1wHM=
+		5J4AhkZzjpCcvLK2E65x+P7VoV8=
 		</data>
 		<key>Resources/mode-java.js</key>
 		<data>
-		OqXsxC9CtZRKh3I9sLaw95k96H4=
+		pJ8BrwqdI+l/P53frVMh5QlTj0Q=
 		</data>
 		<key>Resources/mode-javascript.js</key>
 		<data>
-		VuwTGfO0VekM8RslBhbHCKOVWAg=
+		XpMWyiJp+478SyFMGICoHRGdD2c=
 		</data>
 		<key>Resources/mode-json.js</key>
 		<data>
-		ZlbilU8iDRry2ueLNf/rseIbRqE=
+		WnLVc0CIJiWElio+iGbC23HvUT8=
 		</data>
 		<key>Resources/mode-jsoniq.js</key>
 		<data>
-		/BvwjYzGzYcR7dOGsl4yuD019N8=
+		ey80tz7Wm2ggR4U6uWRnJ7fgz/c=
 		</data>
 		<key>Resources/mode-jsp.js</key>
 		<data>
-		w8eAncaU9sD4DCfZTbkNAOxWoIU=
+		lolde/3LUQyNhMr6C9M23NtN3WA=
 		</data>
 		<key>Resources/mode-jsx.js</key>
 		<data>
-		5jYVEdO4SeYu8DLkjpEdriFszuE=
+		arb7UZCmsrY5iR8V7erB6r6rtZ4=
 		</data>
 		<key>Resources/mode-julia.js</key>
 		<data>
-		72k5j02lTIbswEDfAe4kZDT6wQI=
+		p0QT9hcVpIXhorCXb9xyVEJKZg4=
 		</data>
 		<key>Resources/mode-latex.js</key>
 		<data>
-		c9SYKjZuqSRgPdUogCosPpi/CJ8=
+		UBTbyXL5/YCa3OH0RLmQ03i+zME=
 		</data>
 		<key>Resources/mode-lean.js</key>
 		<data>
-		/gmHspFmgHHZHgmYlExpJN+tbcE=
+		SON4g5KiATmgkezPNqipF9P87hI=
 		</data>
 		<key>Resources/mode-less.js</key>
 		<data>
-		3eUczvMU4rec+j45r62BRVqqycs=
+		Z5UsPJr9DGH+uAafpjfpkqc1ol8=
 		</data>
 		<key>Resources/mode-liquid.js</key>
 		<data>
-		QTD9K4A5vBEGNCwi1LBRQVydxRQ=
+		bh41/OiTNW3OVHnkuRzlsguYa/s=
 		</data>
 		<key>Resources/mode-lisp.js</key>
 		<data>
-		xNYG0K1+PmNdRjiZzC80R8180eA=
+		7ckWcbcePsXLNeMY8aYKNuYcZwM=
 		</data>
 		<key>Resources/mode-live_script.js</key>
 		<data>
-		tUm0RfF/YtsfJ8/FggRLqzSmNQQ=
+		yBzmWGM84jM/XEmMQofG8+xssa4=
 		</data>
 		<key>Resources/mode-livescript.js</key>
 		<data>
-		Au5QLrq4VcqrNxkSLqYjHhYEw/0=
+		Aboq3ov2LZTPNqUTe4uaHPWm9xM=
 		</data>
 		<key>Resources/mode-logiql.js</key>
 		<data>
-		aBxvqcEGTeLpJKg9EjUFRG4Qi7w=
+		wSs2NBCGp+Y56oMUWEGm/MVjB4k=
 		</data>
 		<key>Resources/mode-lsl.js</key>
 		<data>
-		M+iAeRG+fNEOSPDmLjg3rZ+H//U=
+		k04UKurqEdQGddCJl3cgOPjWuO4=
 		</data>
 		<key>Resources/mode-lua.js</key>
 		<data>
-		LblKvqIb5E/b+USFaVpRye4kv+c=
+		8jqFHKNs2dd0XOxamquOkio4YhI=
 		</data>
 		<key>Resources/mode-luapage.js</key>
 		<data>
-		1+gOlmExY4mZAIoivz64WvXnlMM=
+		+5TVncf6pff00Gu7RpC/EjKbwyw=
 		</data>
 		<key>Resources/mode-lucene.js</key>
 		<data>
-		8iv4O/10ccEKrVZjIajcV6MXMBU=
+		BPpywAaZI6cD6qen4QZfyHQSi4c=
 		</data>
 		<key>Resources/mode-makefile.js</key>
 		<data>
-		SRHzyZe/lGClJSMXny6WVb36M5Q=
+		usO/Bw+HgwYQOU5LCDMYxGmB+yE=
 		</data>
 		<key>Resources/mode-markdown.js</key>
 		<data>
-		mrQeZCQwoN13GL0COR+fQEdCKwc=
+		OWamoe+PFMcbQD6kmReTXkUqKH4=
 		</data>
 		<key>Resources/mode-mask.js</key>
 		<data>
-		HeZtVORsjQaleVhX1BF4oDsY1bo=
+		ApeEQgURG6omKvRjKOJn88jjhCY=
 		</data>
 		<key>Resources/mode-matlab.js</key>
 		<data>
-		pE9lKFrPrvixtizmxN3q0nWRbmE=
+		sH4KxVJInH9Uc8K1iT5Pk0Qj2sM=
 		</data>
 		<key>Resources/mode-maze.js</key>
 		<data>
-		ze3tBwO/YFluwRG6/bS2QM1Wvjw=
+		hkT594o9JRhN5oy05RbY+3BKf9M=
 		</data>
 		<key>Resources/mode-mel.js</key>
 		<data>
-		pJDMnG5wyD5Y+3n4m65Yg4eFb9M=
+		IyTblYDRxGpN9PLucoj/SJnglmI=
 		</data>
 		<key>Resources/mode-mips_assembler.js</key>
 		<data>
-		GFvevFbhFNUx9L3hDUjRvkcIhbw=
+		MFUDxqK1aQS5NC0b9iFh8a2DcSA=
 		</data>
 		<key>Resources/mode-mipsassembler.js</key>
 		<data>
-		+OulZaj0TFDpMnNFN7ONBjmw+J0=
+		Ktgk5a5bDDPef/lRvYe0Djr6wQ0=
 		</data>
 		<key>Resources/mode-mushcode.js</key>
 		<data>
-		jHYdgSCCklrwTBmKaNhj+fZWHtk=
+		wlAHiatRxou0tCyglkk/xFSqkAI=
 		</data>
 		<key>Resources/mode-mysql.js</key>
 		<data>
-		qH/y3cbFF4XFXN98OOWzV5EG+qs=
+		PEkrahslUkQ8L37F5v1gipZp9PI=
 		</data>
 		<key>Resources/mode-nix.js</key>
 		<data>
-		i1yjjEArHZXn+b2KtOcThP68cbU=
+		QutC4KZxEzk/abIvRKR4eclixM4=
+		</data>
+		<key>Resources/mode-nsis.js</key>
+		<data>
+		s8qbujqfmelKaHy21TL7LIxvsro=
 		</data>
 		<key>Resources/mode-objectivec.js</key>
 		<data>
-		xM4SpNIi3nshQILGlanpxDImLJY=
+		NOQdkNxvXr6w7B8ZDYnZ+xVyMj8=
 		</data>
 		<key>Resources/mode-ocaml.js</key>
 		<data>
-		Su8ycPG3jlYmRTjwslvLnFRpCZA=
+		aOmraSjGPMbp2ZH4yB+2QRZl7ww=
 		</data>
 		<key>Resources/mode-pascal.js</key>
 		<data>
-		K8CNQau3bU4Y/EtK/463hFfmdyI=
+		vMvLKOh/tTx+8KKlA+qLGFczUAc=
 		</data>
 		<key>Resources/mode-perl.js</key>
 		<data>
-		Ub9dd52a3zw7O9KVp02MbApiAK0=
+		e/MmBSWMer6vbVoYgN6RF8cdjus=
 		</data>
 		<key>Resources/mode-pgsql.js</key>
 		<data>
-		JzR+pWXrh0oJMEMDL/2tLsniTkk=
+		Xfv2B6ISMinrOUOwrEQwG9qSGpo=
 		</data>
 		<key>Resources/mode-php.js</key>
 		<data>
-		bXdpb7mIRzAiqhcyiqw9bYP7udE=
+		Fm5tAgpAkICbCxQkdJ+35E7i5wA=
 		</data>
 		<key>Resources/mode-plain_text.js</key>
 		<data>
-		wAsBqOTUWMX5PD/BFlSLJpCN7nY=
+		FGkb0DCQfuXb1yAKtVEkzly3vek=
 		</data>
 		<key>Resources/mode-powershell.js</key>
 		<data>
-		XDLV9d4yGbYN81Kby9pL/vv/i/U=
+		rAErUV7k6w6Q9JwG3Df5+vz/QYw=
 		</data>
 		<key>Resources/mode-praat.js</key>
 		<data>
-		lEeKlP8698Xx7rD+kJfq6boijOs=
+		yS6U3kOTW8qHcFHXqduh6syHj0Q=
 		</data>
 		<key>Resources/mode-prolog.js</key>
 		<data>
-		piQfz1AFHI+Oqcv2ty9Z4WdwKWY=
+		bE32HDDCj9LEWov6PuQ3jMgT9fk=
 		</data>
 		<key>Resources/mode-properties.js</key>
 		<data>
-		yRCsBkGGt3ZoXwRBCLFoAbh8Ops=
+		rrYv8qoC8mZErkFUzEPLctJuMoI=
 		</data>
 		<key>Resources/mode-protobuf.js</key>
 		<data>
-		y4CFmZSX9Qm0EKrqt94kvIrs+PE=
+		ueVQhyMR91rBKypATzOMiWjCBqE=
 		</data>
 		<key>Resources/mode-python.js</key>
 		<data>
-		uY0cvUdd2QwRSIQMdSzRIVgTKXg=
+		+hp2/wrJoA8sPLJgzi7U8ZfZV54=
 		</data>
 		<key>Resources/mode-r.js</key>
 		<data>
-		KVg8bfWiFdMXQWxWXedP6B14zyY=
+		31k3/vPJ8mNLBh36VMUL5yy3YVI=
+		</data>
+		<key>Resources/mode-razor.js</key>
+		<data>
+		5Wbh/8S+iCQLsDdege7G9sl57rQ=
 		</data>
 		<key>Resources/mode-rdoc.js</key>
 		<data>
-		yLOiEgsOb5e2J7mMnk9Dtq6WYtA=
+		pjId9802x+g+NVSo2TG7B6hiKLM=
 		</data>
 		<key>Resources/mode-rhtml.js</key>
 		<data>
-		0IgESQo85tQtGC8vXLvcuCiS6Ms=
+		WPkm4YULw0ly5jO3hFv+3L+c44k=
+		</data>
+		<key>Resources/mode-rst.js</key>
+		<data>
+		b6FnoYmCnStP/Y6yqum9+anNKYk=
 		</data>
 		<key>Resources/mode-ruby.js</key>
 		<data>
-		Pdz12cvkYe9YFPtOYZXBWe8Bn5M=
+		kPYML+odOYo2BrQahpLeRoFk5d4=
 		</data>
 		<key>Resources/mode-rust.js</key>
 		<data>
-		Er5lKlruLYZq9sGkQVq532M8hVI=
+		Kdb4Iju7fIt1/il570m6Gn/8yfo=
 		</data>
 		<key>Resources/mode-sass.js</key>
 		<data>
-		ZvbOrEfM7N230bacIKiGT16PoQ8=
+		Tgv6qZSELqHt32+gbERTCWSJjRY=
 		</data>
 		<key>Resources/mode-scad.js</key>
 		<data>
-		SJCVaGY6TprXBTJOrvWqC3RWdXM=
+		Zazs23SJftT0hKqtDnBn9fv2Aao=
 		</data>
 		<key>Resources/mode-scala.js</key>
 		<data>
-		bgYdxIJmNaU3gs5tnhoSH2W06B0=
+		jh19TJMAWTTsT3xm6I4IjUagq/E=
 		</data>
 		<key>Resources/mode-scheme.js</key>
 		<data>
-		swqo5TdTSNpDTakY9ypqGc4ct84=
+		IvjAWmvA6Vz0c5o15O4HFilC6oY=
 		</data>
 		<key>Resources/mode-scss.js</key>
 		<data>
-		J9wvzM/pm9rqFzVsx6O6PDlg7no=
+		9CrqYcyfMMqfhubiRFbj3EfzqoU=
 		</data>
 		<key>Resources/mode-sh.js</key>
 		<data>
-		Ou8StZ+iKWXQW6v+s/k0kBByU70=
+		sMxW401Ra5F5pfOj/myHvE6BgXk=
 		</data>
 		<key>Resources/mode-sjs.js</key>
 		<data>
-		uYuX6dOWP46LABs8Sb7dHBetmU0=
+		w4pU2xgJ044BvgeIf0TzbsSa7Zw=
 		</data>
 		<key>Resources/mode-smarty.js</key>
 		<data>
-		/CR1QPebOw2oh7krCalgO9M8Lt8=
+		/ZZRrp9TKywElFGP42iibppr5VU=
 		</data>
 		<key>Resources/mode-snippets.js</key>
 		<data>
-		h6zd4uz4ucIOWYrM0y/u25vv+5U=
+		MSPCRfNxEoIchZUd3wym8rZVvWw=
 		</data>
 		<key>Resources/mode-soy_template.js</key>
 		<data>
-		KsKpcsjxijujhEVIMeQ5ncU5rdg=
+		gSJ+SKLgXSrjuAPsJaXCinGhARY=
 		</data>
 		<key>Resources/mode-space.js</key>
 		<data>
-		UsUSqxyZMOTY/9CC2QEQYWGtOTQ=
+		CevWE1UF4RCDMS4ZxfzZ0/BySLI=
 		</data>
 		<key>Resources/mode-sql.js</key>
 		<data>
-		hW2yETNYr35Bf86lqpiiiAHx7xY=
+		QnApsA4brGLhQmdw19aro/c2OcI=
 		</data>
 		<key>Resources/mode-sqlserver.js</key>
 		<data>
-		e1OQRig+pedb81uxetv+qovc4LU=
+		sbhMzy2BbpN29NozEyX9xR7YdxQ=
 		</data>
 		<key>Resources/mode-stylus.js</key>
 		<data>
-		zqQTBScWoVsD8jikKYm6oHWf9sM=
+		/s9fGxa7Y/4uDEG2jE54UhXX00M=
 		</data>
 		<key>Resources/mode-svg.js</key>
 		<data>
-		DPfyjFlzdhCAkZh9J0XC8hJTgZ8=
+		4VvnRzZNGepJ7q91F4TFlftm4X8=
 		</data>
 		<key>Resources/mode-swift.js</key>
 		<data>
-		FpclkB1UjcNcHk9FOcwtR4FeNi4=
+		TBVjHOLbYLfZCTnHGxvqUzCMrbc=
 		</data>
 		<key>Resources/mode-swig.js</key>
 		<data>
-		s/lJTEKniTRjfbiCO1vYXR9mYXw=
+		B4fjltQ2/2YjuG4vLzBAiC+PHe0=
 		</data>
 		<key>Resources/mode-tcl.js</key>
 		<data>
-		PDE4rbO54LujxBiIqyUVvKyusgU=
+		g7UnsEEydbo1Y1vY6pj67pLOCV4=
 		</data>
 		<key>Resources/mode-tex.js</key>
 		<data>
-		qfw5q8RGnUVlPKsrZaqIfK8cGRA=
+		fUIIeDFkx8G9suUZBXx2vPVZQlQ=
 		</data>
 		<key>Resources/mode-text.js</key>
 		<data>
-		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+		rcg7GeeTSRscbqD9i0bNnzLlkvw=
 		</data>
 		<key>Resources/mode-textile.js</key>
 		<data>
-		Be6/RysxS79pEhyiH/qBsA2Ku8Q=
+		oKOfJ52ZwN12L7F33QGSyXQfc4w=
 		</data>
 		<key>Resources/mode-toml.js</key>
 		<data>
-		+DOZa2++d0MCENh82d27xOGCoJ8=
+		iN+reJoktLArgPVRBpYB3lUVuIE=
 		</data>
 		<key>Resources/mode-twig.js</key>
 		<data>
-		AMcJjAB9lzIwtxoAW5IiUL0IGgc=
+		/KMOguzbCvzHDjBMd5Yp4HXUi2A=
 		</data>
 		<key>Resources/mode-typescript.js</key>
 		<data>
-		pgzWhJ7o3+BLEjOtpjtwm3nhww8=
+		ukmtk8HUQN4KnjdIxnmkXuAxdIA=
 		</data>
 		<key>Resources/mode-vala.js</key>
 		<data>
-		57u9PG/XVsR2wEHhiBdepHNYpXk=
+		NhIYpGufHIL2hOu1t5LOsCndBGg=
 		</data>
 		<key>Resources/mode-vbscript.js</key>
 		<data>
-		i1sUjLFCnszxcIulnMWTHhOfd9c=
+		fjb5lqUCEE70byna9w0DNNVVSSQ=
 		</data>
 		<key>Resources/mode-velocity.js</key>
 		<data>
-		xErJ+UxjqcWY0czjmN5IybZ4MmY=
+		RJzzmGWViXrZQj0jxjCu6ZRaTwI=
 		</data>
 		<key>Resources/mode-verilog.js</key>
 		<data>
-		Rl5CYat3X8oQthbjvhIp+3LJg20=
+		t0bA2fq4mgFd6zfUkH450BLUN+8=
 		</data>
 		<key>Resources/mode-vhdl.js</key>
 		<data>
-		fO+yloQwozZhc6u7L9P7iFL6Kho=
+		Uo8y9TPWbjfXpNNAz4x9ATzrfXA=
+		</data>
+		<key>Resources/mode-wollok.js</key>
+		<data>
+		ykBMJmaxmZ+pKXVuggtPUVZvfSs=
 		</data>
 		<key>Resources/mode-xml.js</key>
 		<data>
-		5/pJIzks/E31stYUxTRhBrDs7YE=
+		xlp5k1zIxNSaZx7l56M5ys3Sqmc=
 		</data>
 		<key>Resources/mode-xquery.js</key>
 		<data>
-		HgVUVOxVnlLHeOtxQrCRe54ZQpk=
+		aH7FobnVaron8qqncRWle/wy+Sk=
 		</data>
 		<key>Resources/mode-yaml.js</key>
 		<data>
-		njo2/qKWHaiUSLVx5RrZXw+9/zs=
+		hI+uLvPchNMseSQ7wZK3JAQB4zw=
 		</data>
-		<key>Resources/snippets/abap.js</key>
+		<key>Resources/mushcode.js</key>
 		<data>
-		2xBsTX/QhBG/xRPObmit3wJ4MAM=
+		ecJloDalYhWzErXpa8oe7O5VczU=
 		</data>
-		<key>Resources/snippets/abc.js</key>
+		<key>Resources/mysql.js</key>
 		<data>
-		mbnA7COYiOLsr0i3C2YZKRiHWAw=
+		c6HOaLPn0iaAt+MmRvYfugOS7H0=
 		</data>
-		<key>Resources/snippets/actionscript.js</key>
+		<key>Resources/nix.js</key>
 		<data>
-		+KWSS+cJdZahVj7GthQFyJ8Whdg=
+		VfMh8vG2/3LLHxUNEfHdGx/LNgM=
 		</data>
-		<key>Resources/snippets/ada.js</key>
+		<key>Resources/nsis.js</key>
 		<data>
-		gvlFmAN9MOUQhnS1jPfiWqUfbEQ=
+		cQR1T7UUbUv6bYNVu+P1fBzNrRE=
 		</data>
-		<key>Resources/snippets/apache_conf.js</key>
+		<key>Resources/objectivec.js</key>
 		<data>
-		VUq4F1k2CNg45d1jLpJ45/X0gas=
+		jlMGsivRfb2FZRrPdVHZ+FRgK3A=
 		</data>
-		<key>Resources/snippets/applescript.js</key>
+		<key>Resources/ocaml.js</key>
 		<data>
-		rXaMdgOYaf2RC8gRzAw+pSIT//g=
+		jHyMG7JHIJTGTvN6NqC2yYbjxWU=
 		</data>
-		<key>Resources/snippets/asciidoc.js</key>
+		<key>Resources/pascal.js</key>
 		<data>
-		vfBB4XWst0tXui56HumHMMl+FdY=
+		371yDw/GyAEVFS0+pE0bSDnSJsU=
 		</data>
-		<key>Resources/snippets/assembly_x86.js</key>
+		<key>Resources/perl.js</key>
 		<data>
-		xwcIgTluoxQH/Lgn2oaD2ggTdRY=
+		Luie6cxT1pSMxwRX+iTYb8s/ee8=
 		</data>
-		<key>Resources/snippets/autohotkey.js</key>
+		<key>Resources/pgsql.js</key>
 		<data>
-		EnATeC0tbq98rK70u9TdVuQrmMs=
+		LWr5iEZ/VWzxxH3EHz4m/Wilir4=
 		</data>
-		<key>Resources/snippets/batchfile.js</key>
+		<key>Resources/php.js</key>
 		<data>
-		j+JAM1BIJAom+up1oCowFANFT+w=
+		FZ5O81yNzu9cpQ2KfD+TXgXCWvo=
 		</data>
-		<key>Resources/snippets/c9search.js</key>
+		<key>Resources/plain_text.js</key>
 		<data>
-		HAnCSV4VFjLgx3bu36RS/xA7qW4=
+		8VK9gBJhv3LjI3q1joCvUK3tPjM=
 		</data>
-		<key>Resources/snippets/c_cpp.js</key>
+		<key>Resources/powershell.js</key>
 		<data>
-		5AbvnXF4EnNuzTX60JgCpOV6Vf0=
+		oC/tievLrABfw1xXQ7jBst6Hk+s=
 		</data>
-		<key>Resources/snippets/cirru.js</key>
+		<key>Resources/praat.js</key>
 		<data>
-		VJ5xY5HlOon/wGnKA2Am/4X5ZKI=
+		vEYHzwN9I1rS2yubE3LzTDl7Fpo=
 		</data>
-		<key>Resources/snippets/clojure.js</key>
+		<key>Resources/prolog.js</key>
 		<data>
-		5g3PvmZhnsSXWJGn/7Hxjs3l9ds=
+		SwgbUel9MYzmO13cbS0CKN4P3/Q=
 		</data>
-		<key>Resources/snippets/cobol.js</key>
+		<key>Resources/properties.js</key>
 		<data>
-		kHLxn4JrBvG+QQT1Ui+Di4zjSPw=
+		oTmkY8qt9HwwdLy9wdPgpNpwWPg=
 		</data>
-		<key>Resources/snippets/coffee.js</key>
+		<key>Resources/protobuf.js</key>
 		<data>
-		uV5ca6RNhJuoxQtqe7Xnd2oa3V8=
+		Sg0/GgDyXxB5Foc1KvHDcPmg+Jo=
 		</data>
-		<key>Resources/snippets/coldfusion.js</key>
+		<key>Resources/python.js</key>
 		<data>
-		Gisd1sgIAYIFOPEKhqnQVNPFuo0=
+		0DSHw3WKm4eF+TjIj56ntGquWH4=
 		</data>
-		<key>Resources/snippets/csharp.js</key>
+		<key>Resources/r.js</key>
 		<data>
-		vLOWdgTEmO8c/Hc3NiP2jVou/AA=
+		CYo/fRTBE7yTEBd/FDt1w3VlAvU=
 		</data>
-		<key>Resources/snippets/css.js</key>
+		<key>Resources/razor.js</key>
 		<data>
-		1xXiKk033PDeKjoYJ2pi4eg74G4=
+		Q3E7P7E0DEOH1sD+/8BBniiW0Ew=
 		</data>
-		<key>Resources/snippets/curly.js</key>
+		<key>Resources/rdoc.js</key>
 		<data>
-		deKXJK9k9iUP93+BVw0aL6lMHB0=
+		n8ziFPYB9V3QlH1j59myd9wOopA=
 		</data>
-		<key>Resources/snippets/d.js</key>
+		<key>Resources/rhtml.js</key>
 		<data>
-		rovatCAKSxVxrN2BPkTA1SYBArY=
+		ulMKLeJU0b7s1I7fcBdoDxwIeKg=
 		</data>
-		<key>Resources/snippets/dart.js</key>
+		<key>Resources/rst.js</key>
 		<data>
-		rt+psgSG/wDAjZBNTW8ug9H8Q48=
+		xBMjV8a2JZa0g8Dm00UMEGdGLEw=
 		</data>
-		<key>Resources/snippets/diff.js</key>
+		<key>Resources/ruby.js</key>
 		<data>
-		nKOUUPbmjWMDfZy49RlZXyZvTKI=
+		iE3ycbfSskSQljvcl/KTN8NHCAY=
 		</data>
-		<key>Resources/snippets/django.js</key>
+		<key>Resources/rust.js</key>
 		<data>
-		USjBuAcaj1DWNb8wh6iBwoPG3rI=
+		YDvMS8Cd1Wz0jTezNQdHPYqUJF8=
 		</data>
-		<key>Resources/snippets/dockerfile.js</key>
+		<key>Resources/sass.js</key>
 		<data>
-		+9V7kUcAjsKf8k5lv3uQFR9+w9c=
+		gQtgKHXb7VNnFAlig3pMWaOtREI=
 		</data>
-		<key>Resources/snippets/dot.js</key>
+		<key>Resources/scad.js</key>
 		<data>
-		xQgy3dbH6OIvjVRqEaccakApr1M=
+		ma1rVWqoro5DTwN6JLS9QJEHBeI=
 		</data>
-		<key>Resources/snippets/eiffel.js</key>
+		<key>Resources/scala.js</key>
 		<data>
-		PSqwXwRP2+6yGPRmz6UYvkQ6dRU=
+		SrKeEBgj6Bf1E8/JxqoJhl2EhIY=
 		</data>
-		<key>Resources/snippets/ejs.js</key>
+		<key>Resources/scheme.js</key>
 		<data>
-		x4fRidS7kgHE9DqWoe/XJj4eI3A=
+		3020692jOhZGCu6AsFszjT757xg=
 		</data>
-		<key>Resources/snippets/elixir.js</key>
+		<key>Resources/scss.js</key>
 		<data>
-		zZyGX9M3lviPmn6mhFClkzAxx38=
+		R/1RYPjzkJOwiToFQE7VEviMJoY=
 		</data>
-		<key>Resources/snippets/elm.js</key>
+		<key>Resources/sh.js</key>
 		<data>
-		8PTDcEqWbF8rxLLCZ/s2odc0wEU=
+		22Mm5SQWCnB88a8vORMYBIJ8+0k=
 		</data>
-		<key>Resources/snippets/erlang.js</key>
+		<key>Resources/sjs.js</key>
 		<data>
-		3kIXS//BWcOWpeNBe3ZpEJ23SWM=
+		sHsdd33/jfpRGsEi4fvDi6Z4kJQ=
 		</data>
-		<key>Resources/snippets/forth.js</key>
+		<key>Resources/smarty.js</key>
 		<data>
-		1xLAwQ2zJ/MZk4O1fOr4SABLxz4=
+		kUGffGF38MGgg67GsFefI7Gb+6Y=
 		</data>
-		<key>Resources/snippets/ftl.js</key>
+		<key>Resources/snippets.js</key>
 		<data>
-		i6oH30NLzQ/xX0pIjxGb/p6ldPE=
+		qUEA9sdfPnvV4J2N1mwAIQC/tYY=
 		</data>
-		<key>Resources/snippets/gcode.js</key>
+		<key>Resources/soy_template.js</key>
 		<data>
-		fgVkuLm7eZ/dCVrEK+FclJDFb8k=
+		cRqjXqHl2COFf6JUcoyG+nM28So=
 		</data>
-		<key>Resources/snippets/gherkin.js</key>
+		<key>Resources/space.js</key>
 		<data>
-		JDEfVMmBA3RtNk9+7Yhs4Vwqkvg=
+		FMBjplzQM8vRjZSEGZ4qVeThdPc=
 		</data>
-		<key>Resources/snippets/gitignore.js</key>
+		<key>Resources/sql.js</key>
 		<data>
-		NZMV5tFUzgq4Jqd9PVQJN3TuzQY=
+		nVOPFsYJcX2Gqgqmy+/nr6gb5+I=
 		</data>
-		<key>Resources/snippets/glsl.js</key>
+		<key>Resources/sqlserver.js</key>
 		<data>
-		vkjkmq26KZy7Ho6YQUCAYo9oCEQ=
+		zTEEUT1+XnGZPURApMm9q6cY4ec=
 		</data>
-		<key>Resources/snippets/golang.js</key>
+		<key>Resources/stylus.js</key>
 		<data>
-		30lw/Vkw0GlnwU+PDg2TEbsuRHM=
+		m0Y+D78wVQKzl6snU+3Yba3IlXY=
 		</data>
-		<key>Resources/snippets/groovy.js</key>
+		<key>Resources/svg.js</key>
 		<data>
-		xBTbB+6BtbmptOOFRttpRMbBC3U=
+		OQOitggWN5jAjA9Tuln5w46Sdds=
 		</data>
-		<key>Resources/snippets/haml.js</key>
+		<key>Resources/swift.js</key>
 		<data>
-		OuqPzqpv7Ho9q0q5SJJsFc7iKMc=
+		gh1+xuYGZQ4j2XYo025jWQIMHcI=
 		</data>
-		<key>Resources/snippets/handlebars.js</key>
+		<key>Resources/swig.js</key>
 		<data>
-		lK5M7LGSwMyJS3rpUAU3DaJ0tJY=
+		8JRCNmRAR4ao4zeabCXMH/u3N7k=
 		</data>
-		<key>Resources/snippets/haskell.js</key>
+		<key>Resources/tcl.js</key>
 		<data>
-		F3WsuPpRwT/6ueLn7O8jgxmj3+Y=
+		Ffm8xL089bhr1XaFJ+OGrTOjvXo=
 		</data>
-		<key>Resources/snippets/haxe.js</key>
+		<key>Resources/tex.js</key>
 		<data>
-		CbKJNBh5Uno2uvnz3DtgVPUP+wk=
+		2kFrkS1rwYfFL+0lf1/V0fziaCo=
 		</data>
-		<key>Resources/snippets/html.js</key>
+		<key>Resources/text.js</key>
 		<data>
-		+GAA7XNbD09jXmF1Dw4MDJ6vDvA=
+		Psr+JCQhzxbnO+SnU5g1wdDXyAY=
 		</data>
-		<key>Resources/snippets/html_elixir.js</key>
+		<key>Resources/textile.js</key>
 		<data>
-		idOfej2t6Oxp539h85jutkovbww=
-		</data>
-		<key>Resources/snippets/html_ruby.js</key>
-		<data>
-		U87EmPr2N6ApuwYk0Eh7nq7imPc=
-		</data>
-		<key>Resources/snippets/ini.js</key>
-		<data>
-		ddRzWmyhBCsw7lfYkpAeHHin/Qw=
-		</data>
-		<key>Resources/snippets/io.js</key>
-		<data>
-		7zBkPjcG1WDRcAgPuvEc0RLhQis=
-		</data>
-		<key>Resources/snippets/jack.js</key>
-		<data>
-		fEtvVWT/el2OCWIl5aiEdJB46gQ=
-		</data>
-		<key>Resources/snippets/jade.js</key>
-		<data>
-		90q+6XRWRDjKxPD7Uyb7XYoi1N8=
-		</data>
-		<key>Resources/snippets/java.js</key>
-		<data>
-		9YajLAADfTJMBOem/vB6z5pZcqE=
-		</data>
-		<key>Resources/snippets/javascript.js</key>
-		<data>
-		ZRS1SBFjqhKpU0Sx7TFjRtwqm2E=
-		</data>
-		<key>Resources/snippets/json.js</key>
-		<data>
-		3T+tn+PMVlgWUjtcqSxM9QgO6MY=
-		</data>
-		<key>Resources/snippets/jsoniq.js</key>
-		<data>
-		JvXY1KIhtjS59sd3CDQgHBtnIH8=
-		</data>
-		<key>Resources/snippets/jsp.js</key>
-		<data>
-		z07fAxLUay4WHpYx7r3Kvf5kzh4=
-		</data>
-		<key>Resources/snippets/jsx.js</key>
-		<data>
-		VDG5AQWyNimZbNol2f++c+2Q98Y=
-		</data>
-		<key>Resources/snippets/julia.js</key>
-		<data>
-		1lMNSg5oga0ZOy4AWl7C5lXnN0g=
-		</data>
-		<key>Resources/snippets/latex.js</key>
-		<data>
-		Sy5JF8uWSrVCbRCwrlDQUiP49IQ=
-		</data>
-		<key>Resources/snippets/lean.js</key>
-		<data>
-		vLLA6DLPttXkg/eo+VZMBXWywbs=
-		</data>
-		<key>Resources/snippets/less.js</key>
-		<data>
-		e9Qb/V4UGTdAiek+JC2MAP/fF8Q=
-		</data>
-		<key>Resources/snippets/liquid.js</key>
-		<data>
-		2wXqlIBNPIV7jQMkZAAOhEix5UA=
-		</data>
-		<key>Resources/snippets/lisp.js</key>
-		<data>
-		LYAM1V7eVmmXAfiNGDhYi1K0fmU=
-		</data>
-		<key>Resources/snippets/live_script.js</key>
-		<data>
-		hQi3vhqjdWMSNYEpAJRyQK9Zu6A=
-		</data>
-		<key>Resources/snippets/livescript.js</key>
-		<data>
-		b18tcopS9MMBX03LGxITyzxuYQU=
-		</data>
-		<key>Resources/snippets/logiql.js</key>
-		<data>
-		xS0TkjW07o85oEgQKVoLcWE71nY=
-		</data>
-		<key>Resources/snippets/lsl.js</key>
-		<data>
-		ehSXNLePEkngQuXCt6Q+/rKRwdM=
-		</data>
-		<key>Resources/snippets/lua.js</key>
-		<data>
-		QmnM5styA9K1rf2rKR9X6Ecr55U=
-		</data>
-		<key>Resources/snippets/luapage.js</key>
-		<data>
-		7W1HotG0NyGy8NL+6m+IuK8k/go=
-		</data>
-		<key>Resources/snippets/lucene.js</key>
-		<data>
-		TOY9OoL68kUICPlMJJOLjYLJC4Y=
-		</data>
-		<key>Resources/snippets/makefile.js</key>
-		<data>
-		X9W093B5i1FwDAvSko6RABcvFCM=
-		</data>
-		<key>Resources/snippets/markdown.js</key>
-		<data>
-		M/wVuY+xJIpvgtGsJkx6dxC7cXY=
-		</data>
-		<key>Resources/snippets/mask.js</key>
-		<data>
-		6wPt3x6PFe+wHelTimyhc0mQn0U=
-		</data>
-		<key>Resources/snippets/matlab.js</key>
-		<data>
-		z+krmIPdRqfV+kjAbpBM10Xyrgs=
-		</data>
-		<key>Resources/snippets/maze.js</key>
-		<data>
-		L2HpJ1Q+M9T/h7mZcB8vp2FPPw0=
-		</data>
-		<key>Resources/snippets/mel.js</key>
-		<data>
-		2/J967aIj126oHd7Eb1Ri8zOuX4=
-		</data>
-		<key>Resources/snippets/mips_assembler.js</key>
-		<data>
-		TbFaH6O9uae9csj8i3+k8ntR4Fg=
-		</data>
-		<key>Resources/snippets/mipsassembler.js</key>
-		<data>
-		bnsjebTcOJM7AVgRKtvTiRe3wxo=
-		</data>
-		<key>Resources/snippets/mushcode.js</key>
-		<data>
-		JkT76pANqNIZl5Nd2iQFUd5By5s=
-		</data>
-		<key>Resources/snippets/mysql.js</key>
-		<data>
-		Mj6at4ruo2vPtQRgKZL0aeJgm5I=
-		</data>
-		<key>Resources/snippets/nix.js</key>
-		<data>
-		qflP6SOF4MrelyHXAA4EKd1KT/I=
-		</data>
-		<key>Resources/snippets/objectivec.js</key>
-		<data>
-		GRClj0ZhH5QtG+0U2LabKicLHSA=
-		</data>
-		<key>Resources/snippets/ocaml.js</key>
-		<data>
-		W5YR/q4jVZuAHyG4m763ss1gGbs=
-		</data>
-		<key>Resources/snippets/pascal.js</key>
-		<data>
-		3s+I0GwVF3+72Aiie33fr1nAx4k=
-		</data>
-		<key>Resources/snippets/perl.js</key>
-		<data>
-		ixTRhAF0H63qm29sKggHikhE6o0=
-		</data>
-		<key>Resources/snippets/pgsql.js</key>
-		<data>
-		MCmo4TrfwdB6Z3MloIs+iQNKJeA=
-		</data>
-		<key>Resources/snippets/php.js</key>
-		<data>
-		qf283pVuMGuDS7qQWcEXlxfyoL8=
-		</data>
-		<key>Resources/snippets/plain_text.js</key>
-		<data>
-		+/7Ie1K+GPrXuFCJCgDe8zPjIBE=
-		</data>
-		<key>Resources/snippets/powershell.js</key>
-		<data>
-		m7irJlsMChD9veS1grQqNQn1qSM=
-		</data>
-		<key>Resources/snippets/praat.js</key>
-		<data>
-		zZ2/5Rm2GGiiicnUaEK0nlaPfxc=
-		</data>
-		<key>Resources/snippets/prolog.js</key>
-		<data>
-		NQI05wHwkgwyTBCFNqi4vl+gxHA=
-		</data>
-		<key>Resources/snippets/properties.js</key>
-		<data>
-		DBeOsTKBDz5cr+o3NSAdALF8WO0=
-		</data>
-		<key>Resources/snippets/protobuf.js</key>
-		<data>
-		3bPuor29IyorSXnCmO1JMbkgqnE=
-		</data>
-		<key>Resources/snippets/python.js</key>
-		<data>
-		fgNUq5eR6YPrlykZXXoEBKwK1NE=
-		</data>
-		<key>Resources/snippets/r.js</key>
-		<data>
-		gDZKgC7fJqmowLH166POIFllo+k=
-		</data>
-		<key>Resources/snippets/rdoc.js</key>
-		<data>
-		oGLIvXOx9C4J07QGAXBKIVk2eFo=
-		</data>
-		<key>Resources/snippets/rhtml.js</key>
-		<data>
-		29Jd5DrDzweuO465wW3pdfFWjn4=
-		</data>
-		<key>Resources/snippets/ruby.js</key>
-		<data>
-		CrzeXsUvYL0aI022so6l70Jja34=
-		</data>
-		<key>Resources/snippets/rust.js</key>
-		<data>
-		1SDzD8Usebys8SWnmP1sQL0cmG4=
-		</data>
-		<key>Resources/snippets/sass.js</key>
-		<data>
-		/oVDEhadky6jg+lh+CmCyjxWn+Y=
-		</data>
-		<key>Resources/snippets/scad.js</key>
-		<data>
-		wJM4QS3XvlMEEbdLtLoaoxcLWfQ=
-		</data>
-		<key>Resources/snippets/scala.js</key>
-		<data>
-		thEiTT9uU0QaCpd9JuKJ/BTpf1E=
-		</data>
-		<key>Resources/snippets/scheme.js</key>
-		<data>
-		gNDGxHhEO0JbgMt7mNKQI96bqAw=
-		</data>
-		<key>Resources/snippets/scss.js</key>
-		<data>
-		MpUEMLoCwOXKuaLz9pSK3EeqVdY=
-		</data>
-		<key>Resources/snippets/sh.js</key>
-		<data>
-		f3Oy1RX5ibKTISjZXSIoEm7ElWU=
-		</data>
-		<key>Resources/snippets/sjs.js</key>
-		<data>
-		T2oFwIHJ+ztkg4zDI1QfrWYzUXo=
-		</data>
-		<key>Resources/snippets/smarty.js</key>
-		<data>
-		MO/Lybvst3N+lIMcemUhcO9pJjE=
-		</data>
-		<key>Resources/snippets/snippets.js</key>
-		<data>
-		IKMEmubUIGBK4M2ctIUXDXKVacU=
-		</data>
-		<key>Resources/snippets/soy_template.js</key>
-		<data>
-		nUps8vKrnJeFFAS+WxX2Cyzu/Jw=
-		</data>
-		<key>Resources/snippets/space.js</key>
-		<data>
-		O/0Ymkozru9jXlxN8kcEbgzjr3w=
-		</data>
-		<key>Resources/snippets/sql.js</key>
-		<data>
-		Uml91gFu7gqL7+w2WJjPV2BlSBI=
-		</data>
-		<key>Resources/snippets/sqlserver.js</key>
-		<data>
-		zxJn0HJ+DL6uNCRwc+GR6fESzIU=
-		</data>
-		<key>Resources/snippets/stylus.js</key>
-		<data>
-		zLwfFGAwkdAbrs4A9QWyA25DPe8=
-		</data>
-		<key>Resources/snippets/svg.js</key>
-		<data>
-		yZUV3Lyje15OGAupMop6tpnBDWQ=
-		</data>
-		<key>Resources/snippets/swift.js</key>
-		<data>
-		8QNScAIclgpdHHegkFaKIRMI/UQ=
-		</data>
-		<key>Resources/snippets/swig.js</key>
-		<data>
-		nk4eDGkNVUHehu1yaRLivYdYkXs=
-		</data>
-		<key>Resources/snippets/tcl.js</key>
-		<data>
-		bvW9XPfMGR4iq8hvQ9pdNDbq8o0=
-		</data>
-		<key>Resources/snippets/tex.js</key>
-		<data>
-		gKj+rfYWCB7A/hwWDxsTPmC9rZM=
-		</data>
-		<key>Resources/snippets/text.js</key>
-		<data>
-		AhFS27thSW71K5oIzfF78WXvAU4=
-		</data>
-		<key>Resources/snippets/textile.js</key>
-		<data>
-		MkAo7tKWzwiMxuqqX9+/avWeniU=
-		</data>
-		<key>Resources/snippets/toml.js</key>
-		<data>
-		Qmks5Qpi2kmb7bb51iMs1RsHNfs=
-		</data>
-		<key>Resources/snippets/twig.js</key>
-		<data>
-		YY/kn/nSZZxBemRcLxOj8onj+Yo=
-		</data>
-		<key>Resources/snippets/typescript.js</key>
-		<data>
-		VbN9z3rqhGXcLA4AjMh8UVj90v0=
-		</data>
-		<key>Resources/snippets/vala.js</key>
-		<data>
-		5DBMvAeo1S1j/toov/bdl06Rud8=
-		</data>
-		<key>Resources/snippets/vbscript.js</key>
-		<data>
-		sipHLA4u7j0atPsBFFQyFbj7gZ0=
-		</data>
-		<key>Resources/snippets/velocity.js</key>
-		<data>
-		6mBNkQCEW6AzEbMQs3FgXMHfZog=
-		</data>
-		<key>Resources/snippets/verilog.js</key>
-		<data>
-		rxXQxevNxSNCjBiQRfBDpy9WODM=
-		</data>
-		<key>Resources/snippets/vhdl.js</key>
-		<data>
-		4FiY6nWCYkLGPQZsrzrytst+HFg=
-		</data>
-		<key>Resources/snippets/xml.js</key>
-		<data>
-		QeYSlx89rEUuPwLeO6NqpADHThw=
-		</data>
-		<key>Resources/snippets/xquery.js</key>
-		<data>
-		tAoCvncXMqSbkg+M1HsR7eDskF4=
-		</data>
-		<key>Resources/snippets/yaml.js</key>
-		<data>
-		KxKB3Ityg++YzL4aCKwKGiSOYVY=
+		xJkkvcvXdE4/8iJTHBW7EnA5to4=
 		</data>
 		<key>Resources/theme-ambiance.js</key>
 		<data>
-		T3yFWO7txAhHUOwoj1rzHWjKfAU=
+		Y92rwA/Gl1Em8KcMyBRjGytcnsk=
 		</data>
 		<key>Resources/theme-chaos.js</key>
 		<data>
-		8A3/yo1UJ1H+Ap9k7dewLZ+mals=
+		Ak8ik0AkiiAYoAk7BKViiXhKhrc=
 		</data>
 		<key>Resources/theme-chrome.js</key>
 		<data>
-		1yv6BZj7VyGCdtn7KO6oqFjGMcc=
+		Bn0yjoswdyHTiwsaZOMA/CieD6s=
 		</data>
 		<key>Resources/theme-clouds.js</key>
 		<data>
-		HJrx/wUv9kl7yoSJlQsxDAdltGk=
+		F5KTyaTCf7FfRaSIxtxNtc/mrpI=
 		</data>
 		<key>Resources/theme-clouds_midnight.js</key>
 		<data>
-		8f83pxAstM9YsxxnRrru4cKZkww=
+		vZ0GW1aD0+9IUYDY9/wuwpPfOII=
 		</data>
 		<key>Resources/theme-cobalt.js</key>
 		<data>
-		Dehxrgizd/tioZWYf12FGOL/oQY=
+		knR9h1ZpYMT5Q0qYvJkYT3Q+djA=
 		</data>
 		<key>Resources/theme-crimson_editor.js</key>
 		<data>
-		EZfuqROqteaVZQ2qI9eFK8iekkk=
+		yd0v+n/pPZLaijI63YbK0sV7w0E=
 		</data>
 		<key>Resources/theme-dawn.js</key>
 		<data>
-		FRER69ZOoeCHazSDNGL83sJUXyw=
+		ocmBgEoGF3J7cHzt9zXI+eiC6A0=
 		</data>
 		<key>Resources/theme-dreamweaver.js</key>
 		<data>
-		U/GX+KmLp5fQOwhdfBv56bC3yS4=
+		wW42aKp1umHcJskHs97Ay0XiTlg=
 		</data>
 		<key>Resources/theme-eclipse.js</key>
 		<data>
-		tCQITT5ae7vyaN5hvxaZ1colXcA=
+		wUEqE3P3/fD2F02NPS+u8flIOZA=
 		</data>
 		<key>Resources/theme-github.js</key>
 		<data>
-		A22v8kSbmAI8slg9a2b3IbQTN/A=
+		1o/NsnWagkzjxZ8NryZLrPaU+tE=
 		</data>
 		<key>Resources/theme-idle_fingers.js</key>
 		<data>
-		VzvAUMk3LPErOho5sruRoMGHBvY=
+		zm0irNc4H1JN4E4bBJh3eC9zCHA=
 		</data>
 		<key>Resources/theme-iplastic.js</key>
 		<data>
-		hz4znNsSdfcgdrTeiWM7z9fKy2w=
+		cpDm5uZ5tKTRyPs3tjV99F9Mniw=
 		</data>
 		<key>Resources/theme-katzenmilch.js</key>
 		<data>
-		vfOOGCeFLb/FTcw0z791HAu89cU=
+		7mOByu1gGMOkEeHNxW9ZQ9w4AE4=
 		</data>
 		<key>Resources/theme-kr_theme.js</key>
 		<data>
-		PGUJdSVDYOgL6VujGHogaNHU1PI=
+		JhDM0STaZ6NAgWvqCXtUnfvqCHg=
 		</data>
 		<key>Resources/theme-kuroir.js</key>
 		<data>
-		D+PzBkFb6Hzy5VbexFq0puBiid4=
+		VMGKEQIzfQgkg38bDuo0gKu/ugs=
 		</data>
 		<key>Resources/theme-merbivore.js</key>
 		<data>
-		gAtf9tvMlwQJH3USC0XmLlMQbvI=
+		toboaxYVSb1xP/hlxhjJZn3zlJc=
 		</data>
 		<key>Resources/theme-merbivore_soft.js</key>
 		<data>
-		vlbOHnOZVWLAeIV82Y4VlCOAUV4=
+		EtPXgek8VfKfv7etB9QE4n0LyzQ=
 		</data>
 		<key>Resources/theme-mono_industrial.js</key>
 		<data>
-		9/XjqAkS7MTNZEhYald6CyGWX6E=
+		Z4f+fd9tt2VjFxFbBMcULXdCcys=
 		</data>
 		<key>Resources/theme-monokai.js</key>
 		<data>
-		mvsZrpB6X9XodxsABGPeflDVskA=
+		U/42jS5WZXt5Z2QSe33rSUNOc5A=
 		</data>
 		<key>Resources/theme-pastel_on_dark.js</key>
 		<data>
-		F6FnBxrLR3PLd0W1+tiZgx9r61I=
+		QT90sCWSROGPK8d7v+sWsNAyJ+I=
 		</data>
 		<key>Resources/theme-solarized_dark.js</key>
 		<data>
-		FylLWvTyMU9WZBwiv1apSmTLUuY=
+		iT9qXySVrZAnwU9doVe9GtYEiOg=
 		</data>
 		<key>Resources/theme-solarized_light.js</key>
 		<data>
-		iXLZqYZusz8qDwyI9TPoGBAtktw=
+		4sWo1SaIL7MbsiybH/lXvEWJd/w=
 		</data>
 		<key>Resources/theme-sqlserver.js</key>
 		<data>
-		yIGHxVMGABSc7z7/Bm8Gt4P9FW8=
+		J8uetJrSxZizfPIY7f1159NYXws=
 		</data>
 		<key>Resources/theme-terminal.js</key>
 		<data>
-		HNqWA9HWGKlHZYBd8VWKrVWeqwA=
+		47H8Ny5dy/usFhIF+chfsRCQTII=
 		</data>
 		<key>Resources/theme-textmate.js</key>
 		<data>
-		07x+izbORu6iYNf/dI2lMwy+ZI8=
+		WZfggw5XIn49Yz/PggNK93osyCc=
 		</data>
 		<key>Resources/theme-tomorrow.js</key>
 		<data>
-		UDDqO8hPZruLCqDKTYryfldDRv8=
+		7qjh7NwGaMlVjWoAAAoUEV4mwvc=
 		</data>
 		<key>Resources/theme-tomorrow_night.js</key>
 		<data>
-		J7lzxf+DMSLKk5oDhnZvKNf4/cA=
+		N0zobaw1YkbawLPCPWyxLJUZzZc=
 		</data>
 		<key>Resources/theme-tomorrow_night_blue.js</key>
 		<data>
-		ywEqtc22chTxVDsB0OAfgQ7D+Fk=
+		HD851J4D1iANoU0AkuXZE6I8CeM=
 		</data>
 		<key>Resources/theme-tomorrow_night_bright.js</key>
 		<data>
-		4IGbGqWDge6l2alwPgcOBJOC8AI=
+		uxCklpmgN4Hm1OmeDVzAA2kXgLg=
 		</data>
 		<key>Resources/theme-tomorrow_night_eighties.js</key>
 		<data>
-		SLaENFnkImAbvKt3zja4a9P6HhU=
+		gfkQcIr6gJ6d64U/cXPKnuJVstU=
 		</data>
 		<key>Resources/theme-twilight.js</key>
 		<data>
-		P1PxZM/SBTwIWBjCproxSzag4eY=
+		Hiu8C87R11ev9Wv0jolO9BqruNI=
 		</data>
 		<key>Resources/theme-vibrant_ink.js</key>
 		<data>
-		Hzz2KEGiMz5SLIfGsfbS04LggDk=
+		A70+UFfcyjXmWSrE9n2litQ7Cok=
 		</data>
 		<key>Resources/theme-xcode.js</key>
 		<data>
-		SnSDJ+dS60SHpDDxGdzPu2rHEKo=
+		st7FcBmhpxL6KXsFUTn2gDCdaV8=
+		</data>
+		<key>Resources/toml.js</key>
+		<data>
+		hSQM2yTCbtSW/lZd3/SruEJc06Q=
+		</data>
+		<key>Resources/twig.js</key>
+		<data>
+		sQY1MerzWRg01s3/llySVkbkSAs=
+		</data>
+		<key>Resources/typescript.js</key>
+		<data>
+		OoynOHcJzAlHSdCDaCoL29dLkfk=
+		</data>
+		<key>Resources/vala.js</key>
+		<data>
+		5Es5N+vapzrU/dXPRaBIHu2nsmk=
+		</data>
+		<key>Resources/vbscript.js</key>
+		<data>
+		GbnKLdph/esTWAHZseLDuvoEuyI=
+		</data>
+		<key>Resources/velocity.js</key>
+		<data>
+		SO1QXfdseDLu0Zi+9b0zU8vFl+E=
+		</data>
+		<key>Resources/verilog.js</key>
+		<data>
+		4FjR5gPwhNrqXp+Of50v5GxPHTU=
+		</data>
+		<key>Resources/vhdl.js</key>
+		<data>
+		uKfpOwdHlEsewUfVbjppTQt1lOw=
+		</data>
+		<key>Resources/wollok.js</key>
+		<data>
+		zq/Hg0bvaqTsbila2fpBo2Ri1tM=
 		</data>
 		<key>Resources/worker-coffee.js</key>
 		<data>
-		Ch09H3UxxO8tMBH9iYbFZKrMD9k=
+		368+a49lOvpNM8EJv4jPpyoGFkw=
 		</data>
 		<key>Resources/worker-css.js</key>
 		<data>
-		2Sq2mOa2+7Nl01NCQ4GizNy9zMs=
+		f1SiwdZGHv46ALVHWRblJ3Tbs3A=
 		</data>
 		<key>Resources/worker-html.js</key>
 		<data>
-		7psnKqlIH/RDzkCBWzu/+N7jLrE=
+		x+sDC+4rztUKr1V/Ec3PX9u4maw=
 		</data>
 		<key>Resources/worker-javascript.js</key>
 		<data>
-		sLi2cu6fs8EdDL9zcdwLUjdLutQ=
+		UQ0QFERmfjYIGm3pzC4xsZg9xZU=
 		</data>
 		<key>Resources/worker-json.js</key>
 		<data>
-		dRF9slz8IQmQKjUT5WILFhE82RA=
+		ov90rE2WlWEaz1yLtfzG/Bcub6A=
 		</data>
 		<key>Resources/worker-lua.js</key>
 		<data>
-		T8uZ6RbdY4mfuadkmwCJE/nOhLg=
+		brIoGP/7v3HFMrvWFhubQDkIMmE=
 		</data>
 		<key>Resources/worker-php.js</key>
 		<data>
-		D+4hLzN+/N9JqU1WttKQibeAWC4=
+		5uWClCrL0EVRaFVNr4lFNKq6XAs=
 		</data>
 		<key>Resources/worker-xml.js</key>
 		<data>
-		dzpv7Vk3K8WxfNkLr4lRIyVf33M=
+		kYNfQQm/b5Qi/Vxz2TzH9WdKs1g=
 		</data>
 		<key>Resources/worker-xquery.js</key>
 		<data>
-		yuA3Iy8BDiL5E1igbEUnkjznyhI=
+		iz+Do6XKCBHdeJUq3+qsm9J4bkc=
+		</data>
+		<key>Resources/xml.js</key>
+		<data>
+		xwgYDPShrCo0XIbWYDDOcmThMA4=
+		</data>
+		<key>Resources/xquery.js</key>
+		<data>
+		MRmVZt9Hy0zO+TtWMPJ5eq+eWUI=
+		</data>
+		<key>Resources/yaml.js</key>
+		<data>
+		jLJMttR8BOz5lzQSeZXZ+nQ6RRM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1523,7 +1567,7 @@
 		</data>
 		<key>Headers/RWAbstractPlugin.h</key>
 		<data>
-		W6R5J7qzvnQIt0RJXooDRJpC/ZQ=
+		FEWMrJDzCA7CL8Qj+NhP1e2znOw=
 		</data>
 		<key>Headers/RWAlert.h</key>
 		<data>
@@ -1579,7 +1623,7 @@
 		</data>
 		<key>Headers/RWPluginProtocol.h</key>
 		<data>
-		2SPI4l95VH8ULK9P95ryRnJmLrQ=
+		t+ZG41S76L+HzCnTpI6Ks8/JitI=
 		</data>
 		<key>Headers/RWSharedStorage.h</key>
 		<data>
@@ -1599,7 +1643,7 @@
 		</data>
 		<key>Headers/RWTextView.h</key>
 		<data>
-		0FL5dmKPJV4XdWWWujtdkh/U7yM=
+		xPunDY1fPE70q4QBmw2N4mOAf6U=
 		</data>
 		<key>Headers/RWTextViewPluginClient.h</key>
 		<data>
@@ -1639,15 +1683,15 @@
 		</data>
 		<key>PrivateHeaders/RWDocument+RWPrivate.h</key>
 		<data>
-		dtrpd3OhxRd6g72+PSKetHMlEfI=
+		/Nspahy2gOQUy56vy2rvFqoRWZg=
 		</data>
 		<key>PrivateHeaders/RWDocument.h</key>
 		<data>
-		5VBelPCqVfUlRBwCnfUu8eeYGmE=
+		UmnoiBUWKoKKoc8/XeHysMmPPDU=
 		</data>
 		<key>PrivateHeaders/RWDocumentModel.h</key>
 		<data>
-		UlSqk0/iG+a4xJJ7Lbj8qjOEi9g=
+		/ykNJeqxOGy0dQR0zujkR/sjZA4=
 		</data>
 		<key>PrivateHeaders/RWDocumentOptionsSnapshot.h</key>
 		<data>
@@ -1659,7 +1703,7 @@
 		</data>
 		<key>PrivateHeaders/RWExporter.h</key>
 		<data>
-		x+ldEd91KZn6bDdlr5I6cuIZi1I=
+		Z3g5coLkXnoZq3d02yvIIhpm31g=
 		</data>
 		<key>PrivateHeaders/RWJavaScript.h</key>
 		<data>
@@ -1691,11 +1735,11 @@
 		</data>
 		<key>PrivateHeaders/RWPage+Sandwich.h</key>
 		<data>
-		T86shRekLWEsp0SKKGJk7t8XBSA=
+		xqzjtMmWwI2/4zYUhQ8GQU3EqMo=
 		</data>
 		<key>PrivateHeaders/RWPage.h</key>
 		<data>
-		9tmd2f8PQYtQAZ+ISyL/5hF5xiI=
+		Ze8DbDFPJolteryZ1ijdynFMfrM=
 		</data>
 		<key>PrivateHeaders/RWPageAttributes+Sandwich.h</key>
 		<data>
@@ -1703,7 +1747,7 @@
 		</data>
 		<key>PrivateHeaders/RWPageAttributes.h</key>
 		<data>
-		+FcaHs7+G8p7RXqNJwJScQ18Hjk=
+		rGgdnjH/u9faUEqFJsKaUI2pb5o=
 		</data>
 		<key>PrivateHeaders/RWPageEncodings.h</key>
 		<data>
@@ -1715,7 +1759,7 @@
 		</data>
 		<key>PrivateHeaders/RWPageStyles.h</key>
 		<data>
-		HWnvmT+pevwYRilguntM02+R1yY=
+		BfvYXzJBpVyXdJUWPJfWXJdcofY=
 		</data>
 		<key>PrivateHeaders/RWPageTree.h</key>
 		<data>
@@ -1751,7 +1795,7 @@
 		</data>
 		<key>PrivateHeaders/RWSiteResource.h</key>
 		<data>
-		RRjyxtFQ6b3vXaN8RidQ28PjnBo=
+		UxdGU3bRs4vP2bwKTgTuEC4YMQU=
 		</data>
 		<key>PrivateHeaders/RWSourceList.h</key>
 		<data>
@@ -1767,7 +1811,7 @@
 		</data>
 		<key>PrivateHeaders/RWTheme.h</key>
 		<data>
-		bWJ5GEDdBr5IM/NRmWBcPBp6ZNk=
+		/M5/x/0NTXCXsVwl6utg8VWF6UQ=
 		</data>
 		<key>PrivateHeaders/RWThemeInstaller.h</key>
 		<data>
@@ -1775,7 +1819,7 @@
 		</data>
 		<key>PrivateHeaders/RWThemeManager.h</key>
 		<data>
-		G2++LlrIWYk7ejlAsTlmA8i4IbU=
+		YMtu2Wh9gxZzEPh7k5k7oONFDU8=
 		</data>
 		<key>PrivateHeaders/RWTidy.h</key>
 		<data>
@@ -1793,7 +1837,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bOak3VqDg0jQ+6rtWXnEFs5rWAA=
+			4iHyVZf/+QT5b0gU+LryvZLZ8RA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1811,7 +1855,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PsYexoG4zo4MpJtGdsMpqqmXpno=
+			TU5pkAqDzGLCcc4denBUAg4Lgts=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1829,7 +1873,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NU9GsaAgHpFOkoDep/i+pmyTOGE=
+			VT1p5UDBYnHXc9jLmfxrlSankJg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1847,7 +1891,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oDw8cLcueIhD8oXXyw0AC84gvoo=
+			CFxHFsbFjQEEUvZw7BhiXqAmTlY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1881,7 +1925,7 @@
 		</dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		Sap+PZPvnNZrbXX0l5mtLOMD/iA=
+		vatOCYPTVRykP38HrMix9kXfFog=
 		</data>
 		<key>Resources/LICENSE</key>
 		<data>
@@ -1991,1309 +2035,1353 @@
 		<data>
 		+zxR6TFJp8t1Q0DDqd2GS+h3OpQ=
 		</data>
+		<key>Resources/abap.js</key>
+		<data>
+		3XoNS4BbS67S1k6rpZMJoysRU4k=
+		</data>
+		<key>Resources/abc.js</key>
+		<data>
+		eN/t58aWYEUcodn65prISK0Xl+g=
+		</data>
 		<key>Resources/ace.js</key>
 		<data>
-		NKC4cL5ksW1EhJvNAP7Y32DYr6g=
+		rmVFpslhBQb0QUYp37CZzQFhywE=
 		</data>
-		<key>Resources/disable-drag-drop.js</key>
+		<key>Resources/actionscript.js</key>
 		<data>
-		Woy/eD/4s8a3xh7LcFPHAdMls0o=
+		LM09e4sM8vab0bNebg9Pb4BchWo=
+		</data>
+		<key>Resources/ada.js</key>
+		<data>
+		l3m3IsC/lzbzaHZi+o7PuQ1cy5U=
+		</data>
+		<key>Resources/apache_conf.js</key>
+		<data>
+		T156jJC1tr07e6c6JFPF9Pucw9M=
+		</data>
+		<key>Resources/applescript.js</key>
+		<data>
+		ZuKhpwMIvZh+OHpeNps08CG8rtw=
+		</data>
+		<key>Resources/asciidoc.js</key>
+		<data>
+		C4Tk6k9d85Fs6RZufSIn1t9tyXM=
+		</data>
+		<key>Resources/assembly_x86.js</key>
+		<data>
+		FcmLAGPEKfOQWB0pD+K+xFzTIRk=
+		</data>
+		<key>Resources/autohotkey.js</key>
+		<data>
+		O2YdBwfScY7LwChrVvuDITppQqc=
+		</data>
+		<key>Resources/batchfile.js</key>
+		<data>
+		fDlDHb36L/OKdvt8sij1bxl5Gbo=
+		</data>
+		<key>Resources/c9search.js</key>
+		<data>
+		5bsCeXb1kmnC7J0ELV9AyXCfD1M=
+		</data>
+		<key>Resources/c_cpp.js</key>
+		<data>
+		rRa2R++Sv+0wEJ5kroSKS076GZg=
+		</data>
+		<key>Resources/cirru.js</key>
+		<data>
+		jEGRjyO4e6U6hApzjd9aXtq1iDc=
+		</data>
+		<key>Resources/clojure.js</key>
+		<data>
+		YSdVMaDl9bYPLMcKbR22pYDiOFU=
+		</data>
+		<key>Resources/cobol.js</key>
+		<data>
+		1rHFueShXD7VsBmr2e0Rfj8yR6k=
+		</data>
+		<key>Resources/coffee.js</key>
+		<data>
+		wAD6aXVlnatsCsBcGeUbOQYE6ts=
+		</data>
+		<key>Resources/coldfusion.js</key>
+		<data>
+		De1Gzhd/QjZKG6MB6s8PRbUSMa0=
+		</data>
+		<key>Resources/csharp.js</key>
+		<data>
+		K72g2o3Xtgxqsjk73BLrOA+Va/o=
+		</data>
+		<key>Resources/css.js</key>
+		<data>
+		joUSNkiUyx/qpnFD47dTwQaRgE8=
+		</data>
+		<key>Resources/curly.js</key>
+		<data>
+		L8bPUyvufXDKS5aMzkKWq59R4AM=
+		</data>
+		<key>Resources/d.js</key>
+		<data>
+		z2z0/1xrZPjgwaCIRke2SJbNj/s=
+		</data>
+		<key>Resources/dart.js</key>
+		<data>
+		d351JP6oCNlz0CLGSASjOKFgTGk=
+		</data>
+		<key>Resources/diff.js</key>
+		<data>
+		PpVwEwi/ziZRg8NRlJcgmNCF28U=
+		</data>
+		<key>Resources/django.js</key>
+		<data>
+		eCZJtadBw0ZHke6gFuWyHWwDLiI=
+		</data>
+		<key>Resources/dockerfile.js</key>
+		<data>
+		dcHUskAgAaXvqPut8+nXBKroNY0=
+		</data>
+		<key>Resources/dot.js</key>
+		<data>
+		JDTLvzUqcL9HW6z3aRwDGus31b8=
+		</data>
+		<key>Resources/editor-oldwebview.html</key>
+		<data>
+		cq5K3xZGZwy1Vibq4hmRkHxopY0=
 		</data>
 		<key>Resources/editor.html</key>
 		<data>
 		zXVt8jnYUNlfdT2TnOWg60U7SAc=
 		</data>
+		<key>Resources/eiffel.js</key>
+		<data>
+		udi++5+uOTypQb0Qbb/hH/vDcxI=
+		</data>
+		<key>Resources/ejs.js</key>
+		<data>
+		u/bDXFJpVggYBdrr7w5VY2kKLOI=
+		</data>
+		<key>Resources/elixir.js</key>
+		<data>
+		h1vb65J+4yzvo6KrKoLFaQAdJEw=
+		</data>
+		<key>Resources/elm.js</key>
+		<data>
+		ddpz7IzqTT2/eLOFK+by7xkKe+M=
+		</data>
+		<key>Resources/erlang.js</key>
+		<data>
+		LMg7uIrPm+qUUVkUyIwSLp+Aesw=
+		</data>
 		<key>Resources/ext-beautify.js</key>
 		<data>
-		HJgFtVnS0K6gSId8s463wnEFwB8=
+		CrFQQxjwi+eFhfkOCp4r5woxbTM=
 		</data>
 		<key>Resources/ext-chromevox.js</key>
 		<data>
-		jOZBFD9qPBWk9BbVG+jM0l2lTck=
+		X6YUyYSzs7VudaH3HiOA+wMWFq4=
 		</data>
 		<key>Resources/ext-elastic_tabstops_lite.js</key>
 		<data>
-		gvZkQ65p8yMquczukNBkWh8TPuY=
+		DiUeQ6w8Uf+rdvgqPZ6RmhN8Jzk=
 		</data>
 		<key>Resources/ext-emmet.js</key>
 		<data>
-		6c4N99DXF3uOIZpBadsXzQ9Vs7s=
+		kuX2TfcrR8T0LR/xlWplhgmBzIU=
 		</data>
 		<key>Resources/ext-error_marker.js</key>
 		<data>
-		a3oiZlfkoyDVEa2fuVcmNsA5Zgs=
+		q5cLdckz8qC3cLrsHWNPPvESZOk=
 		</data>
 		<key>Resources/ext-keybinding_menu.js</key>
 		<data>
-		1sSQ0gpI7D4l3Dq+LR8EEy7jVnM=
+		/3t5B7oz7ItMPYA4y2PgIxn1amo=
 		</data>
 		<key>Resources/ext-language_tools.js</key>
 		<data>
-		AR9uNvVh8VxaEMh/64J4ytmTMZE=
+		clttrb+HwTfZmaykEebzDuQnRMU=
 		</data>
 		<key>Resources/ext-linking.js</key>
 		<data>
-		6uUwC7DbclAT5GJPguD1An3d2Bc=
+		EQvQTUuTa2KcYWY/rew+euFwaYg=
 		</data>
 		<key>Resources/ext-modelist.js</key>
 		<data>
-		eNV9eyoCaYg1xXuXWVefbVXQfJ8=
+		2BSVvxYx6g3DXzwBiDtHe+h96cI=
 		</data>
 		<key>Resources/ext-old_ie.js</key>
 		<data>
-		9ZTusI2XAL5ncJ97GkZziGoOSQI=
+		2lZrsSCQboNWBcPd0W2ni2264Hk=
 		</data>
 		<key>Resources/ext-searchbox.js</key>
 		<data>
-		XOepOLev+p/NQj2ULVY/gbhnERk=
+		PA9CSEKTGyTblRlPns3wYkQHvOA=
+		</data>
+		<key>Resources/ext-settings_menu.js</key>
+		<data>
+		znQM8sdf+bdWISmz9/hL/CNIsn4=
 		</data>
 		<key>Resources/ext-spellcheck.js</key>
 		<data>
-		5t6hAY98KtimVaZFVpHfglFDZwE=
+		oW+D0rA0h6URBw5S4unkspMYzg0=
 		</data>
 		<key>Resources/ext-split.js</key>
 		<data>
-		cqbAjEK5nGiLPKrK659Xc6gzvAc=
+		z91K59lsmrWhtZ/nZWJ3MpTFn4k=
 		</data>
 		<key>Resources/ext-static_highlight.js</key>
 		<data>
-		5Ei2bnOT2QtCUIrr+xkf/84kQ0c=
+		g3DoRkxkh1KCIumyey6taooTqfI=
 		</data>
 		<key>Resources/ext-statusbar.js</key>
 		<data>
-		jloxya4oxv1U8x47Z+gJYerYul0=
+		o1u7LZRNj/AaO5peJaA9B7faVQo=
 		</data>
 		<key>Resources/ext-textarea.js</key>
 		<data>
-		+/wAD3h/HxYHwQ6TSLwR9qjGe94=
+		39E6sDuVlBR3Vh8yziJGSjLS1F4=
 		</data>
 		<key>Resources/ext-themelist.js</key>
 		<data>
-		R1Dez4A17Qi3xsuK9OXEJ0aCN4U=
+		zw8h8L293fLAf5KMpho/J6yZrWc=
 		</data>
 		<key>Resources/ext-whitespace.js</key>
 		<data>
-		tFe55EfZybBQYxSWomTeN+r+opo=
+		oXBu7tslNJwAYVkLgnqbOLEmM3s=
+		</data>
+		<key>Resources/forth.js</key>
+		<data>
+		M00JiiqUD+ISfJJ/9xPIYYZNnJs=
+		</data>
+		<key>Resources/ftl.js</key>
+		<data>
+		s+MFdq63SiZDO6IL0vB1KootxWw=
+		</data>
+		<key>Resources/gcode.js</key>
+		<data>
+		GPM8xQhSldr3acMDsgzrpiqcreQ=
+		</data>
+		<key>Resources/gherkin.js</key>
+		<data>
+		h2W7vm2KCtzm4AzLJFTwFN5NOeM=
+		</data>
+		<key>Resources/gitignore.js</key>
+		<data>
+		8L5Gxn3DqeTsHeX3GOm4p/JwsQg=
+		</data>
+		<key>Resources/glsl.js</key>
+		<data>
+		PP0hLIkITAySYTmBad2rDGE0SvA=
+		</data>
+		<key>Resources/gobstones.js</key>
+		<data>
+		4Wg0RVuNdykXafbpajjKIt/Ge2g=
+		</data>
+		<key>Resources/golang.js</key>
+		<data>
+		5gQiO/PfLl3T+ESai6LmMjNPFF8=
+		</data>
+		<key>Resources/groovy.js</key>
+		<data>
+		AJK8MN+3EbBgxGHUB3zgwtOKF84=
+		</data>
+		<key>Resources/haml.js</key>
+		<data>
+		6ANTEAt+jJGFh8nobDXe5dEnGM8=
+		</data>
+		<key>Resources/handlebars.js</key>
+		<data>
+		RT3jZ4pq08/Xq909cOvOAzpHfdg=
+		</data>
+		<key>Resources/haskell.js</key>
+		<data>
+		kKekBB0FJ6lBYPRtMV3XcKO+4oY=
+		</data>
+		<key>Resources/haxe.js</key>
+		<data>
+		5NtOch28VxQt6cPu3rK1wsoH748=
+		</data>
+		<key>Resources/html.js</key>
+		<data>
+		8OjVcbHTGF0ttuqqw9JYPRSPfKA=
+		</data>
+		<key>Resources/html_elixir.js</key>
+		<data>
+		QIQaYTkC+50kmZlkLz68XGkBoXE=
+		</data>
+		<key>Resources/html_ruby.js</key>
+		<data>
+		l6Fj87Jqi3PObc7V1GZXTWiwsUY=
+		</data>
+		<key>Resources/ini.js</key>
+		<data>
+		KtDVJBJuZ8QUAo4XpjVauPCNqaw=
+		</data>
+		<key>Resources/io.js</key>
+		<data>
+		Fcqf2mqj+xNqI5pvKz+0B95scxs=
+		</data>
+		<key>Resources/jack.js</key>
+		<data>
+		drge8QK5qnTQEaUmbR1N8CXSxOE=
+		</data>
+		<key>Resources/jade.js</key>
+		<data>
+		eQgY2+4IQzw6X2oK3kOcb+TlNnA=
+		</data>
+		<key>Resources/java.js</key>
+		<data>
+		Qv6dHE+/zTMi9YnSs06oV1DoyxE=
+		</data>
+		<key>Resources/javascript.js</key>
+		<data>
+		zq+Kg8iGnW4AxyG/VFUjjP/4IW0=
+		</data>
+		<key>Resources/json.js</key>
+		<data>
+		lKAZJWSAXztkfMbIyvEtWBd+vJE=
+		</data>
+		<key>Resources/jsoniq.js</key>
+		<data>
+		xwOLER2wemgNYOt2EVCG47SmzCA=
+		</data>
+		<key>Resources/jsp.js</key>
+		<data>
+		dlT1hr2+rwbi0e6QvkN2HwsveaA=
+		</data>
+		<key>Resources/jsx.js</key>
+		<data>
+		xvt6+Dd7QLuaWHh2/1QCPHmRoxQ=
+		</data>
+		<key>Resources/julia.js</key>
+		<data>
+		0Xu+Y/UwADRDUMWA4ByjcfDq4Dg=
 		</data>
 		<key>Resources/keybinding-emacs.js</key>
 		<data>
-		1suGxk4tsriUULFGGZyd8/yOQac=
+		kAuPxxSN+IWuaF3Ub2raD/ZSbpo=
 		</data>
 		<key>Resources/keybinding-vim.js</key>
 		<data>
-		QdofI/pt49j9ou/LpAu5JPhwqgA=
+		2Qlqodf/jOHzrk5Eq8on/tuosno=
+		</data>
+		<key>Resources/latex.js</key>
+		<data>
+		oXns6jaRLMQM51dC0kSxj/Ersjg=
+		</data>
+		<key>Resources/lean.js</key>
+		<data>
+		SNsSa+6dQNS+EKBmh7lHT+itUqQ=
+		</data>
+		<key>Resources/less.js</key>
+		<data>
+		rJCenkPPcn7yu7iZkYTEmyBCSos=
+		</data>
+		<key>Resources/liquid.js</key>
+		<data>
+		k8P/W9RpcYJJcr2yCmgEva1froI=
+		</data>
+		<key>Resources/lisp.js</key>
+		<data>
+		wyyk6DhN5KB8VEKULJn7pvXzr14=
+		</data>
+		<key>Resources/live_script.js</key>
+		<data>
+		00kgB3pA5mQcMmgrtkfpnJL1PEE=
+		</data>
+		<key>Resources/livescript.js</key>
+		<data>
+		T98iYaGjT1aUHR8XCLDXQY9fWx8=
+		</data>
+		<key>Resources/logiql.js</key>
+		<data>
+		11ymdJb5InAdC9H0VvTP/KFErEI=
+		</data>
+		<key>Resources/lsl.js</key>
+		<data>
+		oYbZhNWzRsllZ31ufLGrD3Vnf5E=
+		</data>
+		<key>Resources/lua.js</key>
+		<data>
+		hN+jR6hvk9tQWQYAwcfzRxK3jos=
+		</data>
+		<key>Resources/luapage.js</key>
+		<data>
+		RIhq893rz/AWNXh6EGtaXMfGk9g=
+		</data>
+		<key>Resources/lucene.js</key>
+		<data>
+		qPf4a3fkuUk3kPfJv7w/qg+SGoA=
+		</data>
+		<key>Resources/makefile.js</key>
+		<data>
+		1tf6jKwabP+1CKlp4dFtkxScuZM=
+		</data>
+		<key>Resources/markdown.js</key>
+		<data>
+		+inEgj0UxZBRYWjPQEo8l+D4Cpg=
+		</data>
+		<key>Resources/mask.js</key>
+		<data>
+		r31z1mW66bCGvRxYwk9d1UCfjJI=
+		</data>
+		<key>Resources/matlab.js</key>
+		<data>
+		che5+frz/TYFwdU0C+YJTeqavwE=
+		</data>
+		<key>Resources/maze.js</key>
+		<data>
+		yB1Z/3IT+fDb34FGO30JyQ8XzPQ=
+		</data>
+		<key>Resources/mel.js</key>
+		<data>
+		Pi29MbNG1ImUE4m7I+n352VBbjs=
+		</data>
+		<key>Resources/mips_assembler.js</key>
+		<data>
+		qPk+T/MlBcSqaCAZi4w2gPJebK4=
+		</data>
+		<key>Resources/mipsassembler.js</key>
+		<data>
+		ctVEw9eV60ouTkAP4qSGEx9jry8=
 		</data>
 		<key>Resources/mode-abap.js</key>
 		<data>
-		+SGOUFZL66I/7aHO1dftJ2Gzv/Y=
+		+5NHKCFaZQQImhJU1g1k6qFFVVw=
 		</data>
 		<key>Resources/mode-abc.js</key>
 		<data>
-		/jrJL/kPuR1POTEFcWLa4NRYDmg=
+		xmRt6lFvKWrBg31E6IMP6thNTHs=
 		</data>
 		<key>Resources/mode-actionscript.js</key>
 		<data>
-		tvsT0STgRLfICZ/CIA5nFV1Y+vI=
+		pbYN5F2Ra3j6MTh388SWRrYGYQI=
 		</data>
 		<key>Resources/mode-ada.js</key>
 		<data>
-		XGYiEGuuMZGLmSrxfg9QSx8ELoc=
+		/eDXUGiSxluWu7a9Crinb9aOeJ0=
 		</data>
 		<key>Resources/mode-apache_conf.js</key>
 		<data>
-		bV+9ff8rjDDHtwo++UbrWAs2mjE=
+		MlOpwjJ4+s/SlSe5VhVdyHUtfAc=
 		</data>
 		<key>Resources/mode-applescript.js</key>
 		<data>
-		nth3B1fDGz+mf5mnVRle4GHr44U=
+		Kg6jAhiKeGp44+IafrzysmTLuXU=
 		</data>
 		<key>Resources/mode-asciidoc.js</key>
 		<data>
-		EYZ6O2SzDOvmCHgnlNjciqRrFtY=
+		BS7QLOTboue6l47H1pUtIbR/Yqc=
 		</data>
 		<key>Resources/mode-assembly_x86.js</key>
 		<data>
-		IGzNCMGZo4Xsf1KSeBdwo64esvo=
+		AMjbl6MvkuC/9pHptcOPjDO4iWg=
 		</data>
 		<key>Resources/mode-autohotkey.js</key>
 		<data>
-		Yw1EXSyjHkBs//M0NNq8OJ/mm9A=
+		B3Pha7qEpG+uiWbpxWAsmZPweIo=
 		</data>
 		<key>Resources/mode-batchfile.js</key>
 		<data>
-		/u+lGg1wsv7wHCKPDLLkM6mmVos=
+		+EAnMLcVpHyX6k4bOQNe4Xuhql8=
 		</data>
 		<key>Resources/mode-c9search.js</key>
 		<data>
-		jgNTharJVjJ7zNZKR7vuyUt4S+E=
+		1RQbBvc4/7WqBqbJvsIdtrEqaWo=
 		</data>
 		<key>Resources/mode-c_cpp.js</key>
 		<data>
-		b3wNOwtEdhDHh8/QYi0ANmC+wco=
+		rCYP0h56HA1Yr3tpuVcEtW0vIUs=
 		</data>
 		<key>Resources/mode-cirru.js</key>
 		<data>
-		US147h6rnfdfX/WUHXfXkEgBupg=
+		3kwmNZ6nJ9G444Rn3gYxl5gjTs0=
 		</data>
 		<key>Resources/mode-clojure.js</key>
 		<data>
-		HH+CMYYwNWE//a0eTrTd0hHHfMU=
+		dDINkZtXBRogI2wne4l1qe8Bfrk=
 		</data>
 		<key>Resources/mode-cobol.js</key>
 		<data>
-		wDSbZWpfdKsmQEKQQzzqfzeatdI=
+		u+VUNZnkbjixagqMzhDrLo5VRkg=
 		</data>
 		<key>Resources/mode-coffee.js</key>
 		<data>
-		pDbmovKUIOv+actGcbZM9CJpV8o=
+		XLql0NgZ/upjUnnDchRyusORzYE=
 		</data>
 		<key>Resources/mode-coldfusion.js</key>
 		<data>
-		rG/d7V79hXm11Cnjp5lVyZpJ8JE=
+		x420SdTAmAXRFCJe/h0FEjzhYkE=
 		</data>
 		<key>Resources/mode-csharp.js</key>
 		<data>
-		/mIR8Vvl+jcIt2XF+c+mD3Vb2OU=
+		Z+PpYSR0d5gl0bQvai1IEDN9/ww=
 		</data>
 		<key>Resources/mode-css.js</key>
 		<data>
-		3MBQhk+o5rU11zdJxIsiW9ZWTZU=
+		YaAXv+4JZxdmFsVVJC4tkjUvfLQ=
 		</data>
 		<key>Resources/mode-curly.js</key>
 		<data>
-		b5XjywYogvcNCeG+dtEvDtS9AL0=
+		MbQkjMcUgxv/q5J1tHo3NFVwvPQ=
 		</data>
 		<key>Resources/mode-d.js</key>
 		<data>
-		SOYdTJjtufMUSKUFJUK+P8ENTh8=
+		0mO0CK2syhTyspeNsoeQ3MPhGdE=
 		</data>
 		<key>Resources/mode-dart.js</key>
 		<data>
-		gmt0+/ZaQ/rmIrdZSHUaRVM94SM=
+		z8AKn/ghdYdsL6Ham6vvMkA5Gj8=
 		</data>
 		<key>Resources/mode-diff.js</key>
 		<data>
-		oJCbbqwPROqusuwClBnZbIcvdOI=
+		afsZK3XZnFJjI5LaTyVdVjvfs6c=
 		</data>
 		<key>Resources/mode-django.js</key>
 		<data>
-		2JVOpmrvl6B/qRFGA5a/5i6eH5A=
+		Z4T3jQ6YApJwbvLODTql/P/XMlo=
 		</data>
 		<key>Resources/mode-dockerfile.js</key>
 		<data>
-		PuYwEexhe/OZFsLr1I02ZrptGkk=
+		cEkoFOgxPDKtMBFBwoRXnTZswhE=
 		</data>
 		<key>Resources/mode-dot.js</key>
 		<data>
-		o2CdQx3KoDRzq4a0Xsnbf/g7Xnw=
+		gGXjEhrNqI0EQnHmbRNrMfvyZco=
 		</data>
 		<key>Resources/mode-eiffel.js</key>
 		<data>
-		4tZXMkXCP82ev0MJx+ZVnE+664k=
+		Ag5Q2qJ1pqyLCdDE6sENFcJWXkA=
 		</data>
 		<key>Resources/mode-ejs.js</key>
 		<data>
-		drkv7v93kXoZhL6hNVyedA6LZVk=
+		HmHTsvRbtS/2nb5+9Z/7PBQk6pw=
 		</data>
 		<key>Resources/mode-elixir.js</key>
 		<data>
-		OU3fOZR+O41jv9KEk41BMev88OY=
+		r10xfOjQQCdpJy9dONhG52XlpDI=
 		</data>
 		<key>Resources/mode-elm.js</key>
 		<data>
-		KBcYpIxV1TDw1VhlMi8hgpcOseM=
+		rr3qSnDw1jY1L0T6G2nDM2l+mX4=
 		</data>
 		<key>Resources/mode-erlang.js</key>
 		<data>
-		p1HeQIDU+ua+8XLgTVqB3Ld1vAw=
+		OYQk3L7cFtmMjgMv6/Iex1HCksI=
 		</data>
 		<key>Resources/mode-forth.js</key>
 		<data>
-		Ia6+S0hMgGG2Ue1LZuFWyZTKTI4=
+		I8bBjKYCv0+OcVxOx0iY63p+G3g=
 		</data>
 		<key>Resources/mode-ftl.js</key>
 		<data>
-		vOE9TyoLJO7AqzmwCXVIA/gQnrs=
+		/mJu70skhVp/TMpIvoKZBIbk9kc=
 		</data>
 		<key>Resources/mode-gcode.js</key>
 		<data>
-		MHBOVh53eLtPDWK0WIHZIuwjTYk=
+		SH+GEN/DgXqUKSucBpVKCzrTpwY=
 		</data>
 		<key>Resources/mode-gherkin.js</key>
 		<data>
-		kqtv4NWkmbPJAofy+rCArDojDKI=
+		EuOR0yjklHWg64TTM58NnOzpl9M=
 		</data>
 		<key>Resources/mode-gitignore.js</key>
 		<data>
-		DpaYyWFHfoe9XaKkyE9B4udt56M=
+		nNBtS6mMmt6Bdpnhq98t1/ZhqKo=
 		</data>
 		<key>Resources/mode-glsl.js</key>
 		<data>
-		ua+DyY3B2oQ19LxNTPhJE8jBnDc=
+		XKnl6VQgT329oDF5rRTfM5HpWPI=
+		</data>
+		<key>Resources/mode-gobstones.js</key>
+		<data>
+		f1WV+5159psGjkDiYBmmFuynbvs=
 		</data>
 		<key>Resources/mode-golang.js</key>
 		<data>
-		MXaBwYt5o3uCYFKb/vIR1jRXEz8=
+		BPdtX48+64gyS8Iecr0sxK4jc+A=
 		</data>
 		<key>Resources/mode-groovy.js</key>
 		<data>
-		x6Wfps4kt6m1kjIKEy/GWXgTRJk=
+		0Y6qqoxLsEkfIOtkaXmBqReIwTc=
 		</data>
 		<key>Resources/mode-haml.js</key>
 		<data>
-		RsiEJWvOp9PtjfZacN1WEpWPVUU=
+		kQ/KT7HUA0WAbCRsVeSqDiB8zGM=
 		</data>
 		<key>Resources/mode-handlebars.js</key>
 		<data>
-		iOi5HT8DX5JDgeS1jZqk1qYGgkw=
+		Kj/rZodbprFbdcDDVSyqHcTinb0=
 		</data>
 		<key>Resources/mode-haskell.js</key>
 		<data>
-		GmPiRqEl6BHAkZ55QWhhD8t6bqM=
+		m4keAp8C/U8/px/uJxeCTmObmvI=
 		</data>
 		<key>Resources/mode-haxe.js</key>
 		<data>
-		8opTYx49zLjPN0Uu0oXrUML02nw=
+		ZtVxuFthGXrN7CAB04JQw7oJ5ac=
 		</data>
 		<key>Resources/mode-html.js</key>
 		<data>
-		PffzhIqHd9hBjQFRJzuiXRn92hU=
+		kLJavtMHQrJzRrRe3qS0v1jW/mE=
 		</data>
 		<key>Resources/mode-html_elixir.js</key>
 		<data>
-		clnQyyrodZVsaeWEn8mqwGfw5UI=
+		Lw/9sxjb4xQZxjB5U51/jo3X2Cc=
 		</data>
 		<key>Resources/mode-html_ruby.js</key>
 		<data>
-		gNkwxiNhX0TnILtSoE4uTuaBKVc=
+		m6ZplmKRyb9Ca+uM3zujuDHuEIg=
 		</data>
 		<key>Resources/mode-ini.js</key>
 		<data>
-		aw13IZYMAqaJAeoFs8yUTeH7qM8=
+		5DkUr5nX/rTwYtyaN6v8GgX5mLk=
 		</data>
 		<key>Resources/mode-io.js</key>
 		<data>
-		KidgCg2SmRefuZu6eE3e6MvMhxI=
+		A2SulLeDe2up7M1roc+dKV2pdGg=
 		</data>
 		<key>Resources/mode-jack.js</key>
 		<data>
-		MzcmcS8OS+h3Xzba5lg/rSU68Tg=
+		t9CIP5zXQKSzOR8cBLXhalJBBio=
 		</data>
 		<key>Resources/mode-jade.js</key>
 		<data>
-		GW6TBeSjprx5cuKFtwHeSGe1wHM=
+		5J4AhkZzjpCcvLK2E65x+P7VoV8=
 		</data>
 		<key>Resources/mode-java.js</key>
 		<data>
-		OqXsxC9CtZRKh3I9sLaw95k96H4=
+		pJ8BrwqdI+l/P53frVMh5QlTj0Q=
 		</data>
 		<key>Resources/mode-javascript.js</key>
 		<data>
-		VuwTGfO0VekM8RslBhbHCKOVWAg=
+		XpMWyiJp+478SyFMGICoHRGdD2c=
 		</data>
 		<key>Resources/mode-json.js</key>
 		<data>
-		ZlbilU8iDRry2ueLNf/rseIbRqE=
+		WnLVc0CIJiWElio+iGbC23HvUT8=
 		</data>
 		<key>Resources/mode-jsoniq.js</key>
 		<data>
-		/BvwjYzGzYcR7dOGsl4yuD019N8=
+		ey80tz7Wm2ggR4U6uWRnJ7fgz/c=
 		</data>
 		<key>Resources/mode-jsp.js</key>
 		<data>
-		w8eAncaU9sD4DCfZTbkNAOxWoIU=
+		lolde/3LUQyNhMr6C9M23NtN3WA=
 		</data>
 		<key>Resources/mode-jsx.js</key>
 		<data>
-		5jYVEdO4SeYu8DLkjpEdriFszuE=
+		arb7UZCmsrY5iR8V7erB6r6rtZ4=
 		</data>
 		<key>Resources/mode-julia.js</key>
 		<data>
-		72k5j02lTIbswEDfAe4kZDT6wQI=
+		p0QT9hcVpIXhorCXb9xyVEJKZg4=
 		</data>
 		<key>Resources/mode-latex.js</key>
 		<data>
-		c9SYKjZuqSRgPdUogCosPpi/CJ8=
+		UBTbyXL5/YCa3OH0RLmQ03i+zME=
 		</data>
 		<key>Resources/mode-lean.js</key>
 		<data>
-		/gmHspFmgHHZHgmYlExpJN+tbcE=
+		SON4g5KiATmgkezPNqipF9P87hI=
 		</data>
 		<key>Resources/mode-less.js</key>
 		<data>
-		3eUczvMU4rec+j45r62BRVqqycs=
+		Z5UsPJr9DGH+uAafpjfpkqc1ol8=
 		</data>
 		<key>Resources/mode-liquid.js</key>
 		<data>
-		QTD9K4A5vBEGNCwi1LBRQVydxRQ=
+		bh41/OiTNW3OVHnkuRzlsguYa/s=
 		</data>
 		<key>Resources/mode-lisp.js</key>
 		<data>
-		xNYG0K1+PmNdRjiZzC80R8180eA=
+		7ckWcbcePsXLNeMY8aYKNuYcZwM=
 		</data>
 		<key>Resources/mode-live_script.js</key>
 		<data>
-		tUm0RfF/YtsfJ8/FggRLqzSmNQQ=
+		yBzmWGM84jM/XEmMQofG8+xssa4=
 		</data>
 		<key>Resources/mode-livescript.js</key>
 		<data>
-		Au5QLrq4VcqrNxkSLqYjHhYEw/0=
+		Aboq3ov2LZTPNqUTe4uaHPWm9xM=
 		</data>
 		<key>Resources/mode-logiql.js</key>
 		<data>
-		aBxvqcEGTeLpJKg9EjUFRG4Qi7w=
+		wSs2NBCGp+Y56oMUWEGm/MVjB4k=
 		</data>
 		<key>Resources/mode-lsl.js</key>
 		<data>
-		M+iAeRG+fNEOSPDmLjg3rZ+H//U=
+		k04UKurqEdQGddCJl3cgOPjWuO4=
 		</data>
 		<key>Resources/mode-lua.js</key>
 		<data>
-		LblKvqIb5E/b+USFaVpRye4kv+c=
+		8jqFHKNs2dd0XOxamquOkio4YhI=
 		</data>
 		<key>Resources/mode-luapage.js</key>
 		<data>
-		1+gOlmExY4mZAIoivz64WvXnlMM=
+		+5TVncf6pff00Gu7RpC/EjKbwyw=
 		</data>
 		<key>Resources/mode-lucene.js</key>
 		<data>
-		8iv4O/10ccEKrVZjIajcV6MXMBU=
+		BPpywAaZI6cD6qen4QZfyHQSi4c=
 		</data>
 		<key>Resources/mode-makefile.js</key>
 		<data>
-		SRHzyZe/lGClJSMXny6WVb36M5Q=
+		usO/Bw+HgwYQOU5LCDMYxGmB+yE=
 		</data>
 		<key>Resources/mode-markdown.js</key>
 		<data>
-		mrQeZCQwoN13GL0COR+fQEdCKwc=
+		OWamoe+PFMcbQD6kmReTXkUqKH4=
 		</data>
 		<key>Resources/mode-mask.js</key>
 		<data>
-		HeZtVORsjQaleVhX1BF4oDsY1bo=
+		ApeEQgURG6omKvRjKOJn88jjhCY=
 		</data>
 		<key>Resources/mode-matlab.js</key>
 		<data>
-		pE9lKFrPrvixtizmxN3q0nWRbmE=
+		sH4KxVJInH9Uc8K1iT5Pk0Qj2sM=
 		</data>
 		<key>Resources/mode-maze.js</key>
 		<data>
-		ze3tBwO/YFluwRG6/bS2QM1Wvjw=
+		hkT594o9JRhN5oy05RbY+3BKf9M=
 		</data>
 		<key>Resources/mode-mel.js</key>
 		<data>
-		pJDMnG5wyD5Y+3n4m65Yg4eFb9M=
+		IyTblYDRxGpN9PLucoj/SJnglmI=
 		</data>
 		<key>Resources/mode-mips_assembler.js</key>
 		<data>
-		GFvevFbhFNUx9L3hDUjRvkcIhbw=
+		MFUDxqK1aQS5NC0b9iFh8a2DcSA=
 		</data>
 		<key>Resources/mode-mipsassembler.js</key>
 		<data>
-		+OulZaj0TFDpMnNFN7ONBjmw+J0=
+		Ktgk5a5bDDPef/lRvYe0Djr6wQ0=
 		</data>
 		<key>Resources/mode-mushcode.js</key>
 		<data>
-		jHYdgSCCklrwTBmKaNhj+fZWHtk=
+		wlAHiatRxou0tCyglkk/xFSqkAI=
 		</data>
 		<key>Resources/mode-mysql.js</key>
 		<data>
-		qH/y3cbFF4XFXN98OOWzV5EG+qs=
+		PEkrahslUkQ8L37F5v1gipZp9PI=
 		</data>
 		<key>Resources/mode-nix.js</key>
 		<data>
-		i1yjjEArHZXn+b2KtOcThP68cbU=
+		QutC4KZxEzk/abIvRKR4eclixM4=
+		</data>
+		<key>Resources/mode-nsis.js</key>
+		<data>
+		s8qbujqfmelKaHy21TL7LIxvsro=
 		</data>
 		<key>Resources/mode-objectivec.js</key>
 		<data>
-		xM4SpNIi3nshQILGlanpxDImLJY=
+		NOQdkNxvXr6w7B8ZDYnZ+xVyMj8=
 		</data>
 		<key>Resources/mode-ocaml.js</key>
 		<data>
-		Su8ycPG3jlYmRTjwslvLnFRpCZA=
+		aOmraSjGPMbp2ZH4yB+2QRZl7ww=
 		</data>
 		<key>Resources/mode-pascal.js</key>
 		<data>
-		K8CNQau3bU4Y/EtK/463hFfmdyI=
+		vMvLKOh/tTx+8KKlA+qLGFczUAc=
 		</data>
 		<key>Resources/mode-perl.js</key>
 		<data>
-		Ub9dd52a3zw7O9KVp02MbApiAK0=
+		e/MmBSWMer6vbVoYgN6RF8cdjus=
 		</data>
 		<key>Resources/mode-pgsql.js</key>
 		<data>
-		JzR+pWXrh0oJMEMDL/2tLsniTkk=
+		Xfv2B6ISMinrOUOwrEQwG9qSGpo=
 		</data>
 		<key>Resources/mode-php.js</key>
 		<data>
-		bXdpb7mIRzAiqhcyiqw9bYP7udE=
+		Fm5tAgpAkICbCxQkdJ+35E7i5wA=
 		</data>
 		<key>Resources/mode-plain_text.js</key>
 		<data>
-		wAsBqOTUWMX5PD/BFlSLJpCN7nY=
+		FGkb0DCQfuXb1yAKtVEkzly3vek=
 		</data>
 		<key>Resources/mode-powershell.js</key>
 		<data>
-		XDLV9d4yGbYN81Kby9pL/vv/i/U=
+		rAErUV7k6w6Q9JwG3Df5+vz/QYw=
 		</data>
 		<key>Resources/mode-praat.js</key>
 		<data>
-		lEeKlP8698Xx7rD+kJfq6boijOs=
+		yS6U3kOTW8qHcFHXqduh6syHj0Q=
 		</data>
 		<key>Resources/mode-prolog.js</key>
 		<data>
-		piQfz1AFHI+Oqcv2ty9Z4WdwKWY=
+		bE32HDDCj9LEWov6PuQ3jMgT9fk=
 		</data>
 		<key>Resources/mode-properties.js</key>
 		<data>
-		yRCsBkGGt3ZoXwRBCLFoAbh8Ops=
+		rrYv8qoC8mZErkFUzEPLctJuMoI=
 		</data>
 		<key>Resources/mode-protobuf.js</key>
 		<data>
-		y4CFmZSX9Qm0EKrqt94kvIrs+PE=
+		ueVQhyMR91rBKypATzOMiWjCBqE=
 		</data>
 		<key>Resources/mode-python.js</key>
 		<data>
-		uY0cvUdd2QwRSIQMdSzRIVgTKXg=
+		+hp2/wrJoA8sPLJgzi7U8ZfZV54=
 		</data>
 		<key>Resources/mode-r.js</key>
 		<data>
-		KVg8bfWiFdMXQWxWXedP6B14zyY=
+		31k3/vPJ8mNLBh36VMUL5yy3YVI=
+		</data>
+		<key>Resources/mode-razor.js</key>
+		<data>
+		5Wbh/8S+iCQLsDdege7G9sl57rQ=
 		</data>
 		<key>Resources/mode-rdoc.js</key>
 		<data>
-		yLOiEgsOb5e2J7mMnk9Dtq6WYtA=
+		pjId9802x+g+NVSo2TG7B6hiKLM=
 		</data>
 		<key>Resources/mode-rhtml.js</key>
 		<data>
-		0IgESQo85tQtGC8vXLvcuCiS6Ms=
+		WPkm4YULw0ly5jO3hFv+3L+c44k=
+		</data>
+		<key>Resources/mode-rst.js</key>
+		<data>
+		b6FnoYmCnStP/Y6yqum9+anNKYk=
 		</data>
 		<key>Resources/mode-ruby.js</key>
 		<data>
-		Pdz12cvkYe9YFPtOYZXBWe8Bn5M=
+		kPYML+odOYo2BrQahpLeRoFk5d4=
 		</data>
 		<key>Resources/mode-rust.js</key>
 		<data>
-		Er5lKlruLYZq9sGkQVq532M8hVI=
+		Kdb4Iju7fIt1/il570m6Gn/8yfo=
 		</data>
 		<key>Resources/mode-sass.js</key>
 		<data>
-		ZvbOrEfM7N230bacIKiGT16PoQ8=
+		Tgv6qZSELqHt32+gbERTCWSJjRY=
 		</data>
 		<key>Resources/mode-scad.js</key>
 		<data>
-		SJCVaGY6TprXBTJOrvWqC3RWdXM=
+		Zazs23SJftT0hKqtDnBn9fv2Aao=
 		</data>
 		<key>Resources/mode-scala.js</key>
 		<data>
-		bgYdxIJmNaU3gs5tnhoSH2W06B0=
+		jh19TJMAWTTsT3xm6I4IjUagq/E=
 		</data>
 		<key>Resources/mode-scheme.js</key>
 		<data>
-		swqo5TdTSNpDTakY9ypqGc4ct84=
+		IvjAWmvA6Vz0c5o15O4HFilC6oY=
 		</data>
 		<key>Resources/mode-scss.js</key>
 		<data>
-		J9wvzM/pm9rqFzVsx6O6PDlg7no=
+		9CrqYcyfMMqfhubiRFbj3EfzqoU=
 		</data>
 		<key>Resources/mode-sh.js</key>
 		<data>
-		Ou8StZ+iKWXQW6v+s/k0kBByU70=
+		sMxW401Ra5F5pfOj/myHvE6BgXk=
 		</data>
 		<key>Resources/mode-sjs.js</key>
 		<data>
-		uYuX6dOWP46LABs8Sb7dHBetmU0=
+		w4pU2xgJ044BvgeIf0TzbsSa7Zw=
 		</data>
 		<key>Resources/mode-smarty.js</key>
 		<data>
-		/CR1QPebOw2oh7krCalgO9M8Lt8=
+		/ZZRrp9TKywElFGP42iibppr5VU=
 		</data>
 		<key>Resources/mode-snippets.js</key>
 		<data>
-		h6zd4uz4ucIOWYrM0y/u25vv+5U=
+		MSPCRfNxEoIchZUd3wym8rZVvWw=
 		</data>
 		<key>Resources/mode-soy_template.js</key>
 		<data>
-		KsKpcsjxijujhEVIMeQ5ncU5rdg=
+		gSJ+SKLgXSrjuAPsJaXCinGhARY=
 		</data>
 		<key>Resources/mode-space.js</key>
 		<data>
-		UsUSqxyZMOTY/9CC2QEQYWGtOTQ=
+		CevWE1UF4RCDMS4ZxfzZ0/BySLI=
 		</data>
 		<key>Resources/mode-sql.js</key>
 		<data>
-		hW2yETNYr35Bf86lqpiiiAHx7xY=
+		QnApsA4brGLhQmdw19aro/c2OcI=
 		</data>
 		<key>Resources/mode-sqlserver.js</key>
 		<data>
-		e1OQRig+pedb81uxetv+qovc4LU=
+		sbhMzy2BbpN29NozEyX9xR7YdxQ=
 		</data>
 		<key>Resources/mode-stylus.js</key>
 		<data>
-		zqQTBScWoVsD8jikKYm6oHWf9sM=
+		/s9fGxa7Y/4uDEG2jE54UhXX00M=
 		</data>
 		<key>Resources/mode-svg.js</key>
 		<data>
-		DPfyjFlzdhCAkZh9J0XC8hJTgZ8=
+		4VvnRzZNGepJ7q91F4TFlftm4X8=
 		</data>
 		<key>Resources/mode-swift.js</key>
 		<data>
-		FpclkB1UjcNcHk9FOcwtR4FeNi4=
+		TBVjHOLbYLfZCTnHGxvqUzCMrbc=
 		</data>
 		<key>Resources/mode-swig.js</key>
 		<data>
-		s/lJTEKniTRjfbiCO1vYXR9mYXw=
+		B4fjltQ2/2YjuG4vLzBAiC+PHe0=
 		</data>
 		<key>Resources/mode-tcl.js</key>
 		<data>
-		PDE4rbO54LujxBiIqyUVvKyusgU=
+		g7UnsEEydbo1Y1vY6pj67pLOCV4=
 		</data>
 		<key>Resources/mode-tex.js</key>
 		<data>
-		qfw5q8RGnUVlPKsrZaqIfK8cGRA=
+		fUIIeDFkx8G9suUZBXx2vPVZQlQ=
 		</data>
 		<key>Resources/mode-text.js</key>
 		<data>
-		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+		rcg7GeeTSRscbqD9i0bNnzLlkvw=
 		</data>
 		<key>Resources/mode-textile.js</key>
 		<data>
-		Be6/RysxS79pEhyiH/qBsA2Ku8Q=
+		oKOfJ52ZwN12L7F33QGSyXQfc4w=
 		</data>
 		<key>Resources/mode-toml.js</key>
 		<data>
-		+DOZa2++d0MCENh82d27xOGCoJ8=
+		iN+reJoktLArgPVRBpYB3lUVuIE=
 		</data>
 		<key>Resources/mode-twig.js</key>
 		<data>
-		AMcJjAB9lzIwtxoAW5IiUL0IGgc=
+		/KMOguzbCvzHDjBMd5Yp4HXUi2A=
 		</data>
 		<key>Resources/mode-typescript.js</key>
 		<data>
-		pgzWhJ7o3+BLEjOtpjtwm3nhww8=
+		ukmtk8HUQN4KnjdIxnmkXuAxdIA=
 		</data>
 		<key>Resources/mode-vala.js</key>
 		<data>
-		57u9PG/XVsR2wEHhiBdepHNYpXk=
+		NhIYpGufHIL2hOu1t5LOsCndBGg=
 		</data>
 		<key>Resources/mode-vbscript.js</key>
 		<data>
-		i1sUjLFCnszxcIulnMWTHhOfd9c=
+		fjb5lqUCEE70byna9w0DNNVVSSQ=
 		</data>
 		<key>Resources/mode-velocity.js</key>
 		<data>
-		xErJ+UxjqcWY0czjmN5IybZ4MmY=
+		RJzzmGWViXrZQj0jxjCu6ZRaTwI=
 		</data>
 		<key>Resources/mode-verilog.js</key>
 		<data>
-		Rl5CYat3X8oQthbjvhIp+3LJg20=
+		t0bA2fq4mgFd6zfUkH450BLUN+8=
 		</data>
 		<key>Resources/mode-vhdl.js</key>
 		<data>
-		fO+yloQwozZhc6u7L9P7iFL6Kho=
+		Uo8y9TPWbjfXpNNAz4x9ATzrfXA=
+		</data>
+		<key>Resources/mode-wollok.js</key>
+		<data>
+		ykBMJmaxmZ+pKXVuggtPUVZvfSs=
 		</data>
 		<key>Resources/mode-xml.js</key>
 		<data>
-		5/pJIzks/E31stYUxTRhBrDs7YE=
+		xlp5k1zIxNSaZx7l56M5ys3Sqmc=
 		</data>
 		<key>Resources/mode-xquery.js</key>
 		<data>
-		HgVUVOxVnlLHeOtxQrCRe54ZQpk=
+		aH7FobnVaron8qqncRWle/wy+Sk=
 		</data>
 		<key>Resources/mode-yaml.js</key>
 		<data>
-		njo2/qKWHaiUSLVx5RrZXw+9/zs=
+		hI+uLvPchNMseSQ7wZK3JAQB4zw=
 		</data>
-		<key>Resources/snippets/abap.js</key>
+		<key>Resources/mushcode.js</key>
 		<data>
-		2xBsTX/QhBG/xRPObmit3wJ4MAM=
+		ecJloDalYhWzErXpa8oe7O5VczU=
 		</data>
-		<key>Resources/snippets/abc.js</key>
+		<key>Resources/mysql.js</key>
 		<data>
-		mbnA7COYiOLsr0i3C2YZKRiHWAw=
+		c6HOaLPn0iaAt+MmRvYfugOS7H0=
 		</data>
-		<key>Resources/snippets/actionscript.js</key>
+		<key>Resources/nix.js</key>
 		<data>
-		+KWSS+cJdZahVj7GthQFyJ8Whdg=
+		VfMh8vG2/3LLHxUNEfHdGx/LNgM=
 		</data>
-		<key>Resources/snippets/ada.js</key>
+		<key>Resources/nsis.js</key>
 		<data>
-		gvlFmAN9MOUQhnS1jPfiWqUfbEQ=
+		cQR1T7UUbUv6bYNVu+P1fBzNrRE=
 		</data>
-		<key>Resources/snippets/apache_conf.js</key>
+		<key>Resources/objectivec.js</key>
 		<data>
-		VUq4F1k2CNg45d1jLpJ45/X0gas=
+		jlMGsivRfb2FZRrPdVHZ+FRgK3A=
 		</data>
-		<key>Resources/snippets/applescript.js</key>
+		<key>Resources/ocaml.js</key>
 		<data>
-		rXaMdgOYaf2RC8gRzAw+pSIT//g=
+		jHyMG7JHIJTGTvN6NqC2yYbjxWU=
 		</data>
-		<key>Resources/snippets/asciidoc.js</key>
+		<key>Resources/pascal.js</key>
 		<data>
-		vfBB4XWst0tXui56HumHMMl+FdY=
+		371yDw/GyAEVFS0+pE0bSDnSJsU=
 		</data>
-		<key>Resources/snippets/assembly_x86.js</key>
+		<key>Resources/perl.js</key>
 		<data>
-		xwcIgTluoxQH/Lgn2oaD2ggTdRY=
+		Luie6cxT1pSMxwRX+iTYb8s/ee8=
 		</data>
-		<key>Resources/snippets/autohotkey.js</key>
+		<key>Resources/pgsql.js</key>
 		<data>
-		EnATeC0tbq98rK70u9TdVuQrmMs=
+		LWr5iEZ/VWzxxH3EHz4m/Wilir4=
 		</data>
-		<key>Resources/snippets/batchfile.js</key>
+		<key>Resources/php.js</key>
 		<data>
-		j+JAM1BIJAom+up1oCowFANFT+w=
+		FZ5O81yNzu9cpQ2KfD+TXgXCWvo=
 		</data>
-		<key>Resources/snippets/c9search.js</key>
+		<key>Resources/plain_text.js</key>
 		<data>
-		HAnCSV4VFjLgx3bu36RS/xA7qW4=
+		8VK9gBJhv3LjI3q1joCvUK3tPjM=
 		</data>
-		<key>Resources/snippets/c_cpp.js</key>
+		<key>Resources/powershell.js</key>
 		<data>
-		5AbvnXF4EnNuzTX60JgCpOV6Vf0=
+		oC/tievLrABfw1xXQ7jBst6Hk+s=
 		</data>
-		<key>Resources/snippets/cirru.js</key>
+		<key>Resources/praat.js</key>
 		<data>
-		VJ5xY5HlOon/wGnKA2Am/4X5ZKI=
+		vEYHzwN9I1rS2yubE3LzTDl7Fpo=
 		</data>
-		<key>Resources/snippets/clojure.js</key>
+		<key>Resources/prolog.js</key>
 		<data>
-		5g3PvmZhnsSXWJGn/7Hxjs3l9ds=
+		SwgbUel9MYzmO13cbS0CKN4P3/Q=
 		</data>
-		<key>Resources/snippets/cobol.js</key>
+		<key>Resources/properties.js</key>
 		<data>
-		kHLxn4JrBvG+QQT1Ui+Di4zjSPw=
+		oTmkY8qt9HwwdLy9wdPgpNpwWPg=
 		</data>
-		<key>Resources/snippets/coffee.js</key>
+		<key>Resources/protobuf.js</key>
 		<data>
-		uV5ca6RNhJuoxQtqe7Xnd2oa3V8=
+		Sg0/GgDyXxB5Foc1KvHDcPmg+Jo=
 		</data>
-		<key>Resources/snippets/coldfusion.js</key>
+		<key>Resources/python.js</key>
 		<data>
-		Gisd1sgIAYIFOPEKhqnQVNPFuo0=
+		0DSHw3WKm4eF+TjIj56ntGquWH4=
 		</data>
-		<key>Resources/snippets/csharp.js</key>
+		<key>Resources/r.js</key>
 		<data>
-		vLOWdgTEmO8c/Hc3NiP2jVou/AA=
+		CYo/fRTBE7yTEBd/FDt1w3VlAvU=
 		</data>
-		<key>Resources/snippets/css.js</key>
+		<key>Resources/razor.js</key>
 		<data>
-		1xXiKk033PDeKjoYJ2pi4eg74G4=
+		Q3E7P7E0DEOH1sD+/8BBniiW0Ew=
 		</data>
-		<key>Resources/snippets/curly.js</key>
+		<key>Resources/rdoc.js</key>
 		<data>
-		deKXJK9k9iUP93+BVw0aL6lMHB0=
+		n8ziFPYB9V3QlH1j59myd9wOopA=
 		</data>
-		<key>Resources/snippets/d.js</key>
+		<key>Resources/rhtml.js</key>
 		<data>
-		rovatCAKSxVxrN2BPkTA1SYBArY=
+		ulMKLeJU0b7s1I7fcBdoDxwIeKg=
 		</data>
-		<key>Resources/snippets/dart.js</key>
+		<key>Resources/rst.js</key>
 		<data>
-		rt+psgSG/wDAjZBNTW8ug9H8Q48=
+		xBMjV8a2JZa0g8Dm00UMEGdGLEw=
 		</data>
-		<key>Resources/snippets/diff.js</key>
+		<key>Resources/ruby.js</key>
 		<data>
-		nKOUUPbmjWMDfZy49RlZXyZvTKI=
+		iE3ycbfSskSQljvcl/KTN8NHCAY=
 		</data>
-		<key>Resources/snippets/django.js</key>
+		<key>Resources/rust.js</key>
 		<data>
-		USjBuAcaj1DWNb8wh6iBwoPG3rI=
+		YDvMS8Cd1Wz0jTezNQdHPYqUJF8=
 		</data>
-		<key>Resources/snippets/dockerfile.js</key>
+		<key>Resources/sass.js</key>
 		<data>
-		+9V7kUcAjsKf8k5lv3uQFR9+w9c=
+		gQtgKHXb7VNnFAlig3pMWaOtREI=
 		</data>
-		<key>Resources/snippets/dot.js</key>
+		<key>Resources/scad.js</key>
 		<data>
-		xQgy3dbH6OIvjVRqEaccakApr1M=
+		ma1rVWqoro5DTwN6JLS9QJEHBeI=
 		</data>
-		<key>Resources/snippets/eiffel.js</key>
+		<key>Resources/scala.js</key>
 		<data>
-		PSqwXwRP2+6yGPRmz6UYvkQ6dRU=
+		SrKeEBgj6Bf1E8/JxqoJhl2EhIY=
 		</data>
-		<key>Resources/snippets/ejs.js</key>
+		<key>Resources/scheme.js</key>
 		<data>
-		x4fRidS7kgHE9DqWoe/XJj4eI3A=
+		3020692jOhZGCu6AsFszjT757xg=
 		</data>
-		<key>Resources/snippets/elixir.js</key>
+		<key>Resources/scss.js</key>
 		<data>
-		zZyGX9M3lviPmn6mhFClkzAxx38=
+		R/1RYPjzkJOwiToFQE7VEviMJoY=
 		</data>
-		<key>Resources/snippets/elm.js</key>
+		<key>Resources/sh.js</key>
 		<data>
-		8PTDcEqWbF8rxLLCZ/s2odc0wEU=
+		22Mm5SQWCnB88a8vORMYBIJ8+0k=
 		</data>
-		<key>Resources/snippets/erlang.js</key>
+		<key>Resources/sjs.js</key>
 		<data>
-		3kIXS//BWcOWpeNBe3ZpEJ23SWM=
+		sHsdd33/jfpRGsEi4fvDi6Z4kJQ=
 		</data>
-		<key>Resources/snippets/forth.js</key>
+		<key>Resources/smarty.js</key>
 		<data>
-		1xLAwQ2zJ/MZk4O1fOr4SABLxz4=
+		kUGffGF38MGgg67GsFefI7Gb+6Y=
 		</data>
-		<key>Resources/snippets/ftl.js</key>
+		<key>Resources/snippets.js</key>
 		<data>
-		i6oH30NLzQ/xX0pIjxGb/p6ldPE=
+		qUEA9sdfPnvV4J2N1mwAIQC/tYY=
 		</data>
-		<key>Resources/snippets/gcode.js</key>
+		<key>Resources/soy_template.js</key>
 		<data>
-		fgVkuLm7eZ/dCVrEK+FclJDFb8k=
+		cRqjXqHl2COFf6JUcoyG+nM28So=
 		</data>
-		<key>Resources/snippets/gherkin.js</key>
+		<key>Resources/space.js</key>
 		<data>
-		JDEfVMmBA3RtNk9+7Yhs4Vwqkvg=
+		FMBjplzQM8vRjZSEGZ4qVeThdPc=
 		</data>
-		<key>Resources/snippets/gitignore.js</key>
+		<key>Resources/sql.js</key>
 		<data>
-		NZMV5tFUzgq4Jqd9PVQJN3TuzQY=
+		nVOPFsYJcX2Gqgqmy+/nr6gb5+I=
 		</data>
-		<key>Resources/snippets/glsl.js</key>
+		<key>Resources/sqlserver.js</key>
 		<data>
-		vkjkmq26KZy7Ho6YQUCAYo9oCEQ=
+		zTEEUT1+XnGZPURApMm9q6cY4ec=
 		</data>
-		<key>Resources/snippets/golang.js</key>
+		<key>Resources/stylus.js</key>
 		<data>
-		30lw/Vkw0GlnwU+PDg2TEbsuRHM=
+		m0Y+D78wVQKzl6snU+3Yba3IlXY=
 		</data>
-		<key>Resources/snippets/groovy.js</key>
+		<key>Resources/svg.js</key>
 		<data>
-		xBTbB+6BtbmptOOFRttpRMbBC3U=
+		OQOitggWN5jAjA9Tuln5w46Sdds=
 		</data>
-		<key>Resources/snippets/haml.js</key>
+		<key>Resources/swift.js</key>
 		<data>
-		OuqPzqpv7Ho9q0q5SJJsFc7iKMc=
+		gh1+xuYGZQ4j2XYo025jWQIMHcI=
 		</data>
-		<key>Resources/snippets/handlebars.js</key>
+		<key>Resources/swig.js</key>
 		<data>
-		lK5M7LGSwMyJS3rpUAU3DaJ0tJY=
+		8JRCNmRAR4ao4zeabCXMH/u3N7k=
 		</data>
-		<key>Resources/snippets/haskell.js</key>
+		<key>Resources/tcl.js</key>
 		<data>
-		F3WsuPpRwT/6ueLn7O8jgxmj3+Y=
+		Ffm8xL089bhr1XaFJ+OGrTOjvXo=
 		</data>
-		<key>Resources/snippets/haxe.js</key>
+		<key>Resources/tex.js</key>
 		<data>
-		CbKJNBh5Uno2uvnz3DtgVPUP+wk=
+		2kFrkS1rwYfFL+0lf1/V0fziaCo=
 		</data>
-		<key>Resources/snippets/html.js</key>
+		<key>Resources/text.js</key>
 		<data>
-		+GAA7XNbD09jXmF1Dw4MDJ6vDvA=
+		Psr+JCQhzxbnO+SnU5g1wdDXyAY=
 		</data>
-		<key>Resources/snippets/html_elixir.js</key>
+		<key>Resources/textile.js</key>
 		<data>
-		idOfej2t6Oxp539h85jutkovbww=
-		</data>
-		<key>Resources/snippets/html_ruby.js</key>
-		<data>
-		U87EmPr2N6ApuwYk0Eh7nq7imPc=
-		</data>
-		<key>Resources/snippets/ini.js</key>
-		<data>
-		ddRzWmyhBCsw7lfYkpAeHHin/Qw=
-		</data>
-		<key>Resources/snippets/io.js</key>
-		<data>
-		7zBkPjcG1WDRcAgPuvEc0RLhQis=
-		</data>
-		<key>Resources/snippets/jack.js</key>
-		<data>
-		fEtvVWT/el2OCWIl5aiEdJB46gQ=
-		</data>
-		<key>Resources/snippets/jade.js</key>
-		<data>
-		90q+6XRWRDjKxPD7Uyb7XYoi1N8=
-		</data>
-		<key>Resources/snippets/java.js</key>
-		<data>
-		9YajLAADfTJMBOem/vB6z5pZcqE=
-		</data>
-		<key>Resources/snippets/javascript.js</key>
-		<data>
-		ZRS1SBFjqhKpU0Sx7TFjRtwqm2E=
-		</data>
-		<key>Resources/snippets/json.js</key>
-		<data>
-		3T+tn+PMVlgWUjtcqSxM9QgO6MY=
-		</data>
-		<key>Resources/snippets/jsoniq.js</key>
-		<data>
-		JvXY1KIhtjS59sd3CDQgHBtnIH8=
-		</data>
-		<key>Resources/snippets/jsp.js</key>
-		<data>
-		z07fAxLUay4WHpYx7r3Kvf5kzh4=
-		</data>
-		<key>Resources/snippets/jsx.js</key>
-		<data>
-		VDG5AQWyNimZbNol2f++c+2Q98Y=
-		</data>
-		<key>Resources/snippets/julia.js</key>
-		<data>
-		1lMNSg5oga0ZOy4AWl7C5lXnN0g=
-		</data>
-		<key>Resources/snippets/latex.js</key>
-		<data>
-		Sy5JF8uWSrVCbRCwrlDQUiP49IQ=
-		</data>
-		<key>Resources/snippets/lean.js</key>
-		<data>
-		vLLA6DLPttXkg/eo+VZMBXWywbs=
-		</data>
-		<key>Resources/snippets/less.js</key>
-		<data>
-		e9Qb/V4UGTdAiek+JC2MAP/fF8Q=
-		</data>
-		<key>Resources/snippets/liquid.js</key>
-		<data>
-		2wXqlIBNPIV7jQMkZAAOhEix5UA=
-		</data>
-		<key>Resources/snippets/lisp.js</key>
-		<data>
-		LYAM1V7eVmmXAfiNGDhYi1K0fmU=
-		</data>
-		<key>Resources/snippets/live_script.js</key>
-		<data>
-		hQi3vhqjdWMSNYEpAJRyQK9Zu6A=
-		</data>
-		<key>Resources/snippets/livescript.js</key>
-		<data>
-		b18tcopS9MMBX03LGxITyzxuYQU=
-		</data>
-		<key>Resources/snippets/logiql.js</key>
-		<data>
-		xS0TkjW07o85oEgQKVoLcWE71nY=
-		</data>
-		<key>Resources/snippets/lsl.js</key>
-		<data>
-		ehSXNLePEkngQuXCt6Q+/rKRwdM=
-		</data>
-		<key>Resources/snippets/lua.js</key>
-		<data>
-		QmnM5styA9K1rf2rKR9X6Ecr55U=
-		</data>
-		<key>Resources/snippets/luapage.js</key>
-		<data>
-		7W1HotG0NyGy8NL+6m+IuK8k/go=
-		</data>
-		<key>Resources/snippets/lucene.js</key>
-		<data>
-		TOY9OoL68kUICPlMJJOLjYLJC4Y=
-		</data>
-		<key>Resources/snippets/makefile.js</key>
-		<data>
-		X9W093B5i1FwDAvSko6RABcvFCM=
-		</data>
-		<key>Resources/snippets/markdown.js</key>
-		<data>
-		M/wVuY+xJIpvgtGsJkx6dxC7cXY=
-		</data>
-		<key>Resources/snippets/mask.js</key>
-		<data>
-		6wPt3x6PFe+wHelTimyhc0mQn0U=
-		</data>
-		<key>Resources/snippets/matlab.js</key>
-		<data>
-		z+krmIPdRqfV+kjAbpBM10Xyrgs=
-		</data>
-		<key>Resources/snippets/maze.js</key>
-		<data>
-		L2HpJ1Q+M9T/h7mZcB8vp2FPPw0=
-		</data>
-		<key>Resources/snippets/mel.js</key>
-		<data>
-		2/J967aIj126oHd7Eb1Ri8zOuX4=
-		</data>
-		<key>Resources/snippets/mips_assembler.js</key>
-		<data>
-		TbFaH6O9uae9csj8i3+k8ntR4Fg=
-		</data>
-		<key>Resources/snippets/mipsassembler.js</key>
-		<data>
-		bnsjebTcOJM7AVgRKtvTiRe3wxo=
-		</data>
-		<key>Resources/snippets/mushcode.js</key>
-		<data>
-		JkT76pANqNIZl5Nd2iQFUd5By5s=
-		</data>
-		<key>Resources/snippets/mysql.js</key>
-		<data>
-		Mj6at4ruo2vPtQRgKZL0aeJgm5I=
-		</data>
-		<key>Resources/snippets/nix.js</key>
-		<data>
-		qflP6SOF4MrelyHXAA4EKd1KT/I=
-		</data>
-		<key>Resources/snippets/objectivec.js</key>
-		<data>
-		GRClj0ZhH5QtG+0U2LabKicLHSA=
-		</data>
-		<key>Resources/snippets/ocaml.js</key>
-		<data>
-		W5YR/q4jVZuAHyG4m763ss1gGbs=
-		</data>
-		<key>Resources/snippets/pascal.js</key>
-		<data>
-		3s+I0GwVF3+72Aiie33fr1nAx4k=
-		</data>
-		<key>Resources/snippets/perl.js</key>
-		<data>
-		ixTRhAF0H63qm29sKggHikhE6o0=
-		</data>
-		<key>Resources/snippets/pgsql.js</key>
-		<data>
-		MCmo4TrfwdB6Z3MloIs+iQNKJeA=
-		</data>
-		<key>Resources/snippets/php.js</key>
-		<data>
-		qf283pVuMGuDS7qQWcEXlxfyoL8=
-		</data>
-		<key>Resources/snippets/plain_text.js</key>
-		<data>
-		+/7Ie1K+GPrXuFCJCgDe8zPjIBE=
-		</data>
-		<key>Resources/snippets/powershell.js</key>
-		<data>
-		m7irJlsMChD9veS1grQqNQn1qSM=
-		</data>
-		<key>Resources/snippets/praat.js</key>
-		<data>
-		zZ2/5Rm2GGiiicnUaEK0nlaPfxc=
-		</data>
-		<key>Resources/snippets/prolog.js</key>
-		<data>
-		NQI05wHwkgwyTBCFNqi4vl+gxHA=
-		</data>
-		<key>Resources/snippets/properties.js</key>
-		<data>
-		DBeOsTKBDz5cr+o3NSAdALF8WO0=
-		</data>
-		<key>Resources/snippets/protobuf.js</key>
-		<data>
-		3bPuor29IyorSXnCmO1JMbkgqnE=
-		</data>
-		<key>Resources/snippets/python.js</key>
-		<data>
-		fgNUq5eR6YPrlykZXXoEBKwK1NE=
-		</data>
-		<key>Resources/snippets/r.js</key>
-		<data>
-		gDZKgC7fJqmowLH166POIFllo+k=
-		</data>
-		<key>Resources/snippets/rdoc.js</key>
-		<data>
-		oGLIvXOx9C4J07QGAXBKIVk2eFo=
-		</data>
-		<key>Resources/snippets/rhtml.js</key>
-		<data>
-		29Jd5DrDzweuO465wW3pdfFWjn4=
-		</data>
-		<key>Resources/snippets/ruby.js</key>
-		<data>
-		CrzeXsUvYL0aI022so6l70Jja34=
-		</data>
-		<key>Resources/snippets/rust.js</key>
-		<data>
-		1SDzD8Usebys8SWnmP1sQL0cmG4=
-		</data>
-		<key>Resources/snippets/sass.js</key>
-		<data>
-		/oVDEhadky6jg+lh+CmCyjxWn+Y=
-		</data>
-		<key>Resources/snippets/scad.js</key>
-		<data>
-		wJM4QS3XvlMEEbdLtLoaoxcLWfQ=
-		</data>
-		<key>Resources/snippets/scala.js</key>
-		<data>
-		thEiTT9uU0QaCpd9JuKJ/BTpf1E=
-		</data>
-		<key>Resources/snippets/scheme.js</key>
-		<data>
-		gNDGxHhEO0JbgMt7mNKQI96bqAw=
-		</data>
-		<key>Resources/snippets/scss.js</key>
-		<data>
-		MpUEMLoCwOXKuaLz9pSK3EeqVdY=
-		</data>
-		<key>Resources/snippets/sh.js</key>
-		<data>
-		f3Oy1RX5ibKTISjZXSIoEm7ElWU=
-		</data>
-		<key>Resources/snippets/sjs.js</key>
-		<data>
-		T2oFwIHJ+ztkg4zDI1QfrWYzUXo=
-		</data>
-		<key>Resources/snippets/smarty.js</key>
-		<data>
-		MO/Lybvst3N+lIMcemUhcO9pJjE=
-		</data>
-		<key>Resources/snippets/snippets.js</key>
-		<data>
-		IKMEmubUIGBK4M2ctIUXDXKVacU=
-		</data>
-		<key>Resources/snippets/soy_template.js</key>
-		<data>
-		nUps8vKrnJeFFAS+WxX2Cyzu/Jw=
-		</data>
-		<key>Resources/snippets/space.js</key>
-		<data>
-		O/0Ymkozru9jXlxN8kcEbgzjr3w=
-		</data>
-		<key>Resources/snippets/sql.js</key>
-		<data>
-		Uml91gFu7gqL7+w2WJjPV2BlSBI=
-		</data>
-		<key>Resources/snippets/sqlserver.js</key>
-		<data>
-		zxJn0HJ+DL6uNCRwc+GR6fESzIU=
-		</data>
-		<key>Resources/snippets/stylus.js</key>
-		<data>
-		zLwfFGAwkdAbrs4A9QWyA25DPe8=
-		</data>
-		<key>Resources/snippets/svg.js</key>
-		<data>
-		yZUV3Lyje15OGAupMop6tpnBDWQ=
-		</data>
-		<key>Resources/snippets/swift.js</key>
-		<data>
-		8QNScAIclgpdHHegkFaKIRMI/UQ=
-		</data>
-		<key>Resources/snippets/swig.js</key>
-		<data>
-		nk4eDGkNVUHehu1yaRLivYdYkXs=
-		</data>
-		<key>Resources/snippets/tcl.js</key>
-		<data>
-		bvW9XPfMGR4iq8hvQ9pdNDbq8o0=
-		</data>
-		<key>Resources/snippets/tex.js</key>
-		<data>
-		gKj+rfYWCB7A/hwWDxsTPmC9rZM=
-		</data>
-		<key>Resources/snippets/text.js</key>
-		<data>
-		AhFS27thSW71K5oIzfF78WXvAU4=
-		</data>
-		<key>Resources/snippets/textile.js</key>
-		<data>
-		MkAo7tKWzwiMxuqqX9+/avWeniU=
-		</data>
-		<key>Resources/snippets/toml.js</key>
-		<data>
-		Qmks5Qpi2kmb7bb51iMs1RsHNfs=
-		</data>
-		<key>Resources/snippets/twig.js</key>
-		<data>
-		YY/kn/nSZZxBemRcLxOj8onj+Yo=
-		</data>
-		<key>Resources/snippets/typescript.js</key>
-		<data>
-		VbN9z3rqhGXcLA4AjMh8UVj90v0=
-		</data>
-		<key>Resources/snippets/vala.js</key>
-		<data>
-		5DBMvAeo1S1j/toov/bdl06Rud8=
-		</data>
-		<key>Resources/snippets/vbscript.js</key>
-		<data>
-		sipHLA4u7j0atPsBFFQyFbj7gZ0=
-		</data>
-		<key>Resources/snippets/velocity.js</key>
-		<data>
-		6mBNkQCEW6AzEbMQs3FgXMHfZog=
-		</data>
-		<key>Resources/snippets/verilog.js</key>
-		<data>
-		rxXQxevNxSNCjBiQRfBDpy9WODM=
-		</data>
-		<key>Resources/snippets/vhdl.js</key>
-		<data>
-		4FiY6nWCYkLGPQZsrzrytst+HFg=
-		</data>
-		<key>Resources/snippets/xml.js</key>
-		<data>
-		QeYSlx89rEUuPwLeO6NqpADHThw=
-		</data>
-		<key>Resources/snippets/xquery.js</key>
-		<data>
-		tAoCvncXMqSbkg+M1HsR7eDskF4=
-		</data>
-		<key>Resources/snippets/yaml.js</key>
-		<data>
-		KxKB3Ityg++YzL4aCKwKGiSOYVY=
+		xJkkvcvXdE4/8iJTHBW7EnA5to4=
 		</data>
 		<key>Resources/theme-ambiance.js</key>
 		<data>
-		T3yFWO7txAhHUOwoj1rzHWjKfAU=
+		Y92rwA/Gl1Em8KcMyBRjGytcnsk=
 		</data>
 		<key>Resources/theme-chaos.js</key>
 		<data>
-		8A3/yo1UJ1H+Ap9k7dewLZ+mals=
+		Ak8ik0AkiiAYoAk7BKViiXhKhrc=
 		</data>
 		<key>Resources/theme-chrome.js</key>
 		<data>
-		1yv6BZj7VyGCdtn7KO6oqFjGMcc=
+		Bn0yjoswdyHTiwsaZOMA/CieD6s=
 		</data>
 		<key>Resources/theme-clouds.js</key>
 		<data>
-		HJrx/wUv9kl7yoSJlQsxDAdltGk=
+		F5KTyaTCf7FfRaSIxtxNtc/mrpI=
 		</data>
 		<key>Resources/theme-clouds_midnight.js</key>
 		<data>
-		8f83pxAstM9YsxxnRrru4cKZkww=
+		vZ0GW1aD0+9IUYDY9/wuwpPfOII=
 		</data>
 		<key>Resources/theme-cobalt.js</key>
 		<data>
-		Dehxrgizd/tioZWYf12FGOL/oQY=
+		knR9h1ZpYMT5Q0qYvJkYT3Q+djA=
 		</data>
 		<key>Resources/theme-crimson_editor.js</key>
 		<data>
-		EZfuqROqteaVZQ2qI9eFK8iekkk=
+		yd0v+n/pPZLaijI63YbK0sV7w0E=
 		</data>
 		<key>Resources/theme-dawn.js</key>
 		<data>
-		FRER69ZOoeCHazSDNGL83sJUXyw=
+		ocmBgEoGF3J7cHzt9zXI+eiC6A0=
 		</data>
 		<key>Resources/theme-dreamweaver.js</key>
 		<data>
-		U/GX+KmLp5fQOwhdfBv56bC3yS4=
+		wW42aKp1umHcJskHs97Ay0XiTlg=
 		</data>
 		<key>Resources/theme-eclipse.js</key>
 		<data>
-		tCQITT5ae7vyaN5hvxaZ1colXcA=
+		wUEqE3P3/fD2F02NPS+u8flIOZA=
 		</data>
 		<key>Resources/theme-github.js</key>
 		<data>
-		A22v8kSbmAI8slg9a2b3IbQTN/A=
+		1o/NsnWagkzjxZ8NryZLrPaU+tE=
 		</data>
 		<key>Resources/theme-idle_fingers.js</key>
 		<data>
-		VzvAUMk3LPErOho5sruRoMGHBvY=
+		zm0irNc4H1JN4E4bBJh3eC9zCHA=
 		</data>
 		<key>Resources/theme-iplastic.js</key>
 		<data>
-		hz4znNsSdfcgdrTeiWM7z9fKy2w=
+		cpDm5uZ5tKTRyPs3tjV99F9Mniw=
 		</data>
 		<key>Resources/theme-katzenmilch.js</key>
 		<data>
-		vfOOGCeFLb/FTcw0z791HAu89cU=
+		7mOByu1gGMOkEeHNxW9ZQ9w4AE4=
 		</data>
 		<key>Resources/theme-kr_theme.js</key>
 		<data>
-		PGUJdSVDYOgL6VujGHogaNHU1PI=
+		JhDM0STaZ6NAgWvqCXtUnfvqCHg=
 		</data>
 		<key>Resources/theme-kuroir.js</key>
 		<data>
-		D+PzBkFb6Hzy5VbexFq0puBiid4=
+		VMGKEQIzfQgkg38bDuo0gKu/ugs=
 		</data>
 		<key>Resources/theme-merbivore.js</key>
 		<data>
-		gAtf9tvMlwQJH3USC0XmLlMQbvI=
+		toboaxYVSb1xP/hlxhjJZn3zlJc=
 		</data>
 		<key>Resources/theme-merbivore_soft.js</key>
 		<data>
-		vlbOHnOZVWLAeIV82Y4VlCOAUV4=
+		EtPXgek8VfKfv7etB9QE4n0LyzQ=
 		</data>
 		<key>Resources/theme-mono_industrial.js</key>
 		<data>
-		9/XjqAkS7MTNZEhYald6CyGWX6E=
+		Z4f+fd9tt2VjFxFbBMcULXdCcys=
 		</data>
 		<key>Resources/theme-monokai.js</key>
 		<data>
-		mvsZrpB6X9XodxsABGPeflDVskA=
+		U/42jS5WZXt5Z2QSe33rSUNOc5A=
 		</data>
 		<key>Resources/theme-pastel_on_dark.js</key>
 		<data>
-		F6FnBxrLR3PLd0W1+tiZgx9r61I=
+		QT90sCWSROGPK8d7v+sWsNAyJ+I=
 		</data>
 		<key>Resources/theme-solarized_dark.js</key>
 		<data>
-		FylLWvTyMU9WZBwiv1apSmTLUuY=
+		iT9qXySVrZAnwU9doVe9GtYEiOg=
 		</data>
 		<key>Resources/theme-solarized_light.js</key>
 		<data>
-		iXLZqYZusz8qDwyI9TPoGBAtktw=
+		4sWo1SaIL7MbsiybH/lXvEWJd/w=
 		</data>
 		<key>Resources/theme-sqlserver.js</key>
 		<data>
-		yIGHxVMGABSc7z7/Bm8Gt4P9FW8=
+		J8uetJrSxZizfPIY7f1159NYXws=
 		</data>
 		<key>Resources/theme-terminal.js</key>
 		<data>
-		HNqWA9HWGKlHZYBd8VWKrVWeqwA=
+		47H8Ny5dy/usFhIF+chfsRCQTII=
 		</data>
 		<key>Resources/theme-textmate.js</key>
 		<data>
-		07x+izbORu6iYNf/dI2lMwy+ZI8=
+		WZfggw5XIn49Yz/PggNK93osyCc=
 		</data>
 		<key>Resources/theme-tomorrow.js</key>
 		<data>
-		UDDqO8hPZruLCqDKTYryfldDRv8=
+		7qjh7NwGaMlVjWoAAAoUEV4mwvc=
 		</data>
 		<key>Resources/theme-tomorrow_night.js</key>
 		<data>
-		J7lzxf+DMSLKk5oDhnZvKNf4/cA=
+		N0zobaw1YkbawLPCPWyxLJUZzZc=
 		</data>
 		<key>Resources/theme-tomorrow_night_blue.js</key>
 		<data>
-		ywEqtc22chTxVDsB0OAfgQ7D+Fk=
+		HD851J4D1iANoU0AkuXZE6I8CeM=
 		</data>
 		<key>Resources/theme-tomorrow_night_bright.js</key>
 		<data>
-		4IGbGqWDge6l2alwPgcOBJOC8AI=
+		uxCklpmgN4Hm1OmeDVzAA2kXgLg=
 		</data>
 		<key>Resources/theme-tomorrow_night_eighties.js</key>
 		<data>
-		SLaENFnkImAbvKt3zja4a9P6HhU=
+		gfkQcIr6gJ6d64U/cXPKnuJVstU=
 		</data>
 		<key>Resources/theme-twilight.js</key>
 		<data>
-		P1PxZM/SBTwIWBjCproxSzag4eY=
+		Hiu8C87R11ev9Wv0jolO9BqruNI=
 		</data>
 		<key>Resources/theme-vibrant_ink.js</key>
 		<data>
-		Hzz2KEGiMz5SLIfGsfbS04LggDk=
+		A70+UFfcyjXmWSrE9n2litQ7Cok=
 		</data>
 		<key>Resources/theme-xcode.js</key>
 		<data>
-		SnSDJ+dS60SHpDDxGdzPu2rHEKo=
+		st7FcBmhpxL6KXsFUTn2gDCdaV8=
+		</data>
+		<key>Resources/toml.js</key>
+		<data>
+		hSQM2yTCbtSW/lZd3/SruEJc06Q=
+		</data>
+		<key>Resources/twig.js</key>
+		<data>
+		sQY1MerzWRg01s3/llySVkbkSAs=
+		</data>
+		<key>Resources/typescript.js</key>
+		<data>
+		OoynOHcJzAlHSdCDaCoL29dLkfk=
+		</data>
+		<key>Resources/vala.js</key>
+		<data>
+		5Es5N+vapzrU/dXPRaBIHu2nsmk=
+		</data>
+		<key>Resources/vbscript.js</key>
+		<data>
+		GbnKLdph/esTWAHZseLDuvoEuyI=
+		</data>
+		<key>Resources/velocity.js</key>
+		<data>
+		SO1QXfdseDLu0Zi+9b0zU8vFl+E=
+		</data>
+		<key>Resources/verilog.js</key>
+		<data>
+		4FjR5gPwhNrqXp+Of50v5GxPHTU=
+		</data>
+		<key>Resources/vhdl.js</key>
+		<data>
+		uKfpOwdHlEsewUfVbjppTQt1lOw=
+		</data>
+		<key>Resources/wollok.js</key>
+		<data>
+		zq/Hg0bvaqTsbila2fpBo2Ri1tM=
 		</data>
 		<key>Resources/worker-coffee.js</key>
 		<data>
-		Ch09H3UxxO8tMBH9iYbFZKrMD9k=
+		368+a49lOvpNM8EJv4jPpyoGFkw=
 		</data>
 		<key>Resources/worker-css.js</key>
 		<data>
-		2Sq2mOa2+7Nl01NCQ4GizNy9zMs=
+		f1SiwdZGHv46ALVHWRblJ3Tbs3A=
 		</data>
 		<key>Resources/worker-html.js</key>
 		<data>
-		7psnKqlIH/RDzkCBWzu/+N7jLrE=
+		x+sDC+4rztUKr1V/Ec3PX9u4maw=
 		</data>
 		<key>Resources/worker-javascript.js</key>
 		<data>
-		sLi2cu6fs8EdDL9zcdwLUjdLutQ=
+		UQ0QFERmfjYIGm3pzC4xsZg9xZU=
 		</data>
 		<key>Resources/worker-json.js</key>
 		<data>
-		dRF9slz8IQmQKjUT5WILFhE82RA=
+		ov90rE2WlWEaz1yLtfzG/Bcub6A=
 		</data>
 		<key>Resources/worker-lua.js</key>
 		<data>
-		T8uZ6RbdY4mfuadkmwCJE/nOhLg=
+		brIoGP/7v3HFMrvWFhubQDkIMmE=
 		</data>
 		<key>Resources/worker-php.js</key>
 		<data>
-		D+4hLzN+/N9JqU1WttKQibeAWC4=
+		5uWClCrL0EVRaFVNr4lFNKq6XAs=
 		</data>
 		<key>Resources/worker-xml.js</key>
 		<data>
-		dzpv7Vk3K8WxfNkLr4lRIyVf33M=
+		kYNfQQm/b5Qi/Vxz2TzH9WdKs1g=
 		</data>
 		<key>Resources/worker-xquery.js</key>
 		<data>
-		yuA3Iy8BDiL5E1igbEUnkjznyhI=
+		iz+Do6XKCBHdeJUq3+qsm9J4bkc=
+		</data>
+		<key>Resources/xml.js</key>
+		<data>
+		xwgYDPShrCo0XIbWYDDOcmThMA4=
+		</data>
+		<key>Resources/xquery.js</key>
+		<data>
+		MRmVZt9Hy0zO+TtWMPJ5eq+eWUI=
+		</data>
+		<key>Resources/yaml.js</key>
+		<data>
+		jLJMttR8BOz5lzQSeZXZ+nQ6RRM=
 		</data>
 	</dict>
 	<key>rules</key>

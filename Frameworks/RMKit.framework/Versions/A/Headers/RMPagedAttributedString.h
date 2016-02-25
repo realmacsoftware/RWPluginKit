@@ -33,7 +33,7 @@
 /// This is a concrete subclass of RMArchivedObject that saves and loads an NSAttributedString to/from disk.
 @interface RMPagedAttributedString : RMArchivedObject<RMFreezing, RMThawing>
 
-@property (copy, getter=object, setter=setObject:) NSAttributedString* attributedString;
+@property (nonatomic, copy) NSAttributedString* attributedString;
 
 // RMFreezing
 - (NSString*)frozenPathExtension;

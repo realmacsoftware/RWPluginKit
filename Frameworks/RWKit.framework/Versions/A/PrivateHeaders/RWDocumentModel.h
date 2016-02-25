@@ -68,7 +68,6 @@ extern NSString *const RWDocumentModelTreeKey;
 @property (assign) BOOL useFavicon;
 @property (assign) BOOL useWebClipIcon;
 @property (assign) BOOL useBanner;
-@property (assign) BOOL showTidiedCode;
 @property (assign) BOOL loadingDocument;
 @property (assign) BOOL publishSettingsConfigured;
 @property (assign) BOOL wantsXMLSiteMap;
@@ -79,6 +78,9 @@ extern NSString *const RWDocumentModelTreeKey;
 @property (assign) BOOL hasChangedGlobalBody;
 @property (assign) BOOL hasChangedGlobalPrefix;
 @property (assign) BOOL consolidateCSSFiles;
+@property (assign) BOOL useCacheBusting;
+@property (copy) NSString *cacheBustingString;
+@property (assign) BOOL useDocumentPortability;
 
 @property (assign) NSInteger userAgentResizingPreset;
 

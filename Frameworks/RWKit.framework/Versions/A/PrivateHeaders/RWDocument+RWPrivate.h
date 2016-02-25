@@ -25,8 +25,6 @@
  */
 - (void)_initialiseEmptyModel;
 
-- (void)_removeFileReferencesForPage:(RWPage *)page;
-
 @property (readonly, nonatomic, strong) RWDocumentModel *model;
 
 @end

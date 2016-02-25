@@ -31,8 +31,6 @@ extern NSString *const RWDocumentDidRemoveResourceNotification;
 /** If you are defining any new methods that should belong to the document class, define them here instead of in MyDocument.  Over time, I'd like to eventually refactor all the methods in MyDocument and gradually move them here once it's decided that those methods are clean enough to make it through. */
 @interface RWDocument : NSDocument <RWDocument, RMObjectPathing>
 
-@property (nonatomic, retain) IBOutlet NSWindow *window;
-
 extern NSString *const RWDocumentPagesKey;
 @property (nonatomic, readonly, retain) NSArray *pages;
 - (void)reparent:(RWPage *)page parent:(RWPage *)parent clearManifest:(BOOL)clearManifest;
@@ -44,6 +42,7 @@ extern NSString *const RWDocumentAllPagesKey;
 @property (retain) RWPage *index;
 
 @property (nonatomic, retain) NSMutableDictionary *missingPagesInfo;
+@property (nonatomic, retain) NSMutableDictionary *corruptPagesInfo;
 
 - (RWPage *)pageFromUniqueID:(NSString *)identifier topLevelOnly:(BOOL)top;
 - (RWPage *)pageFromUniqueID:(NSString *)uniqueID;
@@ -106,8 +105,6 @@ extern NSString *const RWDocumentAllPagesKey;
 
 @property (assign) BOOL previewAfterExportRelativeToBaseURL;
 
-@property (assign) BOOL showTidiedCode;
-
 extern NSString *const RWDocumentSiteBaseURLKey;
 @property (copy) NSString *siteBaseURL;
 
@@ -158,6 +155,7 @@ extern NSString *const RWDocumentSiteBaseURLKey;
 
 @property (assign) NSInteger userAgentResizingPreset;
 
+@property (retain) NSString *quickLookSandwichTemporaryDirectoryPath;
 @property (copy) RMSandwich *quickLookSandwich;
 @property (copy) NSImage *quickLookSandwichThumbnail;
 
@@ -165,16 +163,23 @@ extern NSString *const RWDocumentSiteBaseURLKey;
 
 @property (copy) NSString *uniqueBackupName;
 
+@property (assign) BOOL useCacheBusting;
+@property (copy) NSString *cacheBustingString;
+
+@property (assign) BOOL useDocumentPortability;
+
 - (BOOL)com_rwrp_checkAndWarnIfTIFF:(NSData *)data extendedWarning:(BOOL)warning;
 
 - (BOOL)hasChangedGlobalFiles;
 - (void)resetGlobalFilesChangedFlags;
 
 @property (nonatomic, retain) NSMutableArray *fileReferences;
-- (NSString *)registerFileURL:(NSURL *)fileURL withIdentifier:(NSString *)clientIdentifier error:(NSError **)error;
+- (NSString *)registerFileURL:(NSURL *)fileURL withIdentifierOrNil:(NSString *)identifier error:(NSError **)error;
+- (NSString *)registerFileURL:(NSURL *)fileURL withIdentifierOrNil:(NSString *)identifier error:(NSError **)error isInternal:(BOOL)isInternal;
+- (void)makeFileReferenceInternalForToken:(NSString *)token;
 - (void)removeFileReferenceForToken:(NSString *)token;
 - (BOOL)hasFileReferenceForToken:(NSString *)token;
 - (NSURL *)fileURLForToken:(NSString *)token error:(NSError **)error;
-- (NSArray *)fileTokensForPage:(RWPage *)page;
+- (BOOL)fileURLIsInternalResourceForToken:(NSString *)token;
 
 @end

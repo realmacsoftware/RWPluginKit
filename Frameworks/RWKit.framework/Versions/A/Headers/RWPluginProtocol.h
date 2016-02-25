@@ -47,6 +47,10 @@
  * galleries and other images from your local hard disk to the Web." */
 + (NSString *)pluginDescription;
 
+/// Returns the version of the plugin
+/* For example "1.0.4". */
++ (NSString *)pluginVersion;
+
 // This should return YES if you provide an HTML description for your plugin (rather than an NSString*)
 + (BOOL)hasHTMLDescription;
 
