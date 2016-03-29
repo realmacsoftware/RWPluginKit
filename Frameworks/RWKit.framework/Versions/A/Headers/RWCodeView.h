@@ -10,6 +10,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+
 #import "RWCodeHighlightingController.h"
 
 @interface RWCodeView : NSView
