@@ -11,12 +11,15 @@ extern NSString *const RWThemeInstallerDidUpdateThemeNotification;
 
 + (BOOL)installObjectAtPath:(NSString *)path;
 
++ (void)uninstallAddons;
+
 // The following methods return the requested path.
 // They do not create or check for it's presence.
 
 + (NSURL *)appSupportDirectoryURL;
 + (NSURL *)addonsUninstallFileURL;
 + (void)chooseAppSupportDirectory;
++ (void)chooseAppSupportDirectoryBypassingConfirmation;
 + (void)clearAppSupportDirectory;
 + (BOOL)hasUserSpecifiedAppSupportDirectory;
 + (NSString *)appSupportPathForNextLaunch;
@@ -27,6 +30,7 @@ extern NSString *const RWThemeInstallerDidUpdateThemeNotification;
 + (NSString *)pathToApplicationSupport;
 + (NSString *)pathToUserInstalledThemes;
 + (NSString *)pathToUserInstalledThemeVariations;
++ (NSString *)pathToUserInstalledEditorThemes;
 + (NSString *)pathToUserInstalledSnippets;
 + (NSString *)pathToUserInstalledPlugins;
 

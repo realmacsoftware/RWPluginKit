@@ -69,7 +69,7 @@ extern NSString *const kRWExporterPageExportError;
 
 // Used to export a single page.
 
-- (BOOL)exportPage:(RWPage *)page toPath:(NSString *)path inRoot:(NSString *)root usingName:(NSString *)name includingChildren:(BOOL)includingChildren;
+- (BOOL)exportPage:(RWPage *)page subPagePath:(NSString *)subPagePath toPath:(NSString *)path inRoot:(NSString *)root usingName:(NSString *)name includingChildren:(BOOL)includingChildren;
 
 // Used to export a site or group of pages.
 

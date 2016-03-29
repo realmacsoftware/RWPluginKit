@@ -103,8 +103,6 @@ extern NSString *const RWDocumentAllPagesKey;
 
 @property (assign) RWLinkStyle commonFileConsolidationMode;
 
-@property (assign) BOOL previewAfterExportRelativeToBaseURL;
-
 extern NSString *const RWDocumentSiteBaseURLKey;
 @property (copy) NSString *siteBaseURL;
 
@@ -166,6 +164,8 @@ extern NSString *const RWDocumentSiteBaseURLKey;
 @property (assign) BOOL useCacheBusting;
 @property (copy) NSString *cacheBustingString;
 
+@property (assign) BOOL minifyExtraFiles;
+
 @property (assign) BOOL useDocumentPortability;
 
 - (BOOL)com_rwrp_checkAndWarnIfTIFF:(NSData *)data extendedWarning:(BOOL)warning;
@@ -179,7 +179,12 @@ extern NSString *const RWDocumentSiteBaseURLKey;
 - (void)makeFileReferenceInternalForToken:(NSString *)token;
 - (void)removeFileReferenceForToken:(NSString *)token;
 - (BOOL)hasFileReferenceForToken:(NSString *)token;
+- (BOOL)canResolveAllFileReferences;
 - (NSURL *)fileURLForToken:(NSString *)token error:(NSError **)error;
 - (BOOL)fileURLIsInternalResourceForToken:(NSString *)token;
+- (void)updateFileReferenceForToken:(NSString *)token fileURL:(NSURL *)fileURL isInternal:(BOOL)isInternal error:(NSError **)error;
+
+- (void)relocateExternalResources;
+- (void)relocateInternalResourcesToURL:(NSURL *)baseURL error:(NSError **)error;
 
 @end

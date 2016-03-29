@@ -99,6 +99,7 @@ typedef NS_ENUM(NSInteger, RWPageAttributesSidebarMode) {
 - (void)setExpiryUnitIndex:(NSUInteger)index;
 
 - (void)setChanged:(BOOL)changed;
+- (void)setChanged:(BOOL)changed silently:(BOOL)silently;
 - (void)setChanged:(BOOL)changed forBookmark:(RWBookmark *)bookmark;
 - (BOOL)changedStatusForBookmark:(RWBookmark *)bookmark;
 
@@ -163,6 +164,15 @@ enum {
 - (NSString*)pageSuffix;
 - (void)setPageSuffix:(NSString*)suffix;
 
+- (NSString *)metaDescription;
+- (void)setMetaDescription:(NSString *)metaDescription;
+
+- (BOOL)shouldIndexPage;
+- (void)setShouldIndexPage:(BOOL)shouldIndex;
+
+- (BOOL)shouldFollowLinks;
+- (void)setShouldFollowLinks:(BOOL)shouldFollow;
+
 + (NSArray *)localisedStringArray:(NSArray *)arrayToLocalise;
 + (NSString *)localizedCustomStyleName;
 
@@ -191,6 +201,7 @@ extern NSString* kRWPageHiddenDidChangeNotification;
 extern NSString* kRWPageAttributeDidChangeNotification;
 extern NSString* kRWPageExternalAttributeDidChangeNotification;
 extern NSString* kRWPageChangedDidChangeNotification;
+extern NSString* kRWAllPagesDidChangeNotification;
 
 // Common Keys
 extern NSString* kRWPageIDKey;
@@ -223,3 +234,6 @@ extern NSString* kRWPageStyleVariationsKey;
 extern NSString* kRWPageStyleVariationsModeKey;
 extern NSString* kRWPageXMLDeclKey;
 extern NSString* kRWPagePagePrefixKey;
+extern NSString* kRWPageMetaDescriptionKey;
+extern NSString* kRWPageRobotsShouldIndexPage;
+extern NSString* kRWPageRobotsShouldFollowLinks;

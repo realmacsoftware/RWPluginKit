@@ -277,7 +277,7 @@ typedef NS_ENUM(NSUInteger, RWDocumentViewTab) {
 
 /*!
 	\brief
-	Root protocol for RapidWeaver 6
+	Root protocol for RapidWeaver 7
  */
 @protocol RWPlugin <NSObject, RWPluginMetadata, RWPluginExport, RWPluginSettings, RWPluginArchiving, RWPluginEditing>
 

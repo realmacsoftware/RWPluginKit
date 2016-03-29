@@ -8,6 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 
+__deprecated
+
 @interface RWPHPController : NSObject
 
 @property (nonatomic, retain) NSData *result;

@@ -64,7 +64,6 @@ extern NSString *const RWDocumentModelTreeKey;
 @property (assign) BOOL obfuscateSiteEmailAddress;
 @property (assign) BOOL useSiteLogo;
 @property (assign) BOOL showBreadcrumbTrail;
-@property (assign) BOOL previewAfterExportRelativeToBaseURL;
 @property (assign) BOOL useFavicon;
 @property (assign) BOOL useWebClipIcon;
 @property (assign) BOOL useBanner;
@@ -81,6 +80,7 @@ extern NSString *const RWDocumentModelTreeKey;
 @property (assign) BOOL useCacheBusting;
 @property (copy) NSString *cacheBustingString;
 @property (assign) BOOL useDocumentPortability;
+@property (assign) BOOL minifyExtraFiles;
 
 @property (assign) NSInteger userAgentResizingPreset;
 
