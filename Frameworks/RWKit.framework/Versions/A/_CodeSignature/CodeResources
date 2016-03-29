@@ -230,6 +230,14 @@
 		<data>
 		+zxR6TFJp8t1Q0DDqd2GS+h3OpQ=
 		</data>
+		<key>Resources/cssmin</key>
+		<data>
+		Vd9cWs3bRVzhMUWihcTZRdCkY6g=
+		</data>
+		<key>Resources/jsmin</key>
+		<data>
+		vXF0CDdABSw6w3YBxfotwlZ2890=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -742,6 +750,14 @@
 		<key>Resources/WebSafeFonts.strings</key>
 		<data>
 		+zxR6TFJp8t1Q0DDqd2GS+h3OpQ=
+		</data>
+		<key>Resources/cssmin</key>
+		<data>
+		Vd9cWs3bRVzhMUWihcTZRdCkY6g=
+		</data>
+		<key>Resources/jsmin</key>
+		<data>
+		vXF0CDdABSw6w3YBxfotwlZ2890=
 		</data>
 	</dict>
 	<key>rules</key>
