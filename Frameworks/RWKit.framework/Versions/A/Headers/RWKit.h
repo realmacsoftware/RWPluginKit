@@ -6,6 +6,7 @@
 #import "RWKit/RWPageProtocol.h"
 #import "RWKit/RWAbstractPlugin.h"
 #import "RWKit/RWSharedStorage.h"
+#import "RWKit/RWPluginHealthCheckProtocol.h"
 
 #import "RWKit/RWAlert.h"
 

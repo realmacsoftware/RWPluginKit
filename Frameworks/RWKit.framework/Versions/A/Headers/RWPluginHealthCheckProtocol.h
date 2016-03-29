@@ -17,6 +17,6 @@
 - (void)showEditorForAttributedString:(id)attributedString attachment:(id)attachment;
 
 // Perform custom health checks
-- (void)performHealthCheckWithErrorReportingBlock:(void(^)(NSString *errorTitle, NSString *errorDescription, void(^repairBlock)()))errorBlock;
+- (void)performHealthCheckWithErrorReportingBlock:(void(^)(NSString *errorTitle, NSString *errorDescription, void(^repairBlock)()))reportError;
 
 @end
