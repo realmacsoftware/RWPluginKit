@@ -21,12 +21,14 @@
 	NSString *_name;
 	NSString *_content;
 	NSString *_language;
+	NSString *_metaTemplate;
 }
 
 @property (nonatomic, copy) NSString *type;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *content;
 @property (nonatomic, copy) NSString *language;
+@property (nonatomic, copy) NSString *metaTemplate;
 
 + (RWMetaField *)metaFieldWithDictionary:(NSDictionary *)dictionary;
 
