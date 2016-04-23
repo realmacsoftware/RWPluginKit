@@ -98,5 +98,3 @@ extern NSString *const kRWDoubleClickedMediaNotification;
 - (RWSharedStorage *)sharedPluginStorage __deprecated;
 
 @end
-
-#define NSLog(...) RWLog(__PRETTY_FUNCTION__, __VA_ARGS__);
