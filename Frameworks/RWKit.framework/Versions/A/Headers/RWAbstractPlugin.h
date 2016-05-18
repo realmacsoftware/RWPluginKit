@@ -68,9 +68,6 @@ extern NSString *const kRWDoubleClickedMediaNotification;
 
 - (void)cancelExport;
 
-- (NSMutableDictionary *)pluginDefaults;
-- (void)setPluginDefaults:(NSDictionary *)defaults;
-
 #pragma mark Resource Access & Linking
 
 // Returns a flat list of site resources.
@@ -83,6 +80,13 @@ extern NSString *const kRWDoubleClickedMediaNotification;
 
 - (NSString *)linkForResourceWithIdentifier:(NSString *)identifier;
 
+#pragma mark Plugin Global Data Support
+
+// Returns an NSMutableDictionary shared between all instances of the same plugin type.
+// This data is keyed by plugin bundle id and stored at the document level.
+
+- (NSMutableDictionary *)globalPluginData;
+
 #pragma mark NSURL Bookmark Support
 
 - (NSString *)registerFileURL:(NSURL *)fileURL error:(NSError **)error;
@@ -92,6 +96,9 @@ extern NSString *const kRWDoubleClickedMediaNotification;
 @end
 
 @interface RWAbstractPlugin (Deprecated)
+
+- (NSMutableDictionary *)pluginDefaults __deprecated;
+- (void)setPluginDefaults:(NSDictionary *)defaults __deprecated;
 
 - (void)broadcastPluginChangedInvert __deprecated;
 - (NSMutableDictionary *)pluginSettingsValueForDisplay:(NSString *)display value:(id)value __deprecated;
