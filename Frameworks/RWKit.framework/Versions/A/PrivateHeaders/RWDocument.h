@@ -183,6 +183,7 @@ extern NSString *const RWDocumentSiteBaseURLKey;
 - (NSURL *)fileURLForToken:(NSString *)token error:(NSError **)error;
 - (BOOL)fileURLIsInternalResourceForToken:(NSString *)token;
 - (void)updateFileReferenceForToken:(NSString *)token fileURL:(NSURL *)fileURL isInternal:(BOOL)isInternal error:(NSError **)error;
+- (void)updateFullPathForToken:(NSString *)token fullPath:(NSString *)fullPath;
 
 - (void)relocateExternalResources;
 - (void)relocateInternalResourcesToURL:(NSURL *)baseURL error:(NSError **)error;

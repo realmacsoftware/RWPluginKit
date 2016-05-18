@@ -10,6 +10,7 @@ extern NSString *const RWThemeInstallerDidUpdateThemeNotification;
 + (void)installAllObjects;
 
 + (BOOL)installObjectAtPath:(NSString *)path;
++ (NSArray *)installObjectsAtPaths:(NSArray *)paths;
 
 + (void)uninstallAddons;
 
@@ -35,5 +36,8 @@ extern NSString *const RWThemeInstallerDidUpdateThemeNotification;
 + (NSString *)pathToUserInstalledPlugins;
 
 + (NSString *)pathForItemNamed:(NSString *)filename;
++ (NSDictionary *)pathsForItemsNamed:(NSArray *)filenames;
++ (NSString *)pathForItemWithIdentifier:(NSString *)identifier;
++ (NSDictionary *)pathsForItemsWithIdentifiers:(NSArray *)identifiers;
 
 @end

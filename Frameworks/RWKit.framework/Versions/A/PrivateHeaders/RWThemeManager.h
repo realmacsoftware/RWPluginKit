@@ -37,6 +37,7 @@ extern NSString *const RWThemeManagerCustomStylesDidChangeNotification;
 + (BOOL)removeTheme:(RWTheme *)theme;
 
 + (NSArray *)pluginExtensions;
++ (NSArray *)stackExtensions;
 
 + (BOOL)isPluginExtension:(NSString *)extension;
 

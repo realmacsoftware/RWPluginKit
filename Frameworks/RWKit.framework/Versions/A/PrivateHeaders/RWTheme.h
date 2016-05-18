@@ -48,6 +48,7 @@
 // RWThemeCapabilities plist values.
 @property (readonly) BOOL supportsToolbarRelTag;
 @property (readonly) BOOL supportsPathTo;
+@property (readonly) BOOL supportsPathToInFiles;
 @property (readonly) BOOL supportsContentOnlySubPages;
 @property (readonly) BOOL supportsBannerImages;
 
