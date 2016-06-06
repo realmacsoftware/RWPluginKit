@@ -45,8 +45,9 @@
 	CGFloat _shadowBlur;
 	NSColor* _shadowColour;
 	CGFloat _rotation;
-	__weak NSDictionary* _attributes;
+	NSDictionary* _attributes;
 	CGImageSourceRef _sourceImage;
+	BOOL _ignoreOrientation;
 }
 
 enum {
@@ -69,7 +70,7 @@ enum {
 - (void)setWidth:(CGFloat)width;
 - (void)setHeight:(CGFloat)height;
 
-- (void)setAttributes:(__weak NSDictionary *)attributes;
+- (void)setAttributes:(NSDictionary *)attributes;
 
 - (BOOL)highQualityScaling;
 - (void)setHighQualityScaling:(BOOL)flag;
@@ -100,6 +101,9 @@ enum {
 
 - (NSColor*)shadowColour;
 - (void)setShadowColour:(NSColor*)colour;
+
+- (BOOL)ignoreOrientation;
+- (void)setIgnoreOrientation:(BOOL)ignoreOrientation;
 
 - (OSStatus)export;
 - (OSStatus)status;

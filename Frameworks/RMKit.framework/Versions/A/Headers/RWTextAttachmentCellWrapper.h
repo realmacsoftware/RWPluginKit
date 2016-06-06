@@ -32,7 +32,7 @@ enum {
 	kPDFAttachmentType
 };
 
-@property (retain) NSImage *cachedTransformImage;
+@property (assign) CGImageRef cachedTransformImageRef;
 @property (retain) id <NSTextAttachmentCell> cell;
 @property (retain) NSDictionary *cachedMediaAttributes;
 

@@ -15,6 +15,9 @@
 #import "RWKit/RWHTMLView.h"
 #import "RWKit/RWHTMLRendering.h"
 
+#import "RWKit/RWMarkdown.h"
+#import "RWMarkdownView.h"
+
 #import "RWKit/RWLink.h"
 #import "RWKit/RWLinkPanel.h"
 
@@ -28,7 +31,6 @@
 #import "RWKit/RWWebResource.h"
 #import "RWKit/RWWebImageTransformationParameters.h"
 
-#import "RWKit/NSString+UUID.h"
 #import "RWKit/NSMutableAttributedString+RWKitAdditions.h"
 
 #import "RWKit/RWKit-Constants.h"

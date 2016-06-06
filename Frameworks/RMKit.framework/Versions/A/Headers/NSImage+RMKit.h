@@ -82,4 +82,6 @@
 
 @end
 
+extern CGImageRef newTransformCGImageUsingAttributes(CGImageRef image, NSDictionary *attributes);
+
 //***************************************************************************

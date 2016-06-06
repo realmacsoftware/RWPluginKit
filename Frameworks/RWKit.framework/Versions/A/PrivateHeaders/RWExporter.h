@@ -12,6 +12,8 @@
 extern NSString *const kRWExporterExportMode;
 extern NSString *const kRWExporterPublishMode;
 extern NSString *const kRWExporterPreviewMode;
+extern NSString *const kRWExporterQuickLookMode;
+extern NSString *const kRWExporterMasterStylePreviewMode;
 extern NSString *const kRWExporterViewSourceCodeMode;
 extern NSString *const kRWExporterConvertingForWebViewDOM;
 
@@ -20,6 +22,10 @@ extern NSString *const kRWExporterConvertingForWebViewDOM;
 	
 	You MUST NOT wait on the main thread inside their handlers, doing so WILL deadlock RapidWeaver
  */
+
+extern NSString *const kRWExporterSiteBackupDidStart;
+extern NSString *const kRWExporterSiteBackupDidEnd;
+extern NSString *const kRWExporterSiteBackupError;
 
 extern NSString *const kRWExporterSiteExportDidStart;
 extern NSString *const kRWExporterSiteExportDidEnd;
@@ -55,13 +61,15 @@ extern NSString *const kRWExporterPageExportError;
 
 @property (nonatomic, copy) NSString *path;
 
+@property (nonatomic, retain) NSMutableArray *exportedResourceURLs;
+
 /*
 	Start
  */
 
 // Used to export a single page.
 
-- (BOOL)exportPage:(RWPage *)page toPath:(NSString *)path inRoot:(NSString *)root usingName:(NSString *)name includingChildren:(BOOL)includingChildren;
+- (BOOL)exportPage:(RWPage *)page subPagePath:(NSString *)subPagePath toPath:(NSString *)path inRoot:(NSString *)root usingName:(NSString *)name includingChildren:(BOOL)includingChildren;
 
 // Used to export a site or group of pages.
 
@@ -69,6 +77,8 @@ extern NSString *const kRWExporterPageExportError;
 
 @property (nonatomic, readonly, assign, getter=isCancelled) BOOL cancelled;
 - (void)cancel;
+
+- (BOOL)exportSiteBackup;
 
 /*
 	Output

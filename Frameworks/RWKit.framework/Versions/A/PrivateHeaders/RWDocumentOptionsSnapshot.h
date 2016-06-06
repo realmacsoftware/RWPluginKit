@@ -24,6 +24,8 @@
 @property BOOL useSiteLogo;
 @property (copy) NSString* siteTitle;
 @property BOOL useSiteTitle;
+@property (copy) NSString* siteLogoAltText;
+@property (copy) NSString* siteBannerAltText;
 @property BOOL showBreadcrumbTrail;
 @property BOOL useSiteSlogan;
 @property (copy) NSString* siteBaseURL;

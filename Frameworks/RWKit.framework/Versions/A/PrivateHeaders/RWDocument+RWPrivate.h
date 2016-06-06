@@ -9,6 +9,7 @@
 #import "RWDocument.h"
 
 @class RWDocumentModel;
+@class RWPage;
 
 @interface RWDocument ()
 

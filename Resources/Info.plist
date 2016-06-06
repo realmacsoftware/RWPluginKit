@@ -34,5 +34,13 @@
 	<string>plugin_icon_active</string>
 	<key>RWAddonSupportURL</key>
 	<string>http://awesome.com</string>
+	<key>RWPluginIconSourceList</key>
+	<string>RWPluginIconSourceList</string>
+	<key>RWPluginIconSourceListSelected</key>
+	<string>RWPluginIconSourceListSelected</string>
+	<key>RWPluginIconAddPageMenu</key>
+	<string>RWPluginIconAddPageMenu</string>
+	<key>RWPluginIconAddPageMenuSelected</key>
+	<string>RWPluginIconAddPageMenuSelected</string>
 </dict>
 </plist>

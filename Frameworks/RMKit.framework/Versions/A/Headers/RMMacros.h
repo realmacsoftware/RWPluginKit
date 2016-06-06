@@ -34,6 +34,9 @@
 
 /// This macro is used to verify that an arbitrary expression is true.  
 /** This macro's intention is similar to assert() and NSCAssert(), except that an expression that fails verification is not regarded as fatal.  Instead of throwing an exception or calling abort(), an unverified expression will (1) emit a warning on the console, and (2) break into the debugger if one is attached.  This macro evalutes to YES or NO depending on whether the expression passed to is true or false, and should be safe to use inside if() conditional checks.  The expression passed to this macro is guaranteed to only be evaluated once. */
+/*
+	Debugger() is deprecated in 10.8, but the logging is still useful
+ */
 #define RMVerifyExpression(expression) \
 	( \
 		(expression) \
@@ -42,7 +45,6 @@
 		: \
 		( \
 			NSLog(@"warning: RMVerifyExpression failed check for `%s' in %s (%s:%d), breaking into debugger if one is attached.", #expression, __func__, __FILE__, __LINE__), \
-			Debugger(), \
 			NO \
 		) \
 	)

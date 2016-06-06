@@ -13,31 +13,12 @@
 #import "RMSSamplePlugin.h"
 #import "RMSSamplePluginOptionsViewController.h"
 #import "RMSSamplePluginContentViewController.h"
-#import "RMSSparkleLoader.h"
 
 //***************************************************************************
 
 @implementation RMSSamplePlugin
 
 //***************************************************************************
-
-- (void)checkForUpdates
-{
-	static SUUpdater *sUpdater = nil;
-	if (sUpdater != nil) {
-		return;
-	}
-	
-	NSError *sparkleError = nil;
-	NSBundle *bundle = [NSBundle bundleForClass:[self class]];
-	sUpdater = [[RMSSparkleLoader sparkleLoader] updaterForBundle:bundle error:&sparkleError];
-	if (sUpdater == nil) {
-		NSLog(@"Failed with error: %@", sparkleError);
-		return;
-	}
-	
-	// Normal Sparkle update logic goes here.
-}
 
 #pragma mark Protocol Methods
 
@@ -54,9 +35,7 @@
 - (NSView *)userInteractionAndEditingView
 {
 	if (contentViewController == nil)
-	{
-//		[self checkForUpdates];
-		
+	{		
 		contentViewController = [[RMSSamplePluginContentViewController alloc] initWithRepresentedObject:self];
 	}
 	
@@ -251,6 +230,18 @@
 + (NSString *)pluginDescription;
 {
 	return NSLocalizedStringFromTableInBundle(@"PluginDescription", nil, [RMSSamplePlugin bundle], @"Localizable");
+}
+
++ (BOOL) canCreateNewPage:(NSError **)errorRef
+{
+	// Return NO and populate the errorRef's localizedDescription if you want to stop a user from creating a new page.
+	return YES;
+}
+
++ (void) willMigrateAddonLocation
+{
+	// If you'd like to be notified if the user migrates their addon folder to a new location,
+	// implement this method and do any necessary work before returning
 }
 
 @end

@@ -6,6 +6,7 @@
 	General bucket for plugins to store commonly used objects in.
 	We create one of these on demand per-plugin class.
  */
+__deprecated
 @interface RWSharedStorage : NSObject <NSLocking>
 
 @property (readonly, nonatomic, strong) NSMutableDictionary *storage;

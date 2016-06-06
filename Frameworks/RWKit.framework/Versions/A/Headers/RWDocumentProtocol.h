@@ -21,4 +21,6 @@
 /// This is the public API for a RapidWeaver document.
 @protocol RWDocument <RW40Document>
 
+@property (nonatomic, getter=isPluginInspectorVisible) BOOL pluginInspectorVisible;
+
 @end

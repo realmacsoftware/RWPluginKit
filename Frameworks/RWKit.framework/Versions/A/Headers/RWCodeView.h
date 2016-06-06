@@ -10,6 +10,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+
 #import "RWCodeHighlightingController.h"
 
 @interface RWCodeView : NSView
@@ -18,9 +19,11 @@
 @property (nonatomic, readonly) IBOutlet NSTextView *textView;
 @property (nonatomic, assign) IBOutlet id delegate;
 
-- (void)setShowLineNumbers:(BOOL)flag;
-- (void)setLanguage:(NSString *)language;
-- (void)setHasBorder:(BOOL)hasBorder;
-- (void)setEditable:(BOOL)editable;
+@property (nonatomic) BOOL showLineNumbers;
+@property (nonatomic, copy) NSString *language;
+@property (nonatomic) BOOL hasBorder;
+@property (nonatomic) BOOL editable;
+@property (nonatomic) BOOL autocompleteEnabled;
+@property (nonatomic) CGFloat fontSize;
 
 @end

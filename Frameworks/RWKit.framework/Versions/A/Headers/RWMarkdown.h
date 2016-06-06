@@ -13,5 +13,6 @@
 + (instancetype) MarkdownExporter;
 
 - (NSString *) exportMarkdownString:(NSString *)markdownString;
+- (NSDictionary *) metadataForMarkdownString:(NSString *)markdownString;
 
 @end

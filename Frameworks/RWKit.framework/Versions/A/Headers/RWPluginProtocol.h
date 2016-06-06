@@ -38,13 +38,18 @@
 /// Returns a resolution-independent icon of the plugin, which will used in RapidWeaver's page list.  The icon will usually be displayed at a size of 128x128 pixels.
 + (NSImage *)pluginIcon;
 
-/// Returns a very small version of the icon for the plugin, which is used in RapidWeaver's page list. The icon will usually be displayed at a size of 16x16px
-+ (NSImage *)smallPluginIcon;
+/// Returns a resolution-independent icon of the plugin, which will used in RapidWeaver's add page menu.  The icon will usually be displayed at a size of 128x128 pixels.
+/// By default, this will return +pluginIcon.
++ (NSImage *)addMenuPluginIcon;
 
 /// Returns a localised description of the plugin, to be displayed to the user.
 /** For example: "The Photo Album plugin enables you to publish your iPhoto
  * galleries and other images from your local hard disk to the Web." */
 + (NSString *)pluginDescription;
+
+/// Returns the version of the plugin
+/* For example "1.0.4". */
++ (NSString *)pluginVersion;
 
 // This should return YES if you provide an HTML description for your plugin (rather than an NSString*)
 + (BOOL)hasHTMLDescription;
@@ -272,7 +277,7 @@ typedef NS_ENUM(NSUInteger, RWDocumentViewTab) {
 
 /*!
 	\brief
-	Root protocol for RapidWeaver 6
+	Root protocol for RapidWeaver 7
  */
 @protocol RWPlugin <NSObject, RWPluginMetadata, RWPluginExport, RWPluginSettings, RWPluginArchiving, RWPluginEditing>
 

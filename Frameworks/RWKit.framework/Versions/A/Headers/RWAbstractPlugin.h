@@ -25,6 +25,10 @@ extern NSString *const kRWDoubleClickedMediaNotification;
 - (NSDocument <RWDocument> *)document;
 
 - (NSObject <RWPage> *)page;
+- (NSString *)uniqueID;
+
++ (BOOL)canCreateNewPage:(NSError **)errorRef currentPages:(NSArray *)currentPages;
++ (void)willMigrateAddonLocation;
 
 + (NSArray *)extraFilesNeededInExportFolder:(NSDictionary *)params;
 - (NSArray *)extraFilesNeededInExportFolder:(NSDictionary *)params;
@@ -34,7 +38,6 @@ extern NSString *const kRWDoubleClickedMediaNotification;
 - (NSString *)pageContentHeaders:(NSDictionary *)params;
 
 - (void)broadcastPluginChanged;
-- (void)broadcastPluginChangedInvert;
 - (void)broadcastPluginExportStatus:(NSString *)message progress:(CGFloat)percent;
 - (void)broadcastMediaChanged;
 - (void)broadcastPluginSettingsRequest;
@@ -55,8 +58,6 @@ extern NSString *const kRWDoubleClickedMediaNotification;
 
 - (NSString *)pathToThemeFile:(NSString *)file params:(NSDictionary *)params correction:(NSInteger)depth;
 
-- (NSMutableDictionary *)pluginSettingsValueForDisplay:(NSString *)display value:(id)value;
-
 - (NSMutableString *)updatePageTemplate:(NSMutableString *)pageTemplate params:(NSDictionary *)params depth:(NSInteger)depth;
 
 - (NSMutableDictionary *)contentOnlySubpageWithHTML:(NSString *)content name:(NSString *)name;
@@ -66,11 +67,6 @@ extern NSString *const kRWDoubleClickedMediaNotification;
 - (NSMutableDictionary *)customSubpageWithData:(NSData *)content name:(NSString *)name destination:(NSString *)destination;
 
 - (void)cancelExport;
-
-- (NSMutableDictionary *)pluginDefaults;
-- (void)setPluginDefaults:(NSDictionary *)defaults;
-
-- (RWSharedStorage *)sharedPluginStorage;
 
 #pragma mark Resource Access & Linking
 
@@ -84,10 +80,28 @@ extern NSString *const kRWDoubleClickedMediaNotification;
 
 - (NSString *)linkForResourceWithIdentifier:(NSString *)identifier;
 
+#pragma mark Plugin Global Data Support
+
+// Returns an NSMutableDictionary shared between all instances of the same plugin type.
+// This data is keyed by plugin bundle id and stored at the document level.
+
+- (NSMutableDictionary *)globalPluginData;
+
 #pragma mark NSURL Bookmark Support
 
 - (NSString *)registerFileURL:(NSURL *)fileURL error:(NSError **)error;
 - (void)removeFileReferenceForToken:(NSString *)token;
 - (NSURL *)fileURLForToken:(NSString *)token error:(NSError **)error;
+
+@end
+
+@interface RWAbstractPlugin (Deprecated)
+
+- (NSMutableDictionary *)pluginDefaults __deprecated;
+- (void)setPluginDefaults:(NSDictionary *)defaults __deprecated;
+
+- (void)broadcastPluginChangedInvert __deprecated;
+- (NSMutableDictionary *)pluginSettingsValueForDisplay:(NSString *)display value:(id)value __deprecated;
+- (RWSharedStorage *)sharedPluginStorage __deprecated;
 
 @end

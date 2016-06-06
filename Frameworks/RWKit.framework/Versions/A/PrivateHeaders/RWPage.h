@@ -14,6 +14,7 @@
 @class RWPageAttributes;
 @class RWPageStyles;
 @class RWTheme;
+@class RWBookmark;
 
 @protocol RWPlugin;
 
@@ -30,7 +31,7 @@
 
 @property (nonatomic, retain) id <RWPlugin> plugin;
 @property (nonatomic, retain) RWPageStyles *styles;
-@property (nonatomic, retain) NSDictionary *manifest;
+@property (nonatomic, retain) NSMutableDictionary *manifests;
 @property (nonatomic, copy) NSDate *createdDate;
 
 @property (nonatomic, copy) NSString *title;
@@ -40,6 +41,11 @@
 @property (nonatomic, readonly) NSURL *supportURL;
 
 @property (nonatomic, assign) NSInteger savedIndex;
+
+@property (nonatomic, assign) BOOL useBanner;
+@property (nonatomic, copy) NSData *bannerData;
+@property (nonatomic, copy) NSString *bannerFilename;
+@property (nonatomic, copy) NSString *bannerAltText;
 
 - (NSString *)path;
 - (NSString *)type;
@@ -72,18 +78,7 @@
 - (NSInteger)hierarchyDepth;
 - (NSInteger)pathDepth;
 
-@property (strong, nonatomic) NSArray *errorsAndWarnings;
-- (void)resetErrorsAndWarnings;
-- (void)appendErrorsAndWarnings:(NSArray *)errors;
-
-- (void)resetErrorsAndWarningsNoNotify;
-- (void)appendErrorsAndWarningsNoNotify:(NSArray *)errors;
-
-@property (copy, nonatomic) NSString *untidiedHTML;
-- (void)setUntidiedHTMLNoNotify:(NSString *)untidiedHTML;
-
 @property (copy, nonatomic) NSString *tidiedHTML;
-- (void)setTidiedHTMLNoNotify:(NSString *)tidiedHTML;
 
 - (BOOL)isExternalPage;
 - (NSString*)externalPageURL;
@@ -101,5 +96,9 @@
 
 - (void)notifyWasSelected;
 - (void)notifyWasDeselected;
+
+- (NSDictionary *)manifestForBookmark:(RWBookmark *)bookmark;
+- (void)setManifest:(NSDictionary *)manifest forBookmark:(RWBookmark *)bookmark;
+- (void)clearManifests;
 
 @end

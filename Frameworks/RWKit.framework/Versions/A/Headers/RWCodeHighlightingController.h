@@ -18,14 +18,11 @@ extern NSString * const RWCodeHighlightingLanguageMarkdown;
 
 - (instancetype) initWithView:(NSView *)view;
 
-- (void) setLanguage:(NSString *)language;
-- (NSString *) language;
-
-- (void) setString:(NSString *)string;
-- (NSString *) string;
-
-- (void) setShowLineNumbers:(BOOL)flag;
-- (BOOL) showLineNumbers;
+@property (nonatomic, copy) NSString *language;
+@property (nonatomic, copy) NSString *string;
+@property (nonatomic) BOOL showLineNumbers;
+@property (nonatomic) BOOL autocompleteEnabled;
+@property (nonatomic, assign) CGFloat fontSize;
 
 - (NSTextView *)textView;
 
