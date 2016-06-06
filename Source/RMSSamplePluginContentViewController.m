@@ -27,7 +27,7 @@
 
 - (NSString *)content
 {
-	return [htmlView string];
+	return htmlView.string;
 }
 
 - (void)textDidChange:(NSNotification *)notification
@@ -43,20 +43,20 @@
 	NSString *string = p.content;
 	
 	if (string) {
-		[htmlView setString:string];
+		htmlView.string = string;
 	}
 	
 	[htmlView setHasBorder:NO];
 }
 
-- (id)initWithRepresentedObject:(id)object
+- (instancetype)initWithRepresentedObject:(id)object
 {
 	self = [super initWithNibName:@"RMSSamplePluginContentView" bundle:[RMSSamplePlugin bundle]];
 	if (self == nil) {
 		return nil;
 	}
 	
-	[self setPlugin:object];
+	self.plugin = object;
 	
 	return self;
 }

@@ -23,14 +23,14 @@
 
 @implementation RMSSamplePluginOptionsViewController
 
-- (id)initWithRepresentedObject:(id)object
+- (instancetype)initWithRepresentedObject:(id)object
 {
 	self = [super initWithNibName:@"RMSSamplePluginOptionsView" bundle:[RMSSamplePlugin bundle]];
 	if (self == nil) {
 		return nil;
 	}
 	
-	[self setPlugin:object];
+	self.plugin = object;
 	
 	return self;
 }
@@ -44,7 +44,7 @@
 		}
 		
 		NSError *bookmarkError = nil;
-		NSURL *fileURL = [openPanel URL];
+		NSURL *fileURL = openPanel.URL;
 		RMSSamplePlugin *pluginInstance = self.plugin;
 		NSString *newFileToken = [pluginInstance registerFileURL:fileURL error:&bookmarkError];
 		if (newFileToken == nil) {
@@ -93,7 +93,7 @@
 	
 	[fileURL stopAccessingSecurityScopedResource];
 	
-	NSLog(@"Read data of %ld bytes.", [fileData length]);
+	NSLog(@"Read data of %ld bytes.", fileData.length);
 }
 
 @end

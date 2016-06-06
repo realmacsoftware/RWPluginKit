@@ -70,7 +70,7 @@
 
 - (NSNumber *)normaliseImages
 {
-	return [NSNumber numberWithUnsignedInt:0];
+	return @0U;
 }
 
 - (NSString *)overrideFileExtension
@@ -146,11 +146,11 @@
 	[super encodeWithCoder:coder];
 	
 	[coder encodeObject:(self.userInteractionAndEditingViewController.content) ?: self.content forKey:@"Content String"];
-	[coder encodeObject:[NSNumber numberWithBool:self.emitRawContent] forKey:@"Emit Raw Content"];
+	[coder encodeObject:@(self.emitRawContent) forKey:@"Emit Raw Content"];
 	[coder encodeObject:self.fileToken forKey:@"File Token"];
 }
 
-- (id)initWithCoder:(NSCoder *)coder
+- (instancetype)initWithCoder:(NSCoder *)coder
 {
 	self = [super initWithCoder:coder];
 	if (self == nil) {
@@ -166,7 +166,7 @@
 	return self;
 }
 
-- (id)init
+- (instancetype)init
 {
 	self = [super init];
 	if (self == nil) {
@@ -203,7 +203,7 @@
 	
 	if (plugin)
 	{
-		return [[NSArray arrayWithObject:plugin] objectEnumerator];
+		return [@[plugin] objectEnumerator];
 	}
 	
 	return nil;
