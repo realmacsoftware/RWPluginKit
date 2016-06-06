@@ -217,10 +217,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "";
 				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = "~/Library/Containers/com.realmacsoftware.rapidweaver/Data/Library/Application Support/RapidWeaver/";
 				ONLY_ACTIVE_ARCH = YES;
 				RAPIDWEAVER_ROOT = ../../RapidWeaver;
 				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -228,10 +232,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "";
 				FRAMEWORK_SEARCH_PATHS = "";
 				IBC_FLATTEN_NIBS = NO;
+				INSTALL_PATH = "~/Library/Containers/com.realmacsoftware.rapidweaver/Data/Library/Application Support/RapidWeaver/";
 				RAPIDWEAVER_ROOT = ../../RapidWeaver;
 				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
