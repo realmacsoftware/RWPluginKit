@@ -13,18 +13,24 @@
 #import "RMSSamplePlugin.h"
 #import "RMSSamplePluginOptionsViewController.h"
 
+@interface RMSSamplePluginOptionsViewController ()
+
+@property (nonatomic, weak) RMSSamplePlugin *plugin;
+
+@end
+
 //***************************************************************************
 
 @implementation RMSSamplePluginOptionsViewController
 
-- (id)initWithRepresentedObject:(id)object
+- (instancetype)initWithRepresentedObject:(id)object
 {
 	self = [super initWithNibName:@"RMSSamplePluginOptionsView" bundle:[RMSSamplePlugin bundle]];
 	if (self == nil) {
 		return nil;
 	}
 	
-	[self setRepresentedObject:object];
+	self.plugin = object;
 	
 	return self;
 }
@@ -38,8 +44,8 @@
 		}
 		
 		NSError *bookmarkError = nil;
-		NSURL *fileURL = [openPanel URL];
-		RMSSamplePlugin *pluginInstance = self.representedObject;
+		NSURL *fileURL = openPanel.URL;
+		RMSSamplePlugin *pluginInstance = self.plugin;
 		NSString *newFileToken = [pluginInstance registerFileURL:fileURL error:&bookmarkError];
 		if (newFileToken == nil) {
 			NSLog(@"Failed to bookmark file with error: %@", bookmarkError);
@@ -56,7 +62,7 @@
 
 - (IBAction)testFileAccess:(id)sender
 {
-	RMSSamplePlugin *pluginInstance = self.representedObject;
+	RMSSamplePlugin *pluginInstance = self.plugin;
 	NSLog(@"fileToken: %@", pluginInstance.fileToken);
 	if (pluginInstance.fileToken == nil) {
 		NSBeep();
@@ -87,7 +93,7 @@
 	
 	[fileURL stopAccessingSecurityScopedResource];
 	
-	NSLog(@"Read data of %ld bytes.", [fileData length]);
+	NSLog(@"Read data of %ld bytes.", fileData.length);
 }
 
 @end

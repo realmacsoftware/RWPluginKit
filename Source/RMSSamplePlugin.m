@@ -14,6 +14,13 @@
 #import "RMSSamplePluginOptionsViewController.h"
 #import "RMSSamplePluginContentViewController.h"
 
+@interface RMSSamplePlugin ()
+
+@property (nonatomic, strong) RMSSamplePluginOptionsViewController *optionsAndConfigurationViewController;
+@property (nonatomic, strong) RMSSamplePluginContentViewController *userInteractionAndEditingViewController;
+
+@end
+
 //***************************************************************************
 
 @implementation RMSSamplePlugin
@@ -24,27 +31,27 @@
 
 - (NSView *)optionsAndConfigurationView
 {
-	if (optionsViewController == nil)
+	if (_optionsAndConfigurationViewController == nil)
 	{
-		optionsViewController = [[RMSSamplePluginOptionsViewController alloc] initWithRepresentedObject:self];
+		_optionsAndConfigurationViewController = [[RMSSamplePluginOptionsViewController alloc] initWithRepresentedObject:self];
 	}
 	
-	return optionsViewController.view;
+	return _optionsAndConfigurationViewController.view;
 }
 
 - (NSView *)userInteractionAndEditingView
 {
-	if (contentViewController == nil)
+	if (_userInteractionAndEditingViewController == nil)
 	{		
-		contentViewController = [[RMSSamplePluginContentViewController alloc] initWithRepresentedObject:self];
+		_userInteractionAndEditingViewController = [[RMSSamplePluginContentViewController alloc] initWithRepresentedObject:self];
 	}
 	
-	return contentViewController.view;
+	return _userInteractionAndEditingViewController.view;
 }
 
 - (id)contentHTML:(NSDictionary *)params
 {
-	NSString *string = (contentViewController.content) ?: self.content;
+	NSString *string = (self.userInteractionAndEditingViewController.content) ?: self.content;
 	if (string == nil) {
 		string = @"";
 	}
@@ -63,7 +70,7 @@
 
 - (NSNumber *)normaliseImages
 {
-	return [NSNumber numberWithUnsignedInt:0];
+	return @0U;
 }
 
 - (NSString *)overrideFileExtension
@@ -128,8 +135,8 @@
 
 - (void)finishSetup
 {
-	contentViewController = nil;
-	optionsViewController = nil;
+	self.userInteractionAndEditingViewController = nil;
+	self.optionsAndConfigurationViewController = nil;
 	
 	[self observeVisibleKeys];
 }
@@ -138,12 +145,12 @@
 {
 	[super encodeWithCoder:coder];
 	
-	[coder encodeObject:(contentViewController.content) ?: self.content forKey:@"Content String"];
-	[coder encodeObject:[NSNumber numberWithBool:self.emitRawContent] forKey:@"Emit Raw Content"];
+	[coder encodeObject:(self.userInteractionAndEditingViewController.content) ?: self.content forKey:@"Content String"];
+	[coder encodeObject:@(self.emitRawContent) forKey:@"Emit Raw Content"];
 	[coder encodeObject:self.fileToken forKey:@"File Token"];
 }
 
-- (id)initWithCoder:(NSCoder *)coder
+- (instancetype)initWithCoder:(NSCoder *)coder
 {
 	self = [super initWithCoder:coder];
 	if (self == nil) {
@@ -159,7 +166,7 @@
 	return self;
 }
 
-- (id)init
+- (instancetype)init
 {
 	self = [super init];
 	if (self == nil) {
@@ -174,14 +181,6 @@
 - (void)dealloc
 {
 	[self stopObservingVisibleKeys];
-	
-	[_content release];
-	[_fileToken release];
-	
-	[contentViewController release];
-	[optionsViewController release];
-	
-    [super dealloc];
 }
 
 //***************************************************************************
@@ -204,7 +203,7 @@
 	
 	if (plugin)
 	{
-		return [[NSArray arrayWithObject:[plugin autorelease]] objectEnumerator];
+		return [@[plugin] objectEnumerator];
 	}
 	
 	return nil;
@@ -224,7 +223,7 @@
 {
 	NSBundle *bundle = [RMSSamplePlugin bundle];
 	NSString *iconFilename = [bundle objectForInfoDictionaryKey:@"CFBundleIconFile"];
-	return [[[NSImage alloc] initWithContentsOfFile:[bundle pathForImageResource:iconFilename]] autorelease];
+	return [[NSImage alloc] initWithContentsOfFile:[bundle pathForImageResource:iconFilename]];
 }
 
 + (NSString *)pluginDescription;

@@ -13,6 +13,12 @@
 #import "RMSSamplePlugin.h"
 #import "RMSSamplePluginContentViewController.h"
 
+@interface RMSSamplePluginContentViewController ()
+
+@property (nonatomic, weak) RMSSamplePlugin *plugin;
+
+@end
+
 //***************************************************************************
 
 @implementation RMSSamplePluginContentViewController
@@ -21,36 +27,36 @@
 
 - (NSString *)content
 {
-	return [htmlView string];
+	return htmlView.string;
 }
 
 - (void)textDidChange:(NSNotification *)notification
 {
-	RMSSamplePlugin *p = self.representedObject;
+	RMSSamplePlugin *p = self.plugin;
 	
 	[p broadcastPluginChanged];
 }
 
 - (void)awakeFromNib
 {
-	RMSSamplePlugin *p = self.representedObject;
+	RMSSamplePlugin *p = self.plugin;
 	NSString *string = p.content;
 	
 	if (string) {
-		[htmlView setString:string];
+		htmlView.string = string;
 	}
 	
 	[htmlView setHasBorder:NO];
 }
 
-- (id)initWithRepresentedObject:(id)object
+- (instancetype)initWithRepresentedObject:(id)object
 {
 	self = [super initWithNibName:@"RMSSamplePluginContentView" bundle:[RMSSamplePlugin bundle]];
 	if (self == nil) {
 		return nil;
 	}
 	
-	[self setRepresentedObject:object];
+	self.plugin = object;
 	
 	return self;
 }

@@ -17,11 +17,7 @@
 
 //***************************************************************************
 
-@interface RMSSamplePlugin : RWAbstractPlugin /*<RWPluginProtocol>*/
-{
-	RMSSamplePluginContentViewController *contentViewController;
-	RMSSamplePluginOptionsViewController *optionsViewController;
-}
+@interface RMSSamplePlugin : RWAbstractPlugin
 
 @property (nonatomic, copy) NSString *content;
 @property (nonatomic, assign) BOOL emitRawContent;
