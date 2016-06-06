@@ -15,7 +15,7 @@
 
 @interface RMSSamplePluginContentViewController ()
 
-@property (nonatomic, assign) RMSSamplePlugin *plugin;
+@property (nonatomic, weak) RMSSamplePlugin *plugin;
 
 @end
 

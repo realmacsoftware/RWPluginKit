@@ -15,7 +15,7 @@
 	IBOutlet RWHTMLView *htmlView;
 }
 
-@property (nonatomic, readonly) NSString *content;
+@property (weak, nonatomic, readonly) NSString *content;
 
 - (id)initWithRepresentedObject:(id)object;
 

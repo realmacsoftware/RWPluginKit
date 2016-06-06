@@ -16,8 +16,8 @@
 
 @interface RMSSamplePlugin ()
 
-@property (nonatomic, retain) RMSSamplePluginOptionsViewController *optionsAndConfigurationViewController;
-@property (nonatomic, retain) RMSSamplePluginContentViewController *userInteractionAndEditingViewController;
+@property (nonatomic, strong) RMSSamplePluginOptionsViewController *optionsAndConfigurationViewController;
+@property (nonatomic, strong) RMSSamplePluginContentViewController *userInteractionAndEditingViewController;
 
 @end
 
@@ -181,14 +181,6 @@
 - (void)dealloc
 {
 	[self stopObservingVisibleKeys];
-	
-	[_content release];
-	[_fileToken release];
-	
-	self.userInteractionAndEditingViewController = nil;
-	self.optionsAndConfigurationViewController = nil;
-	
-    [super dealloc];
 }
 
 //***************************************************************************
@@ -211,7 +203,7 @@
 	
 	if (plugin)
 	{
-		return [[NSArray arrayWithObject:[plugin autorelease]] objectEnumerator];
+		return [[NSArray arrayWithObject:plugin] objectEnumerator];
 	}
 	
 	return nil;
@@ -231,7 +223,7 @@
 {
 	NSBundle *bundle = [RMSSamplePlugin bundle];
 	NSString *iconFilename = [bundle objectForInfoDictionaryKey:@"CFBundleIconFile"];
-	return [[[NSImage alloc] initWithContentsOfFile:[bundle pathForImageResource:iconFilename]] autorelease];
+	return [[NSImage alloc] initWithContentsOfFile:[bundle pathForImageResource:iconFilename]];
 }
 
 + (NSString *)pluginDescription;
