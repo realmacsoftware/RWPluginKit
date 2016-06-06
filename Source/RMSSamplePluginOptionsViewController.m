@@ -13,6 +13,12 @@
 #import "RMSSamplePlugin.h"
 #import "RMSSamplePluginOptionsViewController.h"
 
+@interface RMSSamplePluginOptionsViewController ()
+
+@property (nonatomic, assign) RMSSamplePlugin *plugin;
+
+@end
+
 //***************************************************************************
 
 @implementation RMSSamplePluginOptionsViewController
@@ -24,7 +30,7 @@
 		return nil;
 	}
 	
-	[self setRepresentedObject:object];
+	[self setPlugin:object];
 	
 	return self;
 }
@@ -39,7 +45,7 @@
 		
 		NSError *bookmarkError = nil;
 		NSURL *fileURL = [openPanel URL];
-		RMSSamplePlugin *pluginInstance = self.representedObject;
+		RMSSamplePlugin *pluginInstance = self.plugin;
 		NSString *newFileToken = [pluginInstance registerFileURL:fileURL error:&bookmarkError];
 		if (newFileToken == nil) {
 			NSLog(@"Failed to bookmark file with error: %@", bookmarkError);
@@ -56,7 +62,7 @@
 
 - (IBAction)testFileAccess:(id)sender
 {
-	RMSSamplePlugin *pluginInstance = self.representedObject;
+	RMSSamplePlugin *pluginInstance = self.plugin;
 	NSLog(@"fileToken: %@", pluginInstance.fileToken);
 	if (pluginInstance.fileToken == nil) {
 		NSBeep();

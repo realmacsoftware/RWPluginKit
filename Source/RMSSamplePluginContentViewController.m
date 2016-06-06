@@ -13,6 +13,12 @@
 #import "RMSSamplePlugin.h"
 #import "RMSSamplePluginContentViewController.h"
 
+@interface RMSSamplePluginContentViewController ()
+
+@property (nonatomic, assign) RMSSamplePlugin *plugin;
+
+@end
+
 //***************************************************************************
 
 @implementation RMSSamplePluginContentViewController
@@ -26,14 +32,14 @@
 
 - (void)textDidChange:(NSNotification *)notification
 {
-	RMSSamplePlugin *p = self.representedObject;
+	RMSSamplePlugin *p = self.plugin;
 	
 	[p broadcastPluginChanged];
 }
 
 - (void)awakeFromNib
 {
-	RMSSamplePlugin *p = self.representedObject;
+	RMSSamplePlugin *p = self.plugin;
 	NSString *string = p.content;
 	
 	if (string) {
@@ -50,7 +56,7 @@
 		return nil;
 	}
 	
-	[self setRepresentedObject:object];
+	[self setPlugin:object];
 	
 	return self;
 }
