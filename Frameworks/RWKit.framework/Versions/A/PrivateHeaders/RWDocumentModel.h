@@ -23,7 +23,7 @@
 
 // Some of these properties should arguably be read-only
 @property (retain) NSMutableArray *publishingDestinations;
-@property (retain) NSMutableDictionary *globalPluginData;
+@property (retain) RWBookmark *temporaryPublishingDestination;
 @property (retain) RWBookmark *selectedPublishingDestination;
 @property (copy) NSString *siteTitle;
 @property (copy) NSString *siteLogoAltText;

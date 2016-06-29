@@ -188,6 +188,9 @@
 /// A convenience method to update a sandwich filling version (creating it if necessary), and set its subsandwiches to the argument specified.
 - (BOOL)setSubsandwiches:(NSDictionary*)subsandwiches forVersion:(NSUInteger)version;
 
+/// Returns the subsandwiches for a version
+- (NSDictionary *)subsandwichesForVersion:(NSUInteger)version;
+
 /// Returns the version number for the next empty version slot.
 /** For example, if versions 0, 1 and 2 have been set, this will return 3.  If no versions have been set, this returns 0. */
 - (NSUInteger)nextVersionNumber;

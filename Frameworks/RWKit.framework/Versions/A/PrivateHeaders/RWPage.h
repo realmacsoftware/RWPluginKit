@@ -29,7 +29,12 @@
 @property (nonatomic, assign) RWPage *parent;
 @property (nonatomic, readonly, retain) NSMutableArray *children;
 
+@property (nonatomic, readonly) BOOL pluginIsLoaded;
 @property (nonatomic, retain) id <RWPlugin> plugin;
+@property (nonatomic, retain) RMSandwich *pluginDataSandwich;
+@property (nonatomic, retain) RMSandwich *pageSandwich;
+@property (nonatomic, retain) NSDictionary* pluginClassInfo;
+@property (nonatomic, readonly) Class pluginClass;
 @property (nonatomic, retain) RWPageStyles *styles;
 @property (nonatomic, retain) NSMutableDictionary *manifests;
 @property (nonatomic, copy) NSDate *createdDate;
@@ -51,6 +56,7 @@
 - (NSString *)type;
 
 - (NSView *)view;
+- (NSViewController *)viewController;
 
 - (RWTheme *)theme;
 

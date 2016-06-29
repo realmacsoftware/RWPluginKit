@@ -51,6 +51,7 @@
 @property (readonly) BOOL supportsPathToInFiles;
 @property (readonly) BOOL supportsContentOnlySubPages;
 @property (readonly) BOOL supportsBannerImages;
+@property (readonly) BOOL supportsAlphaInColours;
 
 @property (readonly) BOOL themeIsClassic;
 

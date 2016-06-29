@@ -217,6 +217,7 @@ extern NSString* kRWPageExpiryQuantityKey;
 extern NSString* kRWPageExpiryUnitKey;
 extern NSString* kRWPageFilenameExtKey;
 extern NSString* kRWPageFilenameKey;
+extern NSString* kRWPagePluginExtKey;
 extern NSString* kRWPageFoldernameKey;
 extern NSString* kRWPageHeadersKey;
 extern NSString* kRWPageHiddenKey;

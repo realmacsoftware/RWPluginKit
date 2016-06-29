@@ -27,6 +27,10 @@ extern NSString *const kRWDoubleClickedMediaNotification;
 - (NSObject <RWPage> *)page;
 - (NSString *)uniqueID;
 
++ (void)clearSharedPluinDataForDocument:(NSDocument<RWDocument> *)document;
++ (RMSandwich *)sharedPluginSandwichForDocument:(NSDocument<RWDocument> *)document;
++ (void)loadSharedPluginDataSandwich:(RMSandwich *)sandwich forDocument:(NSDocument<RWDocument> *)document;
+
 + (BOOL)canCreateNewPage:(NSError **)errorRef currentPages:(NSArray *)currentPages;
 + (void)willMigrateAddonLocation;
 
@@ -79,13 +83,6 @@ extern NSString *const kRWDoubleClickedMediaNotification;
 // Note: Results are only valid if called during export!
 
 - (NSString *)linkForResourceWithIdentifier:(NSString *)identifier;
-
-#pragma mark Plugin Global Data Support
-
-// Returns an NSMutableDictionary shared between all instances of the same plugin type.
-// This data is keyed by plugin bundle id and stored at the document level.
-
-- (NSMutableDictionary *)globalPluginData;
 
 #pragma mark NSURL Bookmark Support
 

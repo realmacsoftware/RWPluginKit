@@ -69,10 +69,10 @@ extern NSString *const RWDocumentAllPagesKey;
 @property (nonatomic, retain) RWSourceListNode *resourcesNode;
 @property (nonatomic, retain) RWResourceDatabase *resourceDB;
 
+@property (nonatomic, retain) NSMutableArray *settingsPlugins;
+
 @property (nonatomic, assign) BOOL publishSettingsConfigured;
 @property (nonatomic, retain) NSMutableArray *publishingDestinations;
-
-@property (nonatomic, retain) NSMutableDictionary *globalPluginData;
 
 @property (assign) BOOL useSiteLogo;
 @property (copy) NSData *siteLogoData;
@@ -174,8 +174,6 @@ extern NSString *const RWDocumentSiteBaseURLKey;
 
 - (BOOL)hasChangedGlobalFiles;
 - (void)resetGlobalFilesChangedFlags;
-
-- (NSMutableDictionary *)globalPluginDataForPlugin:(id)plugin;
 
 @property (nonatomic, retain) NSMutableArray *fileReferences;
 - (NSString *)registerFileURL:(NSURL *)fileURL withIdentifierOrNil:(NSString *)identifier error:(NSError **)error;

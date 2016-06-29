@@ -145,9 +145,64 @@ extern NSString *const kRWExporterPageExportDidEnd;
 
 @end
 
+@protocol RWSharedPluginData <NSObject>
+
+@required
+
+/// Load the passed in sandwich for the specified document. This will be called on document load if the plugin has stored shared plugin data
++ (void)loadSharedPluginDataSandwich:(RMSandwich *)sandwich forDocument:(NSDocument <RWDocument> *)document;
+
+/// Return a sandwich containing shared data to be stored in the specified document.
++ (RMSandwich *)sharedPluginSandwichForDocument:(NSDocument <RWDocument> *)document;
+
+/// Clear any shared data for the specified document
++ (void)clearSharedPluinDataForDocument:(NSDocument<RWDocument> *)document;
+
+@end
+
+@protocol RWSharedPluginDataMigration <NSObject>
+
+@required
+
+/// Move any shared data stored in the page to the shared plugin data store
+/** THIS METHOD WILL BE CALLED ONLY ONCE PER PAGE
+ * Only plugins that conform to the RWSharedPluginDataMigration protocol will be migrated
+ * After migration, the page will me marked as being migrated and this method will not be called on subsequent loads
+ */
++ (void)migratePageSandwich:(RMSandwich *)sandwich toSharedPluginDataForDocument:(NSDocument<RWDocument> *)document;
+
+@end
+
+
+/*
+	New plugin API methods. We're moving to NSViewControllers, which means you'll receive more notifications about when your views are on screen.
+	The below methods have been marked as optional, but it would make sense in most cases to return an NSViewController subclass from at least
+	one of them.
+	If your plugin does not implement -editingViewController, you will not appear in the page list.
+	If your plugin implements -settingsViewController, you will appear in the plugin settings list.
+	This makes it possible to build a plugin that doesn't have a corresponding page but does have some settings and may export some files.
+	If you do not want your plugin to appear in the plugin settings list, do not implement -settingsViewController
+ */
+
+@protocol RWPluginEditingViewControllers <NSObject>
+
+@optional
+- (NSViewController *)editingViewController;
+- (NSViewController *)pageInspectorViewController;
+
+@end
+
+@protocol RWPluginSettingsViewController <NSObject>
+
+@required
+- (NSViewController *)settingsViewController;
+
+@end
+
+
 @protocol RWPluginArchiving <NSObject>
 
- @optional
+@optional
 
 /// Creates a new plugin instance with the given sandwich.
 + (id)createWithSandwich:(RMSandwich *)sandwich;
@@ -279,7 +334,7 @@ typedef NS_ENUM(NSUInteger, RWDocumentViewTab) {
 	\brief
 	Root protocol for RapidWeaver 7
  */
-@protocol RWPlugin <NSObject, RWPluginMetadata, RWPluginExport, RWPluginSettings, RWPluginArchiving, RWPluginEditing>
+@protocol RWPlugin <NSObject, RWPluginMetadata, RWPluginExport, RWPluginSettings, RWPluginArchiving>
 
 // This method is called when the plugin is loaded, and the plugin's bundle is passed as an argument. If initialization fails, return NO, and if it goes alright, return YES.
 + (BOOL)initializeClass:(NSBundle *)theBundle;
