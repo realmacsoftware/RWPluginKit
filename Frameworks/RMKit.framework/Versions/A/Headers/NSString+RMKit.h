@@ -81,23 +81,12 @@
 - (NSUInteger)replaceOccurrencesOfString:(NSString *)target withString:(NSString *)replacement;
 @end
 
-@interface NSString (RWPathUtilities)
-- (NSString*)resolveAliases;
-- (OSStatus)pathToFSRef:(FSRef*)fsRef;
-- (OSStatus)pathToFSSpec:(FSSpec*)spec;
-- (NSMutableData*)aliasForPathRelativeTo:(NSString*)pathB;
-@end
-
 @interface NSString (MD5_Checksum)
 - (NSData*)md5Checksum;
 @end
 
 @interface NSString (CRC_Checksum)
 - (NSData*)crcChecksum;
-@end
-
-@interface NSMutableData (RWPathUtilities)
-- (NSString*)resolveAliasRelativeTo:(NSString*)pathB withoutUI:(BOOL)flag;
 @end
 
 @interface NSAttributedString (Attachments)

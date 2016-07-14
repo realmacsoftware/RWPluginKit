@@ -13,7 +13,7 @@
 #import "RMSSamplePlugin.h"
 #import "RMSSamplePluginOptionsViewController.h"
 
-@interface RMSSamplePluginOptionsViewController ()
+@interface RMSSamplePluginOptionsViewController () <RWLinkPanelDelegate>
 
 @property (nonatomic, weak) RMSSamplePlugin *plugin;
 
@@ -22,6 +22,12 @@
 //***************************************************************************
 
 @implementation RMSSamplePluginOptionsViewController
+
+- (void)panelCompletedWithLink:(RWLink *)link
+{
+    
+    NSLog(@"%@", link);
+}
 
 - (instancetype)initWithRepresentedObject:(id)object
 {
@@ -37,6 +43,10 @@
 
 - (IBAction)chooseFile:(id)sender
 {
+    RWLinkPanel *linkPanel = [RWLinkPanel panelWithDelegate:self plugin:self.plugin];
+    [linkPanel presentPanelWithLink:nil parent:nil];
+    return;
+    
 	NSOpenPanel *openPanel = [NSOpenPanel openPanel];
 	[openPanel beginWithCompletionHandler:^(NSInteger result) {
 		if (result != NSFileHandlingPanelOKButton) {

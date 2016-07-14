@@ -15,29 +15,15 @@
 //***************************************************************************
 
 @interface RWPlugin : NSObject
-{
-	NSDictionary *attributes;
-	NSBundle *bundle;
-}
 
 @property (nonatomic, retain) NSDictionary *attributes;
 @property (nonatomic, retain) NSBundle *bundle;
 
-// Designated initializer?
-// Need to review code that calls these initializers and determine
-// what the preferred behaviour is and then clean up the initializers.
-
-- (id)initWithPluginAttributes:(NSDictionary *)attributes;
++ (instancetype)pluginWithPath:(NSString *)path;
 - (id)initWithPath:(NSString *)path;
 
-// Creates a plugin object and initializes it's bundle property.
-// The bundle is not loaded simply by creating a plugin object
-// so there shouldn't be any side effects to this.
-
-+ (instancetype)pluginWithPath:(NSString *)path;
-
-- (BOOL)load;
-- (BOOL)preflight;
+- (NSError *)load;
+- (NSError *)preflight;
 - (BOOL)isVisible;
 - (BOOL)isRetired;
 

@@ -144,6 +144,8 @@
 - (void)encodeWithCoder:(NSCoder *)coder
 {
 	[super encodeWithCoder:coder];
+    
+    
 	
 	[coder encodeObject:(self.userInteractionAndEditingViewController.content) ?: self.content forKey:@"Content String"];
 	[coder encodeObject:@(self.emitRawContent) forKey:@"Emit Raw Content"];
@@ -172,7 +174,7 @@
 	if (self == nil) {
 		return nil;
 	}
-	
+    
 	[self finishSetup];
 	
 	return self;

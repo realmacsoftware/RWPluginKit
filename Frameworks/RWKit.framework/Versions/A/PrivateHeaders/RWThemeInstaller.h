@@ -7,10 +7,9 @@ extern NSString *const RWThemeInstallerDidUpdateThemeNotification;
 
 @interface RWThemeInstaller : NSObject
 
-+ (void)installAllObjects;
++ (NSArray *)installAllObjects;
 
 + (BOOL)installObjectAtPath:(NSString *)path;
-+ (NSArray *)installObjectsAtPaths:(NSArray *)paths;
 
 + (void)uninstallAddons;
 

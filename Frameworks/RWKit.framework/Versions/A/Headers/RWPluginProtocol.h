@@ -156,7 +156,7 @@ extern NSString *const kRWExporterPageExportDidEnd;
 + (RMSandwich *)sharedPluginSandwichForDocument:(NSDocument <RWDocument> *)document;
 
 /// Clear any shared data for the specified document
-+ (void)clearSharedPluinDataForDocument:(NSDocument<RWDocument> *)document;
++ (void)clearSharedPluginDataForDocument:(NSDocument<RWDocument> *)document;
 
 @end
 

@@ -36,10 +36,7 @@ extern NSString *const RWThemeManagerCustomStylesDidChangeNotification;
 + (BOOL)askUserDeleteTheme:(RWTheme *)theme;
 + (BOOL)removeTheme:(RWTheme *)theme;
 
-+ (NSArray *)pluginExtensions;
 + (NSArray *)stackExtensions;
-
-+ (BOOL)isPluginExtension:(NSString *)extension;
 
 /*
  
@@ -56,13 +53,15 @@ extern NSString *const RWThemeManagerCustomStylesDidChangeNotification;
 // Bulk object registration
 - (void)registerObjectsAtPaths:(NSArray *)paths;
 
+// Rebuild theme category index
+- (void)refreshThemeCategories;
+
 // Removes the cached plist data for a theme.
 // Necessary when deleting themes or replacing with
 // newer versions during double-click installs.
 - (void)removeCachedDataForTheme:(RWTheme *)inTheme;
 
-// call this when you've completed the registration scan
-- (void)registrationComplete;
+- (NSArray *)cachedPluginPaths;
 
 - (NSDictionary *)themePropertiesAtPath:(NSString *)path error:(NSError **)error;
 

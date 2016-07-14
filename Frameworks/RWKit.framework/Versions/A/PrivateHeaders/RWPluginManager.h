@@ -24,20 +24,12 @@
 
 //***************************************************************************
 
-/*
-	Sent when the RWPluginManager has finished loading new plugins. This is what you need to listen for if you want to be
-	informed of new plugins being loaded.
-*/
-extern NSString *const RWPluginManagerDidLoadNewPluginsNotification;
-
-//***************************************************************************
-
 @interface RWPluginManager : NSObject
 
-@property (nonatomic, retain) NSDate *timeStamp;
 @property (nonatomic, retain) NSMutableArray *plugins;
 
-@property BOOL loadThirdParty;
++ (NSArray *)pluginExtensions;
++ (BOOL)isPluginExtension:(NSString *)extension;
 
 + (RWPluginManager *)sharedInstance;
 
@@ -55,7 +47,7 @@ extern NSString *const RWPluginManagerDidLoadNewPluginsNotification;
 
 - (void)registerDisabledPlugin:(RWPlugin *)plugin;
 
-- (void)scanForNewPlugins;
+- (NSArray *)loadPluginsAtPaths:(NSArray *)paths;
 
 @end
 

@@ -32,16 +32,10 @@
 @property (nonatomic, copy) NSString *path;
 @property (nonatomic, retain) NSMutableData *alias;
 
-+ (RWFileReference *)referenceTo:(NSString *)pathA relativeTo:(NSString *)pathB;
-
 + (RWFileReference *)referenceWithDictionary:(NSDictionary *)dictionary;
 - (NSDictionary *)propertyList;
 
-- (void)setPath:(NSString *)pathA relativeTo:(NSString *)pathB;
-
 - (BOOL)pathExists;
-
-- (NSString *)resolveRelativeTo:(NSString *)path;
 
 @end
 

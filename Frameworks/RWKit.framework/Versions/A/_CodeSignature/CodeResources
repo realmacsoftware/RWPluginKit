@@ -232,11 +232,11 @@
 		</data>
 		<key>Resources/cssmin</key>
 		<data>
-		gFR2Qst5rEE0z2skSgB/JJnzNzg=
+		HWXWPU8GsKCI9RNop8KAqPBYQbs=
 		</data>
 		<key>Resources/jsmin</key>
 		<data>
-		zLij3bphZ6kcxTtqDktKKTPmcQE=
+		eMPE3GCv3+eAXSbt+8eQziMn2jg=
 		</data>
 		<key>Resources/plugin-placeholder.html</key>
 		<data>
@@ -271,11 +271,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nWwO/CZVI9TWLDPX83lW5sJf7Iw=
+			KfLrfi+eWb+UiiDP+VXrnB4+IEI=
 			</data>
 			<key>hash2</key>
 			<data>
-			2hQZ4A9Ftv9Lb263lOhuRynF3sKV91e6TOXm5vkXvSo=
+			7PB4W7llfjOKkbtq4bjNDm6m50XaDrer/BLewZcvFAc=
 			</data>
 		</dict>
 		<key>Headers/RWAlert.h</key>
@@ -447,11 +447,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/1DjAKKQkjkjo+Pwy2oP5zum5vo=
+			AGIfSXgHbQky/lhzst9SKGthwSY=
 			</data>
 			<key>hash2</key>
 			<data>
-			2A6mYG/EWf1ceVVDqqweGRHmkgrwyaJyeSONDEl+4x8=
+			0vpW4Ver9shps4fTBe0IPjOeasKDD+1LOTTiYP4cnGs=
 			</data>
 		</dict>
 		<key>Headers/RWSharedStorage.h</key>
@@ -551,17 +551,6 @@
 			<key>hash2</key>
 			<data>
 			4/18c0LsEUQYDpemCQnbMKqQKtCc5jp2C1R5HTa1uvg=
-			</data>
-		</dict>
-		<key>PrivateHeaders/BDAlias.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PadQPofssAvpZ/ugwSs6/F1stXY=
-			</data>
-			<key>hash2</key>
-			<data>
-			d+AaX4atRdfUkf+MY3TzZ9o+Jwhj6OVk8RPVmV9pXJI=
 			</data>
 		</dict>
 		<key>PrivateHeaders/NSMutableString+StyleSheet.h</key>
@@ -700,11 +689,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BnS8jmAuXeCFP3CnerAM6bYwRkg=
+			PXojYukBGPXINe7Vb6QfNAj7+1Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			IJFSRDJGugl96yKFe1hZuz3sg3ICxIMbaGTgCZBbyRo=
+			Vmc5sZnOnUr+zdCkEcskShB1DwBiBHs0JdYISSHLXGI=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWManifestGenerator.h</key>
@@ -843,22 +832,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JjZ+NOr2MxSCemPtzt1ERh7Sm8g=
+			2qhhloKlieDu2/xVVJDfafz0aNw=
 			</data>
 			<key>hash2</key>
 			<data>
-			G+l7+akkaqTRekQZIQ+B8/CnAID8luseRV7X+9bl24o=
+			mBBLTAE4VOJuAdzRql1Wdy6fle2CrY0C61PSBweZEaU=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWPluginManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			L0gzH6rXsmjQLO2qQEArqrobDA4=
+			yli7E5XCXLqf1R7JdkEo3Vhu5Hw=
 			</data>
 			<key>hash2</key>
 			<data>
-			5YhTvC/zvpyEguep914WFXLCyflWQYxYALd7Nm6zX3o=
+			WGMQxxWOxm2Ql/gc86mrRrAVChBMem7d/x+UUqyuyRI=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWPluginPlaceholder.h</key>
@@ -975,22 +964,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Pz3sthmEfiH8TSUOT7RaDSmPhSQ=
+			kWTNKCgYWKtDJSQ0N30CH5k0HdQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			wn58ONOGuc8tkP8H6kqbR3jJ/CXCZQjfim3vhh1KwmM=
+			5Kw9a/SZoPOiuDq7zIF1c62QPCgnnGficqA2nDRlkHk=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWThemeManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZjuFqyyhoLUyTq3habTp3ewAL00=
+			YIrOG8bVXoI+8DGQibvV3cQ4p9k=
 			</data>
 			<key>hash2</key>
 			<data>
-			LNOhoJ6quuB8YFsECvmwePh6MDr8IaNP/AIU1cFoHJA=
+			dPQkJBUvDXCQSJnZ/OKgEgNN0zjy96KtAvW73IjJTgw=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWTidy.h</key>
@@ -1534,22 +1523,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gFR2Qst5rEE0z2skSgB/JJnzNzg=
+			HWXWPU8GsKCI9RNop8KAqPBYQbs=
 			</data>
 			<key>hash2</key>
 			<data>
-			VARRBG3uPyX5aytH32HOLB2U/6UTXMq9kgNrV1GTJE8=
+			iQyoYRbNnhHvNXi7F6wU1WFbjeb7gvDQbMESJxT/IU8=
 			</data>
 		</dict>
 		<key>Resources/jsmin</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zLij3bphZ6kcxTtqDktKKTPmcQE=
+			eMPE3GCv3+eAXSbt+8eQziMn2jg=
 			</data>
 			<key>hash2</key>
 			<data>
-			45itZKCNPYgZ70DQ/e1KDozdUrD0r6C2QSrgoAroF2A=
+			bqpjihH6qBgo67JjupRyCaOfKAldIKnPD+5Y27MBQCo=
 			</data>
 		</dict>
 		<key>Resources/plugin-placeholder.html</key>

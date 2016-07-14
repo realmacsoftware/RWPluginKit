@@ -27,12 +27,14 @@ extern NSString *const kRWDoubleClickedMediaNotification;
 - (NSObject <RWPage> *)page;
 - (NSString *)uniqueID;
 
-+ (void)clearSharedPluinDataForDocument:(NSDocument<RWDocument> *)document;
++ (void)clearSharedPluginDataForDocument:(NSDocument<RWDocument> *)document;
 + (RMSandwich *)sharedPluginSandwichForDocument:(NSDocument<RWDocument> *)document;
 + (void)loadSharedPluginDataSandwich:(RMSandwich *)sandwich forDocument:(NSDocument<RWDocument> *)document;
 
 + (BOOL)canCreateNewPage:(NSError **)errorRef currentPages:(NSArray *)currentPages;
 + (void)willMigrateAddonLocation;
+
+- (BOOL)canPerformExportForMode:(NSString *)mode errorMessage:(NSString **)errorMessage;
 
 + (NSArray *)extraFilesNeededInExportFolder:(NSDictionary *)params;
 - (NSArray *)extraFilesNeededInExportFolder:(NSDictionary *)params;
