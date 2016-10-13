@@ -21,7 +21,7 @@
 @property (nonatomic, assign) BOOL nilOnWebUnsafeFont;
 
 + (void)styliseFontMenu:(NSMenu*)menu;
-+ (NSFont*)menuItemTitleToFont:(NSString*)item;
++ (NSFont*)menuItemTitleToFont:(NSString*)title;
 
 + (BOOL)containsWebUnsafeFonts:(NSAttributedString*)string;
 

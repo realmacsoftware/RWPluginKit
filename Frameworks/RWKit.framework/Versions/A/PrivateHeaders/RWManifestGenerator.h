@@ -22,17 +22,14 @@
 
 @interface RWManifestGenerator : NSObject
 
-+ (RWManifestGenerator *)create;
-
 + (NSInteger)version;
 
-- (NSMutableDictionary *)generateManifestForPath:(NSString *)path forPage:(NSString *)pageID includingDigests:(BOOL)includingDigests;
+- (void)enqueueManifestGenerationNamed:(NSString *)manifestName forPath:(NSString *)path page:(NSString *)pageID siteRoot:(NSString *)siteRoot includeDigests:(BOOL)includeDigests;
+- (void)enqueueManifestGenerationNamed:(NSString *)manifestName forPaths:(NSArray *)paths root:(NSString *)root page:(NSString *)pageID siteRoot:(NSString *)siteRoot includeDigests:(BOOL)includeDigests;
 
-- (NSMutableDictionary *)generateManifestWithPaths:(NSArray *)paths fromRoot:(NSString *)root forPage:(NSString *)pageID includingDigests:(BOOL)includingDigests;
+- (void)enqueueEntryForManifestNamed:(NSString *)manifestName file:(NSString *)file relativeTo:(NSString *)root;
 
-- (void)addEntryForFile:(NSString *)file toManifest:(NSMutableDictionary *)manifest relativeTo:(NSString *)root;
-
-- (void)updateManifest:(NSDictionary *)manifest atPath:(NSString *)path;
+- (NSDictionary *)manifests;
 
 @end
 

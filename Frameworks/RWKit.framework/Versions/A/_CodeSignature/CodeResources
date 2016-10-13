@@ -4,16 +4,7 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Resources/Base.lproj/MobileMeWarningSheet.nib/designable.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			CMAVxpcj6cYKq8de60L2J0WjYmc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/Base.lproj/MobileMeWarningSheet.nib/keyedobjects.nib</key>
+		<key>Resources/Base.lproj/MobileMeWarningSheet.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -22,16 +13,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Resources/Base.lproj/RWLinkPanel.nib/designable.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FoBEc0p7WixLA3vX28rOy75HA1w=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/Base.lproj/RWLinkPanel.nib/keyedobjects.nib</key>
+		<key>Resources/Base.lproj/RWLinkPanel.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -40,16 +22,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Resources/Base.lproj/RWTextRulerOptions.nib/designable.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			g6eqT3AH/Vhv+IX0CGtRWLIvOU0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/Base.lproj/RWTextRulerOptions.nib/keyedobjects.nib</key>
+		<key>Resources/Base.lproj/RWTextRulerOptions.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -58,16 +31,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Resources/Base.lproj/STVToolbar.nib/designable.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			outL1QKs9gBCaQ0frTaF8vNk7go=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/Base.lproj/STVToolbar.nib/keyedobjects.nib</key>
+		<key>Resources/Base.lproj/STVToolbar.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -96,7 +60,7 @@
 		</dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		5CB4V6P9vthVkpEJzH/RHhplU1E=
+		YOAOhJXHF/IiuLBLFQCPOyRA7Cw=
 		</data>
 		<key>Resources/LICENSE</key>
 		<data>
@@ -230,14 +194,6 @@
 		<data>
 		+zxR6TFJp8t1Q0DDqd2GS+h3OpQ=
 		</data>
-		<key>Resources/cssmin</key>
-		<data>
-		HWXWPU8GsKCI9RNop8KAqPBYQbs=
-		</data>
-		<key>Resources/jsmin</key>
-		<data>
-		eMPE3GCv3+eAXSbt+8eQziMn2jg=
-		</data>
 		<key>Resources/plugin-placeholder.html</key>
 		<data>
 		3jhNjT0mSJiLxyNcDDVjWGLd97Q=
@@ -271,11 +227,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KfLrfi+eWb+UiiDP+VXrnB4+IEI=
+			1Se2RvRDkjQpXufQj8gpzrYG/Do=
 			</data>
 			<key>hash2</key>
 			<data>
-			7PB4W7llfjOKkbtq4bjNDm6m50XaDrer/BLewZcvFAc=
+			pNtRmxIXG6A0IjpxxyvwWrbsb/HT45o0YZn9uupNMws=
 			</data>
 		</dict>
 		<key>Headers/RWAlert.h</key>
@@ -425,11 +381,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			V9zZhQDbrRWCw9C4vowBB+BvUnU=
+			l4MUnrsmYdZ3OIgJwSJOJ96fHnw=
 			</data>
 			<key>hash2</key>
 			<data>
-			iNo/SxYqUKB4NKxb2v6fmkyGEdJGgqeJSN/7eXb6Zjo=
+			F8x0TrkohAth7VhDafh3qVCsNn+Vlfj6LlvTsn4qwJM=
 			</data>
 		</dict>
 		<key>Headers/RWPluginHealthCheckProtocol.h</key>
@@ -447,11 +403,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AGIfSXgHbQky/lhzst9SKGthwSY=
+			4K21G2G0stL1zqdZYYB4qn4ZW6c=
 			</data>
 			<key>hash2</key>
 			<data>
-			0vpW4Ver9shps4fTBe0IPjOeasKDD+1LOTTiYP4cnGs=
+			bWwrqBz07eBwep56Hct/3PFJh3IE9COehYbWSjgrLT8=
 			</data>
 		</dict>
 		<key>Headers/RWSharedStorage.h</key>
@@ -546,11 +502,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ti/6quf0NGB64OTB3Xi09kA48yw=
+			fZ+n2SN0zWLtIZzds0xs7JLARx8=
 			</data>
 			<key>hash2</key>
 			<data>
-			4/18c0LsEUQYDpemCQnbMKqQKtCc5jp2C1R5HTa1uvg=
+			1ffi32ZFDYJAJltFkVNz1pESA7F9Maxx6W5d7+IAGvU=
 			</data>
 		</dict>
 		<key>PrivateHeaders/NSMutableString+StyleSheet.h</key>
@@ -656,11 +612,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qmd6LYtmUeJwH8LirhqxQXQsDfg=
+			hYAmkiUomDrrtAwmVJZGG2KCQ5I=
 			</data>
 			<key>hash2</key>
 			<data>
-			n80KsJYwBdtyW9m1IQFUSHHkEWvn5O56ZroXDe2vUBk=
+			jGK/Ob8buTPbkZkCIaVNcvj+dJv+l7D7qtMOeCbd7mM=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWJavaScript.h</key>
@@ -700,11 +656,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Yq17wCyKBk48GSXMcJKoVt9yUJM=
+			ME1wnxqSREmnjb0e1JDl4yd1j64=
 			</data>
 			<key>hash2</key>
 			<data>
-			YITuWqtfE2c4XSV59d89DNKgBLQQkKZG/j+O7sYILVg=
+			AjIIKEtdqfKjcicQewrGDzzJdq66q+rwt+yE5NaSHH4=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWMarkupAttributes.h</key>
@@ -1015,20 +971,7 @@
 			i3+u1WCFnNNd+LwzAWKk8+HqRvsS0yLECvaad0rJ2F4=
 			</data>
 		</dict>
-		<key>Resources/Base.lproj/MobileMeWarningSheet.nib/designable.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			CMAVxpcj6cYKq8de60L2J0WjYmc=
-			</data>
-			<key>hash2</key>
-			<data>
-			2oHEPzXQ2JmnGYZhjXiLRYgZoMV+jNWDxev5DYna5FE=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/Base.lproj/MobileMeWarningSheet.nib/keyedobjects.nib</key>
+		<key>Resources/Base.lproj/MobileMeWarningSheet.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1041,20 +984,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Resources/Base.lproj/RWLinkPanel.nib/designable.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FoBEc0p7WixLA3vX28rOy75HA1w=
-			</data>
-			<key>hash2</key>
-			<data>
-			zGnZFR1TtTM7SjEIFwp4M4VZYm24i7ePy3Vp/vzEqaY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/Base.lproj/RWLinkPanel.nib/keyedobjects.nib</key>
+		<key>Resources/Base.lproj/RWLinkPanel.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1067,20 +997,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Resources/Base.lproj/RWTextRulerOptions.nib/designable.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			g6eqT3AH/Vhv+IX0CGtRWLIvOU0=
-			</data>
-			<key>hash2</key>
-			<data>
-			QRUQilHFSrDYv7FHj9BVkHT/0Qm4ay/KxiHSYKTYatc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/Base.lproj/RWTextRulerOptions.nib/keyedobjects.nib</key>
+		<key>Resources/Base.lproj/RWTextRulerOptions.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1093,20 +1010,7 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>Resources/Base.lproj/STVToolbar.nib/designable.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			outL1QKs9gBCaQ0frTaF8vNk7go=
-			</data>
-			<key>hash2</key>
-			<data>
-			gJ5I4ZqpCpPYCCiGW1JQiozHUkziceC2ottYUIW95qA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Resources/Base.lproj/STVToolbar.nib/keyedobjects.nib</key>
+		<key>Resources/Base.lproj/STVToolbar.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1149,11 +1053,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5CB4V6P9vthVkpEJzH/RHhplU1E=
+			YOAOhJXHF/IiuLBLFQCPOyRA7Cw=
 			</data>
 			<key>hash2</key>
 			<data>
-			PWHBx//0ARIUJDCfPO9J4Fij2EWCTRGcJIuDYngyC4Y=
+			EkcSG7RGXOCjp9m38aaDnvk/yw85a5GZlrozLrqswuo=
 			</data>
 		</dict>
 		<key>Resources/LICENSE</key>
@@ -1517,28 +1421,6 @@
 			<key>hash2</key>
 			<data>
 			9GzKe/NA0tmDxbtinVYKUo+U+/pjUHVkvnHIvVOEOsY=
-			</data>
-		</dict>
-		<key>Resources/cssmin</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HWXWPU8GsKCI9RNop8KAqPBYQbs=
-			</data>
-			<key>hash2</key>
-			<data>
-			iQyoYRbNnhHvNXi7F6wU1WFbjeb7gvDQbMESJxT/IU8=
-			</data>
-		</dict>
-		<key>Resources/jsmin</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			eMPE3GCv3+eAXSbt+8eQziMn2jg=
-			</data>
-			<key>hash2</key>
-			<data>
-			bqpjihH6qBgo67JjupRyCaOfKAldIKnPD+5Y27MBQCo=
 			</data>
 		</dict>
 		<key>Resources/plugin-placeholder.html</key>

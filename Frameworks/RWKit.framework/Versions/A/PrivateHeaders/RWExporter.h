@@ -31,9 +31,13 @@ extern NSString *const kRWExporterSiteExportDidStart;
 extern NSString *const kRWExporterSiteExportDidEnd;
 extern NSString *const kRWExporterSiteExportError;
 
+extern NSString *const kRWExporterChecksumGenerationDidStart;
+extern NSString *const kRWExporterChecksumGenerationDidEnd;
+
 extern NSString *const kRWExporterPageExportDidStart;
 extern NSString *const kRWExporterPageExportDidEnd;
 extern NSString *const kRWExporterPageExportError;
+extern NSString *const kRWExporterPageExportUpdateMessage;
 
 @protocol RWExporterDelegate <NSObject>
 
@@ -73,7 +77,7 @@ extern NSString *const kRWExporterPageExportError;
 
 // Used to export a site or group of pages.
 
-- (BOOL)exportPages:(NSArray *)pages;
+- (void)exportPages:(NSArray *)pages completion:(void (^)(BOOL successful))completionBlock;
 
 @property (nonatomic, readonly, assign, getter=isCancelled) BOOL cancelled;
 - (void)cancel;

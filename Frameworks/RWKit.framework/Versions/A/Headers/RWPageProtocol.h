@@ -27,4 +27,7 @@
 - (BOOL)hidden;
 - (NSArray *)children;
 
+// Marks this page as changed.
+- (void)markAsChanged;
+
 @end

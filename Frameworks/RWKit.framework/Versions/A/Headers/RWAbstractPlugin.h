@@ -13,6 +13,10 @@
 @class RMHTML;
 @class RWSharedStorage;
 
+extern NSString* const kRWPluginStartedLoadingNotification;
+extern NSString* const kRWPluginFinishedLoadingNotification;
+extern NSString* const kRWPluginStartedMigrationNotification;
+extern NSString* const kRWPluginFinishedMigrationNotification;
 extern NSString *const kRWPluginChangedNotification;
 extern NSString *const kRWPluginChangedInvertNotification;
 extern NSString *const kRWPluginExportStatusNotification;
@@ -73,6 +77,8 @@ extern NSString *const kRWDoubleClickedMediaNotification;
 - (NSMutableDictionary *)customSubpageWithData:(NSData *)content name:(NSString *)name destination:(NSString *)destination;
 
 - (void)cancelExport;
+
+- (NSArray <RWPage> *)allPagesUsingPlugin;
 
 #pragma mark Resource Access & Linking
 
