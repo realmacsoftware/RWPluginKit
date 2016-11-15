@@ -11,6 +11,6 @@
 @interface RWKeyedUnarchiverDelegate : NSObject <NSKeyedUnarchiverDelegate>
 
 /// Returns a set with the names of any missing plugin classes encountered during the load.
-@property (nonatomic, readonly, retain) NSMutableSet *missing;
+@property (nonatomic, readonly, strong) NSMutableSet *missing;
 
 @end

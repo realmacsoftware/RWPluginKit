@@ -65,7 +65,7 @@ extern RWExportMode RWExportModeEnumFromExportModeString(NSString* exportMode);
 @property (copy) NSString *assetsFolderName DEPRECATED_ATTRIBUTE;
 @property (copy) NSString *resourcesFolderName;
 
-@property (retain) RWPageAttributes* pageAttributes;
+@property (strong) RWPageAttributes* pageAttributes;
 
 // e.g. "http://web.me.com/foobar/MyWebsite"
 @property (copy) NSURL* baseURL;
@@ -117,7 +117,7 @@ extern RWExportMode RWExportModeEnumFromExportModeString(NSString* exportMode);
 
 @property RWPageStyleMode pageStyleMode;
 
-@property (retain) RWTheme* theme;
+@property (strong) RWTheme* theme;
 
 // e.g. ""
 @property (copy) NSString* themeCommonPath;

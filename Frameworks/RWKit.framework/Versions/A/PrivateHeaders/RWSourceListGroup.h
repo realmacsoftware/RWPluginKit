@@ -22,6 +22,6 @@
 
 @property (nonatomic, copy) NSString *name;
 
-@property (nonatomic, readonly) NSArray *items;
+@property (weak, nonatomic, readonly) NSArray *items;
 
 @end

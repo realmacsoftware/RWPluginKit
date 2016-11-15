@@ -13,11 +13,11 @@
 
 @interface RWResourceDatabase : NSObject <NSCoding>
 
-@property (readonly, nonatomic) NSSet *resources;
+@property (weak, readonly, nonatomic) NSSet *resources;
 
-@property (readonly, nonatomic) NSDictionary *identifierMap;
-@property (readonly, nonatomic) NSDictionary *nodeMap;
-@property (readonly, nonatomic) NSDictionary *pageMap;
+@property (weak, readonly, nonatomic) NSDictionary *identifierMap;
+@property (weak, readonly, nonatomic) NSDictionary *nodeMap;
+@property (weak, readonly, nonatomic) NSDictionary *pageMap;
 
 - (void)addResource:(RWSiteResource *)resource node:(RWSourceListNode *)node;
 - (void)removeResources:(NSSet *)resources;

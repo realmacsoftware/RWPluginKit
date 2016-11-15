@@ -16,7 +16,7 @@
 + (instancetype)siteLayoutWithDocument:(RWDocument *)document;
 - (id)initWithDocument:(RWDocument *)document;
 
-@property (readonly, nonatomic, assign) RWDocument *document;
+@property (readonly, nonatomic, weak) RWDocument *document;
 
 - (NSString *)pageName:(RWPage *)page;
 

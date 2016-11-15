@@ -40,8 +40,8 @@ extern NSString *const RWSiteResourceNameKey;
 - (BOOL)validateName:(inout NSString **)nameRef error:(out NSError **)errorRef;
 
 @property (nonatomic, copy) NSURL *publishedURL;
-@property (nonatomic, retain) NSDate *publishedDate;
-@property (nonatomic, retain) NSDate *timeStamp;
+@property (nonatomic, strong) NSDate *publishedDate;
+@property (nonatomic, strong) NSDate *timeStamp;
 
 @property (nonatomic, copy) NSString *fullPath;
 

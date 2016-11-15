@@ -32,17 +32,17 @@ extern NSString *const RWDocumentDidRemoveResourceNotification;
 @interface RWDocument : NSDocument <RWDocument, RMObjectPathing>
 
 extern NSString *const RWDocumentPagesKey;
-@property (nonatomic, readonly, retain) NSArray *pages;
+@property (nonatomic, readonly, strong) NSArray *pages;
 - (void)reparent:(RWPage *)page parent:(RWPage *)parent clearManifest:(BOOL)clearManifest;
 - (void)markAllPagesAsChanged:(BOOL)changed;
 
 extern NSString *const RWDocumentAllPagesKey;
-@property (readonly, nonatomic) NSArray *allPages;
+@property (weak, readonly, nonatomic) NSArray *allPages;
 
-@property (retain) RWPage *index;
+@property (strong) RWPage *index;
 
-@property (nonatomic, retain) NSMutableDictionary *missingPagesInfo;
-@property (nonatomic, retain) NSMutableDictionary *corruptPagesInfo;
+@property (nonatomic, strong) NSMutableDictionary *missingPagesInfo;
+@property (nonatomic, strong) NSMutableDictionary *corruptPagesInfo;
 
 - (RWPage *)pageFromUniqueID:(NSString *)identifier topLevelOnly:(BOOL)top;
 - (RWPage *)pageFromUniqueID:(NSString *)uniqueID;
@@ -66,19 +66,19 @@ extern NSString *const RWDocumentAllPagesKey;
 
 //
 
-@property (nonatomic, retain) RWSourceListNode *resourcesNode;
-@property (nonatomic, retain) RWResourceDatabase *resourceDB;
+@property (nonatomic, strong) RWSourceListNode *resourcesNode;
+@property (nonatomic, strong) RWResourceDatabase *resourceDB;
 
-@property (nonatomic, retain) NSMutableArray *settingsPlugins;
+@property (nonatomic, strong) NSMutableArray *settingsPlugins;
 
 @property (nonatomic, assign) BOOL publishSettingsConfigured;
-@property (nonatomic, retain) NSMutableArray *publishingDestinations;
+@property (nonatomic, strong) NSMutableArray *publishingDestinations;
 
 @property (assign) BOOL useSiteLogo;
 @property (copy) NSData *siteLogoData;
 
-@property (retain) NSString *imageExportFormat;
-@property (retain) NSString *imageExportQuality;
+@property (strong) NSString *imageExportFormat;
+@property (strong) NSString *imageExportQuality;
 
 @property (copy) NSString *siteLogoFilename;
 
@@ -101,7 +101,7 @@ extern NSString *const RWDocumentAllPagesKey;
 @property (copy) NSString *siteSlogan;
 @property (assign) BOOL useSiteSlogan;
 
-@property (retain) RWPageAttributes *defaultPageAttributes;
+@property (strong) RWPageAttributes *defaultPageAttributes;
 
 @property (assign) RWLinkStyle commonFileConsolidationMode;
 
@@ -120,14 +120,14 @@ extern NSString *const RWDocumentSiteBaseURLKey;
 
 @property (copy) NSString *siteBannerAltText;
 
-@property (nonatomic, retain) RWTheme *theme;
+@property (nonatomic, strong) RWTheme *theme;
 - (void)startWatchingTheme:(RWTheme *)theme;
 - (void)stopCurrentThemeWatcher;
 
 @property (copy) NSString *mostRecentlySelectedThemeStyle;
 
 @property (copy) NSString *siteDefaultExportDestination;
-@property (readonly) NSData *siteDefaultExportDestinationBookmark;
+@property (weak, readonly) NSData *siteDefaultExportDestinationBookmark;
 
 @property (copy) NSString *globalCSS;
 @property (copy) NSAttributedString *attributedGlobalCSS;
@@ -155,7 +155,7 @@ extern NSString *const RWDocumentSiteBaseURLKey;
 
 @property (assign) NSInteger userAgentResizingPreset;
 
-@property (retain) NSString *quickLookSandwichTemporaryDirectoryPath;
+@property (strong) NSString *quickLookSandwichTemporaryDirectoryPath;
 @property (copy) RMSandwich *quickLookSandwich;
 @property (copy) NSImage *quickLookSandwichThumbnail;
 
@@ -175,7 +175,7 @@ extern NSString *const RWDocumentSiteBaseURLKey;
 - (BOOL)hasChangedGlobalFiles;
 - (void)resetGlobalFilesChangedFlags;
 
-@property (nonatomic, retain) NSMutableArray *fileReferences;
+@property (nonatomic, strong) NSMutableArray *fileReferences;
 - (NSString *)registerFileURL:(NSURL *)fileURL withIdentifierOrNil:(NSString *)identifier error:(NSError **)error;
 - (NSString *)registerFileURL:(NSURL *)fileURL withIdentifierOrNil:(NSString *)identifier error:(NSError **)error isInternal:(BOOL)isInternal;
 - (void)makeFileReferenceInternalForToken:(NSString *)token;

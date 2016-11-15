@@ -11,27 +11,15 @@
 @class RWTextView;
 
 @interface RWSTVToolbarController : NSViewController
-{
-	NSButton *addLinkButton;
-	NSButton *removeLinkButton;
-	
-	NSButton *alignLeftButton;
-	NSButton *alignCenterButton;
-	NSButton *alignRightButton;
-	
-	NSButton *boldButton;
-	NSButton *italicsButton;
-	NSButton *underlineButton;
-}
 
-@property (nonatomic, assign) IBOutlet NSButton *addLinkButton;
-@property (nonatomic, assign) IBOutlet NSButton *removeLinkButton;
-@property (nonatomic, assign) IBOutlet NSButton *alignLeftButton;
-@property (nonatomic, assign) IBOutlet NSButton *alignCenterButton;
-@property (nonatomic, assign) IBOutlet NSButton *alignRightButton;
-@property (nonatomic, assign) IBOutlet NSButton *boldButton;
-@property (nonatomic, assign) IBOutlet NSButton *italicsButton;
-@property (nonatomic, assign) IBOutlet NSButton *underlineButton;
+@property (nonatomic, weak) IBOutlet NSButton *addLinkButton;
+@property (nonatomic, weak) IBOutlet NSButton *removeLinkButton;
+@property (nonatomic, weak) IBOutlet NSButton *alignLeftButton;
+@property (nonatomic, weak) IBOutlet NSButton *alignCenterButton;
+@property (nonatomic, weak) IBOutlet NSButton *alignRightButton;
+@property (nonatomic, weak) IBOutlet NSButton *boldButton;
+@property (nonatomic, weak) IBOutlet NSButton *italicsButton;
+@property (nonatomic, weak) IBOutlet NSButton *underlineButton;
 
 + (id)controllerWithRepresentedObject:(id)object;
 

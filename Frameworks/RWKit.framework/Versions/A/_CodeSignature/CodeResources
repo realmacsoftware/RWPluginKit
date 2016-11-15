@@ -17,7 +17,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			B1URhV6R61uouIEupc+ZpGQIUBY=
+			boKisYScsSZhGm8qFnnZzJG4P54=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -26,7 +26,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ArLHfFWUJT0JiTxasr3dr3UkQPI=
+			PauAL4Z/i7q1az7+LjRSOF/WWcc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -35,7 +35,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AejrGFioB795ul/ZZiHGxxsDsCI=
+			GXkUf263DXNbF8prRCsOa/+xKrI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -60,7 +60,7 @@
 		</dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		YOAOhJXHF/IiuLBLFQCPOyRA7Cw=
+		/CyVaV0bXjQrQCXLoirv3z8HSBo=
 		</data>
 		<key>Resources/LICENSE</key>
 		<data>
@@ -260,11 +260,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9cFBkrDY1bO3IC1Mc+kKC69e8sw=
+			sAnmMorFMKK3YAqQLeHYBlQD5vM=
 			</data>
 			<key>hash2</key>
 			<data>
-			y9al/9w/sI+c/fbOpSE4CVvZrzIeYXJOAWEG3nmiioE=
+			UwSZH3pK7eAgyQVHrXXZnZQufTAlhvAdkOJ3BpfDeMk=
 			</data>
 		</dict>
 		<key>Headers/RWDocumentProtocol.h</key>
@@ -282,11 +282,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			M0Rctxn23sr3FurAvhsSBRNksYQ=
+			ocrcJZ5jJVn4HIAT4u+faDSv7BU=
 			</data>
 			<key>hash2</key>
 			<data>
-			azGax9VeJvqOWnvxAl1HyVCyRQ4WDT2HjHTfq65ZwZw=
+			lLp36lOZQcK/ZyiWq0z8o3dSneKFVLoG4pF6n8jk+lk=
 			</data>
 		</dict>
 		<key>Headers/RWHTMLRendering.h</key>
@@ -337,22 +337,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fe0h4bBe3hQ69NtJNJJUPDoN+wg=
+			jYc9PSLvjdLC2VZ8/P/uDcWaqhA=
 			</data>
 			<key>hash2</key>
 			<data>
-			nLtnBNvm5e/yTeNt7z6Nbs3YxLg0ekfDCUDSqDiCzic=
+			517OQdug0CTeHpZIBcOkjddxQTBGq/KHadmm1S+SqFE=
 			</data>
 		</dict>
 		<key>Headers/RWLinkPanel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			b/1uR6VjCn1MpvegtfQ14kRh98Q=
+			Hm4zZuHnvLBBTnajcGUxMNyzWjs=
 			</data>
 			<key>hash2</key>
 			<data>
-			GnxvGObWy5vTDBPhD3NNbEhnwEYeGC95D3cgjugZVgk=
+			PSW4Z6gi3oZ/pzP3OtdLrs57VKInQy36i5Z3HZ3HWnM=
 			</data>
 		</dict>
 		<key>Headers/RWMarkdown.h</key>
@@ -425,11 +425,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WR7rwbyTv8o1M7H0AmDTaN6rQLw=
+			1f18F9ADgjljtCnIFM5Rs9buNVg=
 			</data>
 			<key>hash2</key>
 			<data>
-			6AiFf+/+WWIyGRBemqPawpglEVtRI9NVOIsWFmQLK/k=
+			dhF44E+DxdEX4Hu1DctzsdjcDaFR90dBAzh/6DVKap8=
 			</data>
 		</dict>
 		<key>Headers/RWStyledText.h</key>
@@ -447,33 +447,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tf64nkYb0qRaxjaL2isCPf5qykM=
+			pMjNxSix8Dclqy8nBTULaB7GNPc=
 			</data>
 			<key>hash2</key>
 			<data>
-			UExGrJ9V3w5T0d7UpnUU2gt4NhiwUeJpBdy69T9TQjM=
+			y0bPNaOidV3xdOsVxpw1BIi6sarelD38BJn1Hu/ULLE=
 			</data>
 		</dict>
 		<key>Headers/RWTextView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xPunDY1fPE70q4QBmw2N4mOAf6U=
+			wb5kdwgfLv3wTO4o7XcywkxVACM=
 			</data>
 			<key>hash2</key>
 			<data>
-			fwXBv61Ykggi5lk9AmQa7ephhi6LZlC23GhfDZoEO9Y=
+			XqRam9du/1SCNkr2e5OXC91/U4x/GlQl4X0tptyysTM=
 			</data>
 		</dict>
 		<key>Headers/RWTextViewPluginClient.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			v7A9u2eE/LJr2O94I6CCXtSiGN4=
+			7ojuZd/fw7MbUJmIz7eTtqMklLI=
 			</data>
 			<key>hash2</key>
 			<data>
-			8GbnkX8Tlc6Bdc1BLDrxD3tTeBq7h1JVE9qnefzFhGk=
+			XVecTZHbXzocy+lCZEZefrsJ4hvKvzfJwWZhycqsYcs=
 			</data>
 		</dict>
 		<key>Headers/RWWebImageTransformationParameters.h</key>
@@ -568,22 +568,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DA7PIr28ZWoP6qtrlGP/mKW6Wd0=
+			a+9vwuR3oK1rixNnlRpal8hC9mo=
 			</data>
 			<key>hash2</key>
 			<data>
-			cmTLTDre0IsY5vwfXCUcbw86hQHGKZP61N/vaU+Wh2M=
+			ybMqQXEcg12PhU/+BMnFD7m6sG/E1UdS6Zc2N/wPNHA=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWDocumentModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			s9CvgB31FY50oG9iUmvuvlC5ro4=
+			bgRNKC19vMBnlX7WHuBOT8be4+8=
 			</data>
 			<key>hash2</key>
 			<data>
-			h5sE+Bu/gkNFjlTqJC97N0NPu0x07QnMNvdsoFNn9S0=
+			oUPLKq1k0rnkVU9OrWtL7FzA+K4KzJFJWxhJVQ7eqas=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWDocumentOptionsSnapshot.h</key>
@@ -634,11 +634,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			402fJ5Eb1pnFk1ueOH+R1j2imdo=
+			d6jy93F479O8rrHc0Vgi8Dn38r8=
 			</data>
 			<key>hash2</key>
 			<data>
-			x869UJ60RkB5ci7fZVWNIcdw2euliuIOqbWdiZ7jNS0=
+			YeqPo0Dbl1qitLOJlJ2b6OgLHw6qgc0yEJAzt7WrhW0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWKit+Private.h</key>
@@ -689,11 +689,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			czSjoPPYITIfn7aO2u66tjNklYg=
+			rCRZQdlJQeJmWhDdwqFqKocAuVc=
 			</data>
 			<key>hash2</key>
 			<data>
-			XV+qDJtjoDGcdBhxtLZQbnq3aDLbk/IVdTS+qhN2Sbk=
+			KN5FBf2g7EjtOhZJel8SCmZcvD+ToMlZAC3fDnrGrQw=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWPage+Sandwich.h</key>
@@ -711,11 +711,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Gk3RAtO2aIDD2QueBaMTclT3kDs=
+			S3Pco4Rgq+qXj0TtBxU8oClQ6ak=
 			</data>
 			<key>hash2</key>
 			<data>
-			mNBMC9o6raAPkUVG5LuYW6SZwHbZB1rlzKt+yt+EzuQ=
+			Aso+yxdbjxiQP57ZdhVhSRvzQQciMQ6nDB39ls+mRHc=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWPageAttributes+Sandwich.h</key>
@@ -733,11 +733,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			o2HARFR9aljlHOSttUp8czLG+vc=
+			SOFShTba3mnQEmu2EToyt/6LIlk=
 			</data>
 			<key>hash2</key>
 			<data>
-			k1HacJtDYhN+OblK6pBZey1COHLlDsshAlHrXHZYL9g=
+			x1cY3uTdHMjxW6f38W5ZJMAfgSxXHmB5sXnMFarATs0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWPageEncodings.h</key>
@@ -766,77 +766,77 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BfvYXzJBpVyXdJUWPJfWXJdcofY=
+			d4Q0/xTpbg/6ATUe/IX3GqNq+og=
 			</data>
 			<key>hash2</key>
 			<data>
-			/Y3hvGjNM6FhbM0Hua00ZxsjOMM8W8+UsXXUZR1ABng=
+			REu+ZX/UHePXje/JVScAK2KmIxB3gTUKDN6Zxc6Mkvo=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWPageTree.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0xe+/mXlhtHGcwIFgwRTdxCZ5mQ=
+			Ppods8SnUoy2FKr2KbHtWazxWSg=
 			</data>
 			<key>hash2</key>
 			<data>
-			ym/ICGNqlsoCrSjQSMFkiCwSVMA1RNbLQ7yOwsdcKeE=
+			W6rCjp2ulEz4u40V/ziQxSqgKHTGtougQEbTV7M2ge8=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWPlugin.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2qhhloKlieDu2/xVVJDfafz0aNw=
+			U6tI6lXbDWJtamTGwPIzqltH5T8=
 			</data>
 			<key>hash2</key>
 			<data>
-			mBBLTAE4VOJuAdzRql1Wdy6fle2CrY0C61PSBweZEaU=
+			58fJZnb7y+xY18HZc0BAcgppFVMp+GWMNGl6aTUZfT8=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWPluginManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yli7E5XCXLqf1R7JdkEo3Vhu5Hw=
+			pBtovdg8UM3gLvnP5Zu91IO60zQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			WGMQxxWOxm2Ql/gc86mrRrAVChBMem7d/x+UUqyuyRI=
+			0/v1ZC+4aLHCqbRE/xc8eOf2iQP3wOMlaZ/j5dMkajY=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWPluginPlaceholder.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ILNgsM+WEZK08hLONxSjGHF59PQ=
+			0vOZm3WZob3Cx59zsaQ+uQuyVds=
 			</data>
 			<key>hash2</key>
 			<data>
-			AoeQQ/KAxlGc49+XZKuKNn1KB+IYOCubz9GsstBv2HU=
+			TON1n6e4lfCjVlqxhbFSCrHssbY02NPL3yOVU/9YGvo=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWResourceDatabase.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DZa3h/EJLLeYqQjE8oFDcI6QtKs=
+			U+2de9AyspCUrQszZj0pbwhyByE=
 			</data>
 			<key>hash2</key>
 			<data>
-			3MjqgVSUYv7eEjEWCxs8GPgzWMeaJ8csY52xIyedHOQ=
+			ButQkf5GdIbkD8Ak3P5DcdNKxkwaPpEvWsDEnvl439c=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWSTVToolbarController.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DPc1Xgrr2WcW0/CWjB9jjwoYG8U=
+			wD+idI52c7QgiHKFXVsQ2cTqQY0=
 			</data>
 			<key>hash2</key>
 			<data>
-			TQ4FqAFifQDi1JaxKnzawjOh5g/HLOc3JKkoYS8NCuE=
+			IAGW4Ngnls+rJSRH2rbLeUpZqQK+i/fctraBKTo0Mt4=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWSiteFolder.h</key>
@@ -854,22 +854,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rXnngwfS6iHno+GqkTdKjgDca4w=
+			QOSHWShY3yGFtp6bhJFbq/aeHbU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ACrJgy+5cIfYK0Sl2wo5dgZH3b86efngiN8oshqr/5o=
+			neli60pCLLEOt6NyIMNSI8GWnSUGsOOK01Qcvf/pKu4=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWSiteResource.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UxdGU3bRs4vP2bwKTgTuEC4YMQU=
+			FoiI4vFrx7n+mxjd0QypU4no7Yw=
 			</data>
 			<key>hash2</key>
 			<data>
-			G+xCdAMocHs5ghBE3Gm6Y21cHZJlhGhs3TeFEGCZuMU=
+			OlPCYi4jAGJk0IqbLMKlByYgQIMw+DHioZFIG2po+JE=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWSourceList.h</key>
@@ -887,11 +887,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BAC3B3JBYkzH/P3fq6Rp+QsSMzg=
+			SHr/msbTci6OQQUU5fLQjhvCobI=
 			</data>
 			<key>hash2</key>
 			<data>
-			oknII1u+lv+MjxqaljNJmUaXdgEr62HQ83HZJh50CSQ=
+			fZVNQ+Xt0wgOl7oDSkiyUF6t4rjMqzBbInpNd0y5wFc=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWStandardVersionComparator.h</key>
@@ -909,11 +909,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			z2OtSeQ/pwZOiCYbzJNu89uQb8g=
+			tXzPm8uyWxGtqXS0bfpWQKU0QOY=
 			</data>
 			<key>hash2</key>
 			<data>
-			BN1p83VqYGrQXuRjJDweibsuUiKmwvBy8XP18iWsPFU=
+			khzYD+hG/E4UBxtG7od0NR7S/maFTCjCv4ONruOfRdU=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWThemeInstaller.h</key>
@@ -988,11 +988,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			B1URhV6R61uouIEupc+ZpGQIUBY=
+			boKisYScsSZhGm8qFnnZzJG4P54=
 			</data>
 			<key>hash2</key>
 			<data>
-			Mglr/3Q35towJEIWM+0TSM74/g1Ta+ZFEOL1HUtfUpM=
+			xVDUHbqE8sY0UojJWmmMMTB4bppBerQdVl8slGBz+eU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1001,11 +1001,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ArLHfFWUJT0JiTxasr3dr3UkQPI=
+			PauAL4Z/i7q1az7+LjRSOF/WWcc=
 			</data>
 			<key>hash2</key>
 			<data>
-			mXFcfGZtAi1BMPKeaggYeLa7IPkBj1G/hUL3WAXtNl0=
+			ZipVxgMY5QeVFIEBjR4GIMKw9dqx+L6ZsasUW9vaErQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1014,11 +1014,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AejrGFioB795ul/ZZiHGxxsDsCI=
+			GXkUf263DXNbF8prRCsOa/+xKrI=
 			</data>
 			<key>hash2</key>
 			<data>
-			dyQVPzJvOfkweqXayxtQE3cJll8mLgRZylm6ty05wg0=
+			qN6SoUquHaFAm0ZGP0rw9Zt4j10ZiGDdBwLM808ZF2E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1053,11 +1053,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YOAOhJXHF/IiuLBLFQCPOyRA7Cw=
+			/CyVaV0bXjQrQCXLoirv3z8HSBo=
 			</data>
 			<key>hash2</key>
 			<data>
-			EkcSG7RGXOCjp9m38aaDnvk/yw85a5GZlrozLrqswuo=
+			Qu+oZt+TdBLL/whzrJ2gHJJiXxzk59WfLuBkEujxtFI=
 			</data>
 		</dict>
 		<key>Resources/LICENSE</key>

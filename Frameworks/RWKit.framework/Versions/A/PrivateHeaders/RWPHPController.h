@@ -12,7 +12,7 @@ __deprecated
 
 @interface RWPHPController : NSObject
 
-@property (nonatomic, retain) NSData *result;
+@property (nonatomic, strong) NSData *result;
 @property (nonatomic, assign) NSInteger status;
 
 + (RWPHPController *)create;

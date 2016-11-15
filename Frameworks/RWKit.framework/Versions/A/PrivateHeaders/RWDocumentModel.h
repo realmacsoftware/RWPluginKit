@@ -22,9 +22,9 @@
 @interface RWDocumentModel : RMModelObject
 
 // Some of these properties should arguably be read-only
-@property (retain) NSMutableArray *publishingDestinations;
-@property (retain) RWBookmark *temporaryPublishingDestination;
-@property (retain) RWBookmark *selectedPublishingDestination;
+@property (strong) NSMutableArray *publishingDestinations;
+@property (strong) RWBookmark *temporaryPublishingDestination;
+@property (strong) RWBookmark *selectedPublishingDestination;
 @property (copy) NSString *siteTitle;
 @property (copy) NSString *siteLogoAltText;
 @property (copy) NSString *siteCopyright;
@@ -42,19 +42,19 @@
 @property (copy) NSString *mostRecentlySelectedThemeStyle;
 
 extern NSString *const RWDocumentModelTreeKey;
-@property (readonly, retain) RWPageTree *tree;
+@property (readonly, strong) RWPageTree *tree;
 
 @property (copy) NSString *siteDefaultExportDestination;
 @property (copy) NSData *siteDefaultExportDestinationBookmark;
-@property (retain) RWPageAttributes *defaultPageAttributes;
+@property (strong) RWPageAttributes *defaultPageAttributes;
 @property (copy) NSString *siteBaseURL;
-@property (retain) NSMutableDictionary *imageExportSettings;
+@property (strong) NSMutableDictionary *imageExportSettings;
 @property (copy) NSData *faviconData;
 @property (copy) NSData *webClipIconData;
 @property (copy) NSData *bannerData;
 @property (copy) NSString *bannerFilename;
 @property (copy) NSString *siteBannerAltText;
-@property (retain) NSMutableDictionary *documentManifests;
+@property (strong) NSMutableDictionary *documentManifests;
 
 @property (assign) RWLinkStyle commonFileConsolidationMode;
 

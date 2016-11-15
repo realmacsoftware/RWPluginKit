@@ -38,10 +38,6 @@ RWStyledTextViewMode;
 	RWStyledTextViewMode _styledTextMode;
 	RWTextViewDefaultDelegate* _defaultTextViewDelegate;
 	
-	// Transient ivars
-	// NSObject<RWStyledTextViewDelegate>* _delegate;
-	id _delegate;
-	
 	/// We need this ivar because WebView's loading is asynchronous
 	/** If a client demands an HTML package using -HTMLPackage after using -setHTMLPackage: but _before_ the WebView is finished loading, we return them this ivar rather than trying to create an RMHTMLPackage from the webView. */
 	RMHTMLPackage* _HTMLPackageToLoad;
@@ -71,21 +67,21 @@ RWStyledTextViewMode;
 
 @property (copy) RWStyledText* styledText;
 
-@property (readonly, retain) RWTextView* textView;
+@property (readonly, strong) RWTextView* textView;
 
 @property (copy) NSAttributedString* attributedString;
 
 /// The WebView is initialised lazily because it can take a long time to initialise, which affects can significantly impact on nib loading time.  This property will return nil if the webView has not been initialised yet.  To force initialisation, call -setupWebView.
-@property (readonly, retain) RWWebEditView* webView;
+@property (readonly, strong) RWWebEditView* webView;
 
 /// Returns the current text editing view, i.e. -textView if the receiver's styledTextMode is RWStyledTextViewModeAttributedString, or -webView if the receiver's styledTextMode is RWStyledTextViewModeHTML.
-@property (readonly, retain) id textEditingView;
+@property (readonly, strong) id textEditingView;
 
 @property (copy) RMHTMLPackage* HTMLPackage;
 
 /// The delegate for this styled text view.  Note that while the RWStyledTextView object will be the delegate set for the inner RWTextView, all of RWTextView's delegate messages will be forwarded to the main styled text view delegate object.
 // @property (assign) NSObject<RWStyledTextViewDelegate>* delegate;
-@property (assign) id delegate;
+@property (unsafe_unretained) id delegate;
 
 @property BOOL editable;
 
@@ -115,7 +111,6 @@ extern NSString* const RWStyledTextViewDidChangeModeNotification;
 
 @interface RWTextViewDefaultDelegate : NSObject <NSTextViewDelegate>
 {
-	RWStyledTextView *_styledTextView;
 	NSUndoManager *_undoManager;
 }
 
@@ -123,7 +118,7 @@ extern NSString* const RWStyledTextViewDidChangeModeNotification;
 
 - (id)initWithStyledTextView:(RWStyledTextView*)styledTextView;
 
-@property (assign) RWStyledTextView* styledTextView;
+@property (weak) RWStyledTextView* styledTextView;
 
 @end
 

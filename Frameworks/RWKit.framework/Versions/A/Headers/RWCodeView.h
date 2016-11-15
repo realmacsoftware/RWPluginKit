@@ -15,9 +15,9 @@
 
 @interface RWCodeView : NSView
 
-@property (nonatomic, retain) NSString *string;
-@property (nonatomic, readonly) IBOutlet NSTextView *textView;
-@property (nonatomic, assign) IBOutlet id delegate;
+@property (nonatomic, strong) NSString *string;
+@property (unsafe_unretained, nonatomic, readonly) IBOutlet NSTextView *textView;
+@property (nonatomic, unsafe_unretained) IBOutlet id delegate;
 
 @property (nonatomic) BOOL showLineNumbers;
 @property (nonatomic, copy) NSString *language;

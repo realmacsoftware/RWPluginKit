@@ -23,11 +23,11 @@
 - (id)init;
 - (id)initWithRepresentedObject:(id)anObject;
 
-@property (nonatomic, readonly) NSString *name; // comes from the represented object
-@property (nonatomic, retain) id representedObject;
-@property (nonatomic, assign) RWSourceListNode *parent;
-@property (nonatomic, retain) NSMutableArray *children; // shouldn't be exposing this
-@property (nonatomic, readonly) NSString *path; // all enclosing nodes to the root of the tree
+@property (weak, nonatomic, readonly) NSString *name; // comes from the represented object
+@property (nonatomic, strong) id representedObject;
+@property (nonatomic, weak) RWSourceListNode *parent;
+@property (nonatomic, strong) NSMutableArray *children; // shouldn't be exposing this
+@property (weak, nonatomic, readonly) NSString *path; // all enclosing nodes to the root of the tree
 
 - (void)addChild:(RWSourceListNode *)aChild;
 - (void)insertChild:(RWSourceListNode *)aChild atIndex:(NSUInteger)anIndex;

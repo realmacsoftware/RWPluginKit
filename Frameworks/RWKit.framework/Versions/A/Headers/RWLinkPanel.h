@@ -21,7 +21,7 @@
 {
 	RWLink *_currentLink;
 	
-	NSObjectController *bindings;
+	NSObjectController *__weak bindings;
 	
 	IBOutlet NSTextField *urlField;
 	IBOutlet NSPopUpButton *schemePopUp;
@@ -30,7 +30,7 @@
 	IBOutlet NSDictionaryController *linkAttributesController;
 }
 
-@property (nonatomic, readonly) IBOutlet NSObjectController *bindings;
+@property (weak, nonatomic, readonly) IBOutlet NSObjectController *bindings;
 
 + (RWLinkPanel *)panelWithDelegate:(id <RWLinkPanelDelegate>)delegate plugin:(id)plugin;
 

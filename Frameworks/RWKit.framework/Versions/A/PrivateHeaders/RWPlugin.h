@@ -16,8 +16,8 @@
 
 @interface RWPlugin : NSObject
 
-@property (nonatomic, retain) NSDictionary *attributes;
-@property (nonatomic, retain) NSBundle *bundle;
+@property (nonatomic, strong) NSDictionary *attributes;
+@property (nonatomic, strong) NSBundle *bundle;
 
 + (instancetype)pluginWithPath:(NSString *)path;
 - (id)initWithPath:(NSString *)path;

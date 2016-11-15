@@ -26,7 +26,7 @@
 
 @interface RWPluginManager : NSObject
 
-@property (nonatomic, retain) NSMutableArray *plugins;
+@property (nonatomic, strong) NSMutableArray *plugins;
 
 + (NSArray *)pluginExtensions;
 + (BOOL)isPluginExtension:(NSString *)extension;

@@ -23,27 +23,27 @@
 - (id)initWithPluginClass:(Class)pluginClass document:(MyDocument *)document;
 - (id)initWithPlugin:(id <RWPlugin>)plugin document:(MyDocument*)document;
 
-@property (nonatomic, assign) MyDocument *document;
+@property (nonatomic, weak) MyDocument *document;
 @property (nonatomic, copy) NSString *uniqueID;
 
-@property (nonatomic, assign) RWPage *parent;
-@property (nonatomic, readonly, retain) NSMutableArray *children;
+@property (nonatomic, weak) RWPage *parent;
+@property (nonatomic, readonly, strong) NSMutableArray *children;
 
 @property (nonatomic, readonly) BOOL pluginIsLoaded;
-@property (nonatomic, retain) id <RWPlugin> plugin;
-@property (nonatomic, retain) RMSandwich *pluginDataSandwich;
-@property (nonatomic, retain) RMSandwich *pageSandwich;
-@property (nonatomic, retain) NSDictionary* pluginClassInfo;
-@property (nonatomic, readonly) Class pluginClass;
-@property (nonatomic, retain) RWPageStyles *styles;
-@property (nonatomic, retain) NSMutableDictionary *manifests;
+@property (nonatomic, strong) id <RWPlugin> plugin;
+@property (nonatomic, strong) RMSandwich *pluginDataSandwich;
+@property (nonatomic, strong) RMSandwich *pageSandwich;
+@property (nonatomic, strong) NSDictionary* pluginClassInfo;
+@property (unsafe_unretained, nonatomic, readonly) Class pluginClass;
+@property (nonatomic, strong) RWPageStyles *styles;
+@property (nonatomic, strong) NSMutableDictionary *manifests;
 @property (nonatomic, copy) NSDate *createdDate;
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *buttonName;
 @property (nonatomic, copy) NSString *themeName;
 @property (nonatomic, copy) NSString *mostRecentlySelectedStyleName;
-@property (nonatomic, readonly) NSURL *supportURL;
+@property (weak, nonatomic, readonly) NSURL *supportURL;
 
 @property (nonatomic, assign) NSInteger savedIndex;
 
@@ -106,5 +106,8 @@
 - (NSDictionary *)manifestForBookmark:(RWBookmark *)bookmark;
 - (void)setManifest:(NSDictionary *)manifest forBookmark:(RWBookmark *)bookmark;
 - (void)clearManifests;
+
+
+- (void)repairFilePaths;
 
 @end

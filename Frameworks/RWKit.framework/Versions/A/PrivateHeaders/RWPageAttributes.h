@@ -12,13 +12,7 @@
 @class RWDocument;
 @class RWBookmark;
 
-@interface RWPageAttributes : NSObject {
-	NSMutableDictionary *_attributes;
-	RWPage *_page;
-	RWDocument *_document;
-	
-	BOOL _changedSinceLastPreview;
-}
+@interface RWPageAttributes : NSObject
 
 - (id)initWithPage:(RWPage*)page;
 
@@ -176,9 +170,9 @@ enum {
 + (NSArray *)localisedStringArray:(NSArray *)arrayToLocalise;
 + (NSString *)localizedCustomStyleName;
 
-@property (assign) RWPage *page;
-@property (assign) RWDocument *document;
-@property (nonatomic, retain) NSMutableDictionary *attributes;
+@property (weak) RWPage *page;
+@property (weak) RWDocument *document;
+@property (nonatomic, strong) NSMutableDictionary *attributes;
 
 @property (assign) BOOL changedSinceLastPreview;
 

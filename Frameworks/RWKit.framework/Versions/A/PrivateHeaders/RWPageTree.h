@@ -14,7 +14,7 @@
 
 extern NSString *const RWPageTreePagesKey;
 
-@property (nonatomic, retain) NSArray *pages;
+@property (nonatomic, strong) NSArray *pages;
 
 - (void)addPage:(RWPage *)page after:(RWPage *)sibling;
 - (void)removePage:(RWPage *)page andChildren:(BOOL)removeChildren;
@@ -23,7 +23,7 @@ extern NSString *const RWPageTreePagesKey;
 
 - (void)setChildIndex:(RWPage *)child index:(NSUInteger)index;
 
-@property (nonatomic, retain) RWPage *index;
+@property (nonatomic, strong) RWPage *index;
 
 extern NSString *const RWPageTreeAllPagesKey;
 /*!
@@ -33,8 +33,8 @@ extern NSString *const RWPageTreeAllPagesKey;
 	\details
 	Observation is only triggered for mutations made via this object, not direct manipulations of the pages
  */
-@property (nonatomic, readonly) NSArray *allPages;
+@property (weak, nonatomic, readonly) NSArray *allPages;
 
-@property (nonatomic, readonly) NSMenu *pageMenu;
+@property (weak, nonatomic, readonly) NSMenu *pageMenu;
 
 @end

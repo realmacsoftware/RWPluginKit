@@ -15,60 +15,33 @@ extern NSString *kRWPageStyleDidChangeNotification;
 @interface RWPageStyles : NSObject <NSCoding>
 {
  @private
-	RWPage *_page;
 	
-	NSImage *_backgroundImage;
-	NSColor *_backgroundColour;
-	NSString *_customCSS;
-	NSString *_customJavaScript;
-	NSString *_customHeader;
-	NSString *_customBody;
-	NSString *_customSiteTitle;
-	NSString *_customSlogan;
-	NSString *_customCopyright;
-	
-	BOOL _useBackgroundImage;
 	BOOL _repeatbackGroundImageX;
 	BOOL _repeatbackGroundImageY;
-	BOOL _useBackgroundColour;
-	BOOL _useCustomSiteTitle;
-	BOOL _useCustomSlogan;
-	BOOL _useCustomCopyright;
 }
 
-@property (nonatomic, assign) RWPage *page;
+@property (nonatomic, weak) RWPage *page;
+
+@property (nonatomic, assign) BOOL useBackgroundImage;
+@property (nonatomic, strong) NSImage *backgroundImage;
+
+@property (nonatomic, assign) BOOL useBackgroundColour;
+@property (nonatomic, strong) NSColor *backgroundColour;
+
+@property (nonatomic, assign) BOOL useCustomSiteTitle;
+@property (nonatomic, strong) NSString *customSiteTitle;
+
+@property (nonatomic, assign) BOOL useCustomSlogan;
+@property (nonatomic, strong) NSString *customSlogan;
+
+@property (nonatomic, assign) BOOL useCustomCopyright;
+@property (nonatomic, strong) NSString *customCopyright;
+
+@property (nonatomic, strong) NSString *customCSS;
+@property (nonatomic, strong) NSString *customJavaScript;
+@property (nonatomic, strong) NSString *customHeader;
+@property (nonatomic, strong) NSString *customBody;
 
 - (id)initWithPage:(RWPage *)page;
-
-- (BOOL)useBackgroundImage;
-- (NSImage *)backgroundImage;
-
-- (BOOL)useBackgroundColour;
-- (NSColor *)backgroundColour;
-
-- (BOOL)useCustomSiteTitle;
-- (NSString *)customSiteTitle;
-
-- (BOOL)useCustomSlogan;
-- (NSString *)customSlogan;
-
-- (BOOL)useCustomCopyright;
-- (NSString *)customCopyright;
-
-- (NSString *)customCSS;
-- (NSString *)customJavaScript;
-- (NSString *)customHeader;
-- (NSString *)customBody;
-
-- (void)setCustomCSS:(NSString *)css;
-- (void)setCustomJavaScript:(NSString *)js;
-- (void)setCustomHeader:(NSString *)header;
-- (void)setCustomBody:(NSString *)body;
-- (void)setUseCustomSiteTitle:(BOOL)flag;
-- (void)setCustomSiteTitle:(NSString *)title;
-- (void)setUseCustomSlogan:(BOOL)flag;
-- (void)setCustomSlogan:(NSString *)slogan;
-- (void)setUseCustomCopyright:(BOOL)flag;
-- (void)setCustomCopyright:(NSString *)copyright;
 
 @end

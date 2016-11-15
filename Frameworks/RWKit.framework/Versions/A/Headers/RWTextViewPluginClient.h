@@ -30,9 +30,9 @@
 
 - (void)textDidChange:(NSNotification *)aNotification;
 
-@property (retain) RWTextView *_styledContentTextView;
-@property (retain) NSButton *_addButton;
-@property (retain) RWLinkPanel *_linkPanel;
-@property (retain) NSButton *_removeButton;
+@property (strong) RWTextView *_styledContentTextView;
+@property (strong) NSButton *_addButton;
+@property (strong) RWLinkPanel *_linkPanel;
+@property (strong) NSButton *_removeButton;
 
 @end

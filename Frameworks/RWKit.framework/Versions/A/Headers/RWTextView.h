@@ -36,7 +36,7 @@
 
 - (void)showEditorForAttachment:(id)attachment plugin:(RWAbstractPlugin *)plugin;
 
-@property (assign) id pluginDelegate;
+@property (unsafe_unretained) id pluginDelegate;
 
 @end
 

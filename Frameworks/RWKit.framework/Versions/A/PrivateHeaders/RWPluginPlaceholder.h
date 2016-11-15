@@ -26,8 +26,8 @@
 	RMSandwich *sandwich;
 }
 
-@property (nonatomic, retain) NSData *archive;
+@property (nonatomic, strong) NSData *archive;
 @property (nonatomic, copy) NSString *missingClassName;
-@property (nonatomic, retain) NSDictionary *missingClassInfo;
+@property (nonatomic, strong) NSDictionary *missingClassInfo;
 
 @end

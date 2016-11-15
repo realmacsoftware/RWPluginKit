@@ -33,7 +33,7 @@ enum {
 @property (nonatomic, copy) NSString *subpageID;
 @property (nonatomic, copy) NSString *anchor;
 
-@property (nonatomic, retain) NSMutableDictionary *attributes;
+@property (nonatomic, strong) NSMutableDictionary *attributes;
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *rel;
