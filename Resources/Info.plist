@@ -9,15 +9,13 @@
 	<key>CFBundleIconFile</key>
 	<string>Icon</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.mycompanyname.rwplugin.${PRODUCT_NAME:identifier}</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
-	<key>RWAddonAuthor</key>
-	<string>Sample Plugin Developer</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0b1</string>
 	<key>CFBundleSignature</key>
@@ -26,21 +24,23 @@
 	<string>100</string>
 	<key>NSPrincipalClass</key>
 	<string>RMSSamplePlugin</string>
-	<key>RWPluginAPIVersion</key>
-	<integer>4</integer>
-	<key>RWPluginIconSmall</key>
-	<string>plugin_icon</string>
-	<key>RWPluginIconSmallSelected</key>
-	<string>plugin_icon_active</string>
+	<key>RWAddonAuthor</key>
+	<string>Sample Plugin Developer</string>
 	<key>RWAddonSupportURL</key>
 	<string>http://awesome.com</string>
-	<key>RWPluginIconSourceList</key>
-	<string>RWPluginIconSourceList</string>
-	<key>RWPluginIconSourceListSelected</key>
-	<string>RWPluginIconSourceListSelected</string>
+	<key>RWPluginAPIVersion</key>
+	<integer>4</integer>
 	<key>RWPluginIconAddPageMenu</key>
 	<string>RWPluginIconAddPageMenu</string>
 	<key>RWPluginIconAddPageMenuSelected</key>
 	<string>RWPluginIconAddPageMenuSelected</string>
+	<key>RWPluginIconSmall</key>
+	<string>plugin_icon</string>
+	<key>RWPluginIconSmallSelected</key>
+	<string>plugin_icon_active</string>
+	<key>RWPluginIconSourceList</key>
+	<string>RWPluginIconSourceList</string>
+	<key>RWPluginIconSourceListSelected</key>
+	<string>RWPluginIconSourceListSelected</string>
 </dict>
 </plist>
