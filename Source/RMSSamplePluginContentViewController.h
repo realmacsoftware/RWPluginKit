@@ -17,7 +17,7 @@
 
 @property (weak, nonatomic, readonly) NSString *content;
 
-- (instancetype)initWithRepresentedObject:(id)object NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithRepresentedObject:(id)object;
 
 @end
 

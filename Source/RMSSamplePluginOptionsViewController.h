@@ -12,7 +12,7 @@
 
 @interface RMSSamplePluginOptionsViewController : NSViewController
 
-- (instancetype)initWithRepresentedObject:(id)object NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithRepresentedObject:(id)object;
 
 - (IBAction)chooseFile:(id)sender;
 - (IBAction)testFileAccess:(id)sender;
