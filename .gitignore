@@ -2,3 +2,4 @@ build
 *.mode*
 *.pbxuser
 xcuserdata
+.DS_Store
