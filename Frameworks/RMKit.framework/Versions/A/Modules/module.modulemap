@@ -1,0 +1,6 @@
+framework module RMKit {
+  umbrella header "RMKit.h"
+
+  export *
+  module * { export * }
+}
