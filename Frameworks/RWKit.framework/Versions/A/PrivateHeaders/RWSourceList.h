@@ -16,12 +16,6 @@
 
 @protocol RWSourceList <NSObject>
 
-- (NSString *)persistenceKey;
-
-- (void)willDisplayCell:(id)cell forTableColumn:(NSTableColumn *)tc;
-- (BOOL)setObjectValue:(id)object forTableColumn:(NSTableColumn *)tc;
-- (id)objectValueForTableColumn:(NSTableColumn *)tc;
-
 - (BOOL)isExpandable;
 
 - (NSInteger)numberOfChildren;

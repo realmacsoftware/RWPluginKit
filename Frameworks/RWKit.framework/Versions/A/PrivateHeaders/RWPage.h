@@ -15,6 +15,7 @@
 @class RWPageStyles;
 @class RWTheme;
 @class RWBookmark;
+@class RWSearchResult;
 
 @protocol RWPlugin;
 
@@ -47,9 +48,7 @@
 
 @property (nonatomic, assign) NSInteger savedIndex;
 
-@property (nonatomic, assign) BOOL useBanner;
-@property (nonatomic, copy) NSData *bannerData;
-@property (nonatomic, copy) NSString *bannerFilename;
+@property (nonatomic, strong) RWSiteResource *banner;
 @property (nonatomic, copy) NSString *bannerAltText;
 
 - (NSString *)path;
@@ -108,6 +107,8 @@
 - (void)clearManifests;
 
 
-- (void)repairFilePaths;
+- (void)repairFilePathsWithURL:(NSURL *)url;
+
+- (void)searchForString:(NSString *)searchString foundResult:(void (^)(RWSearchResult *searchResult))foundBlock completion:(void (^)(void))completion;
 
 @end

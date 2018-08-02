@@ -19,6 +19,8 @@
 @property (nonatomic, strong) NSDictionary *attributes;
 @property (nonatomic, strong) NSBundle *bundle;
 
+@property (nonatomic) BOOL disabled;
+
 + (instancetype)pluginWithPath:(NSString *)path;
 - (id)initWithPath:(NSString *)path;
 
@@ -38,6 +40,9 @@
 - (NSString *)versionString;
 - (NSString *)path;
 - (NSString *)comments;
+- (NSString *)author;
+- (NSImage *)icon;
+- (NSURL *)supportURL;
 - (Class)factory;
 
 + (NSString *)pluginNameAtPath:(NSString *)path;

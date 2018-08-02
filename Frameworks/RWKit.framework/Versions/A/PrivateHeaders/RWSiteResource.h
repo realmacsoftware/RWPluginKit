@@ -14,39 +14,38 @@
 
 #import <Foundation/Foundation.h>
 
+@class RWSiteFolder;
 @class RWBookmark;
+
+extern NSString *const RWSiteResourceIdentifierKey;
+extern NSString *const RWSiteResourceNameKey;
 
 @interface RWSiteResource : NSObject
 
-@property (nonatomic, copy) NSString *fileToken;
+@property (nonatomic, weak) RWSiteFolder *parent;
+
+@property (nonatomic, readonly) NSString *identifier;
+
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *fileToken;
+
+@property (nonatomic, strong) NSURL *publishedURL;
+@property (nonatomic, strong) NSDate *publishedDate;
+@property (nonatomic, assign) BOOL isRemoteResource;
+@property (nonatomic, strong) NSDate *timeStamp;
+
+@property (nonatomic, strong) NSString *fullPath;
+@property (nonatomic, strong) NSURL *originalURL;
+
+@property (nonatomic, readonly) NSString *path; // returns the path of this node in the tree
 
 - (id)initWithFileIdentifier:(NSString *)fileIdentifier name:(NSString *)name;
 + (instancetype)siteResourceWithFileIdentifier:(NSString *)fileIdentifier name:(NSString *)name;
 
-extern NSString *const RWSiteResourceIdentifierKey;
-/*!
-	\brief
-	Immutable, the same between launches
- */
-@property (nonatomic, readonly, copy) NSString *identifier;
-
-extern NSString *const RWSiteResourceNameKey;
-/*!
-	\brief
-	User provided name
- */
-@property (nonatomic, copy) NSString *name;
-
-- (BOOL)validateName:(inout NSString **)nameRef error:(out NSError **)errorRef;
-
-@property (nonatomic, copy) NSURL *publishedURL;
-@property (nonatomic, strong) NSDate *publishedDate;
-@property (nonatomic, strong) NSDate *timeStamp;
-
-@property (nonatomic, copy) NSString *fullPath;
-
 - (void)setChanged:(BOOL)changed;
 - (void)setChanged:(BOOL)changed forBookmark:(RWBookmark *)bookmark;
 - (BOOL)changedStatusForBookmark:(RWBookmark *)bookmark;
+
+- (void)removeFromParent;
 
 @end

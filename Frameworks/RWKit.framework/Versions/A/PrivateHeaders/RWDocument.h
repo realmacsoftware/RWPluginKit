@@ -15,14 +15,13 @@
 #import "RWKit/RWDocumentProtocol.h"
 #import "RWKit/RMHTML.h"
 
-@class RMFolderWatcher;
 @class RWDocumentModel;
 @class RWPage;
 @class RWPageAttributes;
-@class RWResourceDatabase;
 @class RWTheme;
-@class RWSourceListNode;
+@class RWSiteFolder;
 @class RWDocumentOptionsSnapshot;
+@class WebIconPackage;
 
 extern NSString *const RWDocumentWillRemoveResourceNotification;
 extern NSString *const RWDocumentDidRemoveResourceNotification;
@@ -52,8 +51,8 @@ extern NSString *const RWDocumentAllPagesKey;
 - (NSString *)pathFromPage:(id)pageID to:(id)pageID2;
 - (NSString *)pathFromPage:(id)params cruftlessLinks:(NSNumber *)cruftlessLinksNumber;
 
-- (void)addResources:(NSArray *)resourceArray toNode:(RWSourceListNode *)folderNode atIndex:(NSInteger)index;
-- (void)removeResourceNode:(RWSourceListNode *)node;
+- (void)addResource:(RWSiteResource *)resource;
+- (void)addResources:(NSArray <RWSiteResource *> *)resources;
 
 @property (assign, nonatomic) BOOL wantsXMLSiteMap;
 
@@ -66,21 +65,15 @@ extern NSString *const RWDocumentAllPagesKey;
 
 //
 
-@property (nonatomic, strong) RWSourceListNode *resourcesNode;
-@property (nonatomic, strong) RWResourceDatabase *resourceDB;
+@property (nonatomic, strong) RWSiteFolder *resourcesNode;
 
 @property (nonatomic, strong) NSMutableArray *settingsPlugins;
 
 @property (nonatomic, assign) BOOL publishSettingsConfigured;
 @property (nonatomic, strong) NSMutableArray *publishingDestinations;
 
-@property (assign) BOOL useSiteLogo;
-@property (copy) NSData *siteLogoData;
-
 @property (strong) NSString *imageExportFormat;
 @property (strong) NSString *imageExportQuality;
-
-@property (copy) NSString *siteLogoFilename;
 
 @property (copy) NSString *siteTitle;
 @property (assign) BOOL useSiteTitle;
@@ -101,6 +94,12 @@ extern NSString *const RWDocumentAllPagesKey;
 @property (copy) NSString *siteSlogan;
 @property (assign) BOOL useSiteSlogan;
 
+@property (assign) BOOL useSocialTags;
+@property (copy) NSString *twitterAccount;
+
+@property (copy) NSString *siteLanguage;
+@property (copy) NSString *siteDirection;
+
 @property (strong) RWPageAttributes *defaultPageAttributes;
 
 @property (assign) RWLinkStyle commonFileConsolidationMode;
@@ -108,17 +107,9 @@ extern NSString *const RWDocumentAllPagesKey;
 extern NSString *const RWDocumentSiteBaseURLKey;
 @property (copy) NSString *siteBaseURL;
 
-@property (assign) BOOL useWebClipIcon;
-@property (copy) NSData *webClipIconData;
-
-@property (assign) BOOL useFavicon;
-@property (copy) NSData *faviconData;
-
-@property (assign) BOOL useBanner;
-@property (copy) NSData *bannerData;
-@property (copy) NSString *bannerFilename;
-
 @property (copy) NSString *siteBannerAltText;
+
+@property (copy) NSColor *pinnedTabIconColor;
 
 @property (nonatomic, strong) RWTheme *theme;
 - (void)startWatchingTheme:(RWTheme *)theme;
@@ -153,8 +144,6 @@ extern NSString *const RWDocumentSiteBaseURLKey;
 @property (readonly) BOOL useGlobalPrefix;
 @property (assign) BOOL hasChangedGlobalPrefix;
 
-@property (assign) NSInteger userAgentResizingPreset;
-
 @property (strong) NSString *quickLookSandwichTemporaryDirectoryPath;
 @property (copy) RMSandwich *quickLookSandwich;
 @property (copy) NSImage *quickLookSandwichThumbnail;
@@ -169,6 +158,20 @@ extern NSString *const RWDocumentSiteBaseURLKey;
 @property (assign) BOOL minifyExtraFiles;
 
 @property (assign) BOOL useDocumentPortability;
+@property (copy) NSNumber *overrideWebServerPort;
+@property (assign) BOOL autoStartWebServer;
+
+@property (nonatomic, strong) RWSiteResource *siteLogo;
+@property (nonatomic, strong) RWSiteResource *webClipIcon;
+@property (nonatomic, strong) RWSiteResource *favicon;
+@property (nonatomic, strong) RWSiteResource *pinnedTabIcon;
+@property (nonatomic, strong) RWSiteResource *banner;
+@property (nonatomic, strong) WebIconPackage *iconPackage;
+
+@property (assign) BOOL anonymiseThirdPartyRequests;
+@property (assign) BOOL showPrivacyMessage;
+@property (assign) BOOL rememberPrivacyMessageDismissed;
+@property (copy) NSAttributedString *privacyMessage;
 
 - (BOOL)com_rwrp_checkAndWarnIfTIFF:(NSData *)data extendedWarning:(BOOL)warning;
 
@@ -178,6 +181,7 @@ extern NSString *const RWDocumentSiteBaseURLKey;
 @property (nonatomic, strong) NSMutableArray *fileReferences;
 - (NSString *)registerFileURL:(NSURL *)fileURL withIdentifierOrNil:(NSString *)identifier error:(NSError **)error;
 - (NSString *)registerFileURL:(NSURL *)fileURL withIdentifierOrNil:(NSString *)identifier error:(NSError **)error isInternal:(BOOL)isInternal;
+- (NSString *)registerData:(NSData *)data withIdentifierOrNil:(NSString *)identifier error:(NSError **)error;
 - (void)makeFileReferenceInternalForToken:(NSString *)token;
 - (void)removeFileReferenceForToken:(NSString *)token;
 - (BOOL)hasFileReferenceForToken:(NSString *)token;

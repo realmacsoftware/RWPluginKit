@@ -47,6 +47,7 @@
 	CGFloat _rotation;
 	NSDictionary* _attributes;
 	CGImageSourceRef _sourceImage;
+    BOOL _sourceImageOwned;
 	BOOL _ignoreOrientation;
 }
 
@@ -62,6 +63,7 @@ enum {
 
 - (id)initWithData:(NSData*)data;
 - (id)initWithPath:(NSString*)path;
+- (id)initWithCGImageSourceRef:(id)cgImageSourceRef;
 
 + (id)exporterWithData:(NSData*)data;
 + (id)exporterWithFile:(NSString*)path;

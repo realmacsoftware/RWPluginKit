@@ -152,6 +152,9 @@ enum {
 
 - (NSMutableDictionary*)filterAttributes:(NSMutableDictionary*)attributes with:(NSArray*)selection;
 
+- (void)setStyleVariable:(NSString *)variable forTag:(NSString *)variableTag;
+- (NSMutableDictionary *)styleVariables;
+
 - (NSString*)pagePrefix;
 - (void)setPagePrefix:(NSString*)prefix;
 
@@ -160,6 +163,18 @@ enum {
 
 - (NSString *)metaDescription;
 - (void)setMetaDescription:(NSString *)metaDescription;
+
+- (NSString *)openGraphTitle;
+- (void)setOpenGraphTitle:(NSString *)openGraphTitle;
+
+- (NSString *)openGraphDescription;
+- (void)setOpenGraphDescription:(NSString *)openGraphDescription;
+
+- (NSString *)openGraphImageResourceIdentifier;
+- (void)setOpenGraphImageResourceIdentifier:(NSString *)openGraphImageResourceIdentifier;
+
+- (BOOL)shouldEnableRobotTags;
+- (void)setShouldEnableRobotTags:(BOOL)shouldEnable;
 
 - (BOOL)shouldIndexPage;
 - (void)setShouldIndexPage:(BOOL)shouldIndex;
@@ -227,8 +242,13 @@ extern NSString* kRWPageSidebarStyledKey;
 extern NSString* kRWPageSidebarTitleKey;
 extern NSString* kRWPageStyleVariationsKey;
 extern NSString* kRWPageStyleVariationsModeKey;
+extern NSString* kRWPageStyleVariablesKey;
 extern NSString* kRWPageXMLDeclKey;
 extern NSString* kRWPagePagePrefixKey;
 extern NSString* kRWPageMetaDescriptionKey;
+extern NSString* kRWPageOpenGraphTitleKey;
+extern NSString* kRWPageOpenGraphDescriptionKey;
+extern NSString* kRWPageOpenGraphImageResourceIdentifierKey;
+extern NSString* kRWPageRobotsShouldEnableRobotTags;
 extern NSString* kRWPageRobotsShouldIndexPage;
 extern NSString* kRWPageRobotsShouldFollowLinks;

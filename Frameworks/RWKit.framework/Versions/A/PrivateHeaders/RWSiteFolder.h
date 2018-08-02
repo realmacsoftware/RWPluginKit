@@ -14,11 +14,71 @@
 
 #import <Cocoa/Cocoa.h>
 
-#import "RWKit/RWSourceList.h"
+@class RWSiteFolder;
+@class RWSiteResource;
 
-@interface RWSiteFolder : NSObject <NSCoding>
+extern NSString *const RWSiteFolderDidChangeNotification;
+
+@interface RWSiteFolder : NSObject
+
+@property (nonatomic, weak) RWSiteFolder *parent;
+
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, readonly) NSArray *children;
+@property (nonatomic, readonly) NSArray *items;
+@property (nonatomic, readonly) NSString *path; // returns the path of this node in the tree
+
+@property (nonatomic, readonly) NSArray *allChildFolders;
 
 - (id)initWithName:(NSString *)name;
-@property (nonatomic, copy) NSString *name;
+
+#pragma mark - Items Array Getters
+
+- (NSUInteger)countOfItems;
+- (id)objectInItemsAtIndex:(NSUInteger)index;
+- (void)getItems:(id __unsafe_unretained *)buffer range:(NSRange)inRange;
+
+#pragma mark - Items Array Mutators
+
+- (void)insertItems:(NSArray *)array atIndexes:(NSIndexSet *)indexes;
+- (void)removeItemsAtIndexes:(NSIndexSet *)indexes;
+- (void)replaceItemsAtIndexes:(NSIndexSet *)indexes withItems:(NSArray *)array;
+
+- (void)insertObject:(id)object inItemsAtIndex:(NSUInteger)index;
+- (void)removeObjectFromItemsAtIndex:(NSUInteger)index;
+- (void)replaceObjectInItemsAtIndex:(NSUInteger)index withObject:(id)object;
+
+- (void)addItem:(id)object;
+- (void)addItems:(NSArray *)objects;
+
+- (void)removeItem:(RWSiteResource *)resource;
+
+#pragma mark - Children Array Getters
+
+- (NSUInteger)countOfChildren;
+- (id)objectInChildrenAtIndex:(NSUInteger)index;
+- (void)getChildren:(id __unsafe_unretained *)buffer range:(NSRange)inRange;
+
+#pragma mark - Children Array Mutators
+
+- (void)insertChildren:(NSArray *)array atIndexes:(NSIndexSet *)indexes;
+- (void)removeChildrenAtIndexes:(NSIndexSet *)indexes;
+- (void)replaceChildrenAtIndexes:(NSIndexSet *)indexes withChildren:(NSArray *)array;
+
+- (void)insertObject:(id)object inChildrenAtIndex:(NSUInteger)index;
+- (void)removeObjectFromChildrenAtIndex:(NSUInteger)index;
+- (void)replaceObjectInChildrenAtIndex:(NSUInteger)index withObject:(id)object;
+
+- (void)addChild:(id)object;
+
+- (void)removeFromParent;
+- (void)removeChild:(RWSiteFolder *)childFolder;
+
+#pragma mark - Methods
+
+- (RWSiteResource *)resourceWithIdentifier:(NSString *)identifier;
+- (NSArray <RWSiteResource *> *)allResources;
+
+- (void)markAllResourcesAsChanged:(BOOL)changed;
 
 @end

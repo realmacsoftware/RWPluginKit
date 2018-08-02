@@ -23,13 +23,10 @@
 #import "RWKit/RWDocumentModel.h"
 #import "RWKit/RWDocumentOptionsSnapshot.h"
 
-#import "RWKit/RWResourceDatabase.h"
 #import "RWKit/RWSiteFolder.h"
 #import "RWKit/RWSiteResource.h"
 
 #import "RWKit/RWSourceList.h"
-#import "RWKit/RWSourceListGroup.h"
-#import "RWKit/RWSourceListNode.h"
 
 #import "RWKit/RWPageAttributes+Sandwich.h"
 
@@ -51,4 +48,7 @@
 #import "RWKit/RWSiteLayout.h"
 
 #import "RWKit/NSMutableString+StyleSheet.h"
-#import "RWKit/NSURL+RWKitAdditions.h"
+#import "RWKit/NSUserDefaults+RWKit.h"
+#import "RWKit/NSFileManager+RWKit.h"
+#import "RWKit/NSURL+RWKit.h"
+

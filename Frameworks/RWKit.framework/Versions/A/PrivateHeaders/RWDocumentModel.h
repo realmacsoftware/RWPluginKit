@@ -18,8 +18,9 @@
 @class RWPageTree;
 @class RWPageAttributes;
 @class RWBookmark;
+@class WebIconPackage;
 
-@interface RWDocumentModel : RMModelObject
+@interface RWDocumentModel : NSObject
 
 // Some of these properties should arguably be read-only
 @property (strong) NSMutableArray *publishingDestinations;
@@ -30,8 +31,6 @@
 @property (copy) NSString *siteCopyright;
 @property (copy) NSString *siteEmail;
 @property (copy) NSString *siteSlogan;
-@property (copy) NSString *siteLogoFilename;
-@property (copy) NSData *siteLogoData;
 @property (copy) NSString *siteContactText;
 @property (copy) NSString *siteThemeName;
 @property (copy) NSString *globalCSS;
@@ -49,11 +48,8 @@ extern NSString *const RWDocumentModelTreeKey;
 @property (strong) RWPageAttributes *defaultPageAttributes;
 @property (copy) NSString *siteBaseURL;
 @property (strong) NSMutableDictionary *imageExportSettings;
-@property (copy) NSData *faviconData;
-@property (copy) NSData *webClipIconData;
-@property (copy) NSData *bannerData;
-@property (copy) NSString *bannerFilename;
 @property (copy) NSString *siteBannerAltText;
+@property (copy) NSColor *pinnedTabIconColor;
 @property (strong) NSMutableDictionary *documentManifests;
 
 @property (assign) RWLinkStyle commonFileConsolidationMode;
@@ -61,13 +57,11 @@ extern NSString *const RWDocumentModelTreeKey;
 @property (assign) BOOL useSiteTitle;
 @property (assign) BOOL useSiteCopyright;
 @property (assign) BOOL useSiteSlogan;
+@property (assign) BOOL useSocialTags;
+@property (copy) NSString *twitterAccount;
 @property (assign) BOOL addCopyrightMailto;
 @property (assign) BOOL obfuscateSiteEmailAddress;
-@property (assign) BOOL useSiteLogo;
 @property (assign) BOOL showBreadcrumbTrail;
-@property (assign) BOOL useFavicon;
-@property (assign) BOOL useWebClipIcon;
-@property (assign) BOOL useBanner;
 @property (assign) BOOL loadingDocument;
 @property (assign) BOOL publishSettingsConfigured;
 @property (assign) BOOL wantsXMLSiteMap;
@@ -81,14 +75,29 @@ extern NSString *const RWDocumentModelTreeKey;
 @property (assign) BOOL useCacheBusting;
 @property (copy) NSString *cacheBustingString;
 @property (assign) BOOL useDocumentPortability;
+@property (copy) NSNumber *overrideWebServerPort;
+@property (assign) BOOL autoStartWebServer;
 @property (assign) BOOL minifyExtraFiles;
 
-@property (assign) NSInteger userAgentResizingPreset;
+@property (copy) NSString *siteLogoIdentifier;
+@property (copy) NSString *webClipIconIdentifier;
+@property (copy) NSString *faviconIdentifier;
+@property (copy) NSString *pinnedTabIconIdentifier;
+@property (copy) NSString *bannerIdentifier;
+@property (strong) WebIconPackage *iconPackage;
+
+@property (assign) BOOL anonymiseThirdPartyRequests;
+@property (assign) BOOL showPrivacyMessage;
+@property (assign) BOOL rememberPrivacyMessageDismissed;
+@property (copy) NSAttributedString *privacyMessage;
 
 @property (copy) NSArray *directoryIndexEntries;
 
 @property (copy) NSString *projectNotes;
 
 @property (copy) NSString *uniqueBackupName;
+
+@property (copy) NSString *siteLanguage;
+@property (copy) NSString *siteDirection;
 
 @end

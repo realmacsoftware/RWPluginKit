@@ -11,7 +11,7 @@
 #import "RWKit/RWDocumentProtocol.h"
 
 @class RMHTML;
-@class RWSharedStorage;
+@class RWSearchResult;
 
 extern NSString* const kRWPluginStartedLoadingNotification;
 extern NSString* const kRWPluginFinishedLoadingNotification;
@@ -98,15 +98,11 @@ extern NSString *const kRWDoubleClickedMediaNotification;
 - (void)removeFileReferenceForToken:(NSString *)token;
 - (NSURL *)fileURLForToken:(NSString *)token error:(NSError **)error;
 
-@end
+#pragma mark Search Helper
 
-@interface RWAbstractPlugin (Deprecated)
-
-- (NSMutableDictionary *)pluginDefaults __deprecated;
-- (void)setPluginDefaults:(NSDictionary *)defaults __deprecated;
-
-- (void)broadcastPluginChangedInvert __deprecated;
-- (NSMutableDictionary *)pluginSettingsValueForDisplay:(NSString *)display value:(id)value __deprecated;
-- (RWSharedStorage *)sharedPluginStorage __deprecated;
+// A helper method - pass in a large block of text and we'll generate search results and call foundBlock for you
+// You can call this as many times as you need - but you're still responsible for calling your completion block
+// Pass in a userInfo dictionary to reference model objects across search methods
+- (void)searchString:(NSString *)haystack forString:(NSString *)needle foundBlock:(void (^)(RWSearchResult *searchResult))foundBlock userInfo:(NSDictionary *)userInfo;
 
 @end

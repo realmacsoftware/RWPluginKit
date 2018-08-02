@@ -4,47 +4,23 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Resources/Base.lproj/MobileMeWarningSheet.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			jBaFAoPp502ptIVZBoWkBu+mfQI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>Resources/Base.lproj/RWLinkPanel.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			boKisYScsSZhGm8qFnnZzJG4P54=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
+		<data>
+		GMXKDtLfbF1xnlT+lTaIU26/42M=
+		</data>
 		<key>Resources/Base.lproj/RWTextRulerOptions.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PauAL4Z/i7q1az7+LjRSOF/WWcc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
+		<data>
+		iIPBstXWILJaFkTn+pfo854F2pc=
+		</data>
 		<key>Resources/Base.lproj/STVToolbar.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GXkUf263DXNbF8prRCsOa/+xKrI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
+		<data>
+		tetCP7CCcQ16yadah+3ExvL69os=
+		</data>
 		<key>Resources/English.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YZMVFJG3dCYJ3XzELDL53wuhZts=
+			DNuNRREUv+sdArnsQEQJuEPXmMw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -60,15 +36,11 @@
 		</dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		/CyVaV0bXjQrQCXLoirv3z8HSBo=
+		UUSx4BzE4EiCx6MW1tHllLNYZIs=
 		</data>
 		<key>Resources/LICENSE</key>
 		<data>
 		CN3fJTmJI0qqlvyytZijWaBspII=
-		</data>
-		<key>Resources/LICENSE.html</key>
-		<data>
-		PbkIEsRGgCx3aB3UdYcJi7xBW7E=
 		</data>
 		<key>Resources/Markup.plist</key>
 		<data>
@@ -76,99 +48,99 @@
 		</data>
 		<key>Resources/STVAddLink.tiff</key>
 		<data>
-		bNxATovDRvJMjDgcPJSTaAw9EX0=
+		amSZ+5rkBjgWwi1Vh/HGVkwbb8k=
 		</data>
 		<key>Resources/STVAddLinkPressed.tiff</key>
 		<data>
-		BN8PKpgQazYZ183qz94k1FNwdbQ=
+		UedW1Em1eFkGlNez3wdT4RVpRO0=
 		</data>
 		<key>Resources/STVAddList.tiff</key>
 		<data>
-		RJBCx6eZjIJeCY8pxF4uOsbc/1k=
+		l+0mkySsKzdyRqt+dJhRNOWswLg=
 		</data>
 		<key>Resources/STVAddListPressed.tiff</key>
 		<data>
-		NsHomYvEyOwZU4hgOmb2+RcDHKM=
+		inPpmaBySfNDQcsWu6x3xzMSz4E=
 		</data>
 		<key>Resources/STVAddMarkup.tiff</key>
 		<data>
-		IT7YAvx0pFXEqxPn8ovKZhq6GDY=
+		IQRgGqH9794uQ9RWwTwEFtCYab0=
 		</data>
 		<key>Resources/STVAddMarkupPressed.tiff</key>
 		<data>
-		sFga8dLGsDcOOYOApBB1lM/Vk50=
+		YhNVERVfUxhcVIqa9/MXiHUujzI=
 		</data>
 		<key>Resources/STVBold.tiff</key>
 		<data>
-		3fmRQewe7SEt+Ozbo4MofVNCwVU=
+		LY24y8AeEx04Ps/sWAq005yIX4Q=
 		</data>
 		<key>Resources/STVBoldPressed.tiff</key>
 		<data>
-		HukZk4kob8OUmE3HWi7Bu6oMuSw=
+		aQELxeZWYG5gsWdkNrAiQ3foqhQ=
 		</data>
 		<key>Resources/STVCenterAlign.tiff</key>
 		<data>
-		nPDeJ5H8Gk5L6yTkqyte4bF6H60=
+		ZE8bZAmWfrDb7zRKrE7QpwxWj7I=
 		</data>
 		<key>Resources/STVCenterAlignPressed.tiff</key>
 		<data>
-		Y5y/Pd/gZ67NQsaKG/EmZ5W0rLY=
+		4x+pXZEJCS8lQb+TgmeEGlMW39k=
 		</data>
 		<key>Resources/STVColours.tiff</key>
 		<data>
-		patcTvyLxT5XWNNwP+ZY4uSYJsQ=
+		4K3t5KzHhOkQ5Xh5etULXXM5o44=
 		</data>
 		<key>Resources/STVColoursPressed.tiff</key>
 		<data>
-		3BGq0I8SsItAgevEqjxkEKSu5LM=
+		X+B2Ok7JdiM/7Loh87EC9rSc83o=
 		</data>
 		<key>Resources/STVFonts.tiff</key>
 		<data>
-		hp5OITRXlT5goBgoK7HadE0dG30=
+		9z9z76qVrdRgJXUxe780dFqTF2w=
 		</data>
 		<key>Resources/STVFontsPressed.tiff</key>
 		<data>
-		xuJ64AzTT3AXq8f1sVUAVHoweXI=
+		Asjg0+xh22R/Q8MSqllTK/nyBLQ=
 		</data>
 		<key>Resources/STVItalic.tiff</key>
 		<data>
-		4r5BtDBoIuZ2VvtunTJXNMHrj8k=
+		YwMf9nplrNfyXrcuXvMBHjENLC4=
 		</data>
 		<key>Resources/STVItalicPressed.tiff</key>
 		<data>
-		S5e3kl0mhnoJLozu/oI1Xyb3fQo=
+		WOo0sa5rkl0I2fi6d6S3tZdCPgk=
 		</data>
 		<key>Resources/STVLeftAlign.tiff</key>
 		<data>
-		cKxIv9H91B/pSXvKO0VkuFHgKNk=
+		2p1qBuNmSKXzbrWwYTJVVdlW3ms=
 		</data>
 		<key>Resources/STVLeftAlignPressed.tiff</key>
 		<data>
-		CxyvLlpwyBiZ56o9P4NjuFZF9cw=
+		niIA7nZXU64K6L3wEqH4feGzp8E=
 		</data>
 		<key>Resources/STVRemoveLink.tiff</key>
 		<data>
-		TFIykJXHKAGEiHk8Dw+lKYZb1A0=
+		hoVw9FpbL/ILxI2gV+6nlsliTto=
 		</data>
 		<key>Resources/STVRemoveLinkPressed.tiff</key>
 		<data>
-		vs/xQ0WFsxgBKdnN3I9zg4nkpFU=
+		zR9O7zlA6eoiHG6Xg2DC9Urn2uQ=
 		</data>
 		<key>Resources/STVRightAlign.tiff</key>
 		<data>
-		lVwtNkedefMl064M6NChsabYnTc=
+		9mrNuuaj5OncZ0NPuGXInoTT5cA=
 		</data>
 		<key>Resources/STVRightAlignPressed.tiff</key>
 		<data>
-		YmAxHM4TDZMNMTD89qWkJRAK4rs=
+		jFEmI0mBaakojWsXTXfS/IDEKT8=
 		</data>
 		<key>Resources/STVUnderline.tiff</key>
 		<data>
-		RN4p+JwqfAMU3EoS+7QzmvDceU0=
+		vKOYBqjxek+ImJ010QBfrF9WggI=
 		</data>
 		<key>Resources/STVUnderlinePressed.tiff</key>
 		<data>
-		ACSzA0a9nJqQVU5XQo/ZV/TPATg=
+		drXkGnHZqa2kQ/X4Vcnychg+IDY=
 		</data>
 		<key>Resources/Syntax Definitions/css.plist</key>
 		<data>
@@ -189,6 +161,10 @@
 		<key>Resources/Syntax Definitions/php.plist</key>
 		<data>
 		BOJPd4XdLmIBGlO66zXKdrS0lAk=
+		</data>
+		<key>Resources/SyntaxDefinitions.plist</key>
+		<data>
+		fCI5n5EOKrtxNyNDrIFEzK6uJxA=
 		</data>
 		<key>Resources/WebSafeFonts.strings</key>
 		<data>
@@ -227,11 +203,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1Se2RvRDkjQpXufQj8gpzrYG/Do=
+			cK+wM7L13jVGTiCyvzc8GV8UivI=
 			</data>
 			<key>hash2</key>
 			<data>
-			pNtRmxIXG6A0IjpxxyvwWrbsb/HT45o0YZn9uupNMws=
+			pwG4WSuKIciBo5TJV+AwTizH2BhkHZfKiodziIIkWFc=
 			</data>
 		</dict>
 		<key>Headers/RWAlert.h</key>
@@ -245,48 +221,48 @@
 			ZaGw+XGejsQYTEdO5imMyvC2rSzmjCC6rzG9hoiArhQ=
 			</data>
 		</dict>
-		<key>Headers/RWCodeHighlightingController.h</key>
+		<key>Headers/RWAppSettings.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3VmSyd2rNl3DdSw7Y/GhW/W1w2o=
+			ajuZ5f6Sfe29lH0swmn0QzEaEcU=
 			</data>
 			<key>hash2</key>
 			<data>
-			r2rNtU5nq4Rzuqycx1HUbUNDfh4N0l3uxxpbymA1W48=
+			4gMY4kYbMpbGhIL7/Mb62CURocHYw3Tc5DN354lZQvQ=
 			</data>
 		</dict>
 		<key>Headers/RWCodeView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sAnmMorFMKK3YAqQLeHYBlQD5vM=
+			WrooTeo0VuXZ19nF40/v5fSnLjc=
 			</data>
 			<key>hash2</key>
 			<data>
-			UwSZH3pK7eAgyQVHrXXZnZQufTAlhvAdkOJ3BpfDeMk=
+			0Z7KgOeJLfRIS5/UANNEUhXrAe8ECNOdHhxGgkJa5h0=
 			</data>
 		</dict>
 		<key>Headers/RWDocumentProtocol.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Lq7c5TV9mrdI+hT3250ke6VWlCI=
+			uqjDh4JpBB1E0w3+gJTgTwdydVo=
 			</data>
 			<key>hash2</key>
 			<data>
-			APK5Tzu92DQhKXYLbp1viMMGDnUNVOAGV0vBA35WhYw=
+			bJnIv7sEj721AIJ81sJyEuNkpIMOhVY7GFk7s/JZVew=
 			</data>
 		</dict>
 		<key>Headers/RWExportParams.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ocrcJZ5jJVn4HIAT4u+faDSv7BU=
+			cytkgJN0h+sfS1bwMQQlGC+/5tc=
 			</data>
 			<key>hash2</key>
 			<data>
-			lLp36lOZQcK/ZyiWq0z8o3dSneKFVLoG4pF6n8jk+lk=
+			L+RQm3JSFHkHmQWZCwciGWvs0sqcrEE2tg9GKlw6LAY=
 			</data>
 		</dict>
 		<key>Headers/RWHTMLRendering.h</key>
@@ -326,11 +302,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s7UHWAZJeCww9/2wsGOtZOhySfE=
+			irfQwSOb+KnDguqOuzwSAS5HlNo=
 			</data>
 			<key>hash2</key>
 			<data>
-			hB41nsCwLGCiMwv4uQiN9zV0yZlFPpAJdNvdmZ1pwlY=
+			dLx0jLeasV6i6HBEzukhtGcC5xnn5X6rN2T3e5rSloc=
 			</data>
 		</dict>
 		<key>Headers/RWLink.h</key>
@@ -348,11 +324,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Hm4zZuHnvLBBTnajcGUxMNyzWjs=
+			nOXwWgSBjP2lxkStba3lZeKp71w=
 			</data>
 			<key>hash2</key>
 			<data>
-			PSW4Z6gi3oZ/pzP3OtdLrs57VKInQy36i5Z3HZ3HWnM=
+			o4LYQ8K3aX4/S0mAXDHogL7Am4o3VBzc+oLqykU++D0=
 			</data>
 		</dict>
 		<key>Headers/RWMarkdown.h</key>
@@ -403,33 +379,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4K21G2G0stL1zqdZYYB4qn4ZW6c=
+			Nyh6j2Rfm9jjzsrroWGVWBExEGk=
 			</data>
 			<key>hash2</key>
 			<data>
-			bWwrqBz07eBwep56Hct/3PFJh3IE9COehYbWSjgrLT8=
+			NLM6e4HmewZaoU6S2UutMoiSbroDqiEFXGLO/jpmsQ0=
 			</data>
 		</dict>
-		<key>Headers/RWSharedStorage.h</key>
+		<key>Headers/RWSearchResult.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VJ71Sg/YfLHfjbI7P/KM3k7xQaU=
+			g7PFusR5PgWygK9YcY3B20oI5t0=
 			</data>
 			<key>hash2</key>
 			<data>
-			2b2jMVkq5hvvGefYuk6N8vRnSvwXeSbZvcVWPkx+p3k=
-			</data>
-		</dict>
-		<key>Headers/RWSourceListNode.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1f18F9ADgjljtCnIFM5Rs9buNVg=
-			</data>
-			<key>hash2</key>
-			<data>
-			dhF44E+DxdEX4Hu1DctzsdjcDaFR90dBAzh/6DVKap8=
+			eCj96f767ydYx4XVyiuPnoItJULo886hNUn7ffW7v6s=
 			</data>
 		</dict>
 		<key>Headers/RWStyledText.h</key>
@@ -509,6 +474,17 @@
 			1ffi32ZFDYJAJltFkVNz1pESA7F9Maxx6W5d7+IAGvU=
 			</data>
 		</dict>
+		<key>PrivateHeaders/NSFileManager+RWKit.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PNlt5ogxTEz8P73/lCgJFOxze4E=
+			</data>
+			<key>hash2</key>
+			<data>
+			qEpH2Hr470KFYJmiR6qT0DsgpWydKrksB+8+Bltxx/I=
+			</data>
+		</dict>
 		<key>PrivateHeaders/NSMutableString+StyleSheet.h</key>
 		<dict>
 			<key>hash</key>
@@ -520,15 +496,26 @@
 			2SnE8aoMEJtKhRT16CeCwe5IipjxQt7+z3DNMaCHz7o=
 			</data>
 		</dict>
-		<key>PrivateHeaders/NSURL+RWKitAdditions.h</key>
+		<key>PrivateHeaders/NSURL+RWKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Key2dhtx5C2ioxEGHE1CPNDuHiE=
+			Ks9gXWuyyMJUp2617UaL7QrXbNc=
 			</data>
 			<key>hash2</key>
 			<data>
-			r8QSLOiiUcvpEDNFUJ0TPen4QDNC/Z7zeQTByMvOZOQ=
+			9iRCIiF6kxJ3MfEGkOJMqz/+MQF21AEIOOxM5zWq4OQ=
+			</data>
+		</dict>
+		<key>PrivateHeaders/NSUserDefaults+RWKit.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AbCq/WzSkCbT1rxDhaR4buXHHTU=
+			</data>
+			<key>hash2</key>
+			<data>
+			XCvw2zBVycH3clEaR8Rt3V0wzBrN5ZBTznaL/46lvVU=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RMXMLSiteMapEntry.h</key>
@@ -546,55 +533,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Wj3k2AzoYAOjlFNVkrMaTK7T9bU=
+			8D3YAfoKfOWkgVMkQZDQhBCc5J8=
 			</data>
 			<key>hash2</key>
 			<data>
-			l5JRMd2nSHovi7kUHkGYLgj/Js/rOTwf8eEcr4qpKiY=
+			Og8it0o5K1VZy/IlzFxjRZU2dk9px27IJcIIbqnyctA=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWDocument+RWPrivate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/Nspahy2gOQUy56vy2rvFqoRWZg=
+			EQyCBniphqyl1NCKivFV6UF/dB0=
 			</data>
 			<key>hash2</key>
 			<data>
-			BUsm1Qs3IYoILyEJ5ULxA5vv5a9/fi2vwbTPaGhTBXM=
+			HqyO0T/zv0xox/jTSdh4aPYgG6fTN8KJfJEPUagoW0w=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWDocument.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			a+9vwuR3oK1rixNnlRpal8hC9mo=
+			vgN0VRgxKDa+vDkbEFjxnGATZIc=
 			</data>
 			<key>hash2</key>
 			<data>
-			ybMqQXEcg12PhU/+BMnFD7m6sG/E1UdS6Zc2N/wPNHA=
+			mJ+gIaaFrW9BQEE/4oKwF8W0+F9yM5uUAoqqiYF26wE=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWDocumentModel.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bgRNKC19vMBnlX7WHuBOT8be4+8=
+			LCi2EFdQ8FoetvQQIldfPgVt484=
 			</data>
 			<key>hash2</key>
 			<data>
-			oUPLKq1k0rnkVU9OrWtL7FzA+K4KzJFJWxhJVQ7eqas=
+			TVsaksnL11Bxf0mYzp17wXk1ukStotLY+vlPtbXeL3g=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWDocumentOptionsSnapshot.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			o6yBf3yyrc4DEtcZNhz6g37JIjc=
+			EDSMVyToiAwfQnLBfFJdTUjByCY=
 			</data>
 			<key>hash2</key>
 			<data>
-			2xAc8WboBTHUe/QxeoRrhOAs7gu7lY0m2qeHD+ezNCM=
+			xW8uP4gDAj0H6Dq6j1Znhs3KaGMWBpNkoG3p0jM9Qo4=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWErrorReporter.h</key>
@@ -612,11 +599,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hYAmkiUomDrrtAwmVJZGG2KCQ5I=
+			rP8iHUyYDskfdIiGC6393yzth/M=
 			</data>
 			<key>hash2</key>
 			<data>
-			jGK/Ob8buTPbkZkCIaVNcvj+dJv+l7D7qtMOeCbd7mM=
+			1xTf6lM0ci0xq6z80xw5tXSNutSNyaT6RMC8HK5MvTI=
+			</data>
+		</dict>
+		<key>PrivateHeaders/RWIdentifiers.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IWVgCN6ckjVoZcsKKO2BOlltQt8=
+			</data>
+			<key>hash2</key>
+			<data>
+			GRuYH5BxwTTmeF6uMzHBQwuiuNLcwvMM913w0NfXeD0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWJavaScript.h</key>
@@ -645,11 +643,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PXojYukBGPXINe7Vb6QfNAj7+1Q=
+			2BupcilfjakG85n4Gji+G+69gq4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Vmc5sZnOnUr+zdCkEcskShB1DwBiBHs0JdYISSHLXGI=
+			k8W6MwjrYbyWVQ65Io7Z37mw4McbrZWcDwg9cSIl2GM=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWManifestGenerator.h</key>
@@ -711,11 +709,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S3Pco4Rgq+qXj0TtBxU8oClQ6ak=
+			7ZLkgqQyPmpkEtmEcCBRI0r6aUM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Aso+yxdbjxiQP57ZdhVhSRvzQQciMQ6nDB39ls+mRHc=
+			bY97GgkNIWzu1DQ1qMIOgefSNmdISRzCz6g0o2xa/D0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWPageAttributes+Sandwich.h</key>
@@ -733,11 +731,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SOFShTba3mnQEmu2EToyt/6LIlk=
+			djGkX67OL6Gv8Gus4aGAGKYKvJk=
 			</data>
 			<key>hash2</key>
 			<data>
-			x1cY3uTdHMjxW6f38W5ZJMAfgSxXHmB5sXnMFarATs0=
+			Ybp/TGCAQvtVa6vLYwDpH+NTZmXcvaqIXJqWjMTEWfM=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWPageEncodings.h</key>
@@ -788,22 +786,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			U6tI6lXbDWJtamTGwPIzqltH5T8=
+			3DdhRWYjqcjJC3wr6BcYONrtwBo=
 			</data>
 			<key>hash2</key>
 			<data>
-			58fJZnb7y+xY18HZc0BAcgppFVMp+GWMNGl6aTUZfT8=
+			0OovGOVTR72AYQlrG173wtcdep0QRXip041ty71HmVM=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWPluginManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pBtovdg8UM3gLvnP5Zu91IO60zQ=
+			/SxWEh9yfGMcOwcmw9zo2ZAvYVc=
 			</data>
 			<key>hash2</key>
 			<data>
-			0/v1ZC+4aLHCqbRE/xc8eOf2iQP3wOMlaZ/j5dMkajY=
+			WvibsYyp4jeyJJ5LHw/lkfMeKjvGuF/99JRFJ+aGDSQ=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWPluginPlaceholder.h</key>
@@ -815,17 +813,6 @@
 			<key>hash2</key>
 			<data>
 			TON1n6e4lfCjVlqxhbFSCrHssbY02NPL3yOVU/9YGvo=
-			</data>
-		</dict>
-		<key>PrivateHeaders/RWResourceDatabase.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			U+2de9AyspCUrQszZj0pbwhyByE=
-			</data>
-			<key>hash2</key>
-			<data>
-			ButQkf5GdIbkD8Ak3P5DcdNKxkwaPpEvWsDEnvl439c=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWSTVToolbarController.h</key>
@@ -843,11 +830,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SUhfIJwEBMgWJZqoihJ4h6rxzSk=
+			Qw9AMJEhcrhd9ZE7QVoSHftDZeY=
 			</data>
 			<key>hash2</key>
 			<data>
-			xf4Xdl9tgMUvIydUAplyHxOpYhuZDyyF9zF0xpRM4K8=
+			nzGqsUU6CZ8QFqQFnx5hB3Stj3doB6F/M2y71X6C/2E=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWSiteLayout.h</key>
@@ -865,33 +852,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FoiI4vFrx7n+mxjd0QypU4no7Yw=
+			40yBr6Shy/NzDYTKFtsCFtkZu6g=
 			</data>
 			<key>hash2</key>
 			<data>
-			OlPCYi4jAGJk0IqbLMKlByYgQIMw+DHioZFIG2po+JE=
+			s9ijXyr4SCGadVxf82q9tmTJAWIaMFCo8QZOjwlPK0o=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWSourceList.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zosxnoN/rIEVUM7V24R6RfyrnxU=
+			+PmIMjKEvVC3PjdQtOZSGjCye1s=
 			</data>
 			<key>hash2</key>
 			<data>
-			UXMZdhGrhqfDObenVJq3SCqDA9svx9JOjOkeIauUjFI=
-			</data>
-		</dict>
-		<key>PrivateHeaders/RWSourceListGroup.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			SHr/msbTci6OQQUU5fLQjhvCobI=
-			</data>
-			<key>hash2</key>
-			<data>
-			fZVNQ+Xt0wgOl7oDSkiyUF6t4rjMqzBbInpNd0y5wFc=
+			74PE8jTjF2foBNvYd6hKWcBJfBw+aqDG2AJrZU/0gvc=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWStandardVersionComparator.h</key>
@@ -909,33 +885,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tXzPm8uyWxGtqXS0bfpWQKU0QOY=
+			gK5QVR8njOzRLfFJUAcwW0zwqUc=
 			</data>
 			<key>hash2</key>
 			<data>
-			khzYD+hG/E4UBxtG7od0NR7S/maFTCjCv4ONruOfRdU=
+			Al6sXsGgKeI9RJM+CHdyggg3ioxWgyxT8pGFh9YsBiA=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWThemeInstaller.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kWTNKCgYWKtDJSQ0N30CH5k0HdQ=
+			I2+2fdWt3khUUmgnxdgYwsix9CU=
 			</data>
 			<key>hash2</key>
 			<data>
-			5Kw9a/SZoPOiuDq7zIF1c62QPCgnnGficqA2nDRlkHk=
+			PPpBoDjW9wvbv+NoHX4touxVzVCN6sobcl2cnHBJ4bU=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWThemeManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YIrOG8bVXoI+8DGQibvV3cQ4p9k=
+			Jcsl9xxwoOVcDUKC20INi2Hnxqc=
 			</data>
 			<key>hash2</key>
 			<data>
-			dPQkJBUvDXCQSJnZ/OKgEgNN0zjy96KtAvW73IjJTgw=
+			9IY2mCVCOlugFSkURdC3x1pURkIsczDHgx4bJ5MhuPQ=
+			</data>
+		</dict>
+		<key>PrivateHeaders/RWThemePresenter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GsiE7L7f5dA9A+QmkyJAOnrPAEg=
+			</data>
+			<key>hash2</key>
+			<data>
+			1jd8iK8WA9yrlp37TTTQREQM2oARSb8gE+6jIOKqfac=
 			</data>
 		</dict>
 		<key>PrivateHeaders/RWTidy.h</key>
@@ -971,67 +958,48 @@
 			i3+u1WCFnNNd+LwzAWKk8+HqRvsS0yLECvaad0rJ2F4=
 			</data>
 		</dict>
-		<key>Resources/Base.lproj/MobileMeWarningSheet.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			jBaFAoPp502ptIVZBoWkBu+mfQI=
-			</data>
-			<key>hash2</key>
-			<data>
-			R2vz28xZauKluIpt2+x/bgq3I+OTT0ahEV3UUJ+bsW4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>Resources/Base.lproj/RWLinkPanel.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			boKisYScsSZhGm8qFnnZzJG4P54=
+			GMXKDtLfbF1xnlT+lTaIU26/42M=
 			</data>
 			<key>hash2</key>
 			<data>
-			xVDUHbqE8sY0UojJWmmMMTB4bppBerQdVl8slGBz+eU=
+			J0tKjusVEkeWvGA9lJr24n0WIMynnd0VU+GZB7xEUdo=
 			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 		<key>Resources/Base.lproj/RWTextRulerOptions.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PauAL4Z/i7q1az7+LjRSOF/WWcc=
+			iIPBstXWILJaFkTn+pfo854F2pc=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZipVxgMY5QeVFIEBjR4GIMKw9dqx+L6ZsasUW9vaErQ=
+			mtpzRONnlSrkHNATB3mJppx0GW3l1NzPBJG5Okxtunw=
 			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 		<key>Resources/Base.lproj/STVToolbar.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GXkUf263DXNbF8prRCsOa/+xKrI=
+			tetCP7CCcQ16yadah+3ExvL69os=
 			</data>
 			<key>hash2</key>
 			<data>
-			qN6SoUquHaFAm0ZGP0rw9Zt4j10ZiGDdBwLM808ZF2E=
+			qDO5oQVyb1G5JwwhpWjo+YeHbNcRFFo4lQK2knIIMNk=
 			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 		<key>Resources/English.lproj/InfoPlist.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YZMVFJG3dCYJ3XzELDL53wuhZts=
+			DNuNRREUv+sdArnsQEQJuEPXmMw=
 			</data>
 			<key>hash2</key>
 			<data>
-			QaXUgi06iIsuxrmj/tKFjgnlvpNWoPco3nNVuNL9Uqw=
+			oi1UHL2iA+3YcEhJxg0brUrWqt08+dCaD3wI2NLj1qA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1053,11 +1021,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/CyVaV0bXjQrQCXLoirv3z8HSBo=
+			UUSx4BzE4EiCx6MW1tHllLNYZIs=
 			</data>
 			<key>hash2</key>
 			<data>
-			Qu+oZt+TdBLL/whzrJ2gHJJiXxzk59WfLuBkEujxtFI=
+			L34xxXF+JQPZgClBiBUCQ1NwEznx1z0cna/qYt1xW6k=
 			</data>
 		</dict>
 		<key>Resources/LICENSE</key>
@@ -1069,17 +1037,6 @@
 			<key>hash2</key>
 			<data>
 			bZFPdiOYQ63tNdNMrHw5zwf2qbyiG7S2PZgdGxUF3zo=
-			</data>
-		</dict>
-		<key>Resources/LICENSE.html</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PbkIEsRGgCx3aB3UdYcJi7xBW7E=
-			</data>
-			<key>hash2</key>
-			<data>
-			edCoahU31Qrt34Wmt4XXXPdmSKEkO6/i3Dl3G5M1Ctg=
 			</data>
 		</dict>
 		<key>Resources/Markup.plist</key>
@@ -1097,264 +1054,264 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bNxATovDRvJMjDgcPJSTaAw9EX0=
+			amSZ+5rkBjgWwi1Vh/HGVkwbb8k=
 			</data>
 			<key>hash2</key>
 			<data>
-			sBiMgpJVvo7SJwj1CC/gSKQ5zUG8VyJTIpL7KvGsuB8=
+			bZKr5RiI5JCIzeqSLy1jZLm4M40J8NJOZEeq4u2HxeE=
 			</data>
 		</dict>
 		<key>Resources/STVAddLinkPressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BN8PKpgQazYZ183qz94k1FNwdbQ=
+			UedW1Em1eFkGlNez3wdT4RVpRO0=
 			</data>
 			<key>hash2</key>
 			<data>
-			WL9b0Tzs8lbwbqApdZtIqW6h9DC6AixJ1fZdNxTpJfY=
+			0EcbdNap0aGsBwxMUPqyt5TLnxLsBwKsuMMugFPpM1I=
 			</data>
 		</dict>
 		<key>Resources/STVAddList.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RJBCx6eZjIJeCY8pxF4uOsbc/1k=
+			l+0mkySsKzdyRqt+dJhRNOWswLg=
 			</data>
 			<key>hash2</key>
 			<data>
-			Dl5FJ1hWiWyFDAZbEuDvs9H87paVzqYzuqRxiiEU0VQ=
+			xPR14taDFRYwMlVkgdDu4KrS6u7RwQzN0hPzSipU29o=
 			</data>
 		</dict>
 		<key>Resources/STVAddListPressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NsHomYvEyOwZU4hgOmb2+RcDHKM=
+			inPpmaBySfNDQcsWu6x3xzMSz4E=
 			</data>
 			<key>hash2</key>
 			<data>
-			zvsrYQEwAd9LS8jvmjWEjJFJH+3YR/3vFp82nyKPoEA=
+			IcKnPrFK9yWN5ObT94Qbp1EHT3u7cNWmYEm7t7fPEGQ=
 			</data>
 		</dict>
 		<key>Resources/STVAddMarkup.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IT7YAvx0pFXEqxPn8ovKZhq6GDY=
+			IQRgGqH9794uQ9RWwTwEFtCYab0=
 			</data>
 			<key>hash2</key>
 			<data>
-			lm8ypApbLpHS3nORMMaV52aeCyij5rlcjT9/WjsXaTw=
+			zu7+hUUMrqhs4NqH66xJnuQdhDjrtaf63v7ivBXXnxw=
 			</data>
 		</dict>
 		<key>Resources/STVAddMarkupPressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sFga8dLGsDcOOYOApBB1lM/Vk50=
+			YhNVERVfUxhcVIqa9/MXiHUujzI=
 			</data>
 			<key>hash2</key>
 			<data>
-			JL/SPgBP46sphOLZ41cXUBwhQyUcJxNA9W/LCThBGMw=
+			SZD7RgAvQrzpyDmYA0Na4ynP/4Xr3VfiMqxkzoGwJdI=
 			</data>
 		</dict>
 		<key>Resources/STVBold.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3fmRQewe7SEt+Ozbo4MofVNCwVU=
+			LY24y8AeEx04Ps/sWAq005yIX4Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			PfMyWvzNygwd+v0lZfTB284S0rNMl5hnaqTizZPxRr8=
+			gZcwwV3djCt0smCnXVEYc9VPAMthMPCyRXjiY1TEDqw=
 			</data>
 		</dict>
 		<key>Resources/STVBoldPressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HukZk4kob8OUmE3HWi7Bu6oMuSw=
+			aQELxeZWYG5gsWdkNrAiQ3foqhQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			VNyXvK7i5BO7khwJA//YOGqnK6y0xACG7AlVhIXcc9U=
+			4zCXBnHWboPHe5qXKN8ETxDoa8lfCgzy65rxhoPZdlk=
 			</data>
 		</dict>
 		<key>Resources/STVCenterAlign.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nPDeJ5H8Gk5L6yTkqyte4bF6H60=
+			ZE8bZAmWfrDb7zRKrE7QpwxWj7I=
 			</data>
 			<key>hash2</key>
 			<data>
-			xbfK65osyRhDF4tuBM9xRGq5ifCPPA/8qIb5JyC+Q9s=
+			ZqGDfjh/D+cQbJbpiMKne5mIn92lZyv8WARpojqamxw=
 			</data>
 		</dict>
 		<key>Resources/STVCenterAlignPressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Y5y/Pd/gZ67NQsaKG/EmZ5W0rLY=
+			4x+pXZEJCS8lQb+TgmeEGlMW39k=
 			</data>
 			<key>hash2</key>
 			<data>
-			4TXi5xR8JaWE2bWX2+RNtWDaV3nYyqVAKfpR09wWNwE=
+			IPx9/qemfE0bZM56DoGNmV9C+8vZjrNQGqkwvKNsyjg=
 			</data>
 		</dict>
 		<key>Resources/STVColours.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			patcTvyLxT5XWNNwP+ZY4uSYJsQ=
+			4K3t5KzHhOkQ5Xh5etULXXM5o44=
 			</data>
 			<key>hash2</key>
 			<data>
-			AIbilvwId+fNP/H9yrXh90uGjM/K5HvV+0lDG9oRydk=
+			C160zj818DmaO0LkF+rCtBYjV3Ror5SfCQ7on5/VJjg=
 			</data>
 		</dict>
 		<key>Resources/STVColoursPressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3BGq0I8SsItAgevEqjxkEKSu5LM=
+			X+B2Ok7JdiM/7Loh87EC9rSc83o=
 			</data>
 			<key>hash2</key>
 			<data>
-			4c9Ya4GLrgbKq0+CJ3wuLJikrwnjRzanf+PYr3eaeCI=
+			v2d26aXnA/hPJj7fEL+wIHr8if5uvAnyjz00l9/uhqg=
 			</data>
 		</dict>
 		<key>Resources/STVFonts.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hp5OITRXlT5goBgoK7HadE0dG30=
+			9z9z76qVrdRgJXUxe780dFqTF2w=
 			</data>
 			<key>hash2</key>
 			<data>
-			kCdGDPoE7B1Da/XSTVQnsOlJCpPms0pewTZ2COkARaU=
+			U7C49F2VRaav9wq9blN4lRKjYSEyhpC9mk6oqhK8TqU=
 			</data>
 		</dict>
 		<key>Resources/STVFontsPressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xuJ64AzTT3AXq8f1sVUAVHoweXI=
+			Asjg0+xh22R/Q8MSqllTK/nyBLQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			eqEi1+vvMONmZYDiNiV6mY7J0/YN5oUrBPOAmfpqvp0=
+			C6dvO4W5bW/Tq74DXPPnl0JpwltZ2ooWchf7kJS0FvE=
 			</data>
 		</dict>
 		<key>Resources/STVItalic.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4r5BtDBoIuZ2VvtunTJXNMHrj8k=
+			YwMf9nplrNfyXrcuXvMBHjENLC4=
 			</data>
 			<key>hash2</key>
 			<data>
-			jtX2ShNcl3dY3WxMDKWcMARXUHnjMNrVJZ/A1fPP+0Q=
+			swfm5L7kiR3eyLDJjCM8FuIIcfOyajH5CuX/ooxOCY0=
 			</data>
 		</dict>
 		<key>Resources/STVItalicPressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			S5e3kl0mhnoJLozu/oI1Xyb3fQo=
+			WOo0sa5rkl0I2fi6d6S3tZdCPgk=
 			</data>
 			<key>hash2</key>
 			<data>
-			XRC/r+XO9Qe76LTmheVKdBOFgagGEmTcFYsfPcYgNEs=
+			4hReURw3hanD3CG177gWztvNJAwl0/L3PZ7RL1G/BFc=
 			</data>
 		</dict>
 		<key>Resources/STVLeftAlign.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cKxIv9H91B/pSXvKO0VkuFHgKNk=
+			2p1qBuNmSKXzbrWwYTJVVdlW3ms=
 			</data>
 			<key>hash2</key>
 			<data>
-			891lOwVab4c32ejxqUmN9YbAt7jhRh6H3BShV5LDydk=
+			DE1RD7n8hwgPBT8sVYR+Asceh8zmlyymSPXwShm15oo=
 			</data>
 		</dict>
 		<key>Resources/STVLeftAlignPressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CxyvLlpwyBiZ56o9P4NjuFZF9cw=
+			niIA7nZXU64K6L3wEqH4feGzp8E=
 			</data>
 			<key>hash2</key>
 			<data>
-			F6Ok6vFhl/roair33Y0xdNkQpXP4XmIwvQ2aCDzX9r4=
+			VgkADDCUOSxZD8TizLNJGo2Gz8GMkk3yzTwm6EJ8Dwo=
 			</data>
 		</dict>
 		<key>Resources/STVRemoveLink.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TFIykJXHKAGEiHk8Dw+lKYZb1A0=
+			hoVw9FpbL/ILxI2gV+6nlsliTto=
 			</data>
 			<key>hash2</key>
 			<data>
-			FJVfqIykJe1iBeYJfYHLVODFgUIg6xpPZMzZZ0MYIaY=
+			Uolma7dKnthqDb7rD1N2nPc65WwcBvzf6AoWiTEkFuc=
 			</data>
 		</dict>
 		<key>Resources/STVRemoveLinkPressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vs/xQ0WFsxgBKdnN3I9zg4nkpFU=
+			zR9O7zlA6eoiHG6Xg2DC9Urn2uQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			deE+2KJCM09VoUEJWSsf3AtBeZG/qy+I9xD6m6shGA4=
+			Mxn+OR3tPULVHQ18ho1hF/zBXjTvAATkozXLhzmlkWw=
 			</data>
 		</dict>
 		<key>Resources/STVRightAlign.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lVwtNkedefMl064M6NChsabYnTc=
+			9mrNuuaj5OncZ0NPuGXInoTT5cA=
 			</data>
 			<key>hash2</key>
 			<data>
-			XCaO6g9PzsqT6wDX3w9sk125FJxDuZPA0c7sufZ3tOY=
+			jsGUvCw1jNW2+3+3IV1FeyFmeB/J35BpmB2CEHI7bp4=
 			</data>
 		</dict>
 		<key>Resources/STVRightAlignPressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YmAxHM4TDZMNMTD89qWkJRAK4rs=
+			jFEmI0mBaakojWsXTXfS/IDEKT8=
 			</data>
 			<key>hash2</key>
 			<data>
-			pqcbzaFS7lE1j0HCWw3Y71YBaDWuGX/i2kfls3bABh8=
+			FN+O52/cXdTqH0FzZhsUwx5thfgUA7X2GN71zKUK2mk=
 			</data>
 		</dict>
 		<key>Resources/STVUnderline.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RN4p+JwqfAMU3EoS+7QzmvDceU0=
+			vKOYBqjxek+ImJ010QBfrF9WggI=
 			</data>
 			<key>hash2</key>
 			<data>
-			H9nr5LgdwzPZ5QeN4IjmpRLY3u/rjQ7w1WEEsu8+qKQ=
+			Fu30DDBnVMifuXUR9SyfKBfUiQGJ80apeqmkjCFQKpg=
 			</data>
 		</dict>
 		<key>Resources/STVUnderlinePressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ACSzA0a9nJqQVU5XQo/ZV/TPATg=
+			drXkGnHZqa2kQ/X4Vcnychg+IDY=
 			</data>
 			<key>hash2</key>
 			<data>
-			pbtWrbfrvZKVUPiAOSDdYLTWgVlDSfBWgefkV2iHr4g=
+			bk5JUy4DTR0euOqLhdTXjPyJEQwuptD8WQynqlW0gGk=
 			</data>
 		</dict>
 		<key>Resources/Syntax Definitions/css.plist</key>
@@ -1412,6 +1369,17 @@
 			PX/g7EvoJ6PRrd/IFbYPNIF3yRlwyo2/md1sRDoUXcM=
 			</data>
 		</dict>
+		<key>Resources/SyntaxDefinitions.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fCI5n5EOKrtxNyNDrIFEzK6uJxA=
+			</data>
+			<key>hash2</key>
+			<data>
+			/oTOWrHrQdhY1EHLTqXYIjAoFLBm8awPmpVXNc7+Dkk=
+			</data>
+		</dict>
 		<key>Resources/WebSafeFonts.strings</key>
 		<dict>
 			<key>hash</key>
@@ -1452,6 +1420,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Resources/Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^version.plist$</key>
 		<true/>
@@ -1511,6 +1484,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Resources/Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^[^/]+$</key>
 		<dict>

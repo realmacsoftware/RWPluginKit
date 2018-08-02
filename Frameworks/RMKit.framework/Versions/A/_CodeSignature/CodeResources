@@ -19,7 +19,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		+DbIg2lEZ+12lsa3TX0LfND5APg=
+		pmLpj9j5mbcEX+mLtUS21FJleHk=
 		</data>
 		<key>Resources/marker.tiff</key>
 		<data>
@@ -131,11 +131,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e22ZPxQ+qs+iotkkS0meBR890XQ=
+			jlR6waOh+Xvng3sviPp4WBLV43o=
 			</data>
 			<key>hash2</key>
 			<data>
-			Rz2dor8FpIhOmiYlZ3hd6ErdDI0RCYC0KvBdN60FRwc=
+			2bjkVRyKsAOX50SEOenV2RxXBvrLqN8zLMPBrmv0JwM=
 			</data>
 		</dict>
 		<key>Headers/NSMutableDictionary+RMKit.h</key>
@@ -226,17 +226,6 @@
 			ZAnZoaZKakTxaP3KJnBtL9jUXf2pzUd37+ZPxsQXop4=
 			</data>
 		</dict>
-		<key>Headers/RMFolderWatcher.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			KgKINAN8niMr4Cs1hh2hgZX20xc=
-			</data>
-			<key>hash2</key>
-			<data>
-			23i9aQ62S2HlmvGUDM54xoM1Vv2phzTO0EmyOSd8Uz0=
-			</data>
-		</dict>
 		<key>Headers/RMFreezeThaw.h</key>
 		<dict>
 			<key>hash</key>
@@ -274,11 +263,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			X0yJkxQg+xKJYY9el/Pxb53CeOs=
+			NTrBM/EFIVBxZdIhxxe2CROiUyg=
 			</data>
 			<key>hash2</key>
 			<data>
-			zmVYgr7ZP3djOwEdKOFiU1KPqgu15BMIJqVPh5Tc3SY=
+			HpueMMQYJMnKBY3uLyUSgScPBZEYJ2PULhC+OZ3LnnE=
 			</data>
 		</dict>
 		<key>Headers/RMMacros.h</key>
@@ -301,17 +290,6 @@
 			<key>hash2</key>
 			<data>
 			2BymgLL9iRPfD6Rp48iwWzJm3s7SdE+kdA00Edj7jwA=
-			</data>
-		</dict>
-		<key>Headers/RMModelObject.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			mP6fcPtHbyEm4kYXLrFrvYWfAok=
-			</data>
-			<key>hash2</key>
-			<data>
-			uNzOajRHXQy3NAsWJTC36qlJg4Hn52puznoRselwr14=
 			</data>
 		</dict>
 		<key>Headers/RMObjectPath.h</key>
@@ -358,15 +336,26 @@
 			PRRJhnnEmP6yXtIUbIlwwquRD5XQNVbReKQnSMbdN90=
 			</data>
 		</dict>
+		<key>Headers/RMSVG.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QWHFGMU4J5NYLDPSMbMO410hVlY=
+			</data>
+			<key>hash2</key>
+			<data>
+			bMMVzXRcirwXXzIzgtGkzitZAdFM8gnp7FWzAULhS3E=
+			</data>
+		</dict>
 		<key>Headers/RMSandwich.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PQXu/GQQzqpJTkxpoQeXuKoSKwM=
+			rZ//RDZJT0JrW/oClMc7IoE1q1U=
 			</data>
 			<key>hash2</key>
 			<data>
-			qzfWo+iCDbr7hPolefjBGLF59K83Hd2qQc3XHclusRQ=
+			oquM3Uo0o99Fdwqd6bhLMXiPyYvXWblVLh3bdVaLEeU=
 			</data>
 		</dict>
 		<key>Headers/RMUUID.h</key>
@@ -439,33 +428,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xlXFOAFseJfw194lwf2GL7C8La0=
+			0LCnOLI51jQ2eX3SvqL6d8O7zGM=
 			</data>
 			<key>hash2</key>
 			<data>
-			8j5uvZ9Vpk7HYij6Z/OsnehxIhPPC6AzK7rvP8ThikA=
+			94L41mYeffe46iY/FzU8Mv9UqrWv1v7qDwgIeXxijy8=
 			</data>
 		</dict>
 		<key>Headers/RWTextAttachment.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yrwrjrB53AVLL1Hx/9tju+373kM=
+			iz8rRDNFksYWMR6lJzTJTkqgqPM=
 			</data>
 			<key>hash2</key>
 			<data>
-			OXregkSshqOPMtQjiuNDihYwHJb2coULsbn1vyPfqmI=
+			B6+rAxb44ewRMKVfzb7aRuZKj6LzEaa684/RmyFSKdQ=
 			</data>
 		</dict>
 		<key>Headers/RWTextAttachmentCellWrapper.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			flBaBUtXaNKzNIpqSuCsw7YBMr4=
+			TsjAMluVQ/7sxBgSVBvn5sNorV4=
 			</data>
 			<key>hash2</key>
 			<data>
-			ig8k6BhUakStvuuSrqqzTfHrb1DBnkmyicXsm+OAJvc=
+			Xu7FIztJnkx9rCv65nnb3fbD+azF9JARRT/V80Jv/ME=
 			</data>
 		</dict>
 		<key>Headers/RWTuple.h</key>
@@ -477,6 +466,17 @@
 			<key>hash2</key>
 			<data>
 			lUX5gDzk5TpOub1uLZH7SJTtvxhwIMa5YlrQuFre+0c=
+			</data>
+		</dict>
+		<key>Modules/module.modulemap</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MFlFapyX6NQENz0nyj4rw+83eHI=
+			</data>
+			<key>hash2</key>
+			<data>
+			R/5Wb6klMOF+gUJ6P2WcXNRiqZQcLnXWQFCfmDfhskY=
 			</data>
 		</dict>
 		<key>Resources/English.lproj/Localizable.strings</key>
@@ -507,11 +507,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+DbIg2lEZ+12lsa3TX0LfND5APg=
+			pmLpj9j5mbcEX+mLtUS21FJleHk=
 			</data>
 			<key>hash2</key>
 			<data>
-			SAt6EF1KBUSCD60H8mLxekePzJWU6ZqWcrljYW4MeOc=
+			ol8lgRzgZ6YmSXeMqw373Yw9q3nOp1EFVSZ4qOIO824=
 			</data>
 		</dict>
 		<key>Resources/marker.tiff</key>
@@ -543,6 +543,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Resources/Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^version.plist$</key>
 		<true/>
@@ -602,6 +607,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Resources/Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^[^/]+$</key>
 		<dict>

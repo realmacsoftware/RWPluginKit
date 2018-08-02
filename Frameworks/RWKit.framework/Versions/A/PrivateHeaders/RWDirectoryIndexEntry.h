@@ -12,13 +12,11 @@
 
 #import <Cocoa/Cocoa.h>
 
-#import <RMKit/RMModelObject.h>
-
 /*!
 	\brief
 	This is a very simple class that only holds a filename.  It's not really necessary, but was required when I was fooling around with creating a UI to edit the directory index filenames.  (Binding an NSTableColumn to an array _requires_ that the array items have a key, so you can't simply have an NSArray of NSStrings, for example; you need to have an NSArray of RWDirectoryIndexEntry objects instead.)
  */
-@interface RWDirectoryIndexEntry : RMModelObject
+@interface RWDirectoryIndexEntry : NSObject
 
 + (NSSet *)standardIndexDirectoryEntries;
 

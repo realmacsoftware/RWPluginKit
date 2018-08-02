@@ -23,6 +23,9 @@
 
 //***************************************************************************
 
+@import Foundation;
+@import AppKit;
+
 #import "RMKit/RMMacros.h"
 #import "RMKit/RMKit-Constants.h"
 
@@ -30,11 +33,10 @@
 #import "RMKit/RMCGFloatSupport.h"
 #import	"RMKit/RMEXIFFetcher.h"
 #import "RMKit/RMFilesystemObject.h"
-#import "RMKit/RMFolderWatcher.h"
 #import "RMKit/RMFreezeThaw.h"
 #import "RMKit/RMHTMLPackage.h"
 #import "RMKit/RMMenuButton.h"
-#import "RMKit/RMModelObject.h"
+//#import "RMKit/RMModelObject.h"
 #import "RMKit/RMObjectPath.h"
 #import "RMKit/RMPagedAttributedString.h"
 #import "RMKit/RMPagedObject.h"
@@ -49,6 +51,8 @@
 #import "RMKit/RWTextAttachment.h"
 #import "RMKit/RWTextAttachmentCellWrapper.h"
 #import "RMKit/RWTuple.h"
+#import "RMKit/RMSVG.h"
+#import "RMKit/RWFileReference.h"
 
 #import "RMKit/CGImage+RMKit.h"
 #import "RMKit/CIImage+RMKit.h"

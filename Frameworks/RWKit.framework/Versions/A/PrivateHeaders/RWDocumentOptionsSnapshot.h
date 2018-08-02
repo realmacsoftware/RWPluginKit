@@ -19,22 +19,21 @@
 // RWDocumentOptionsSnapshot; represents a snapshot of the editable model state that appears in the Site Setup sheet
 // Upon opening the sheet a snapshot is taken and any edits performed on that, when the sheet is dismissed the edits
 // are pushed back to the document triggering any appropriate saved state and site export state changes
-@interface RWDocumentOptionsSnapshot : RMModelObject
+@interface RWDocumentOptionsSnapshot : NSObject
 
-@property BOOL useSiteLogo;
 @property (copy) NSString* siteTitle;
 @property BOOL useSiteTitle;
 @property (copy) NSString* siteLogoAltText;
 @property (copy) NSString* siteBannerAltText;
 @property BOOL showBreadcrumbTrail;
 @property BOOL useSiteSlogan;
+@property BOOL useSocialTags;
+@property (copy) NSString *twitterAccount;
 @property (copy) NSString* siteBaseURL;
 @property BOOL addCopyrightMailto;
 @property BOOL useSiteCopyright;
 @property (copy) NSString* siteEmail;
 @property (copy) NSString* siteContactText;
-@property BOOL useWebClipIcon;
-@property BOOL useFavicon;
 @property (copy) NSString* siteSlogan;
 @property (copy) NSString* siteCopyright;
 @property (assign) RWLinkStyle commonFileConsolidationMode;

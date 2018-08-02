@@ -32,7 +32,10 @@
 
 @property (weak, nonatomic, readonly) IBOutlet NSObjectController *bindings;
 
+@property (assign, nonatomic) BOOL showRemoveLinkButton;
+
 + (RWLinkPanel *)panelWithDelegate:(id <RWLinkPanelDelegate>)delegate plugin:(id)plugin;
++ (RWLinkPanel *)panelWithDelegate:(id <RWLinkPanelDelegate>)delegate document:(id)document;
 
 - (void)presentPanelWithLink:(RWLink *)link parent:(NSWindow *)parent;
 

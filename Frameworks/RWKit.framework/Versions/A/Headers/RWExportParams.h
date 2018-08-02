@@ -35,7 +35,8 @@ typedef enum {
 	RWExportModeMasterStyle,
 	RWExportModeViewSourceCode,
 	RWExportModeConvertingForWebViewDOM,
-	RWExportModeQuickLook
+	RWExportModeQuickLook,
+    RWExportModeSearch
 } RWExportMode;
 
 typedef enum {
@@ -46,7 +47,7 @@ typedef enum {
 extern NSString* RWExportModeStringFromExportModeEnum(RWExportMode exportMode);
 extern RWExportMode RWExportModeEnumFromExportModeString(NSString* exportMode);
 
-@interface RWExportParameters : RMModelObject
+@interface RWExportParameters : NSObject
 
 /// Creates an (autoreleased) export parameters object from the given parameters dictionary.
 + (RWExportParameters*)exportParametersWithDictionary:(NSDictionary*)paramsDictionary;
@@ -60,9 +61,6 @@ extern RWExportMode RWExportModeEnumFromExportModeString(NSString* exportMode);
 // e.g. "html"
 @property (copy) NSString* filenameExtension;
 
-// The per page assets folder no longer exists as of RW 5. Resources can be
-// found in the root level "resources" folder.
-@property (copy) NSString *assetsFolderName DEPRECATED_ATTRIBUTE;
 @property (copy) NSString *resourcesFolderName;
 
 @property (strong) RWPageAttributes* pageAttributes;

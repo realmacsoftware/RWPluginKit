@@ -24,9 +24,19 @@
 
 //***************************************************************************
 
+extern NSString * const RWPluginManagerWillRemovePluginNotification;
+extern NSString * const RWPluginManagerDidRemovePluginNotification;
+extern NSString * const RWPluginManagerPluginsLoadedNotification;
+
+//***************************************************************************
+
 @interface RWPluginManager : NSObject
 
-@property (nonatomic, strong) NSMutableArray *plugins;
+@property (nonatomic, strong) NSArrayController *pluginsArrayController;
+@property (nonatomic, strong) NSMutableArray *plugins; // only enabled plugins
+@property (nonatomic, strong, readonly) NSArray *hiddenPlugins;
+@property (nonatomic, strong) NSMutableArray *allPlugins; // all plugins, including disabled plugins
+@property (nonatomic) BOOL isStacksInstalled;
 
 + (NSArray *)pluginExtensions;
 + (BOOL)isPluginExtension:(NSString *)extension;
@@ -45,9 +55,14 @@
 
 - (RWPlugin *)pluginForIdentifier:(NSString *)identifier;
 
-- (void)registerDisabledPlugin:(RWPlugin *)plugin;
+- (void)registerInstallFailed:(RWPlugin *)plugin;
 
 - (NSArray *)loadPluginsAtPaths:(NSArray *)paths;
+- (void)deletePlugin:(RWPlugin *)plugin;
+
+- (void)enablePlugin:(RWPlugin *)plugin;
+- (void)disablePlugin:(RWPlugin *)plugin;
+- (void)togglePluginEnabled:(RWPlugin *)plugin; // calls one of the above two methods - inverts state
 
 @end
 

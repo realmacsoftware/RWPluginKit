@@ -69,7 +69,8 @@
 
 + (NSDictionary *)propertiesFromFile:(NSString *)path;
 
-+ (NSImage *)imageFromCGImage:(CGImageRef)image;
+// This method just returns [NSImage initWithCGImage:size:]. You should use NSImage directly.
++ (NSImage *)imageFromCGImage:(CGImageRef)image __deprecated;
 
 @end
 

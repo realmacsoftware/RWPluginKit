@@ -10,12 +10,14 @@
 #import <RMKit/RMKit.h>
 #import "RWKit.h"
 
-@class RMFolderWatcher;
 @class RWTheme;
 
 extern NSString *const RWThemeManagerWillRemoveThemeNotification;
 extern NSString *const RWThemeManagerDidRemoveThemeNotification;
 extern NSString *const RWThemeManagerCustomStylesDidChangeNotification;
+
+extern NSString *const RWThemeManagerDidEnableThemeNotification;
+extern NSString *const RWThemeManagerDidDisableThemeNotification;
 
 @interface RWThemeManager : NSObject
 
@@ -68,6 +70,8 @@ extern NSString *const RWThemeManagerCustomStylesDidChangeNotification;
 - (NSString *)themeNameAtPath:(NSString *)path;
 - (BOOL)themeAtPathIsTextBased:(NSString *)path;
 
+- (void)toggleThemeEnabled:(RWTheme *)theme;
+
 /*
  
  */
@@ -76,12 +80,12 @@ extern NSString *const RWThemeManagerThemesKey;
 @property (readonly, copy, nonatomic) NSArray *themes;
 @property (readonly, copy, nonatomic) NSArray *responsiveThemes;
 @property (readonly, copy, nonatomic) NSArray *nonClassicThemes;
+@property (readonly, strong, nonatomic) NSMutableArray *disabledThemes;
+
+@property (nonatomic, strong) NSArrayController *themesArrayController;
 
 // return the theme matching the given name
 - (RWTheme *)themeForName:(NSString*)name;
-
-// return an RMFolderWatcher for the specified theme's plist
-- (RMFolderWatcher *)watcherForTheme:(RWTheme *)theme;
 
 // remove the theme
 - (void)removeTheme:(RWTheme *)theme;

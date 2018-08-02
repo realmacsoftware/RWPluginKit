@@ -29,7 +29,9 @@
 enum {
 	kImageAttachmentType = 1,
 	kMovieAttachmentType,
-	kPDFAttachmentType
+	kPDFAttachmentType,
+    kSVGAttachmentType,
+    kSiteResourceAttachmentType
 };
 
 @property (assign) CGImageRef cachedTransformImageRef;
@@ -39,6 +41,12 @@ enum {
 - (NSInteger)attachmentType;
 - (void)setUnderlyingCell:(id <NSTextAttachmentCell>)cell;
 - (void)setAttachment:(NSTextAttachment *)anAttachment;
+
+@end
+
+//---------------------------------------------------------------------------
+
+@interface RWSiteResourceTextAttachmentCellWrapper : RWTextAttachmentCellWrapper
 
 @end
 
@@ -57,6 +65,12 @@ enum {
 //---------------------------------------------------------------------------
 
 @interface RWPDFTextAttachmentCellWrapper : RWTextAttachmentCellWrapper
+
+@end
+
+//---------------------------------------------------------------------------
+
+@interface RWSVGTextAttachmentCellWrapper : RWImageTextAttachmentCellWrapper
 
 @end
 

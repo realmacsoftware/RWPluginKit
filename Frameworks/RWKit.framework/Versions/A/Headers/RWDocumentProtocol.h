@@ -10,11 +10,17 @@
 
 //***************************************************************************
 
+@class RWSiteResource;
+
 /// This is the public API for a RapidWeaver 4.0 document.
 @protocol RW40Document <NSObject>
 
 /// Returns the window for the document
 - (NSWindow *)window;
+- (RWSiteResource *)addResourceForURL:(NSURL *)resourceURL error:(NSError **)error;
+- (RWSiteResource *)resourceForURL:(NSURL *)URL;
+- (NSString *)macroStringForResource:(RWSiteResource *)resource;
+- (NSImage *)previewImageForResource:(RWSiteResource *)resource;
 
 @end
 

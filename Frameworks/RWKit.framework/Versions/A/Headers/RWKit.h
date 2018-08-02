@@ -1,11 +1,12 @@
 
 #import "RMKit/RMKit.h"
 
+#import "RWKit/RWAppSettings.h"
 #import "RWKit/RWPluginProtocol.h"
 #import "RWKit/RWDocumentProtocol.h"
 #import "RWKit/RWPageProtocol.h"
 #import "RWKit/RWAbstractPlugin.h"
-#import "RWKit/RWSharedStorage.h"
+
 
 #import "RWKit/RWAlert.h"
 

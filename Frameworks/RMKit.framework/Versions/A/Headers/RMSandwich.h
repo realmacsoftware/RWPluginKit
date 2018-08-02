@@ -235,3 +235,11 @@
 - (RMSandwich *)sandwich;
 
 @end
+
+@interface RMSandwichFilling (LazyLoading)
+- (void)updateDataPathsWithURL:(NSURL *)url;
+@end
+
+@interface RMSandwich (LazyLoading)
+- (void)updateDataPathsWithURL:(NSURL *)url;
+@end

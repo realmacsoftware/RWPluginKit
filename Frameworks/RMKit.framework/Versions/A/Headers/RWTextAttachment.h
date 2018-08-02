@@ -67,18 +67,19 @@ enum
 //***************************************************************************
 
 @interface RWTextAttachment : NSTextAttachment
-{
-	@private
-	NSMutableDictionary *_attributes;
-	NSImage *_image;
-	NSData *_cachedImage;
-}
 
-@property (retain) NSMutableDictionary *attributes;
-@property (retain) NSData *cachedImage;
-@property (retain, atomic) NSImage *image;
+@property (strong) NSMutableDictionary *attributes;
+@property (strong) NSData *cachedImage;
+
+@property (strong, nonatomic) id resource;
+@property (strong, nonatomic) NSString *resourceIdentifier;
+@property (strong, nonatomic) NSFileWrapper *resourceFileWrapper;
+
+@property (readonly, nonatomic) id cgImageSourceRef;
+@property (readonly, nonatomic) id cgImageRef;
 
 - (NSMutableDictionary *)mediaAttributes;
+- (BOOL)mediaAttributesHaveChanged;
 - (void)setMediaType:(NSInteger)type;
 
 - (void)updateImage;

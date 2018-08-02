@@ -67,6 +67,8 @@ extern NSString *const kRWExporterPageExportUpdateMessage;
 
 @property (nonatomic, retain) NSMutableArray *exportedResourceURLs;
 
+@property (nonatomic, copy) NSString *overriddenSiteBaseURL;
+
 /*
 	Start
  */

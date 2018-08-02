@@ -6,12 +6,16 @@
 
 + (instancetype)themeWithPath:(NSString *)path;
 
+@property (nonatomic) BOOL disabled;
+
 @property (readonly, strong) NSArray *colourTagFiles;
 @property (readonly, strong) NSArray *files;
 @property (readonly, strong) NSArray *keywords;
 
 @property (readonly, strong) NSImage *largePreview;
 @property (readonly, strong) NSImage *smallPreview;
+@property (readonly, strong) id previewCGImageRef;
+@property (readonly) CGSize previewCGImageSize;
 
 @property (readonly, copy) NSString *themeAuthor;
 @property (readonly, copy) NSString *themeName;
@@ -40,6 +44,10 @@
 @property (weak, readonly) NSString *toolbarBreadCrumbItem;
 @property (weak, readonly) NSString *toolbarBreadCrumbSeparator;
 
+// RWAssetOptions
+@property (readonly) CGSize logoImageRecommendedSize;
+@property (weak, readonly) NSString *logoImageRecommendedSizeString;
+
 // RWBannerOptions
 @property (readonly) CGSize bannerImageRecommendedSize;
 @property (weak, readonly) NSString *bannerImageRecommendedSizeString;
@@ -57,6 +65,9 @@
 
 // RMStoreKit-style bundle identifier, nil for any incompatible themes.
 @property (weak, readonly) NSString *bundleIdentifier;
+
+@property (nonatomic, strong, readonly) NSString *name;
+@property (nonatomic, strong, readonly) NSString *author;
 
 - (void)setupTheme;
 
