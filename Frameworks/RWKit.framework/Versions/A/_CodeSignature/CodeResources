@@ -6,11 +6,11 @@
 	<dict>
 		<key>Resources/Base.lproj/RWLinkPanel.nib</key>
 		<data>
-		GMXKDtLfbF1xnlT+lTaIU26/42M=
+		sY8XqYwbmZq+xIcQIvXkHcVaagM=
 		</data>
 		<key>Resources/Base.lproj/RWTextRulerOptions.nib</key>
 		<data>
-		iIPBstXWILJaFkTn+pfo854F2pc=
+		p/eYwfvaIg+EYiHw1qFdX2iprtI=
 		</data>
 		<key>Resources/Base.lproj/STVToolbar.nib</key>
 		<data>
@@ -36,7 +36,7 @@
 		</dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		UUSx4BzE4EiCx6MW1tHllLNYZIs=
+		JbTYqwhw7CeciD/BN30PBp/mLqk=
 		</data>
 		<key>Resources/LICENSE</key>
 		<data>
@@ -48,99 +48,99 @@
 		</data>
 		<key>Resources/STVAddLink.tiff</key>
 		<data>
-		amSZ+5rkBjgWwi1Vh/HGVkwbb8k=
+		RRp6kYYYeWKo6cEFOwsD0OHL43o=
 		</data>
 		<key>Resources/STVAddLinkPressed.tiff</key>
 		<data>
-		UedW1Em1eFkGlNez3wdT4RVpRO0=
+		r1WozaV8GI4oOVwLTF53Y2C7j4Y=
 		</data>
 		<key>Resources/STVAddList.tiff</key>
 		<data>
-		l+0mkySsKzdyRqt+dJhRNOWswLg=
+		G1Tvj0c7hVkUiZQuucOVUK0r464=
 		</data>
 		<key>Resources/STVAddListPressed.tiff</key>
 		<data>
-		inPpmaBySfNDQcsWu6x3xzMSz4E=
+		5gABGPtOmWC2pVX7lp41gUY5x6Q=
 		</data>
 		<key>Resources/STVAddMarkup.tiff</key>
 		<data>
-		IQRgGqH9794uQ9RWwTwEFtCYab0=
+		jkIdaGFrINOyxZq1p5x+YK1wUYE=
 		</data>
 		<key>Resources/STVAddMarkupPressed.tiff</key>
 		<data>
-		YhNVERVfUxhcVIqa9/MXiHUujzI=
+		ZmWMVJTev7anecQXvmqC/XNkY/g=
 		</data>
 		<key>Resources/STVBold.tiff</key>
 		<data>
-		LY24y8AeEx04Ps/sWAq005yIX4Q=
+		ZZNwFcEE2KYxqU5h+kBEf42Wv+I=
 		</data>
 		<key>Resources/STVBoldPressed.tiff</key>
 		<data>
-		aQELxeZWYG5gsWdkNrAiQ3foqhQ=
+		+aQ34wRKfetI9e4ISKO07qjwhnk=
 		</data>
 		<key>Resources/STVCenterAlign.tiff</key>
 		<data>
-		ZE8bZAmWfrDb7zRKrE7QpwxWj7I=
+		Dqo0UllUoP2RqFur2643g2GTNwg=
 		</data>
 		<key>Resources/STVCenterAlignPressed.tiff</key>
 		<data>
-		4x+pXZEJCS8lQb+TgmeEGlMW39k=
+		6gnDGk1yfxe6ieYGQD5DEF2D68Q=
 		</data>
 		<key>Resources/STVColours.tiff</key>
 		<data>
-		4K3t5KzHhOkQ5Xh5etULXXM5o44=
+		FVXieTmTjOglEIkWkO/6ga3nkSM=
 		</data>
 		<key>Resources/STVColoursPressed.tiff</key>
 		<data>
-		X+B2Ok7JdiM/7Loh87EC9rSc83o=
+		Fw+7BnUGHyKIgoKWZQ5uy5EGYeM=
 		</data>
 		<key>Resources/STVFonts.tiff</key>
 		<data>
-		9z9z76qVrdRgJXUxe780dFqTF2w=
+		ysdkctgbdMynPgJl/J9gO7gxgyM=
 		</data>
 		<key>Resources/STVFontsPressed.tiff</key>
 		<data>
-		Asjg0+xh22R/Q8MSqllTK/nyBLQ=
+		tmiQZeuqOVc93+FqLQzqFW9sRmY=
 		</data>
 		<key>Resources/STVItalic.tiff</key>
 		<data>
-		YwMf9nplrNfyXrcuXvMBHjENLC4=
+		mzfvNXfcgiMi6oO9iPE2gZQSWNY=
 		</data>
 		<key>Resources/STVItalicPressed.tiff</key>
 		<data>
-		WOo0sa5rkl0I2fi6d6S3tZdCPgk=
+		7GIHD8eE6mt8C3zTIRZBQSxGysg=
 		</data>
 		<key>Resources/STVLeftAlign.tiff</key>
 		<data>
-		2p1qBuNmSKXzbrWwYTJVVdlW3ms=
+		XmyXw/CaP8fsp89/RlcGO2eMj9o=
 		</data>
 		<key>Resources/STVLeftAlignPressed.tiff</key>
 		<data>
-		niIA7nZXU64K6L3wEqH4feGzp8E=
+		YLSbYJAmtemhhvCCAXsdWLvs0C4=
 		</data>
 		<key>Resources/STVRemoveLink.tiff</key>
 		<data>
-		hoVw9FpbL/ILxI2gV+6nlsliTto=
+		9wKCyfVQwyTjR30OGIRttqXDwiA=
 		</data>
 		<key>Resources/STVRemoveLinkPressed.tiff</key>
 		<data>
-		zR9O7zlA6eoiHG6Xg2DC9Urn2uQ=
+		+DBnms0nzERzp50YSb6TYeqVG3Q=
 		</data>
 		<key>Resources/STVRightAlign.tiff</key>
 		<data>
-		9mrNuuaj5OncZ0NPuGXInoTT5cA=
+		z649A4+mOCU5ju4aOmtzjwrgskw=
 		</data>
 		<key>Resources/STVRightAlignPressed.tiff</key>
 		<data>
-		jFEmI0mBaakojWsXTXfS/IDEKT8=
+		hFvy2kQELA7jRZnbZ7BiSpZ9MzQ=
 		</data>
 		<key>Resources/STVUnderline.tiff</key>
 		<data>
-		vKOYBqjxek+ImJ010QBfrF9WggI=
+		wGXRyQl72xgtCFP+t2TkCJmkpXg=
 		</data>
 		<key>Resources/STVUnderlinePressed.tiff</key>
 		<data>
-		drXkGnHZqa2kQ/X4Vcnychg+IDY=
+		AtDIpsOPo/a6sEnMuMoG/09A8KQ=
 		</data>
 		<key>Resources/Syntax Definitions/css.plist</key>
 		<data>
@@ -225,11 +225,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ajuZ5f6Sfe29lH0swmn0QzEaEcU=
+			wSNVfVBZlx/E7Nbj9jVbupMgUI4=
 			</data>
 			<key>hash2</key>
 			<data>
-			4gMY4kYbMpbGhIL7/Mb62CURocHYw3Tc5DN354lZQvQ=
+			43Ef14K9DZd1E69O9a0wceHbgiKiJCqR2yOosoG76x4=
 			</data>
 		</dict>
 		<key>Headers/RWCodeView.h</key>
@@ -962,22 +962,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GMXKDtLfbF1xnlT+lTaIU26/42M=
+			sY8XqYwbmZq+xIcQIvXkHcVaagM=
 			</data>
 			<key>hash2</key>
 			<data>
-			J0tKjusVEkeWvGA9lJr24n0WIMynnd0VU+GZB7xEUdo=
+			F3V4WrqYG1ONY8vLSXpD31J/QOMSHgu2iaG2IuU3mhI=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/RWTextRulerOptions.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iIPBstXWILJaFkTn+pfo854F2pc=
+			p/eYwfvaIg+EYiHw1qFdX2iprtI=
 			</data>
 			<key>hash2</key>
 			<data>
-			mtpzRONnlSrkHNATB3mJppx0GW3l1NzPBJG5Okxtunw=
+			jsttoOYXUJgxvQFIx96ZH03f0TC1ZdAi85jpMiwO5N4=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/STVToolbar.nib</key>
@@ -1021,11 +1021,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UUSx4BzE4EiCx6MW1tHllLNYZIs=
+			JbTYqwhw7CeciD/BN30PBp/mLqk=
 			</data>
 			<key>hash2</key>
 			<data>
-			L34xxXF+JQPZgClBiBUCQ1NwEznx1z0cna/qYt1xW6k=
+			I+vEImIMOAz40TB8xm4P8OgcWWVpsQLchn4gMUEzR/w=
 			</data>
 		</dict>
 		<key>Resources/LICENSE</key>
@@ -1054,264 +1054,264 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			amSZ+5rkBjgWwi1Vh/HGVkwbb8k=
+			RRp6kYYYeWKo6cEFOwsD0OHL43o=
 			</data>
 			<key>hash2</key>
 			<data>
-			bZKr5RiI5JCIzeqSLy1jZLm4M40J8NJOZEeq4u2HxeE=
+			vjF6TRmvHtx8KYuRXDiVdCHTRut9BrwwR1Zi5NAdbJE=
 			</data>
 		</dict>
 		<key>Resources/STVAddLinkPressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UedW1Em1eFkGlNez3wdT4RVpRO0=
+			r1WozaV8GI4oOVwLTF53Y2C7j4Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			0EcbdNap0aGsBwxMUPqyt5TLnxLsBwKsuMMugFPpM1I=
+			A2gquPL1PpUZW8vT9YW9VqcM0rKdHUjc7vOX5fEuAnc=
 			</data>
 		</dict>
 		<key>Resources/STVAddList.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			l+0mkySsKzdyRqt+dJhRNOWswLg=
+			G1Tvj0c7hVkUiZQuucOVUK0r464=
 			</data>
 			<key>hash2</key>
 			<data>
-			xPR14taDFRYwMlVkgdDu4KrS6u7RwQzN0hPzSipU29o=
+			ZY8JKow66C+ponTyYDGIXfpezr9anYQQdg/3I44RknE=
 			</data>
 		</dict>
 		<key>Resources/STVAddListPressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			inPpmaBySfNDQcsWu6x3xzMSz4E=
+			5gABGPtOmWC2pVX7lp41gUY5x6Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			IcKnPrFK9yWN5ObT94Qbp1EHT3u7cNWmYEm7t7fPEGQ=
+			FUp1/knarclBLqMc9pHsYMw8kq71i+p0/KBgs+7lg1Y=
 			</data>
 		</dict>
 		<key>Resources/STVAddMarkup.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IQRgGqH9794uQ9RWwTwEFtCYab0=
+			jkIdaGFrINOyxZq1p5x+YK1wUYE=
 			</data>
 			<key>hash2</key>
 			<data>
-			zu7+hUUMrqhs4NqH66xJnuQdhDjrtaf63v7ivBXXnxw=
+			8w8RoKVT0eEDf1MQid932Q6AACvm+OYhBesVm0iLNV0=
 			</data>
 		</dict>
 		<key>Resources/STVAddMarkupPressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YhNVERVfUxhcVIqa9/MXiHUujzI=
+			ZmWMVJTev7anecQXvmqC/XNkY/g=
 			</data>
 			<key>hash2</key>
 			<data>
-			SZD7RgAvQrzpyDmYA0Na4ynP/4Xr3VfiMqxkzoGwJdI=
+			n8u59wWRDZZTRPeIHY4Av337HnOJ9xqyhASWqOxoULg=
 			</data>
 		</dict>
 		<key>Resources/STVBold.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LY24y8AeEx04Ps/sWAq005yIX4Q=
+			ZZNwFcEE2KYxqU5h+kBEf42Wv+I=
 			</data>
 			<key>hash2</key>
 			<data>
-			gZcwwV3djCt0smCnXVEYc9VPAMthMPCyRXjiY1TEDqw=
+			lxEuPQXuA3MoUf+LjJU9HmUIqJruycRFuaPdzMRgc+k=
 			</data>
 		</dict>
 		<key>Resources/STVBoldPressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aQELxeZWYG5gsWdkNrAiQ3foqhQ=
+			+aQ34wRKfetI9e4ISKO07qjwhnk=
 			</data>
 			<key>hash2</key>
 			<data>
-			4zCXBnHWboPHe5qXKN8ETxDoa8lfCgzy65rxhoPZdlk=
+			F3GH5Wl1OgF2lnJd9Er2Mn8E8jHR8XeHHunoNE4G1FM=
 			</data>
 		</dict>
 		<key>Resources/STVCenterAlign.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZE8bZAmWfrDb7zRKrE7QpwxWj7I=
+			Dqo0UllUoP2RqFur2643g2GTNwg=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZqGDfjh/D+cQbJbpiMKne5mIn92lZyv8WARpojqamxw=
+			uA98zVMlOgRi+CdT5JzWsN4bwrvzGAM6F080kG/CafU=
 			</data>
 		</dict>
 		<key>Resources/STVCenterAlignPressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4x+pXZEJCS8lQb+TgmeEGlMW39k=
+			6gnDGk1yfxe6ieYGQD5DEF2D68Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			IPx9/qemfE0bZM56DoGNmV9C+8vZjrNQGqkwvKNsyjg=
+			d4dEcWonz2mDT2g/xP9Cxu8cFfDCoFY1AXa5bFYUwJ0=
 			</data>
 		</dict>
 		<key>Resources/STVColours.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4K3t5KzHhOkQ5Xh5etULXXM5o44=
+			FVXieTmTjOglEIkWkO/6ga3nkSM=
 			</data>
 			<key>hash2</key>
 			<data>
-			C160zj818DmaO0LkF+rCtBYjV3Ror5SfCQ7on5/VJjg=
+			tZXcfx5mPxIyM3qWYGDV0HwV9NzKsYCd/QodONTNNGI=
 			</data>
 		</dict>
 		<key>Resources/STVColoursPressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			X+B2Ok7JdiM/7Loh87EC9rSc83o=
+			Fw+7BnUGHyKIgoKWZQ5uy5EGYeM=
 			</data>
 			<key>hash2</key>
 			<data>
-			v2d26aXnA/hPJj7fEL+wIHr8if5uvAnyjz00l9/uhqg=
+			iqZVJN8YVvNidZqolLQ4M/J+Yezl7W8mF4BuMsw3pmg=
 			</data>
 		</dict>
 		<key>Resources/STVFonts.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9z9z76qVrdRgJXUxe780dFqTF2w=
+			ysdkctgbdMynPgJl/J9gO7gxgyM=
 			</data>
 			<key>hash2</key>
 			<data>
-			U7C49F2VRaav9wq9blN4lRKjYSEyhpC9mk6oqhK8TqU=
+			+irIvjJ5Ic9I5cIKZllQBgYT95Ha2ZcHA6AZdokkW0c=
 			</data>
 		</dict>
 		<key>Resources/STVFontsPressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Asjg0+xh22R/Q8MSqllTK/nyBLQ=
+			tmiQZeuqOVc93+FqLQzqFW9sRmY=
 			</data>
 			<key>hash2</key>
 			<data>
-			C6dvO4W5bW/Tq74DXPPnl0JpwltZ2ooWchf7kJS0FvE=
+			woQVWn6rX3+diFhNWbW7AhtEJ8sDoIAX6afTA+9YIRY=
 			</data>
 		</dict>
 		<key>Resources/STVItalic.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YwMf9nplrNfyXrcuXvMBHjENLC4=
+			mzfvNXfcgiMi6oO9iPE2gZQSWNY=
 			</data>
 			<key>hash2</key>
 			<data>
-			swfm5L7kiR3eyLDJjCM8FuIIcfOyajH5CuX/ooxOCY0=
+			jW93fCQpkk/MZNm6jB0uTCp0XZHIqB7bLhxLMArX9Nw=
 			</data>
 		</dict>
 		<key>Resources/STVItalicPressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WOo0sa5rkl0I2fi6d6S3tZdCPgk=
+			7GIHD8eE6mt8C3zTIRZBQSxGysg=
 			</data>
 			<key>hash2</key>
 			<data>
-			4hReURw3hanD3CG177gWztvNJAwl0/L3PZ7RL1G/BFc=
+			L8T1kPLwu35itk42+w+nyJ6Enrbtr9m6M4XANLix9v4=
 			</data>
 		</dict>
 		<key>Resources/STVLeftAlign.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2p1qBuNmSKXzbrWwYTJVVdlW3ms=
+			XmyXw/CaP8fsp89/RlcGO2eMj9o=
 			</data>
 			<key>hash2</key>
 			<data>
-			DE1RD7n8hwgPBT8sVYR+Asceh8zmlyymSPXwShm15oo=
+			uv9HhFAU3rmnO901gB6aQV08+FaLx8A7KMu+Y1dGisE=
 			</data>
 		</dict>
 		<key>Resources/STVLeftAlignPressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			niIA7nZXU64K6L3wEqH4feGzp8E=
+			YLSbYJAmtemhhvCCAXsdWLvs0C4=
 			</data>
 			<key>hash2</key>
 			<data>
-			VgkADDCUOSxZD8TizLNJGo2Gz8GMkk3yzTwm6EJ8Dwo=
+			9YXVk/OAdcOqvqSkFWTh1EoMIZaAi3I0LAYMlgipJJc=
 			</data>
 		</dict>
 		<key>Resources/STVRemoveLink.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hoVw9FpbL/ILxI2gV+6nlsliTto=
+			9wKCyfVQwyTjR30OGIRttqXDwiA=
 			</data>
 			<key>hash2</key>
 			<data>
-			Uolma7dKnthqDb7rD1N2nPc65WwcBvzf6AoWiTEkFuc=
+			wZKUHsUOJjsH+ulgSkLuQma/HbK7lNi9a97gsno8s5M=
 			</data>
 		</dict>
 		<key>Resources/STVRemoveLinkPressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zR9O7zlA6eoiHG6Xg2DC9Urn2uQ=
+			+DBnms0nzERzp50YSb6TYeqVG3Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			Mxn+OR3tPULVHQ18ho1hF/zBXjTvAATkozXLhzmlkWw=
+			cuikOOnUpl5nm0pTjCPN8RNP/M4YD+/oX2fb2YRi1pU=
 			</data>
 		</dict>
 		<key>Resources/STVRightAlign.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9mrNuuaj5OncZ0NPuGXInoTT5cA=
+			z649A4+mOCU5ju4aOmtzjwrgskw=
 			</data>
 			<key>hash2</key>
 			<data>
-			jsGUvCw1jNW2+3+3IV1FeyFmeB/J35BpmB2CEHI7bp4=
+			EzLHm9rOMYcDWpauy37t4SPbFk/0OxcZAHKRq1O5ydM=
 			</data>
 		</dict>
 		<key>Resources/STVRightAlignPressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jFEmI0mBaakojWsXTXfS/IDEKT8=
+			hFvy2kQELA7jRZnbZ7BiSpZ9MzQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			FN+O52/cXdTqH0FzZhsUwx5thfgUA7X2GN71zKUK2mk=
+			y9+VPURfzdRyV4Kj6FFbh3QBsNAjVzKZ8veL00h8c0w=
 			</data>
 		</dict>
 		<key>Resources/STVUnderline.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vKOYBqjxek+ImJ010QBfrF9WggI=
+			wGXRyQl72xgtCFP+t2TkCJmkpXg=
 			</data>
 			<key>hash2</key>
 			<data>
-			Fu30DDBnVMifuXUR9SyfKBfUiQGJ80apeqmkjCFQKpg=
+			xK0F9Ne9S95c66v5vdrzUbX/rwzhYZu9CnrJMp6gCwM=
 			</data>
 		</dict>
 		<key>Resources/STVUnderlinePressed.tiff</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			drXkGnHZqa2kQ/X4Vcnychg+IDY=
+			AtDIpsOPo/a6sEnMuMoG/09A8KQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			bk5JUy4DTR0euOqLhdTXjPyJEQwuptD8WQynqlW0gGk=
+			ovqeAjkG5GDo4KVsv4yBeeZt8hgci/bc2fDNpillB+g=
 			</data>
 		</dict>
 		<key>Resources/Syntax Definitions/css.plist</key>
