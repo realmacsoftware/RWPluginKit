@@ -18,6 +18,7 @@
 /// Returns the window for the document
 - (NSWindow *)window;
 - (RWSiteResource *)addResourceForURL:(NSURL *)resourceURL error:(NSError **)error;
+- (RWSiteResource *)addResourceForURL:(NSURL *)resourceURL error:(NSError **)error internal:(BOOL)internal;
 - (RWSiteResource *)resourceForURL:(NSURL *)URL;
 - (NSString *)macroStringForResource:(RWSiteResource *)resource;
 - (NSImage *)previewImageForResource:(RWSiteResource *)resource;

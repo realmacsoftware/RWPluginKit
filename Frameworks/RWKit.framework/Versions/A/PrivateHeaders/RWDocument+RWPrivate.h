@@ -25,8 +25,6 @@
  */
 - (void)_initialiseEmptyModel;
 
-- (BOOL)validateSiteBaseURL:(NSString **)ioValue error:(NSError **)outError;
-
 @property (readonly, nonatomic, strong) RWDocumentModel *model;
 
 @end

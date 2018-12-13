@@ -9,8 +9,6 @@ extern NSString *const RWThemeInstallerDidUpdateThemeNotification;
 
 + (NSArray *)installAllObjects;
 
-+ (BOOL)installObjectAtPath:(NSString *)path;
-
 + (void)uninstallAddons;
 
 // The following methods return the requested path.

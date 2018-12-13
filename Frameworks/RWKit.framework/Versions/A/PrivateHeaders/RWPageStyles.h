@@ -42,6 +42,10 @@ extern NSString *kRWPageStyleDidChangeNotification;
 @property (nonatomic, strong) NSString *customHeader;
 @property (nonatomic, strong) NSString *customBody;
 
+@property (nonatomic, assign) BOOL useCustomLanguage;
+@property (nonatomic, strong) NSString *customLanguage;
+@property (nonatomic, strong) NSString *customLanguageDirection;
+
 - (id)initWithPage:(RWPage *)page;
 
 @end

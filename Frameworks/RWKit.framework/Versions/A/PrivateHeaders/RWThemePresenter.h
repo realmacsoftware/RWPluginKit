@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+@class RWTheme;
 @class RWThemePresenter;
 
 @protocol RWThemePresenterDelegate <NSObject>
@@ -18,8 +19,7 @@
 
 @interface RWThemePresenter : NSObject
 
+@property (nonatomic, strong) RWTheme *theme;
 @property (nonatomic, strong) id <RWThemePresenterDelegate> delegate;
-
-- (instancetype)initWithURL:(NSURL *)url;
 
 @end

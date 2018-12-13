@@ -54,13 +54,16 @@
 
 + (NSString *)pathToBuiltInPlugIns;
 + (NSString *)pathToBuiltInThemes;
-+ (NSString *)pathToBuiltInEditorThemes;
+
+#pragma mark - Plugin Defaults (all versions)
+
+// Location of directory to store plugin defaults
++ (NSURL *)rwPluginDefaultsSupportLocationWithError:(NSError **)error;
 
 #pragma mark - Paths: User Installed Addons
 
 + (NSURL *)userInstalledThemesLocationWithError:(NSError **)error;
 + (NSURL *)userInstalledThemeVariationsLocationWithError:(NSError **)error;
-+ (NSURL *)userInstalledEditorThemesLocationWithError:(NSError **)error;
 + (NSURL *)userInstalledSnippetsLocationWithError:(NSError **)error;
 + (NSURL *)userInstalledStacksLocationWithError:(NSError **)error;
 + (NSURL *)userInstalledPluginsLocationWithError:(NSError **)error;
@@ -68,7 +71,6 @@
 
 + (NSURL *)userInstalledThemesLocation;
 + (NSURL *)userInstalledThemeVariationsLocation;
-+ (NSURL *)userInstalledEditorThemesLocation;
 + (NSURL *)userInstalledSnippetsLocation;
 + (NSURL *)userInstalledStacksLocation;
 + (NSURL *)userInstalledPluginsLocation;
@@ -76,7 +78,6 @@
 
 + (NSString *)pathToUserInstalledThemes;
 + (NSString *)pathToUserInstalledThemeVariations;
-+ (NSString *)pathToUserInstalledEditorThemes;
 + (NSString *)pathToUserInstalledSnippets;
 + (NSString *)pathToUserInstalledStacks;
 + (NSString *)pathToUserInstalledPlugins;
@@ -102,5 +103,10 @@
 
 // Create custom addon location information for storing to user defaults
 - (NSDictionary *)locationInfoWithError:(NSError **)error;
+
+#pragma mark - Bookmarks
+
+- (NSData *)appScopedBookmarkDataWithError:(NSError **)error;
+- (NSData *)documentScopedBookmarkDataForDocumentURL:(NSURL *)documentURL withError:(NSError **)error;
 
 @end

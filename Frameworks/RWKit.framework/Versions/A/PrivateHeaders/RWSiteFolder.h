@@ -81,4 +81,6 @@ extern NSString *const RWSiteFolderDidChangeNotification;
 
 - (void)markAllResourcesAsChanged:(BOOL)changed;
 
+- (NSMenu *)menuRepresentationWithTarget:(id)target action:(SEL)action;
+
 @end

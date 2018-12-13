@@ -26,6 +26,9 @@
 #import "RWKit/RWSiteFolder.h"
 #import "RWKit/RWSiteResource.h"
 
+#import "RWKit/RWFileReference.h"
+#import "RWKit/RWFileReferences.h"
+
 #import "RWKit/RWSourceList.h"
 
 #import "RWKit/RWPageAttributes+Sandwich.h"
@@ -38,7 +41,6 @@
 #import "RWKit/RMXMLSiteMapEntry.h"
 #import "RWKit/RWMetaField.h"
 #import "RWKit/RWMarkupAttributes.h"
-#import "RWKit/RWTidy.h"
 #import "RWKit/RWWebView.h"
 #import "RWKit/RWExporter.h"
 #import "RWKit/RWJavaScript.h"

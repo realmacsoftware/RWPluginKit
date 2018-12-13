@@ -46,4 +46,8 @@ extern NSString * const RWPreferencesGenericPageIconsKey;
 // Save custom addon location info to user defaults
 + (void)setRWCustomAddonLocationInfo:(NSDictionary *)locationInfo;
 
+#pragma mark - Value Accessors
+
+- (NSInteger)integerForKey:(NSString *)defaultName defaultValue:(NSInteger)defaultValue;
+
 @end

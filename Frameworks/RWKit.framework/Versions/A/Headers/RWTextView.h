@@ -15,11 +15,7 @@
 
 @class RWAbstractPlugin;
 
-@interface RWTextView : NSTextView <RWLinkPanelDelegate> {
-	NSColor* _ignoreBackground;
-	NSColor* _htmlBackground;
-	BOOL _addedNotificationObserver;
-}
+@interface RWTextView : NSTextView <RWLinkPanelDelegate>
 
 - (NSArray*)attachments;
 - (NSArray*)selectedAttachments;
@@ -31,6 +27,8 @@
 - (void)applyIgnoreFormattingToSelection:(id)sender;
 - (void)removeFormattingFromSelection:(id)sender;
 - (IBAction)orderFrontListInspector:(id)sender;
+
+- (void)fixUpAttachments;
 
 - (IBAction)removeSmartQuotesFromSelection:(id)sender;
 

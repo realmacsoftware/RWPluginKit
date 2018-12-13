@@ -24,6 +24,8 @@ extern NSString *const kRWCurrentMediaChangedNotification;
 extern NSString *const kRWPluginPageSettingsRequestNotification;
 extern NSString *const kRWDoubleClickedMediaNotification;
 
+extern NSString *const kRWPluginChangedReloadPreviewUserInfoKey;
+
 @interface RWAbstractPlugin : NSObject <RWPlugin, NSCoding>
 
 - (NSDocument <RWDocument> *)document;
@@ -48,6 +50,7 @@ extern NSString *const kRWDoubleClickedMediaNotification;
 - (NSString *)pageContentHeaders:(NSDictionary *)params;
 
 - (void)broadcastPluginChanged;
+- (void)broadcastPluginChangedReloadingPreviews:(BOOL)reloadPreview;
 - (void)broadcastPluginExportStatus:(NSString *)message progress:(CGFloat)percent;
 - (void)broadcastMediaChanged;
 - (void)broadcastPluginSettingsRequest;
@@ -92,11 +95,15 @@ extern NSString *const kRWDoubleClickedMediaNotification;
 
 - (NSString *)linkForResourceWithIdentifier:(NSString *)identifier;
 
+#pragma mark File References
+
+
+
 #pragma mark NSURL Bookmark Support
 
-- (NSString *)registerFileURL:(NSURL *)fileURL error:(NSError **)error;
-- (void)removeFileReferenceForToken:(NSString *)token;
-- (NSURL *)fileURLForToken:(NSString *)token error:(NSError **)error;
+- (NSString *)registerFileURL:(NSURL *)fileURL error:(NSError **)error DEPRECATED_ATTRIBUTE;
+- (void)removeFileReferenceForToken:(NSString *)token DEPRECATED_ATTRIBUTE;
+- (NSURL *)fileURLForToken:(NSString *)token error:(NSError **)error DEPRECATED_ATTRIBUTE;
 
 #pragma mark Search Helper
 
@@ -104,5 +111,12 @@ extern NSString *const kRWDoubleClickedMediaNotification;
 // You can call this as many times as you need - but you're still responsible for calling your completion block
 // Pass in a userInfo dictionary to reference model objects across search methods
 - (void)searchString:(NSString *)haystack forString:(NSString *)needle foundBlock:(void (^)(RWSearchResult *searchResult))foundBlock userInfo:(NSDictionary *)userInfo;
+
+#pragma mark Plugin Defaults
+
+// Allows you to store a dictionary into RapidWeaver's group container to persist global settings.
+// Availability: RW8
+- (NSMutableDictionary *)pluginDefaults;
+- (void)setPluginDefaults:(NSDictionary *)defaults;
 
 @end

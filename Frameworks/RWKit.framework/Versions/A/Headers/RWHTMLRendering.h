@@ -27,10 +27,6 @@
 /* If the page parameter is nil, no links will be resolved, and images will be exported in their original file format with high quality.  The folder name for auxiliary files (images etc) and the image prefix will be randomly named. */
 + (RMHTMLPackage *)renderAttributedStringToHTMLPackage:(NSAttributedString *)attributedString page:(id <RWPage>)page exportMode:(RWExportMode)exportMode;
 
-/// Renders (exports) the page as HTML to the directory at the given path.
-/** The index filename must not be nil. */
-+ (void)renderPage:(id <RWPage>)page toDirectory:(NSString *)path indexFilename:(NSString *)indexFilename exportMode:(RWExportMode)exportMode;
-
 @end
 
 @protocol RWHTMLRendering <NSObject>

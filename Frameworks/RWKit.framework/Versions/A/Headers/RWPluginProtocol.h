@@ -55,6 +55,9 @@
 // This should return YES if you provide an HTML description for your plugin (rather than an NSString*)
 + (BOOL)hasHTMLDescription;
 
+// Return YES if this page should be initially hidden from the site menu's when created
++ (BOOL)initiallyHiddenFromNavigation;
+
 @end
 
 @protocol RWPluginExport <NSObject>

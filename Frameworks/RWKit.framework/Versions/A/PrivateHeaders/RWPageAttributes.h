@@ -38,21 +38,6 @@
 
 - (NSArray*)encodings;
 
-- (NSString*)output;
-- (void)setOutput:(NSString*)output;
-- (NSArray*)outputs;
-- (NSArray*)localisedOutputs;
-- (NSUInteger)outputIndex;
-- (void)setOutputIndex:(NSUInteger)index;
-
-enum {
-	kRWPageOutputDefault,
-	kRWPageOutputTidied,
-	kRWPageOutputOptimised
-};
-- (NSInteger)outputFromOutput:(NSString*)output;
-- (BOOL)outputModeIsTidied;
-
 - (NSArray*)headers;
 - (void)setHeaders:(NSMutableArray*)headers;
 - (NSString*)headersText;
@@ -182,6 +167,9 @@ enum {
 - (BOOL)shouldFollowLinks;
 - (void)setShouldFollowLinks:(BOOL)shouldFollow;
 
+- (BOOL)shouldEnableSocialTags;
+- (void)setShouldEnableSocialTags:(BOOL)shouldEnable;
+
 + (NSArray *)localisedStringArray:(NSArray *)arrayToLocalise;
 + (NSString *)localizedCustomStyleName;
 
@@ -235,7 +223,6 @@ extern NSString* kRWPageImageQualityKey;
 extern NSString* kRWPageLastExportedKey;
 extern NSString* kRWPageLinkTargetKey;
 extern NSString* kRWPageMetaFieldsKey;
-extern NSString* kRWPageOutputKey;
 extern NSString* kRWPageSidebarKey;
 extern NSString* kRWPageSidebarModeKey;
 extern NSString* kRWPageSidebarStyledKey;
@@ -252,3 +239,4 @@ extern NSString* kRWPageOpenGraphImageResourceIdentifierKey;
 extern NSString* kRWPageRobotsShouldEnableRobotTags;
 extern NSString* kRWPageRobotsShouldIndexPage;
 extern NSString* kRWPageRobotsShouldFollowLinks;
+extern NSString* kRWPageEnableSocialTags;

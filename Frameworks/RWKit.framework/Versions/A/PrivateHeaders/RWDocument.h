@@ -22,6 +22,7 @@
 @class RWSiteFolder;
 @class RWDocumentOptionsSnapshot;
 @class WebIconPackage;
+@class RWFileReferences;
 
 extern NSString *const RWDocumentWillRemoveResourceNotification;
 extern NSString *const RWDocumentDidRemoveResourceNotification;
@@ -144,16 +145,11 @@ extern NSString *const RWDocumentSiteBaseURLKey;
 @property (readonly) BOOL useGlobalPrefix;
 @property (assign) BOOL hasChangedGlobalPrefix;
 
-@property (strong) NSString *quickLookSandwichTemporaryDirectoryPath;
-@property (copy) RMSandwich *quickLookSandwich;
-@property (copy) NSImage *quickLookSandwichThumbnail;
-
 @property (copy) NSString *projectNotes;
 
 @property (copy) NSString *uniqueBackupName;
 
 @property (assign) BOOL useCacheBusting;
-@property (copy) NSString *cacheBustingString;
 
 @property (assign) BOOL minifyExtraFiles;
 
@@ -172,26 +168,15 @@ extern NSString *const RWDocumentSiteBaseURLKey;
 @property (assign) BOOL showPrivacyMessage;
 @property (assign) BOOL rememberPrivacyMessageDismissed;
 @property (copy) NSAttributedString *privacyMessage;
+@property (copy) NSString *privacyMessageDismissButtonTitle;
 
 - (BOOL)com_rwrp_checkAndWarnIfTIFF:(NSData *)data extendedWarning:(BOOL)warning;
 
 - (BOOL)hasChangedGlobalFiles;
 - (void)resetGlobalFilesChangedFlags;
 
-@property (nonatomic, strong) NSMutableArray *fileReferences;
-- (NSString *)registerFileURL:(NSURL *)fileURL withIdentifierOrNil:(NSString *)identifier error:(NSError **)error;
-- (NSString *)registerFileURL:(NSURL *)fileURL withIdentifierOrNil:(NSString *)identifier error:(NSError **)error isInternal:(BOOL)isInternal;
-- (NSString *)registerData:(NSData *)data withIdentifierOrNil:(NSString *)identifier error:(NSError **)error;
-- (void)makeFileReferenceInternalForToken:(NSString *)token;
-- (void)removeFileReferenceForToken:(NSString *)token;
-- (BOOL)hasFileReferenceForToken:(NSString *)token;
-- (BOOL)canResolveAllFileReferences;
-- (NSURL *)fileURLForToken:(NSString *)token error:(NSError **)error;
-- (BOOL)fileURLIsInternalResourceForToken:(NSString *)token;
-- (void)updateFileReferenceForToken:(NSString *)token fileURL:(NSURL *)fileURL isInternal:(BOOL)isInternal error:(NSError **)error;
-- (void)updateFullPathForToken:(NSString *)token fullPath:(NSString *)fullPath;
 
-- (void)relocateExternalResources;
-- (void)relocateInternalResourcesToURL:(NSURL *)baseURL error:(NSError **)error;
+@property (nonatomic, strong) RWFileReferences *fileReferences;
+
 
 @end

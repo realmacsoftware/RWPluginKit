@@ -19,7 +19,7 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		72NYLflnhxoSaYWfLPErBplnpvM=
+		mRJbN/iqeDxEe2ibEw9Gt1lSoqc=
 		</data>
 		<key>Resources/marker.tiff</key>
 		<data>
@@ -263,11 +263,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NTrBM/EFIVBxZdIhxxe2CROiUyg=
+			Kc4GZ9Xt7MekKCV+FOq/rsSdKS4=
 			</data>
 			<key>hash2</key>
 			<data>
-			HpueMMQYJMnKBY3uLyUSgScPBZEYJ2PULhC+OZ3LnnE=
+			OGdhQKuIok+EMarbLgA98pXpcXi8qN62Kv1j6dDKmik=
 			</data>
 		</dict>
 		<key>Headers/RMMacros.h</key>
@@ -378,17 +378,6 @@
 			<key>hash2</key>
 			<data>
 			Olpmt02g0G3Cqbx7x2DmEOBRGeF1Uq3J9wA9mDuNlt4=
-			</data>
-		</dict>
-		<key>Headers/RWFileReference.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			vONfPzgIT6rU8iw8WzftWmYF1FA=
-			</data>
-			<key>hash2</key>
-			<data>
-			BkLx1HDVejEWei+kx+AU0x04x9tMt49nR+p0QI1yolY=
 			</data>
 		</dict>
 		<key>Headers/RWLineCountView.h</key>
@@ -507,11 +496,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			72NYLflnhxoSaYWfLPErBplnpvM=
+			mRJbN/iqeDxEe2ibEw9Gt1lSoqc=
 			</data>
 			<key>hash2</key>
 			<data>
-			6IohyWZHO42scq1DGCouobget5NLsEVDGpXIkqeC04M=
+			pySEcy01OgFRkOyVn0Gs4u5954AuvzWN/WvYPkXaJZ4=
 			</data>
 		</dict>
 		<key>Resources/marker.tiff</key>

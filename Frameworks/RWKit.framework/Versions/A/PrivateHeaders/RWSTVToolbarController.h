@@ -12,15 +12,6 @@
 
 @interface RWSTVToolbarController : NSViewController
 
-@property (nonatomic, weak) IBOutlet NSButton *addLinkButton;
-@property (nonatomic, weak) IBOutlet NSButton *removeLinkButton;
-@property (nonatomic, weak) IBOutlet NSButton *alignLeftButton;
-@property (nonatomic, weak) IBOutlet NSButton *alignCenterButton;
-@property (nonatomic, weak) IBOutlet NSButton *alignRightButton;
-@property (nonatomic, weak) IBOutlet NSButton *boldButton;
-@property (nonatomic, weak) IBOutlet NSButton *italicsButton;
-@property (nonatomic, weak) IBOutlet NSButton *underlineButton;
-
 + (id)controllerWithRepresentedObject:(id)object;
 
 - (void)updateTextToolbarForTextView:(RWTextView *)textView;

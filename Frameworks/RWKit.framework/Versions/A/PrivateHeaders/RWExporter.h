@@ -12,9 +12,7 @@
 extern NSString *const kRWExporterExportMode;
 extern NSString *const kRWExporterPublishMode;
 extern NSString *const kRWExporterPreviewMode;
-extern NSString *const kRWExporterQuickLookMode;
 extern NSString *const kRWExporterMasterStylePreviewMode;
-extern NSString *const kRWExporterViewSourceCodeMode;
 extern NSString *const kRWExporterConvertingForWebViewDOM;
 
 /*
@@ -29,21 +27,13 @@ extern NSString *const kRWExporterSiteBackupError;
 
 extern NSString *const kRWExporterSiteExportDidStart;
 extern NSString *const kRWExporterSiteExportDidEnd;
-extern NSString *const kRWExporterSiteExportError;
 
 extern NSString *const kRWExporterChecksumGenerationDidStart;
 extern NSString *const kRWExporterChecksumGenerationDidEnd;
 
 extern NSString *const kRWExporterPageExportDidStart;
 extern NSString *const kRWExporterPageExportDidEnd;
-extern NSString *const kRWExporterPageExportError;
 extern NSString *const kRWExporterPageExportUpdateMessage;
-
-@protocol RWExporterDelegate <NSObject>
-
-- (void)exporter:(RWExporter *)exporter didExportResource:(RWSiteResource *)resource;
-
-@end
 
 #pragma mark -
 
@@ -55,17 +45,11 @@ extern NSString *const kRWExporterPageExportUpdateMessage;
 
 - (id)initWithDocument:(RWDocument *)document;
 
-@property (nonatomic, assign) id <RWExporterDelegate> delegate;
-
-@property (nonatomic, assign) BOOL mergeFolders;
-
 @property (nonatomic) RWLinkStyle consolidatedPathsStyle;
 
 @property (nonatomic, copy) NSString *mode;
 
 @property (nonatomic, copy) NSString *path;
-
-@property (nonatomic, retain) NSMutableArray *exportedResourceURLs;
 
 @property (nonatomic, copy) NSString *overriddenSiteBaseURL;
 
@@ -79,12 +63,14 @@ extern NSString *const kRWExporterPageExportUpdateMessage;
 
 // Used to export a site or group of pages.
 
-- (void)exportPages:(NSArray *)pages completion:(void (^)(BOOL successful))completionBlock;
+- (void)exportPages:(NSArray *)pages completion:(void (^)(BOOL successful, NSError *error))completionBlock;
 
 @property (nonatomic, readonly, assign, getter=isCancelled) BOOL cancelled;
 - (void)cancel;
 
 - (BOOL)exportSiteBackup;
+
+- (void)parseHTMLString:(NSString *)htmlString forElementNames:(NSArray *)elementNames usingBlock:(void (^)(NSXMLElement *node, BOOL *stop))block;
 
 /*
 	Output

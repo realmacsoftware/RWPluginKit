@@ -24,7 +24,6 @@
 
 // Some of these properties should arguably be read-only
 @property (strong) NSMutableArray *publishingDestinations;
-@property (strong) RWBookmark *temporaryPublishingDestination;
 @property (strong) RWBookmark *selectedPublishingDestination;
 @property (copy) NSString *siteTitle;
 @property (copy) NSString *siteLogoAltText;
@@ -73,7 +72,6 @@ extern NSString *const RWDocumentModelTreeKey;
 @property (assign) BOOL hasChangedGlobalPrefix;
 @property (assign) BOOL consolidateCSSFiles;
 @property (assign) BOOL useCacheBusting;
-@property (copy) NSString *cacheBustingString;
 @property (assign) BOOL useDocumentPortability;
 @property (copy) NSNumber *overrideWebServerPort;
 @property (assign) BOOL autoStartWebServer;
@@ -90,6 +88,7 @@ extern NSString *const RWDocumentModelTreeKey;
 @property (assign) BOOL showPrivacyMessage;
 @property (assign) BOOL rememberPrivacyMessageDismissed;
 @property (copy) NSAttributedString *privacyMessage;
+@property (copy) NSString *privacyMessageDismissButtonTitle;
 
 @property (copy) NSArray *directoryIndexEntries;
 
