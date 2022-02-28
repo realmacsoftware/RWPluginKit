@@ -35,7 +35,7 @@
 @property (nonatomic, strong) RMSandwich *pluginDataSandwich;
 @property (nonatomic, strong) RMSandwich *pageSandwich;
 @property (nonatomic, strong) NSDictionary* pluginClassInfo;
-@property (unsafe_unretained, nonatomic, readonly) Class pluginClass;
+@property (nonatomic, readonly) Class pluginClass;
 @property (nonatomic, strong) RWPageStyles *styles;
 @property (nonatomic, strong) NSMutableDictionary *manifests;
 @property (nonatomic, copy) NSDate *createdDate;
@@ -44,7 +44,7 @@
 @property (nonatomic, copy) NSString *buttonName;
 @property (nonatomic, copy) NSString *themeName;
 @property (nonatomic, copy) NSString *mostRecentlySelectedStyleName;
-@property (weak, nonatomic, readonly) NSURL *supportURL;
+@property (nonatomic, readonly) NSURL *supportURL;
 
 @property (nonatomic, assign) NSInteger savedIndex;
 

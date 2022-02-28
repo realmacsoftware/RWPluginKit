@@ -10,7 +10,6 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "Fragaria.h"
 
 extern NSString * const RWCodeHighlightingLanguageHTML;
 extern NSString * const RWCodeHighlightingLanguageCSS;
@@ -18,15 +17,19 @@ extern NSString * const RWCodeHighlightingLanguagePHP;
 extern NSString * const RWCodeHighlightingLanguageJavascript;
 extern NSString * const RWCodeHighlightingLanguageMarkdown;
 
-@interface RWCodeView : MGSFragariaView
+@interface RWCodeView : NSView
 
-@property (nonatomic, unsafe_unretained) IBOutlet id <NSTextViewDelegate> delegate;
+@property (nonatomic, strong) NSString *string;
+@property (nonatomic, readonly) NSTextView *textView;
 
-@property (nonatomic) BOOL showLineNumbers;
-@property (nonatomic, copy) NSString *language;
-@property (nonatomic) BOOL hasBorder;
-@property (nonatomic) BOOL editable;
-@property (nonatomic) BOOL autocompleteEnabled;
-@property (nonatomic) CGFloat fontSize;
+@property (nonatomic, weak) IBOutlet id <NSTextViewDelegate> delegate;
+
+@property (nonatomic, assign) BOOL showLineNumbers;
+@property (nonatomic, strong) NSString *language;
+@property (nonatomic, assign) BOOL hasBorder;
+@property (nonatomic, assign) BOOL editable;
+@property (nonatomic, assign) CGFloat fontSize;
+
+@property (nonatomic, assign) BOOL autocompleteEnabled DEPRECATED_MSG_ATTRIBUTE("Auto complete is no longer supported");
 
 @end

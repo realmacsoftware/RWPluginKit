@@ -81,8 +81,6 @@ extern NSString *const kRWPluginChangedReloadPreviewUserInfoKey;
 
 - (void)cancelExport;
 
-- (NSArray <RWPage> *)allPagesUsingPlugin;
-
 #pragma mark Resource Access & Linking
 
 // Returns a flat list of site resources.
@@ -98,6 +96,27 @@ extern NSString *const kRWPluginChangedReloadPreviewUserInfoKey;
 #pragma mark File References
 
 
+
+#pragma mark Site Layout
+
+// Obtain an array of RWPage instances using this plugin
+- (NSArray <RWPage> *)allPagesUsingPlugin;
+
+// Available options for generating paths to pages
+typedef NS_OPTIONS(NSUInteger, RWPagePathOptions) {
+    RWPagePathOptionsNone = 0,
+    RWPagePathOptionsRelative = 1 << 0,
+    RWPagePathOptionsCruftlessLinks = 1 << 1
+};
+
+// Generate the path to a page from the current page
+- (NSString *)pathToPage:(id <RWPage>)page options:(RWPagePathOptions)options;
+
+// Generate the path to a page from another page
+- (NSString *)pathToPage:(id <RWPage>)page fromPage:(id <RWPage>)fromPage options:(RWPagePathOptions)options;
+
+// Generate the path to a page from another page, applying a depth correction
+- (NSString *)pathToPage:(id <RWPage>)page fromPage:(id <RWPage>)fromPage options:(RWPagePathOptions)options depthCorrectionCount:(const NSUInteger)depthCorrectionCount;
 
 #pragma mark NSURL Bookmark Support
 

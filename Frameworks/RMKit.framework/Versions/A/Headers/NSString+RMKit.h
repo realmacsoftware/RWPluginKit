@@ -92,7 +92,6 @@
 @interface NSAttributedString (Attachments)
 - (NSArray*)attachments;
 - (NSArray*)attachmentsForRange:(NSRange)maxRange;
-- (NSUInteger)normaliseImageAttachments;
 @end
 
 //***************************************************************************

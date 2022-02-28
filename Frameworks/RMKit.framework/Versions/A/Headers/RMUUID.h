@@ -31,19 +31,19 @@ extern NSString *UUIDString(void);
 
 @interface RMUUID : NSObject <RMValueObject, NSCoding>
 
-+ (RMUUID*)UUID;
-+ (RMUUID*)UUIDWithString:(NSString*)UUIDString;
-+ (RMUUID*)UUIDWithData:(NSData*)data;
-+ (RMUUID*)nullUUID;
++ (RMUUID *)UUID;
++ (RMUUID *)UUIDWithString:(NSString*)UUIDString;
++ (RMUUID *)UUIDWithData:(NSData*)data;
++ (RMUUID *)nullUUID;
 
-- (RMUUID*)init;
-- (RMUUID*)initWithCFUUID:(CFUUIDRef)CFUUID;
-- (RMUUID*)initWithString:(NSString*)UUIDString;
-- (RMUUID*)initWithData:(NSData*)data;
+- (RMUUID *)init;
+- (RMUUID *)initWithCFUUID:(CFUUIDRef)CFUUID;
+- (RMUUID *)initWithString:(NSString*)UUIDString;
+- (RMUUID *)initWithData:(NSData*)data;
 
-- (NSString*)UUIDString;
-- (NSData*)UUIDData;
+- (NSString *)UUIDString;
+- (NSData *)UUIDData;
 
-- (BOOL)isEqualToUUID:(RMUUID*)other;
+- (BOOL)isEqualToUUID:(RMUUID *)other;
 
 @end

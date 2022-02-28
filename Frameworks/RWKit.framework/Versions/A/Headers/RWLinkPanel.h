@@ -21,8 +21,6 @@
 {
 	RWLink *_currentLink;
 	
-	NSObjectController *__weak bindings;
-	
 	IBOutlet NSTextField *urlField;
 	IBOutlet NSPopUpButton *schemePopUp;
 	IBOutlet NSView *customAttributesView;
@@ -30,7 +28,7 @@
 	IBOutlet NSDictionaryController *linkAttributesController;
 }
 
-@property (weak, nonatomic, readonly) IBOutlet NSObjectController *bindings;
+@property (weak, nonatomic) IBOutlet NSObjectController *bindings;
 
 @property (assign, nonatomic) BOOL showRemoveLinkButton;
 

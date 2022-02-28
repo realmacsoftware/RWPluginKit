@@ -81,7 +81,7 @@ RWStyledTextViewMode;
 
 /// The delegate for this styled text view.  Note that while the RWStyledTextView object will be the delegate set for the inner RWTextView, all of RWTextView's delegate messages will be forwarded to the main styled text view delegate object.
 // @property (assign) NSObject<RWStyledTextViewDelegate>* delegate;
-@property (unsafe_unretained) id delegate;
+@property (weak) id delegate;
 
 @property BOOL editable;
 

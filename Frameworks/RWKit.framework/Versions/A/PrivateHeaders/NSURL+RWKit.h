@@ -109,4 +109,12 @@
 - (NSData *)appScopedBookmarkDataWithError:(NSError **)error;
 - (NSData *)documentScopedBookmarkDataForDocumentURL:(NSURL *)documentURL withError:(NSError **)error;
 
+#pragma mark - iCloud Drive
+
+- (BOOL)isOniCloudDrive;
+
+#pragma mark - MD5
+
+- (NSData *)contentChecksumWithError:(NSError **)outError;
+
 @end

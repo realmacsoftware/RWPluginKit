@@ -320,9 +320,6 @@ extern NSString *const kRWExporterPageExportDidEnd;
  */
 - (NSArray *)contextualMenuAdditionsForView:(id)view;
 
-// This method should rescale all images that are saved in the document to their final output size on the web page.  The return value is the number of images normalised.  As an example, let's say a user has three images in their page: one image is 350x350 pixels at 100% scaling; another image is 1000x1000 with a final output size of 600x300 (set in the media inspector or because your plugin enforces it), and the third image is 5000x5000 rescaled to 10% of its original size.  After image normalisation, the first image should remain unchanged at 350x350 pixels due to it having a scale factor of 100%; the second image will be 600x300; the third image will be 500x500.  If you have any NSMutableAttributedString instance variables in your plugin, you may call a method named -[RWTextView normaliseImageAttachments], which returned an unsigned int.  That method will normalise any images in the styled text view for you.  Note that you must implement this method to avoid a warning when the image normalisation information sheet appears to the user.  If you do not store any images in your plugin or do need not to normalise any images, simply return [NSNumber numberWithUnsignedInt:0].  Note the British spelling of this method!
-- (NSNumber *)normaliseImages;
-
 /*!
 	\brief
 	This notification name is sent just after the user switches between the Edit/Preview modes.

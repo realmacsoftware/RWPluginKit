@@ -15,7 +15,7 @@ extern NSUInteger const RWExternalResourceErrorDocumentNotFound;
 
 typedef NSString RWFileReferenceAccessToken;
 typedef NSString RWFileChangedNotificationToken;
-typedef void (^FileChangedBlock)();
+typedef void (^FileChangedBlock)(void);
 
 @class RWDocument, RWStorageVolume;
 
@@ -24,6 +24,9 @@ typedef void (^FileChangedBlock)();
 // The unique resource identifier
 @property (nonatomic, readonly) NSString *identifier;
 
+// Content checksum
+@property (nonatomic, readonly) NSData *checksum;
+
 // Is this resource stored inside the project file
 @property (nonatomic, readonly) BOOL storedInDocument;
 
@@ -31,19 +34,24 @@ typedef void (^FileChangedBlock)();
 @property (nonatomic, readonly) BOOL fileIsAccessible;
 
 // Last error
-@property (nonatomic, readonly) NSError *error;
+@property (atomic, readonly) NSError *error;
 
 // Set to YES if the bookmark couldn't be resolved correctly. Can happen when converting pre RW8.1 docs
 @property (nonatomic, readonly) BOOL bookmarkRepairRequired;
 
 // Storage volume information, nil if volume is inaccessible
-@property (nonatomic, readonly) RWStorageVolume *volume;
+@property (atomic, readonly) RWStorageVolume *volume;
 
 // Last known storage volume name
-@property (nonatomic, readonly) NSString *lastKnownStorageVolumeName;
+@property (atomic, readonly) NSString *lastKnownStorageVolumeName;
 
 // Last known storage volume name
-@property (nonatomic, readonly) NSString *lastResolvablePath;
+@property (atomic, readonly) NSString *lastResolvablePath;
+
+// Path if file is held inside the document. Can be either
+//  - Filename if located within the document resources folder
+//  - Full path to tmp folder if resource not yet copied to document
+@property (atomic, readonly) NSString *internalFilePath;
 
 #pragma mark - New File References
 

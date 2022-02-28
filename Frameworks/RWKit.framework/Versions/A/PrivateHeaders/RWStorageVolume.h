@@ -28,6 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) BOOL available;
 
 + (RWStorageVolume *)volumeForURL:(NSURL *)url;
++ (RWStorageVolume *)volumeWithName:(NSString *)volumeName;
 
 - (void)updateVolumeAvailablility;
 

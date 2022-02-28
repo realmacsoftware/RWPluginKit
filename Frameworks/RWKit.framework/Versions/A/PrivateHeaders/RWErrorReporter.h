@@ -15,4 +15,7 @@
 + (void)reportError:(NSString *)error context:(NSString *)context DEPRECATED_ATTRIBUTE;
 + (void)reportErrorWithTitle:(NSString *)title message:(NSString *)message;
 
++ (void)reportError:(NSError *)error;
++ (void)reportException:(NSException *)exception;
+
 @end

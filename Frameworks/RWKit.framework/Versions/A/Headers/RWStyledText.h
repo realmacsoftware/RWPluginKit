@@ -27,9 +27,6 @@
 /// A class that stores either an NSAttributedString or RMHTMLPackage object, and provides a common interface to access the contents.
 /** To ease RapidWeaver 4.0's transition from a attributed strings to full-blown HTML editing, we provide this RWStyledText class as a (hopefully) helpful class that abstracts away the details of exactly whether you're dealing with an attributed string or an HTML package.  While this class is somewhat useful on its own, it is intended to be used in conjunction with an RWStyledTextView, in which case it becomes far more powerful since it will automatically synchronise its contents with the RWStyledTextView. */
 @interface RWStyledText : NSObject<RMFreezing, RMThawing, RMValueObject, RWHTMLRendering, RMDiscardableContent>
-{
-	id _text;
-}
 
 /// Creates a new (autoreleased) styled text instance with the given attributed string.
 + (RWStyledText*)styledTextWithAttributedString:(NSAttributedString*)attributedString;
@@ -69,10 +66,10 @@
 - (RMHTMLPackage*)renderWithPage:(id<RWPage>)page exportParameters:(RWExportParameters*)exportParameters;
 
 // RMDiscardableContent protocol
-- (BOOL)beginContentAccess;
-- (void)endContentAccess;
-- (void)discardContentIfPossible;
-- (BOOL)isContentDiscarded;
+- (BOOL)beginContentAccess __deprecated;
+- (void)endContentAccess __deprecated;
+- (void)discardContentIfPossible __deprecated;
+- (BOOL)isContentDiscarded __deprecated;
 
 //---------------------------------------------------------------------------
 

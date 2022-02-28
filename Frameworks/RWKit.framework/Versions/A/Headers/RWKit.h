@@ -31,6 +31,4 @@
 #import "RWKit/RWWebResource.h"
 #import "RWKit/RWWebImageTransformationParameters.h"
 
-#import "RWKit/NSMutableAttributedString+RWKitAdditions.h"
-
 #import "RWKit/RWKit-Constants.h"

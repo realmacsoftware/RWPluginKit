@@ -43,6 +43,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (RWFileReference *)fileReferenceForIdentifier:(NSString *)identifier;
 
+- (NSArray <RWFileReference *> *)fileReferencesWithChecksum:(NSData *)checksum;
+
 #pragma mark - Validation
 
 - (BOOL)canResolveAllFileReferences;
@@ -51,6 +53,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL)hasBrokenFileReferences;
 - (void)repairBrokenFileReferences;
+- (NSArray *)brokenFileReferences;
 
 @end
 

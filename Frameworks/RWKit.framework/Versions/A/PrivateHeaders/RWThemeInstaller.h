@@ -7,6 +7,9 @@ extern NSString *const RWThemeInstallerDidUpdateThemeNotification;
 
 @interface RWThemeInstaller : NSObject
 
++ (void)setShouldLoad3rdPartyThemes:(BOOL)shouldLoad;
++ (void)setShouldLoad3rdPartyPlugins:(BOOL)shouldLoad;
+
 + (NSArray *)installAllObjects;
 
 + (void)uninstallAddons;
@@ -15,8 +18,6 @@ extern NSString *const RWThemeInstallerDidUpdateThemeNotification;
 // They do not create or check for it's presence.
 
 + (NSURL *)addonsUninstallFileURL;
-+ (void)clearAppSupportDirectory;
-
 
 + (NSString *)pathForItemNamed:(NSString *)filename;
 + (NSDictionary *)pathsForItemsNamed:(NSArray *)filenames;

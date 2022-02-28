@@ -17,6 +17,8 @@
 @class RWSiteFolder;
 @class RWBookmark;
 
+extern NSString *const RWSiteResourceDidChangeNotification;
+
 extern NSString *const RWSiteResourceIdentifierKey;
 extern NSString *const RWSiteResourceNameKey;
 

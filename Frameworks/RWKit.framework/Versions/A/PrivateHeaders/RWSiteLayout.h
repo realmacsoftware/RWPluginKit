@@ -20,26 +20,18 @@
 
 - (NSString *)pageName:(RWPage *)page;
 
-// Now that we're owned by the document, this could be an instance variable.
-- (NSString *)pathToPage:(RWPage *)page fromPage:(RWPage *)page2 inDocument:(RWDocument *)document relative:(BOOL)relative;
-- (NSString *)pathToPage:(RWPage *)page fromPage:(RWPage *)page2 inDocument:(RWDocument *)document relative:(BOOL)relative cruftlessLinks:(BOOL)useCruftlessLinks;
+- (NSString *)pathToPage:(RWPage *)page fromPage:(RWPage *)page2 relative:(BOOL)relative;
+- (NSString *)pathToPage:(RWPage *)page fromPage:(RWPage *)page2 relative:(BOOL)relative cruftlessLinks:(BOOL)useCruftlessLinks;
+- (NSString *)pathToPage:(RWPage *)page fromPage:(RWPage *)page2 relative:(BOOL)relative depthCorrection:(const NSInteger)depthCorrection;
+- (NSString *)pathToPage:(RWPage *)page fromPage:(RWPage *)page2 relative:(BOOL)relative depthCorrection:(const NSInteger)depthCorrection cruftlessLinks:(BOOL)useCruftlessLinks;
 
-- (NSString *)pathToPage:(RWPage *)page fromPage:(RWPage *)page2 inDocument:(RWDocument *)document relative:(BOOL)relative depthCorrection:(const NSInteger)depthCorrection;
+- (NSString *)pathToRootFromPage:(RWPage *)page;
 
-// Applies to the from page.
-- (NSString *)pathToPage:(RWPage *)page fromPage:(RWPage *)page2 inDocument:(RWDocument *)document relative:(BOOL)relative depthCorrection:(const NSInteger)depthCorrection cruftlessLinks:(BOOL)useCruftlessLinks;
+- (RWPage *)pageFromIndexFilePath:(NSString *)pagePath relativeTo:(NSString *)siteRoot;
 
-/*
- 
- */
+- (RWPage *)pageFromPath:(NSString *)pagePath relativeTo:(NSString *)siteRoot;
 
-- (NSString *)pathToRootFromPage:(RWPage *)page inDocument:(RWDocument *)document;
-
-- (RWPage *)pageFromIndexFilePath:(NSString *)pagePath relativeTo:(NSString *)siteRoot inDocument:(RWDocument *)document;
-
-- (RWPage *)pageFromPath:(NSString *)pagePath relativeTo:(NSString *)siteRoot inDocument:(RWDocument *)document;
-
-- (BOOL)pageOccupiesSharedFolder:(RWPage *)page inDocument:(RWDocument *)document;
+- (BOOL)pageOccupiesSharedFolder:(RWPage *)page;
 
 + (BOOL)isReservedFolderName:(NSString *)name;
 

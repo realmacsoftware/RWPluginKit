@@ -1,6 +1,8 @@
 
 #import "RMKit/RMKit.h"
 
+#import "RWKit/RWCrashChecker.h"
+
 #import "RWKit/RWPage.h"
 #import "RWKit/RWPage+Sandwich.h"
 #import "RWKit/RWPageError.h"
@@ -28,6 +30,8 @@
 
 #import "RWKit/RWFileReference.h"
 #import "RWKit/RWFileReferences.h"
+#import "RWKit/RWStorageVolumes.h"
+#import "RWKit/RWStorageVolume.h"
 
 #import "RWKit/RWSourceList.h"
 
@@ -45,9 +49,9 @@
 #import "RWKit/RWExporter.h"
 #import "RWKit/RWJavaScript.h"
 #import "RWKit/RWManifestGenerator.h"
-#import "RWKit/RWPHPController.h"
 #import "RWKit/RWErrorReporter.h"
 #import "RWKit/RWSiteLayout.h"
+#import "RWKit/RWPathInformation.h"
 
 #import "RWKit/NSMutableString+StyleSheet.h"
 #import "RWKit/NSUserDefaults+RWKit.h"

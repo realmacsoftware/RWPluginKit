@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)sharedStorageVolumes;
 
 - (RWStorageVolume *)volumeForURL:(NSURL *)url;
+- (RWStorageVolume *)volumeWithName:(NSString *)volumeName;
 
 @end
 

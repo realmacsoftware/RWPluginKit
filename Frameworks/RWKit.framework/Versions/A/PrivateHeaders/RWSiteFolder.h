@@ -23,6 +23,8 @@ extern NSString *const RWSiteFolderDidChangeNotification;
 
 @property (nonatomic, weak) RWSiteFolder *parent;
 
+@property (nonatomic, readonly) NSString *identifier;
+
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, readonly) NSArray *children;
 @property (nonatomic, readonly) NSArray *items;
@@ -76,7 +78,18 @@ extern NSString *const RWSiteFolderDidChangeNotification;
 
 #pragma mark - Methods
 
+// Searches for a subfolder with the given identifier
+- (RWSiteFolder *)folderWithIdentifier:(NSString *)identifier;
+
+// Searches for a resource with the given identifier
 - (RWSiteResource *)resourceWithIdentifier:(NSString *)identifier;
+
+// Returns a direct subfolder with the given name
+- (RWSiteFolder *)folderWithName:(NSString *)name;
+
+// Merge an array of RWSiteResource/RWSiteFolder into this folder
+- (void)mergeItems:(NSArray *)items;
+
 - (NSArray <RWSiteResource *> *)allResources;
 
 - (void)markAllResourcesAsChanged:(BOOL)changed;

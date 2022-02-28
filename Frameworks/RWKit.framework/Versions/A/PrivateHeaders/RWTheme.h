@@ -83,4 +83,7 @@
 + (NSArray *)themeExtensions;
 + (BOOL)isThemeExtension:(NSString *)extension;
 
+
+- (void)filterIllegalKeywords:(NSArray <NSString *> *)illegalKeywords;
+
 @end
