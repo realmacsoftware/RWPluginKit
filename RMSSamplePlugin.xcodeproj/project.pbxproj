@@ -137,6 +137,11 @@
 			attributes = {
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Realmac Software";
+				TargetAttributes = {
+					9C736B69094C726A001443E6 = {
+						ProvisioningStyle = Manual;
+					};
+				};
 			};
 			buildConfigurationList = 9C72E61C088EEA07007CC3F7 /* Build configuration list for PBXProject "RMSSamplePlugin" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -247,10 +252,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = "~/Library/Containers/com.realmacsoftware.rapidweaver/Data/Library/Application Support/RapidWeaver/";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				ONLY_ACTIVE_ARCH = YES;
 				RAPIDWEAVER_ROOT = ../../RapidWeaver;
 				SDKROOT = macosx;
-				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -290,15 +293,18 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				RAPIDWEAVER_ROOT = ../../RapidWeaver;
 				SDKROOT = macosx;
-				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
 		9C736B7C094C726A001443E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Frameworks\"",
@@ -306,8 +312,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Resources/Prefix.pch;
 				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = build;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompanyname.rwplugin.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = SamplePlugin;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = rapidweaverplugin;
 			};
 			name = Debug;
@@ -315,8 +323,12 @@
 		9C736B7D094C726A001443E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Frameworks\"",
@@ -324,8 +336,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Resources/Prefix.pch;
 				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = /;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompanyname.rwplugin.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = SamplePlugin;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = rapidweaverplugin;
 			};
 			name = Release;
