@@ -1,0 +1,11 @@
+framework module RWKit {
+  umbrella header "RWKit.h"
+
+  export *
+  module * { export * }
+}
+
+module RWKit.Swift {
+    header "RWKit-Swift.h"
+    requires objc
+}

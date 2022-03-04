@@ -1,141 +1,92 @@
-/*
-    RWAbstractPlugin.h
-    RapidWeaver Plugin Development Kit
+//************************************************************************
+//
+//  RapidWeaver Plugin Development Kit
+//  Copyright © 2022 Realmac Software. All rights reserved.
+//
+//  These coded instructions, statements, and computer programs contain
+//  unpublished proprietary information of Realmac Software Ltd
+//  and are protected by copyright law. They may not be disclosed
+//  to third parties or copied or duplicated in any form, in whole or
+//  in part, without the prior written consent of Realmac Software Ltd.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+//  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+//  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+//  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR
+//  ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+//  CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+//  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+//  THIS IS A RAPIDWEAVER INTERNAL HEADER FILE AND THE INTERFACES
+//  DESCRIBED HERE COULD CHANGE WITHOUT NOTICE
+//
+//************************************************************************
 
-    Copyright (c) 2004 Realmac Software Limited. All rights reserved.
-*/
+@import Cocoa;
 
-#import <Cocoa/Cocoa.h>
+#import <RWKit/RWPluginProtocol.h>
 
-#import "RWKit/RWPluginProtocol.h"
-#import "RWKit/RWDocumentProtocol.h"
+@protocol RWDocumentProtocol;
+@protocol RWPageProtocol;
 
-@class RMHTML;
-@class RWSearchResult;
+@interface RWAbstractPlugin : NSObject <RWPluginProtocol, NSCoding>
 
-extern NSString* const kRWPluginStartedLoadingNotification;
-extern NSString* const kRWPluginFinishedLoadingNotification;
-extern NSString* const kRWPluginStartedMigrationNotification;
-extern NSString* const kRWPluginFinishedMigrationNotification;
-extern NSString *const kRWPluginChangedNotification;
-extern NSString *const kRWPluginChangedInvertNotification;
-extern NSString *const kRWPluginExportStatusNotification;
-extern NSString *const kRWCurrentMediaChangedNotification;
-extern NSString *const kRWPluginPageSettingsRequestNotification;
-extern NSString *const kRWDoubleClickedMediaNotification;
+@property (nonatomic, readonly) id <RWDocumentProtocol> document;
+@property (nonatomic, readonly) id <RWPageProtocol> page;
 
-extern NSString *const kRWPluginChangedReloadPreviewUserInfoKey;
-
-@interface RWAbstractPlugin : NSObject <RWPlugin, NSCoding>
-
-- (NSDocument <RWDocument> *)document;
-
-- (NSObject <RWPage> *)page;
 - (NSString *)uniqueID;
 
-+ (void)clearSharedPluginDataForDocument:(NSDocument<RWDocument> *)document;
-+ (RMSandwich *)sharedPluginSandwichForDocument:(NSDocument<RWDocument> *)document;
-+ (void)loadSharedPluginDataSandwich:(RMSandwich *)sandwich forDocument:(NSDocument<RWDocument> *)document;
+/// Returns an array of <RWPageProtocol> instances using this plugin
+- (NSArray <RWPageProtocol> *)allPagesUsingPlugin;
 
-+ (BOOL)canCreateNewPage:(NSError **)errorRef currentPages:(NSArray *)currentPages;
-+ (void)willMigrateAddonLocation;
+#pragma mark URLs
 
-- (BOOL)canPerformExportForMode:(NSString *)mode errorMessage:(NSString **)errorMessage;
+/// Returns the url to the addons directory
++ (NSURL *)rwAddonsLocation;
 
-+ (NSArray *)extraFilesNeededInExportFolder:(NSDictionary *)params;
-- (NSArray *)extraFilesNeededInExportFolder:(NSDictionary *)params;
+#pragma mark Temporary Data
 
-- (NSString *)contentHTML:(NSDictionary *)params;
-- (NSString *)sidebarHTML:(NSDictionary *)params;
-- (NSString *)pageContentHeaders:(NSDictionary *)params;
-
-- (void)broadcastPluginChanged;
-- (void)broadcastPluginChangedReloadingPreviews:(BOOL)reloadPreview;
-- (void)broadcastPluginExportStatus:(NSString *)message progress:(CGFloat)percent;
-- (void)broadcastMediaChanged;
-- (void)broadcastPluginSettingsRequest;
-
-- (NSArray *)directoryContents:(NSString *)path;
-
+/// Returns the full path to a temporary directory ending with the provided name. Useful for storing any temporary files your plugin needs to generate. The directory is automatically cleared the next time RapidWeaver is launched
 - (NSString *)tempFilesDirectory:(NSString *)name;
-+ (NSString *)tempFilesDirectory:(NSString *)name forPlugin:(RWAbstractPlugin *)plugin;
-+ (NSString *)tempFilesDirectory:(NSString *)name forUniqueID:(NSString *)unique;
 
-// Return paths for temporary file storage. These calls don't create the folder.
-// Return paths of the form:
-// --> path/to/tmp/RapidWeaver
-// --> path/to/tmp/RapidWeaver/processID
-
-+ (NSString *)pathToTempDirectory;
-+ (NSString *)pathToAppTempDirectory; // Process ID version.
-
-- (NSString *)pathToThemeFile:(NSString *)file params:(NSDictionary *)params correction:(NSInteger)depth;
-
-- (NSMutableString *)updatePageTemplate:(NSMutableString *)pageTemplate params:(NSDictionary *)params depth:(NSInteger)depth;
-
-- (NSMutableDictionary *)contentOnlySubpageWithHTML:(NSString *)content name:(NSString *)name;
-- (NSMutableDictionary *)contentOnlySubpageWithData:(NSData *)content name:(NSString *)name;
-- (NSMutableDictionary *)contentOnlySubpageWithEntireHTML:(NSString *)content name:(NSString *)name;
-
-- (NSMutableDictionary *)customSubpageWithData:(NSData *)content name:(NSString *)name destination:(NSString *)destination;
-
-- (void)cancelExport;
-
-#pragma mark Resource Access & Linking
-
-// Returns a flat list of site resources.
-
-- (NSArray *)resourceInfoList;
-
-// Returns a URL string that takes into account the user's current link setting as specified in the preferences.
-// Passing nil will result in an empty string being returned.
-// Note: Results are only valid if called during export!
-
-- (NSString *)linkForResourceWithIdentifier:(NSString *)identifier;
-
-#pragma mark File References
-
-
-
-#pragma mark Site Layout
-
-// Obtain an array of RWPage instances using this plugin
-- (NSArray <RWPage> *)allPagesUsingPlugin;
-
-// Available options for generating paths to pages
-typedef NS_OPTIONS(NSUInteger, RWPagePathOptions) {
-    RWPagePathOptionsNone = 0,
-    RWPagePathOptionsRelative = 1 << 0,
-    RWPagePathOptionsCruftlessLinks = 1 << 1
-};
-
-// Generate the path to a page from the current page
-- (NSString *)pathToPage:(id <RWPage>)page options:(RWPagePathOptions)options;
-
-// Generate the path to a page from another page
-- (NSString *)pathToPage:(id <RWPage>)page fromPage:(id <RWPage>)fromPage options:(RWPagePathOptions)options;
-
-// Generate the path to a page from another page, applying a depth correction
-- (NSString *)pathToPage:(id <RWPage>)page fromPage:(id <RWPage>)fromPage options:(RWPagePathOptions)options depthCorrectionCount:(const NSUInteger)depthCorrectionCount;
-
-#pragma mark NSURL Bookmark Support
-
-- (NSString *)registerFileURL:(NSURL *)fileURL error:(NSError **)error DEPRECATED_ATTRIBUTE;
-- (void)removeFileReferenceForToken:(NSString *)token DEPRECATED_ATTRIBUTE;
-- (NSURL *)fileURLForToken:(NSString *)token error:(NSError **)error DEPRECATED_ATTRIBUTE;
-
-#pragma mark Search Helper
-
-// A helper method - pass in a large block of text and we'll generate search results and call foundBlock for you
-// You can call this as many times as you need - but you're still responsible for calling your completion block
-// Pass in a userInfo dictionary to reference model objects across search methods
-- (void)searchString:(NSString *)haystack forString:(NSString *)needle foundBlock:(void (^)(RWSearchResult *searchResult))foundBlock userInfo:(NSDictionary *)userInfo;
 
 #pragma mark Plugin Defaults
 
-// Allows you to store a dictionary into RapidWeaver's group container to persist global settings.
-// Availability: RW8
-- (NSMutableDictionary *)pluginDefaults;
+/// Allows you to store a dictionary into RapidWeaver's group container to persist global settings.
+/// Availability: RW8
 - (void)setPluginDefaults:(NSDictionary *)defaults;
+
+/// Allows you to retrieve a dictionary from RapidWeaver's group container containing global settings.
+/// Availability: RW8
+- (NSMutableDictionary *)pluginDefaults;
+
+
+#pragma mark Markdown Support
+
+/// Returns HTML for the given markdown string
+/// Availability: RW9+
++ (NSString *)htmlForMarkdownString:(NSString *)markdownString;
+
+/// Returns
+/// Availability: RW9+
++ (NSDictionary *)metadataForMarkdownString:(NSString *)markdownString;
+
+
+#pragma mark Relaunch
+
+/// Request that RapidWeaver should relaunch. Useful after installing updates or changing settings that could affect the entire project.
+/// Availability: RW9+
+- (void)requestApplicationRelaunchWithReason:(NSString *)reason;
+
+
+#pragma mark Deprecations
+
+/// Returns an array of dictionaries [{name:identifier}, ...] describing all site resources.
+- (NSArray <NSDictionary *> *)resourceInfoList DEPRECATED_MSG_ATTRIBUTE("This method is deprecated and will be removed. Use self.document.rootResource");
+
+/// Returns a URL string that takes into account the user's current link setting as specified in the preferences.
+/// Passing nil will result in an empty string being returned.
+/// Note: Results are only valid if called during export!
+- (NSString *)linkForResourceWithIdentifier:(NSString *)identifier DEPRECATED_MSG_ATTRIBUTE("Use methods defined on RWResourceProtocol");
 
 @end

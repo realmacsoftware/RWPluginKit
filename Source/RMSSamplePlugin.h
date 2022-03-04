@@ -1,6 +1,6 @@
 //***************************************************************************
 
-// Copyright (C) 2004 ~ 2010 Realmac Software Ltd
+// Copyright (C) 2004 ~ 2022 Realmac Software Ltd
 //
 // These coded instructions, statements, and computer programs contain
 // unpublished proprietary information of Realmac Software Ltd

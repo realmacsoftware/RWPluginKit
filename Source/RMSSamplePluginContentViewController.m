@@ -1,6 +1,6 @@
 //***************************************************************************
 
-// Copyright (C) 2009 ~ 2010 Realmac Software Ltd
+// Copyright (C) 2009 ~ 2022 Realmac Software Ltd
 //
 // These coded instructions, statements, and computer programs contain
 // unpublished proprietary information of Realmac Software Ltd
@@ -16,6 +16,7 @@
 @interface RMSSamplePluginContentViewController ()
 
 @property (nonatomic, weak) RMSSamplePlugin *plugin;
+@property (nonatomic, weak) IBOutlet RWCodeView *htmlView;
 
 @end
 
@@ -27,7 +28,7 @@
 
 - (NSString *)content
 {
-	return htmlView.string;
+	return self.htmlView.string;
 }
 
 - (void)textDidChange:(NSNotification *)notification
@@ -43,10 +44,12 @@
 	NSString *string = p.content;
 	
 	if (string) {
-		htmlView.string = string;
+		self.htmlView.string = string;
 	}
 	
-	[htmlView setHasBorder:NO];
+	[self.htmlView setHasBorder:NO];
+    
+    self.htmlView.language = RWCodeHighlightingLanguageHTML;
 }
 
 - (instancetype)initWithRepresentedObject:(id)object

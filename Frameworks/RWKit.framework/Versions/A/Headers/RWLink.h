@@ -1,15 +1,28 @@
+//************************************************************************
 //
-//  RWLink.h
-//  RWPluginUtilities
+//  RapidWeaver Plugin Development Kit
+//  Copyright © 2022 Realmac Software. All rights reserved.
 //
-//  Created by Simon Taylor on 20/02/2005.
-//  Copyright (c) 2005 Realmac Software. All rights reserved.
+//  These coded instructions, statements, and computer programs contain
+//  unpublished proprietary information of Realmac Software Ltd
+//  and are protected by copyright law. They may not be disclosed
+//  to third parties or copied or duplicated in any form, in whole or
+//  in part, without the prior written consent of Realmac Software Ltd.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+//  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+//  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+//  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR
+//  ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+//  CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+//  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 //  THIS IS A RAPIDWEAVER INTERNAL HEADER FILE AND THE INTERFACES
-//  DESCRIBED HERE COULD CHANGE WITHOUT NOTICE 
+//  DESCRIBED HERE COULD CHANGE WITHOUT NOTICE
 //
+//************************************************************************
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 enum {
 	kRWLinkNotAnAsset = 0,
@@ -17,36 +30,24 @@ enum {
 	kRWLinkSiteAsset = 2
 };
 
+__attribute__((objc_subclassing_restricted))
 @interface RWLink : NSObject <NSCoding, NSCopying>
-{
-	NSString *_name;
-	NSString *_subpageID;
-	NSString *_anchor;
-	
-	NSMutableDictionary *_attributes;
-	
-	BOOL _internal;
-	NSInteger _asset;
-}
 
-@property (nonatomic, copy) NSString *name;
-@property (nonatomic, copy) NSString *subpageID;
-@property (nonatomic, copy) NSString *anchor;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *subpageID;
+@property (nonatomic, strong) NSString *anchor;
 
-@property (nonatomic, strong) NSMutableDictionary *attributes;
+@property (nonatomic, strong) NSMutableDictionary <NSString *, NSString *> *attributes;
 
-@property (nonatomic, copy) NSString *title;
-@property (nonatomic, copy) NSString *rel;
-@property (nonatomic, copy) NSString *href;
-@property (nonatomic, copy) NSString *target;
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSString *rel;
+@property (nonatomic, strong) NSString *href;
+@property (nonatomic, strong) NSString *target;
 
-@property BOOL internal;
-@property BOOL opensNewWindow;
-@property NSInteger asset;
+@property (nonatomic) BOOL internal;
+@property (nonatomic) BOOL opensNewWindow;
+@property (nonatomic) NSInteger asset;
 
 - (id)initWithHREF:(NSString *)link internal:(BOOL)internal;
-
-/// The -setHREF: method is for backwards compatibility only (you should be using -setHref: instead)
-- (void)setHREF:(NSString *)href;
 
 @end

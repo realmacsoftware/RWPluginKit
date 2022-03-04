@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		4A382892103BF7D600B264B7 /* RMSSamplePluginOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A382891103BF7D600B264B7 /* RMSSamplePluginOptionsViewController.m */; };
 		4A3E8A5A12A4D5D5000DA675 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4A3E8A5912A4D5D5000DA675 /* Icon.icns */; };
-		4A75DB4712A39B8700AD635C /* RMKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A75DB4612A39B8700AD635C /* RMKit.framework */; };
 		4A75DBAD12A39C6E00AD635C /* RWKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A75DBAC12A39C6E00AD635C /* RWKit.framework */; };
 		4A844B14103C1E6400E24E24 /* RMSSamplePluginContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A844B13103C1E6400E24E24 /* RMSSamplePluginContentViewController.m */; };
 		4A90E4671031086300093215 /* RMSSamplePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A90E4641031086300093215 /* RMSSamplePlugin.m */; };
 		4AFBCD8F12A6810000781A0C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AFBCD8D12A6810000781A0C /* Localizable.strings */; };
 		4AFBCD9412A6811000781A0C /* RMSSamplePluginContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AFBCD9012A6811000781A0C /* RMSSamplePluginContentView.xib */; };
 		4AFBCD9512A6811000781A0C /* RMSSamplePluginOptionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AFBCD9212A6811000781A0C /* RMSSamplePluginOptionsView.xib */; };
+		8226E00527D2789700A49091 /* ReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = 8226E00427D2789700A49091 /* ReadMe.md */; };
 		9C736B75094C726A001443E6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86EC48AB06813ED400EF9A10 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +23,6 @@
 		4A382890103BF7D600B264B7 /* RMSSamplePluginOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMSSamplePluginOptionsViewController.h; path = source/RMSSamplePluginOptionsViewController.h; sourceTree = "<group>"; };
 		4A382891103BF7D600B264B7 /* RMSSamplePluginOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMSSamplePluginOptionsViewController.m; path = source/RMSSamplePluginOptionsViewController.m; sourceTree = "<group>"; };
 		4A3E8A5912A4D5D5000DA675 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Icon.icns; path = Resources/Icon.icns; sourceTree = "<group>"; };
-		4A75DB4612A39B8700AD635C /* RMKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RMKit.framework; path = Frameworks/RMKit.framework; sourceTree = "<group>"; };
 		4A75DBAC12A39C6E00AD635C /* RWKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RWKit.framework; path = Frameworks/RWKit.framework; sourceTree = "<group>"; };
 		4A844B12103C1E6400E24E24 /* RMSSamplePluginContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMSSamplePluginContentViewController.h; path = source/RMSSamplePluginContentViewController.h; sourceTree = "<group>"; };
 		4A844B13103C1E6400E24E24 /* RMSSamplePluginContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMSSamplePluginContentViewController.m; path = source/RMSSamplePluginContentViewController.m; sourceTree = "<group>"; };
@@ -34,6 +33,7 @@
 		4AFBCD8E12A6810000781A0C /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = Localizations/English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4AFBCD9112A6811000781A0C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Localizations/English.lproj/RMSSamplePluginContentView.xib; sourceTree = "<group>"; };
 		4AFBCD9312A6811000781A0C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = Localizations/English.lproj/RMSSamplePluginOptionsView.xib; sourceTree = "<group>"; };
+		8226E00427D2789700A49091 /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 		86EC48AB06813ED400EF9A10 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		9C736B80094C726A001443E6 /* SamplePlugin.rapidweaverplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SamplePlugin.rapidweaverplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C736B84094C7280001443E6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
@@ -45,7 +45,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C736B75094C726A001443E6 /* Cocoa.framework in Frameworks */,
-				4A75DB4712A39B8700AD635C /* RMKit.framework in Frameworks */,
 				4A75DBAD12A39C6E00AD635C /* RWKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +70,7 @@
 		86EC46E80681018500EF9A10 = {
 			isa = PBXGroup;
 			children = (
+				8226E00427D2789700A49091 /* ReadMe.md */,
 				4A90E4691031087600093215 /* Source */,
 				86EC483306812DE600EF9A10 /* Resources */,
 				86EC48B406813EDD00EF9A10 /* Frameworks */,
@@ -102,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				86EC48AB06813ED400EF9A10 /* Cocoa.framework */,
-				4A75DB4612A39B8700AD635C /* RMKit.framework */,
 				4A75DBAC12A39C6E00AD635C /* RWKit.framework */,
 			);
 			name = Frameworks;
@@ -139,6 +138,7 @@
 				ORGANIZATIONNAME = "Realmac Software";
 				TargetAttributes = {
 					9C736B69094C726A001443E6 = {
+						DevelopmentTeam = P97H7FTHWN;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -172,6 +172,7 @@
 				4AFBCD8F12A6810000781A0C /* Localizable.strings in Resources */,
 				4AFBCD9412A6811000781A0C /* RMSSamplePluginContentView.xib in Resources */,
 				4AFBCD9512A6811000781A0C /* RMSSamplePluginOptionsView.xib in Resources */,
+				8226E00527D2789700A49091 /* ReadMe.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,13 +305,12 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = P97H7FTHWN;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Frameworks\"",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Resources/Prefix.pch;
 				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = build;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompanyname.rwplugin.${PRODUCT_NAME:identifier}";
@@ -328,13 +328,12 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = P97H7FTHWN;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Frameworks\"",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Resources/Prefix.pch;
 				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = /;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompanyname.rwplugin.${PRODUCT_NAME:identifier}";

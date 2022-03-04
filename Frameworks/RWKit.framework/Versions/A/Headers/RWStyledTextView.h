@@ -1,55 +1,35 @@
-//***************************************************************************
+//************************************************************************
+//
+//  RapidWeaver Plugin Development Kit
+//  Copyright © 2022 Realmac Software. All rights reserved.
+//
+//  These coded instructions, statements, and computer programs contain
+//  unpublished proprietary information of Realmac Software Ltd
+//  and are protected by copyright law. They may not be disclosed
+//  to third parties or copied or duplicated in any form, in whole or
+//  in part, without the prior written consent of Realmac Software Ltd.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+//  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+//  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+//  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR
+//  ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+//  CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+//  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+//  THIS IS A RAPIDWEAVER INTERNAL HEADER FILE AND THE INTERFACES
+//  DESCRIBED HERE COULD CHANGE WITHOUT NOTICE
+//
+//************************************************************************
 
-#import <Cocoa/Cocoa.h>
+@import Cocoa;
 
-//***************************************************************************
-
-@class RMHTMLPackage;
 @class RWStyledText;
 @class RWTextView;
-@class RWWebEditView;
-@class RWTextViewDefaultDelegate;
-
-@protocol RWStyledTextViewDelegate;
-@protocol RWPlugin;
-@protocol RWPage;
-
-//***************************************************************************
-
-// Implementation note: this enum is designed to be explicitly in sync with the NSTabView tab view item index number in the RWStyledTextView class.
-typedef enum
-{
-	RWStyledTextViewModeAttributedString = 0,
-	RWStyledTextViewModeHTML = 1,
-}
-RWStyledTextViewMode;
-
-//***************************************************************************
 
 @interface RWStyledTextView : NSView <NSCoding>
-{
-	NSTabView* _tabView;
-	
-	id _toolsViewController;
-	
-	RWTextView* _textView;
-	RWWebEditView* _webView;
-	
-	RWStyledTextViewMode _styledTextMode;
-	RWTextViewDefaultDelegate* _defaultTextViewDelegate;
-	
-	/// We need this ivar because WebView's loading is asynchronous
-	/** If a client demands an HTML package using -HTMLPackage after using -setHTMLPackage: but _before_ the WebView is finished loading, we return them this ivar rather than trying to create an RMHTMLPackage from the webView. */
-	RMHTMLPackage* _HTMLPackageToLoad;
-}
 
-- (BOOL)isAttributedStringMode;
-- (BOOL)isHTMLMode;
-
-- (NSObject <RWPlugin> *)plugin;
-
-/// Sets up the WebView; this returns immediately if the WebView is already initialised and configured.
-- (void)setupWebView;
+- (id <RWPluginProtocol>)plugin;
 
 // Actions
 - (IBAction)onAddLink:(id)sender;
@@ -63,21 +43,14 @@ RWStyledTextViewMode;
 - (void)encodeWithCoder:(NSCoder*)aCoder;
 - (id)initWithCoder:(NSCoder*)aDecoder;
 
-@property RWStyledTextViewMode styledTextMode;
-
 @property (copy) RWStyledText* styledText;
 
 @property (readonly, strong) RWTextView* textView;
 
 @property (copy) NSAttributedString* attributedString;
 
-/// The WebView is initialised lazily because it can take a long time to initialise, which affects can significantly impact on nib loading time.  This property will return nil if the webView has not been initialised yet.  To force initialisation, call -setupWebView.
-@property (readonly, strong) RWWebEditView* webView;
-
-/// Returns the current text editing view, i.e. -textView if the receiver's styledTextMode is RWStyledTextViewModeAttributedString, or -webView if the receiver's styledTextMode is RWStyledTextViewModeHTML.
+/// Returns the current text editing view
 @property (readonly, strong) id textEditingView;
-
-@property (copy) RMHTMLPackage* HTMLPackage;
 
 /// The delegate for this styled text view.  Note that while the RWStyledTextView object will be the delegate set for the inner RWTextView, all of RWTextView's delegate messages will be forwarded to the main styled text view delegate object.
 // @property (assign) NSObject<RWStyledTextViewDelegate>* delegate;
@@ -87,32 +60,17 @@ RWStyledTextViewMode;
 
 @end
 
-//***************************************************************************
+#pragma mark - RWStyledTextViewDelegate Protocol
 
 @protocol RWStyledTextViewDelegate <NSObject>
 
-- (NSObject <RWPlugin> *)pluginForStyledTextView:(RWStyledTextView*)styledTextView;
-
-@optional
-
-/// This delegate method is called when the RWStyledTextView changes modes.
-/** The newMode parameter is the mode that the RWStyledTextView changed to; e.g. if it changed from Rich Text to HTML, newMode would be RWStyledTextViewModeHTML.  If the mode being changed to is HTML, this delegate method is called only when the HTML is fully loaded. */
-- (void)styledTextView:(RWStyledTextView*)styledTextView didChangeMode:(RWStyledTextViewMode)newMode;
+- (id <RWPluginProtocol>)pluginForStyledTextView:(RWStyledTextView*)styledTextView;
 
 @end
 
-//***************************************************************************
-
-/// This notification name is posted when the RWStyledTextView changes modes.
-/** If the mode being changed to is HTML, this notification is posted only when the HTML is fully loaded. */
-extern NSString* const RWStyledTextViewDidChangeModeNotification;
-
-//***************************************************************************
+#pragma mark - RWTextViewDefaultDelegate
 
 @interface RWTextViewDefaultDelegate : NSObject <NSTextViewDelegate>
-{
-	NSUndoManager *_undoManager;
-}
 
 + (RWTextViewDefaultDelegate*)textViewDefaultDelegateWithStyledTextView:(RWStyledTextView*)styledTextView;
 

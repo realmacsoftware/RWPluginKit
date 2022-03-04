@@ -1,6 +1,6 @@
 //***************************************************************************
 
-// Copyright (C) 2004 ~ 2010 Realmac Software Ltd
+// Copyright (C) 2004 ~ 2022 Realmac Software Ltd
 //
 // These coded instructions, statements, and computer programs contain
 // unpublished proprietary information of Realmac Software Ltd
@@ -14,7 +14,7 @@
 #import "RMSSamplePluginOptionsViewController.h"
 #import "RMSSamplePluginContentViewController.h"
 
-@interface RMSSamplePlugin ()
+@interface RMSSamplePlugin () <RWPluginPublishingProtocol>
 
 @property (nonatomic, strong) RMSSamplePluginOptionsViewController *optionsAndConfigurationViewController;
 @property (nonatomic, strong) RMSSamplePluginContentViewController *userInteractionAndEditingViewController;
@@ -49,18 +49,15 @@
 	return _userInteractionAndEditingViewController.view;
 }
 
-- (id)contentHTML:(NSDictionary *)params
+- (void)publishPageWithContext:(id<RWPluginPublishingContext>)context
 {
-	NSString *string = (self.userInteractionAndEditingViewController.content) ?: self.content;
-	if (string == nil) {
-		string = @"";
-	}
-	
-	if (self.emitRawContent == NO) {
-		return [NSString stringWithString:string];
-	}
-	
-	return [self contentOnlySubpageWithEntireHTML:[NSString stringWithString:string] name:nil];
+    NSString *string = (self.userInteractionAndEditingViewController.content) ?: self.content;
+    if (string == nil) {
+        string = @"";
+    }
+    
+    context.contentHTML = string;
+    context.applyTheme = !self.emitRawContent;
 }
 
 - (NSString *)sidebarHTML:(NSDictionary *)params

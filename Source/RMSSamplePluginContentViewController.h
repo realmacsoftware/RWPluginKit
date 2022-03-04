@@ -1,6 +1,6 @@
 //***************************************************************************
 
-// Copyright (C) 2009 ~ 2010 Realmac Software Ltd
+// Copyright (C) 2009 ~ 2022 Realmac Software Ltd
 //
 // These coded instructions, statements, and computer programs contain
 // unpublished proprietary information of Realmac Software Ltd
@@ -10,10 +10,9 @@
 
 //***************************************************************************
 
+@import RWKit;
+
 @interface RMSSamplePluginContentViewController : NSViewController
-{
-	IBOutlet RWHTMLView *htmlView;
-}
 
 @property (weak, nonatomic, readonly) NSString *content;
 

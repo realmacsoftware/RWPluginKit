@@ -1,404 +1,64 @@
-//***************************************************************************
-
-// Copyright (C) 2004-2007 Realmac Software Ltd
+//************************************************************************
 //
-// These coded instructions, statements, and computer programs contain
-// unpublished proprietary information of Realmac Software Ltd
-// and are protected by copyright law. They may not be disclosed
-// to third parties or copied or duplicated in any form, in whole or
-// in part, without the prior written consent of Realmac Software Ltd.
+//  RapidWeaver Plugin Development Kit
+//  Copyright © 2022 Realmac Software. All rights reserved.
+//
+//  These coded instructions, statements, and computer programs contain
+//  unpublished proprietary information of Realmac Software Ltd
+//  and are protected by copyright law. They may not be disclosed
+//  to third parties or copied or duplicated in any form, in whole or
+//  in part, without the prior written consent of Realmac Software Ltd.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+//  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+//  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+//  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR
+//  ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+//  CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+//  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+//  THIS IS A RAPIDWEAVER INTERNAL HEADER FILE AND THE INTERFACES
+//  DESCRIBED HERE COULD CHANGE WITHOUT NOTICE
+//
+//************************************************************************
 
-//***************************************************************************
+@import Cocoa;
 
-#import <Cocoa/Cocoa.h>
+#import <RWKit/RWPluginArchivingProtocol.h>
+#import <RWKit/RWPluginEditingProtocol.h>
+#import <RWKit/RWPluginExportProtocol.h>
+#import <RWKit/RWPluginMetadataProtocol.h>
+#import <RWKit/RWSharedPluginDataProtocol.h>
 
-#import "RWKit/RWDocumentProtocol.h"
-#import "RWKit/RWPageProtocol.h"
-
-@class RMHTMLPackage;
-@class RMSandwich;
-@class RWExportParameters;
-@class RWSearchResult;
-
-/*!
-	\brief
-	These methods will be removed and the data will be loaded from a file inside the plug-in bundle which RapidWeaver will read instead of loading the bundle
- */
-@protocol RWPluginMetadata <NSObject>
-
-/// Returns a localised name of the plugin.
-/** The localised name will be displayed in RapidWeaver's plugin listing.  For
- * example, you may return "Photo Album" in English, or "Album de photos" for
- * French. */
-+ (NSString *)pluginName;
-
-/// Returns the author of the plugin.
-/** For example: "Realmac Software Ltd". */
-+ (NSString *)pluginAuthor;
-
-/// Returns a resolution-independent icon of the plugin, which will used in RapidWeaver's page list.  The icon will usually be displayed at a size of 128x128 pixels.
-+ (NSImage *)pluginIcon;
-
-/// Returns a resolution-independent icon of the plugin, which will used in RapidWeaver's add page menu.  The icon will usually be displayed at a size of 128x128 pixels.
-/// By default, this will return +pluginIcon.
-+ (NSImage *)addMenuPluginIcon;
-
-/// Returns a localised description of the plugin, to be displayed to the user.
-/** For example: "The Photo Album plugin enables you to publish your iPhoto
- * galleries and other images from your local hard disk to the Web." */
-+ (NSString *)pluginDescription;
-
-/// Returns the version of the plugin
-/* For example "1.0.4". */
-+ (NSString *)pluginVersion;
-
-// This should return YES if you provide an HTML description for your plugin (rather than an NSString*)
-+ (BOOL)hasHTMLDescription;
-
-// Return YES if this page should be initially hidden from the site menu's when created
-+ (BOOL)initiallyHiddenFromNavigation;
-
-@end
-
-@protocol RWPluginExport <NSObject>
-
-/*
-	These notifications ARE NOT posted on the main thread, this is a significant API change from RapidWeaver 5
-	
-	You MUST NOT wait on the main thread inside their handlers, doing so WILL deadlock RapidWeaver
- */
-
-/// This notification name is sent just as a site export has been started.
-/** The notification object will be the RWDocument that is being exported. */
-extern NSString *const kRWExporterSiteExportDidStart;
-
-/// This notification name is sent just as a site export has been finished.
-/** The notification object will be the RWDocument that is being exported. */
-extern NSString *const kRWExporterSiteExportDidEnd;
-
-/// This notification name is sent just after a page export has been started.
-/** The notification object will be the RWPage that is being exported. */
-extern NSString *const kRWExporterPageExportDidStart;
-
-/// This notification name is sent just after a page export has been finished.
-/** The notification object will be the RWPage that is being exported. */
-extern NSString *const kRWExporterPageExportDidEnd;
-
-// This method has the same use as its instance counterpart below, except this class version should be used for copying files specific to the plugin itself, rather than the plugin instance. For example, the - (NSArray *)extraFilesNeededInExportFolder should return the user's photos, and  + (NSArray *)extraFilesNeededInExportFolder should return a picture frame graphic.
-+ (NSArray *)extraFilesNeededInExportFolder:(NSDictionary *)parameters;
-
-// This should return an NSArray of NSString file paths if your plugin needs any files (such as images, audio, style sheets, and others) copied into the export folder when the user exports a site for publishing. The files should be located in some sort of temporary directory. Pass an array with no objects if you don't need any extra files copied.
-- (NSArray *)extraFilesNeededInExportFolder:(NSDictionary *)parameters;
-
-// This should return all HTML code resulting from user-interaction. The code should be suitable to be placed inside RapidWeaver's content area.
-- (NSString *)contentHTML:(NSDictionary *)parameters;
-
-// This should return all HTML code generated by the plugin. The code should be suitable to be placed inside RapidWeaver's sidebar area.
-- (NSString *)sidebarHTML:(NSDictionary *)parameters;
-
-// This should return any HTML to be inserted immediately before the closing body tag.
-- (NSString *)extraBodyHTML:(NSDictionary *)parameters;
-
-// Defaults to YES. Return NO to opt out of asynchronous exporting
-- (BOOL)allowsAsynchronousExport;
-
- @optional
-
-// If implemented, it should return a string that will be substituted into the theme's %plugin_header% area (usually inside the <head> tag of the HTML).
-- (NSString *)pageContentHeaders:(NSDictionary *)parameters;
-
-// This method should return a string, which will be placed before the HTML DOCTYPE header on the page.  This method is optional; if you don't define it, no extra content will be placed before the DOCTYPE header.
-- (NSString *)pageContentPrefix:(NSDictionary*)parameters;
-
-/// If you implement this method, the HTML returned in -renderForPage: or -contentHTML: is used as the entire page contents' HTML, rather than being placed in the %content% tag inside the page.
-/** The name parameter is ignored. */
-- (NSMutableDictionary *)contentOnlySubpageWithEntireHTML:(NSString *)content name:(NSString *)name;
-
-/// Returns an HTML package that is placed into the webpage's main content area.
-/** Normally, the main resource of the HTML package is substituted directly into the %content% area of the theme file, unless you implement the -contentOnlySubpageWithEntireHTML:name: method.  If you wish to publish extra files besides the main HTML resource, put those extra files inside the HTML package with the same directory name as the exportParameters.filesFolderName property. */
-- (RMHTMLPackage *)renderForPage:(RWExportParameters *)exportParameters;
-
- @required
-
-/// This method is invoked by RapidWeaver to inform your plugin to cancel the export.
-/** When you receive this message, it is recommended that you toggle a BOOL
-  * property inside your plugin that you frequently check; when you detect that
-  * the BOOL has been toggled, tidy up any temporary storage and return as soon
-  * as possible. */
-- (void)cancelExport;
-
- @optional
-
-- (NSArray *)pagesForSiteMap:(NSDictionary *)info;
-
-- (NSString *)defaultFolderName;
-
-@end
-
-@protocol RWPluginSettings <NSObject>
-
-// return a dirctionary describing the plugin and its exportable settings
-// TODO: Need to document this more
-- (NSDictionary *)pluginSettings;
-
-// apply the settings as returned from -pluginSettings to this plugin
-// TODO: Need to document this more
-- (void)setPluginSettings:(NSDictionary *)settings;
-
-// return YES if this plugin will accept 'settings'
-// TODO: Need to document this more
-- (BOOL)acceptsPluginSettings:(NSDictionary *)settings;
-
-// return YES if this plugin can provide settings (default is NO)
-// TODO: Need to document this more
-- (BOOL)providesPluginSettings;
-
-@end
-
-@protocol RWSharedPluginData <NSObject>
-
-@required
-
-/// Load the passed in sandwich for the specified document. This will be called on document load if the plugin has stored shared plugin data
-+ (void)loadSharedPluginDataSandwich:(RMSandwich *)sandwich forDocument:(NSDocument <RWDocument> *)document;
-
-/// Return a sandwich containing shared data to be stored in the specified document.
-+ (RMSandwich *)sharedPluginSandwichForDocument:(NSDocument <RWDocument> *)document;
-
-/// Clear any shared data for the specified document
-+ (void)clearSharedPluginDataForDocument:(NSDocument<RWDocument> *)document;
-
-@end
-
-@protocol RWSharedPluginDataMigration <NSObject>
-
-@required
-
-/// Move any shared data stored in the page to the shared plugin data store
-/** THIS METHOD WILL BE CALLED ONLY ONCE PER PAGE
- * Only plugins that conform to the RWSharedPluginDataMigration protocol will be migrated
- * After migration, the page will me marked as being migrated and this method will not be called on subsequent loads
- */
-+ (void)migratePageSandwich:(RMSandwich *)sandwich toSharedPluginDataForDocument:(NSDocument<RWDocument> *)document;
-
-@end
+@protocol RWPageProtocol;
 
 
-/*
-	New plugin API methods. We're moving to NSViewControllers, which means you'll receive more notifications about when your views are on screen.
-	The below methods have been marked as optional, but it would make sense in most cases to return an NSViewController subclass from at least
-	one of them.
-	If your plugin does not implement -editingViewController, you will not appear in the page list.
-	If your plugin implements -settingsViewController, you will appear in the plugin settings list.
-	This makes it possible to build a plugin that doesn't have a corresponding page but does have some settings and may export some files.
-	If you do not want your plugin to appear in the plugin settings list, do not implement -settingsViewController
- */
+@protocol RWPluginProtocol <NSObject, RWPluginArchiving, RWPluginEditing, RWPluginExport, RWPluginMetadata, RWSharedPluginData>
 
-@protocol RWPluginEditingViewControllers <NSObject>
+// Called when the plugin is loaded, passing the plugin's bundle as an argument. Return a BOOL indicating if initialization was successful.
++ (BOOL)initializeClass:(NSBundle * _Nonnull)bundle;
+
+- (instancetype _Nonnull)init;
+
+/// Return YES if a new page can be created. The currentPages parameter contains all existing pages in this project using this plugin.
++ (BOOL)canCreateNewPage:(NSError * _Nullable * _Nullable)errorRef currentPages:(NSArray <RWPageProtocol> * _Nonnull)currentPages;
+
+/// Defaults to YES. Return No if only 1 page is allowed per project
+/// Availability: RW9+
++ (BOOL)allowsMultiplePages;
+
+
++ (void)willMigrateAddonLocation;
+
+/// Return YES if export is allowed for the mode
+- (BOOL)canPerformExportForMode:(NSString * _Nonnull)mode errorMessage:(NSString * _Nullable * _Nullable)errorMessage;
+
+/// Notify RW that this plugin's content has changed
+- (void)broadcastPluginChanged;
 
 @optional
-- (NSViewController *)editingViewController;
-- (NSViewController *)pageInspectorViewController;
+
+/// Return a preferred folder name used when creating pages, defaults to 'page'
+- (NSString * _Nullable)defaultFolderName;
 
 @end
-
-@protocol RWPluginSettingsViewController <NSObject>
-
-@required
-- (NSViewController *)settingsViewController;
-
-@end
-
-
-@protocol RWPluginSearch <NSObject>
-
-@required
-/// Called when a user searches their entire project for a string. Call foundBlock() with each search result in your plugin
-/// You *must* call the completion block when you've finished searching your plugin, or the search will stall
-- (void)searchForString:(NSString *)searchString foundResult:(void (^)(RWSearchResult *searchResult))foundBlock completion:(void (^)(void))completion;
-
-/// Called when a user taps your search result in the Search window. Allows you to direct the user to the instance that they selected.
-- (void)navigateToSearchResult:(RWSearchResult *)searchResult;
-
-/// If the user cancels the search and your plugin is currently processing search results, you should use this method to stop any searches you're currently performing
-- (void)cancelSearch;
-
-@end
-
-@protocol RWPluginArchiving <NSObject>
-
-@optional
-
-/// Creates a new plugin instance with the given sandwich.
-+ (id)createWithSandwich:(RMSandwich *)sandwich;
-
-/// Returns a sandwich that will be saved to disk, as part of the user's RapidWeaver document.
-- (RMSandwich *)sandwich;
-
-/// This is similar to the +pluginName method, but is used in preference to +pluginName when saving a document.
-/** This is mostly designed for the RWPluginPlaceholder class, which is used
- * when RapidWeaver loads a document that uses a plugin not currently
- * installed on the system.  RWPluginPlaceholder's +pluginName method returns
- * "Placeholder", but its -archivingName implementation returns the name of
- * the plugin it's standing in place for (such as "Blocks").  This enables the
- * plugin placeholder to communicate to the saving code the real name of the
- * plugin.  Note that this is an instance method, unlike +pluginName, which
- * is a class method.  If you do not implement this method, the saving
- * code will use the result of +pluginName instead. */
-- (NSString *)archivingName;
-
-/// This is similar to +pluginAuthor, but is used in preference to +pluginAuthor when saving a document.
-/** See the documentation for -archivingName for more information. */
-- (NSString *)archivingAuthor;
-
-/// Returns the homepage for the plugin, which the user may visit to find out more information about your plugin.
-/** You may return nil if your plugin does not have a real homepage (though I
- * guess a better solution would be to create a homepage... RapidWeaver may be
- * useful for doing that :).  For example:
- * [NSURL URLWithString:@"http://www.myrapidweaverplugins.com/myplugin/"]
- * See the documentation for -archivingName for more information. */
-- (NSURL *)archivingHomepageURL;
-
-/// The class name for the plugin that will be used when saving a document.
-/** You may override this method to enable a different class name to be used
- * as the factory class.  This method is intended mostly to be used by
- * RWPluginPlaceholder (which returns the class name of the plugin that it's
- * standing in for, such as "YHBlocks"), but may be useful in other bizarre
- * circumstances.  If you do not implement this method, the receiver's
- * -className method will be used instead.  Note that this is an instance
- * method, not a class method. */
-- (NSString *)archivingClassName;
-
-/// Returns an NSData object that will be written when saving a document.
-/** This method is only called if -sandwich returns nil.  You will usually
- * never need to implement this method: this method is mostly for the benefit
- * of the RWPluginPlaceholder class, which must be able to preserve
- * non-sandwiched plugin data archives exactly in their original state.  If
- * you implement this method, the data returned in this method will be used
- * to create the plugin from a saved document if your plugin's
- * +createWithSandwich: method doesn't exist or returns nil. */
-- (NSData *)archivingData;
-
- @optional
-
-/*!
-	\brief
-	Invoked on the main thread after `document` returns non nil
- */
-- (void)documentWasLoaded;
-
-@end
-
-@protocol RWPluginEditing <NSObject>
-
-/*!
-	\brief
-	Return result is not retained by RW
-	This should return the view to be shown inside RapidWeaver for editing the attributes and content associated with your plugin. For example, for a blog plugin, this would be a view showing a table view of blog entries and text views for editing each entry.
- */
-- (NSView *)userInteractionAndEditingView;
-
-/*!
-	\bief
-	Return result is not retained by RW
-	This should return the view that will appear in the Page Inspector's Page Settings tab
- */
-- (NSView *)optionsAndConfigurationView;
-
- @optional
-
-/*!
-	\brief
-	Returns an array of menu items to be added to the view.
-	The view, in this case, is an RWTextView. Normally this would
-	just be overriden as part of the normal sub-classing via
-	-menuForEvent: but since we hide the RWTextView in a RWStyledTextView
-	that's not currently possible. ie: You can't override RWTextView
-	when using an RWStyledTextView in your NIB/XIBs. Instead, test
-	your view here and provide any items as necessary.
-	if (view == myStyledTextView.textView) {// do something...}
- */
-- (NSArray *)contextualMenuAdditionsForView:(id)view;
-
-/*!
-	\brief
-	This notification name is sent just after the user switches between the Edit/Preview modes.
-	The notification object is the RWDocument in which the user switched mode, while the userInfo dictionary contains one key named RWDocumentViewDidSwitchTabsUserInfoKeyMode
- */
-extern NSString *const RWDocumentViewDidSwitchTabs;
-	extern NSString *const RWDocumentViewDidSwitchTabsUserInfoKeyMode; // @(RWDocumentViewTab)
-
-typedef NS_ENUM(NSUInteger, RWDocumentViewTab) {
-	RWDocumentViewTabEdit = 0,
-	RWDocumentViewTabPreview = 1,
-	RWDocumentViewTabSource = 2,
-};
-
-/// This method will be called when your plugin has been selected by the user in the page list.
-/** You can use this method to prepare the plugin to be displayed to the user.  For example, if you need to load any data off disk before the plugin's UI can be displayed properly, you can do it here.  Note that this method is _not_ called before the start of an export or publish. */
-- (void)pluginWasSelected;
-
-/// This method will be called when your plugin has been unselected (because the user has selected another page in the page list).
-/** You can use this method to page out any in-memory data to disk, to keep RapidWeaver's memory usage small.  For example, the Styled Text plugin will save the data for the main text view out to disk and release all the memory used by the text (which may be hundreds of megabytes, in the case of very large documents). */
-- (void)pluginWasDeselected;
-
-//// Theme-Specific Options
-
-// This method should return the stored value for a given theme-specific option key. See below for further information on these values and their use.
-- (id)valueForThemeSpecificOptionKey:(NSString *)key;
-
-// This method is called by RapidWeaver if your plugin has any theme-specific options available. These options are for customizing your plugin's output content-wise from theme to theme. For example, if you made a photo album plugin, this concept makes it possible for different themes to use custom picture frame graphics for the same plugin. The custom picture frame graphic would be specified in the theme's file format, where it might acknowledge certain plugins and specify options for them. If you have theme options, and your plugin does not get any input from the theme on how it should look, you should have defaults ready for use.
-- (void)setValue:(id)value forThemeSpecificOptionKey:(NSString *)key;
-
-@end
-
-/*!
-	\brief
-	Root protocol for RapidWeaver
- */
-@protocol RWPlugin <NSObject, RWPluginMetadata, RWPluginExport, RWPluginSettings, RWPluginArchiving>
-
-// This method is called when the plugin is loaded, and the plugin's bundle is passed as an argument. If initialization fails, return NO, and if it goes alright, return YES.
-+ (BOOL)initializeClass:(NSBundle *)theBundle;
-
-@end
-
-/*!
-	\brief
-	You may call this function to gain access to the RapidWeaver document that contains your plugin.
-	Pass your own plugin instance (i.e. self) as the parameter to this function.
-	
-	This function is marked as a weak import so that you may
-	continue to develop plugins that are backward-compatible with RapidWeaver
-	3.x: if you are doing that, be sure to check for the existence of this
-	function (via "if(RWDocumentForPlugin == NULL)" before calling it in your
-	code.  (If you are developing >=4.0 only plugins, please continue, nothing
-	to see here.)
-	
-	If you call this function in one of your plugin's initialisers, realise
-	that the document may not be finished loading yet, so don't be surprised if
-	some document property or method returns nil (or worse...)
-  */
-extern NSDocument <RWDocument> *RWDocumentForPlugin(id <RWPlugin> plugin) WEAK_IMPORT_ATTRIBUTE;
-
-/*!
-	\brief
-	You may call this function to gain access to the RapidWeaver page that contains your plugin.
-	Pass your own plugin instance (i.e. self) as the parameter to this
-	function.  Note that this function will return you the page that hosts
-	your plugin, not the currently selected page.
-	
-	This function is marked as a weak import so that you may
-	continue to develop plugins that are backward-compatible with RapidWeaver
-	3.x: if you are doing that, be sure to check for the existence of this
-	function (via "if(RWPageForPlugin == NULL)" before calling it in your
-	code.  (If you are developing >=4.0 only plugins, please continue, nothing
-	to see here.)
-	
-	If you call this function in one of your plugin's initialisers, realise
-	that the page may not be finished loading yet, so don't be surprised if
-	some page property or method returns nil (or worse...)
- */
-extern NSObject <RWPage> *RWPageForPlugin(id <RWPlugin> plugin) WEAK_IMPORT_ATTRIBUTE;
-
-extern NSArray <RWPage> *RWAllPagesUsingPlugin(id <RWPlugin> plugin) WEAK_IMPORT_ATTRIBUTE;

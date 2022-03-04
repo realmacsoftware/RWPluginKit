@@ -1,128 +1,103 @@
-//***************************************************************************
-
-// Copyright (C) 2005-2010 Realmac Software Ltd
+//************************************************************************
 //
-// These coded instructions, statements, and computer programs contain
-// unpublished proprietary information of Realmac Software Ltd
-// and are protected by copyright law. They may not be disclosed
-// to third parties or copied or duplicated in any form, in whole or
-// in part, without the prior written consent of Realmac Software Ltd.
+//  RapidWeaver Plugin Development Kit
+//  Copyright © 2022 Realmac Software. All rights reserved.
+//
+//  These coded instructions, statements, and computer programs contain
+//  unpublished proprietary information of Realmac Software Ltd
+//  and are protected by copyright law. They may not be disclosed
+//  to third parties or copied or duplicated in any form, in whole or
+//  in part, without the prior written consent of Realmac Software Ltd.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+//  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+//  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+//  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR
+//  ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+//  CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+//  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+//  THIS IS A RAPIDWEAVER INTERNAL HEADER FILE AND THE INTERFACES
+//  DESCRIBED HERE COULD CHANGE WITHOUT NOTICE
+//
+//************************************************************************
 
-//***************************************************************************
+@import Cocoa;
 
-#import <Cocoa/Cocoa.h>
+#import <RWKit/RWKit-Constants.h>
 
-#import "RMKit/RMKit.h"
-
-@class RWPageAttributes;
-@class RWTheme;
-
-typedef enum {
-	/// This page has its own customised page style
-	/** This does _not_ indicate that the page has its own customised _theme_, only the theme style!  Note that this is the same as the kRWPageStyleVariationsPageMode value declared in RWPageAttributes.h (but we can't import RWPageAttributes.h since that's part of RapidWeaver and not part of RWKit yet). */
-	RWPageStyleModePage = 0,
-	
-	/// This page uses the default site style for its current theme
-	/** Note that this is the same as the kRWPageStyleVariationsSiteMode value declared in RWPageAttributes.h (but we can't import RWPageAttributes.h since that's part of RapidWeaver and not part of RWKit yet). */
-	RWPageStyleModeSite
-}
-RWPageStyleMode;
-
-typedef enum {
-	RWExportModeExport,
-	RWExportModePublish,
-	RWExportModePreview,
-	RWExportModeMasterStyle,
-	RWExportModeViewSourceCode,
-	RWExportModeConvertingForWebViewDOM,
-	RWExportModeQuickLook,
-    RWExportModeSearch
-} RWExportMode;
-
-typedef enum {
-	RWCommonFilesPathModeAbsolute,
-	RWCommonFilesPathModeRelative,
-} RWCommonFilesPathMode;
-
-extern NSString* RWExportModeStringFromExportModeEnum(RWExportMode exportMode);
-extern RWExportMode RWExportModeEnumFromExportModeString(NSString* exportMode);
-
+/// Useful for accessing export parameters while using pre RW9 export methods
+/// See RWPluginPublishingProtocol interface for improved RW9 export
+__attribute__((objc_subclassing_restricted))
 @interface RWExportParameters : NSObject
 
-/// Creates an (autoreleased) export parameters object from the given parameters dictionary.
-+ (RWExportParameters*)exportParametersWithDictionary:(NSDictionary*)paramsDictionary;
+/// Creates an export parameters object from the given parameters dictionary.
++ (RWExportParameters *)exportParametersWithDictionary:(NSDictionary *)paramsDictionary;
 
 /// Initialises an export parameters object from the given parameters dictionary.
-- (RWExportParameters*)initWithDictionary:(NSDictionary*)paramsDictionary;
+- (RWExportParameters *)initWithDictionary:(NSDictionary *)paramsDictionary;
 
 /// Returns the export settings in dictionary format, suitable used for the 'params' or 'exportParameters' in RapidWeaver's old -export functions.
-- (NSMutableDictionary*)dictionary;
+- (NSMutableDictionary *)dictionary;
 
-// e.g. "html"
-@property (copy) NSString* filenameExtension;
+/// Filename extension this page will use e.g. "html"
+@property (nonatomic, readonly) NSString *filenameExtension;
 
-@property (copy) NSString *resourcesFolderName;
+/// Always "Resources"
+@property (nonatomic, readonly) NSString *resourcesFolderName;
 
-@property (strong) RWPageAttributes* pageAttributes;
+/// Website address where this page will be published e.g. "http://web.me.com/foobar/MyWebsite"
+@property (nonatomic, readonly) NSURL *baseURL;
 
-// e.g. "http://web.me.com/foobar/MyWebsite"
-@property (copy) NSURL* baseURL;
+/// Link style used when referencing resources or other pages
+@property (nonatomic, readonly) RWKitLinkStyle commonFilesPathMode;
 
-@property RWCommonFilesPathMode commonFilesPathMode;
+/// Custom CSS to be applied to each page
+@property (nonatomic, readonly) NSString *customCSS;
 
-// e.g. 0
-@property BOOL contentOnlySubpages;
+/// Custom headers to be applied to each page
+@property (nonatomic, readonly) NSString *customHeader;
 
-// e.g. ""
-@property (copy) NSString* customCSSPath;
+/// Custom Javascript to be applied to each page
+@property (nonatomic, readonly) NSString *customJavaScript;
 
-// e.g. ""
-@property (copy) NSString* customHeader;
+/// Name of the folder containing page files e.g. "files"
+@property (nonatomic, readonly) NSString *filesFolderName;
 
-// e.g. ""
-@property (copy) NSString* customJavaScript;
+/// Name of the folder containing page images e.g. "images"
+@property (nonatomic, readonly) NSString *imagesFolderName;
 
-// e.g. "files"
-@property (copy) NSString* filesFolderName;
+/// Filename of the site index page e.g. "index.html"
+@property (nonatomic, readonly) NSString *indexFilename;
 
-// e.g. "images"
-@property (copy) NSString* imagesFolderName;
+/// Location of this page when published e.g. "products/books"
+@property (nonatomic, readonly) NSString *location;
 
-// e.g. "index.html"
-@property (copy) NSString* indexFilename;
+/// Export mode, see RWExportMode for more information
+@property (nonatomic, readonly) RWExportMode exportMode;
 
-// e.g. ""
-@property (copy) NSString* location;
+/// Filename of this page e.g. "index.html"
+@property (nonatomic, readonly) NSString *name;
 
-// e.g. RWExportModePublish
-@property RWExportMode exportMode;
+/// Page encoding e.g. "utf-8"
+@property (nonatomic, readonly) NSString *encoding;
 
-// e.g. "index.html"
-@property (copy) NSString* name;
+/// Path where exported files should be written
+@property (nonatomic, readonly) NSString *exportPath;
 
-// e.g. "utf-8"
-@property (copy) NSString* encoding;
+/// Path to the plugin's common files e.g. "rw_common/plugins/styledtext"
+@property (nonatomic, readonly) NSString *pluginCommonPath;
 
-/// The filesystem path that the export should be performed to.
-// e.g. "/private/var/folders/4K/4KPl0EDa2RW0Rk+1YwSRB++++TI/TemporaryItems/RapidWeaver/70086/document-8055824/RWDocumentPagePreview"
-@property (copy) NSString* exportPath;
+/// Path to the theme's files  e.g. "rw_common/themes/offroad"
+@property (nonatomic, readonly) NSString *themeCommonPath;
 
-// e.g. ""
-@property (copy) NSString* pluginCommonPath;
+/// Browser Title e.g. "Untitled Page"
+@property (nonatomic, readonly) NSString *title;
 
-// e.g. "Theme Default"
-@property (copy) NSString* styleName;
+/// Theme style to apply e.g. "Theme Default"
+@property (nonatomic, readonly) NSString *styleName;
 
-@property RWPageStyleMode pageStyleMode;
-
-@property (strong) RWTheme* theme;
-
-// e.g. ""
-@property (copy) NSString* themeCommonPath;
-
-// e.g. "Untitled Page"
-@property (copy) NSString* title;
-
-@property (copy) NSDictionary* styles;
+/// Dictionary of theme style variations
+@property (nonatomic, readonly) NSDictionary *styles;
 
 @end
